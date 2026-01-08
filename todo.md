@@ -31,3 +31,7 @@
 ## Footer-Logo Anpassung
 
 - [x] Footer-Logo auf eine Zeile ändern: "RED TEAMING for Hotels" analog Header
+
+## "Über uns" Seite komplett überarbeiten
+
+- [x] About.tsx mit 7 neuen Sektionen ersetzen (Intro, Was Red Teaming bedeutet, Warum Sicherheit trügt, Was wir prüfen, Abgrenzung, Unsere Rolle, CTA)
