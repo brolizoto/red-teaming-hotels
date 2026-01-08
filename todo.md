@@ -62,3 +62,7 @@
 - [x] Hintergrund-Gradients und visuelle Effekte implementieren
 - [x] Card-Designs mit Borders für bessere Strukturierung
 - [x] Grid-Layouts mit Icons + Content für moderne Optik
+
+## Hero-Sektion Subtext Anpassung
+
+- [x] Subtext in Hero-Sektion anpassen: "… handlungsfähig zu bleiben – physisch, digital und organisatorisch. Damit Entscheidungen im Ernstfall nicht improvisiert werden müssen."

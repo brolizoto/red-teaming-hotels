@@ -262,7 +262,8 @@ export default function Home() {
               Wenn Vorbereitung über Schaden entscheidet.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Professionelle Hotel Security durch Red Teaming: Wir unterstützen Direktionen dabei, Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch.
+              … handlungsfähig zu bleiben – physisch, digital und organisatorisch.<br />
+              Damit Entscheidungen im Ernstfall nicht improvisiert werden müssen.
             </p>
             <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('hero'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base mx-auto">
               Gespräch anfragen (30 Minuten)
