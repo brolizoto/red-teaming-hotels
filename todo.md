@@ -92,3 +92,7 @@
 - [x] Funktionales Bild suchen (Technikraum/Serverraum/Back-of-House)
 - [x] Bild herunterladen und in public/images speichern
 - [x] Bild dezent rechts ins Layout integrieren (klein & ruhig)
+
+## Serverraum-Bild als Hintergrundbild umgestalten
+
+- [x] Bild von Seitenplatzierung zu Hintergrundbild mit Overlay ändern für mehr Impact
