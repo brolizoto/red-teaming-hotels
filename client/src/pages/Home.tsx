@@ -259,7 +259,7 @@ export default function Home() {
               Wenn Vorbereitung über Schaden entscheidet.
             </h1>
             <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-md">
-              Red Teaming für Hotels unterstützt Direktionen dabei, Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch.
+              Professionelle Hotel Security durch Red Teaming: Wir unterstützen Direktionen dabei, Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch.
             </p>
             <div className="flex gap-4">
               <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('hero'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base">
@@ -273,7 +273,7 @@ export default function Home() {
           <div className="hidden md:block bg-gray-100 overflow-hidden">
             <img
               src="/images/hero-hotel-lobby.jpg"
-              alt="Modern hotel lobby with minimalist design"
+              alt="Hotel Security - Moderne Hotellobby mit professionellem Sicherheitskonzept"
               className="w-full h-full object-cover"
             />
           </div>
@@ -286,7 +286,7 @@ export default function Home() {
           <div className="bg-gray-100 overflow-hidden h-64 md:h-full min-h-96 rounded-lg order-2 md:order-1">
             <img
               src="/images/security-corridor.jpg"
-              alt="Hotel corridor with security systems"
+              alt="Hotel Security - Hotelflur mit Sicherheitssystemen und Überwachung"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -297,7 +297,7 @@ export default function Home() {
               Die unbequeme Wahrheit
             </h2>
             <p className="text-base text-muted-foreground mb-4">
-              Sicherheit scheitert selten an Technik – sondern an Führung, Vorbereitung und Realität.
+              Hotel Security scheitert selten an Technik – sondern an Führung, Vorbereitung und Realität.
             </p>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex gap-3">
@@ -355,7 +355,7 @@ export default function Home() {
           <div className="bg-gray-100 overflow-hidden h-64 md:h-full min-h-96 rounded-lg order-2">
             <img
               src="/images/crisis-management.jpg"
-              alt="Crisis management and decision-making"
+              alt="Hotel Security Krisenmanagement - Entscheidungsfindung im Notfall"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -476,7 +476,7 @@ export default function Home() {
               <div className="text-primary font-bold text-lg mb-2">RED TEAMING</div>
               <div className="text-sm text-muted-foreground">for Hotels</div>
               <p className="text-xs text-muted-foreground mt-4">
-                Hotel Security ist heute ein Führungs- und Entscheidungs­thema
+                Hotel Security ist heute ein Führungs- und Entscheidungsthema
               </p>
             </div>
             <div className="flex flex-col md:flex-row gap-12 md:gap-16 md:justify-end">

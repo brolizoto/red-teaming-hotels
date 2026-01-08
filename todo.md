@@ -20,3 +20,10 @@
 ## Abstände konsistent machen
 
 - [x] Section-Divider zwischen Abschnitten entfernen für einheitliche Abstände
+
+## SEO-Optimierung mit "Hotel Security"
+
+- [x] Meta-Tags optimieren (Title, Description, Keywords mit "Hotel Security")
+- [x] Content auf Home-Seite anpassen (natürliche Integration von "Hotel Security")
+- [x] Alt-Tags bei Bildern mit "Hotel Security" ergänzen
+- [x] Schema.org JSON-LD aktualisieren
