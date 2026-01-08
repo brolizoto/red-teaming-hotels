@@ -498,9 +498,6 @@ export default function Home() {
                 <p className="text-sm text-muted-foreground">
                   <a href="mailto:contact@rt4h.ch" className="hover:text-primary transition-colors">
                     contact@rt4h.ch
-                  </a><br />
-                  <a href="tel:+41787401929" className="hover:text-primary transition-colors">
-                    +41 78 740 19 29
                   </a>
                 </p>
               </div>
