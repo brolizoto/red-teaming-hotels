@@ -10,3 +10,9 @@
 - [ ] Export-Funktionalität (CSV) implementieren
 - [x] Unit-Tests für Admin-Funktionen schreiben
 - [x] Dashboard testen und verifizieren
+
+## Layout-Optimierungen Home-Seite
+
+- [x] Abstände zwischen Sektionen reduzieren (py-16 md:py-24 → py-12 md:py-16)
+- [x] "Die unbequeme Wahrheit" Layout umdrehen: Bild links, Text rechts
+- [x] "Das doppelte Horror-Szenario" Layout umdrehen: Text links, Bild rechts

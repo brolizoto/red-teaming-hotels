@@ -281,9 +281,17 @@ export default function Home() {
       </section>
 
       {/* Why Now Section - About */}
-      <section id="about" className="container py-16 md:py-24">
+      <section id="about" className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:gap-16 items-center">
-          <div>
+          <div className="bg-gray-100 overflow-hidden h-64 md:h-full min-h-96 rounded-lg order-2 md:order-1">
+            <img
+              src="/images/security-corridor.jpg"
+              alt="Hotel corridor with security systems"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div className="order-1 md:order-2">
             <div className="accent-line mb-6"></div>
             <h2 className="text-heading mb-6">
               Die unbequeme Wahrheit
@@ -310,31 +318,15 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div className="bg-gray-100 overflow-hidden h-64 md:h-full min-h-96 rounded-lg">
-            <img
-              src="/images/security-corridor.jpg"
-              alt="Hotel corridor with security systems"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
         </div>
       </section>
 
       <div className="section-divider"></div>
 
       {/* The Double Horror Scenario */}
-      <section className="container py-16 md:py-24">
+      <section className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:gap-16 items-center">
-          <div className="bg-gray-100 overflow-hidden h-64 md:h-full min-h-96 order-2 md:order-1 rounded-lg">
-            <img
-              src="/images/crisis-management.jpg"
-              alt="Crisis management and decision-making"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div className="order-1 md:order-2">
+          <div>
             <div className="accent-line mb-6"></div>
             <h2 className="text-heading mb-6">
               Das doppelte Horror-Szenario
@@ -362,13 +354,21 @@ export default function Home() {
               </ul>
             </div>
           </div>
+          <div className="bg-gray-100 overflow-hidden h-64 md:h-full min-h-96 rounded-lg order-2">
+            <img
+              src="/images/crisis-management.jpg"
+              alt="Crisis management and decision-making"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </div>
       </section>
 
       <div className="section-divider"></div>
 
       {/* Services Section */}
-      <section id="services" className="container py-16 md:py-24">
+      <section id="services" className="container py-12 md:py-16">
         <div className="accent-line mb-8"></div>
         <h2 className="text-heading mb-12">Unser Ansatz</h2>
         
@@ -438,7 +438,7 @@ export default function Home() {
       <div className="section-divider"></div>
 
       {/* Process Section */}
-      <section className="container py-16 md:py-24">
+      <section className="container py-12 md:py-16">
         <div className="accent-line mb-8"></div>
         <h2 className="text-heading mb-12">Ablauf der Zusammenarbeit</h2>
         
@@ -461,7 +461,7 @@ export default function Home() {
       <div className="section-divider"></div>
 
       {/* CTA Section */}
-      <section className="container py-16 md:py-24">
+      <section className="container py-12 md:py-16">
         <div className="max-w-2xl">
           <p className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren.
