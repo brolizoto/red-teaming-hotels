@@ -309,6 +309,10 @@ export default function Home() {
                     <span className="text-primary font-bold">•</span>
                     <span>IT-Ausfälle verhindern Evakuation und Kommunikation</span>
                   </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Entscheidungen sind vorbereitet – oder werden im Ernstfall improvisiert</span>
+                  </li>
                 </ul>
               </div>
             </div>

@@ -66,3 +66,7 @@
 ## Hero-Sektion Subtext Anpassung
 
 - [x] Subtext in Hero-Sektion anpassen: "… handlungsfähig zu bleiben – physisch, digital und organisatorisch. Damit Entscheidungen im Ernstfall nicht improvisiert werden müssen."
+
+## "Die unbequeme Wahrheit" Bulletpoint ergänzen
+
+- [x] 5. Bulletpoint hinzufügen: "Entscheidungen sind vorbereitet – oder werden im Ernstfall improvisiert"
