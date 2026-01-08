@@ -70,3 +70,7 @@
 ## "Die unbequeme Wahrheit" Bulletpoint ergänzen
 
 - [x] 5. Bulletpoint hinzufügen: "Entscheidungen sind vorbereitet – oder werden im Ernstfall improvisiert"
+
+## Hero-Subtext komplett überarbeiten
+
+- [x] Subtext ersetzen durch: "Red Teaming for Hotels unterstützt Direktionen dabei, die Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch. Damit Entscheidungen im Ernstfall nicht improvisiert werden müssen."
