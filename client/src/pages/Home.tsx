@@ -317,7 +317,7 @@ export default function Home() {
               <div className="text-primary font-bold text-lg mb-2">RED TEAMING</div>
               <div className="text-sm text-muted-foreground">for Hotels</div>
               <p className="text-xs text-muted-foreground mt-4">
-                Executive Risk & Protection Assessment
+                Hotel Security ist heute ein Führungs- und Entscheidungs­thema
               </p>
             </div>
             <div>
