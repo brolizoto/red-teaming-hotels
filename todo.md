@@ -86,3 +86,9 @@
 ## CTA-Sektion Text ergänzen
 
 - [x] CTA-Text ergänzen um "– nicht erst im Ereignis" für stärkere Kontrastierung
+
+## "Was wir real prüfen" Bild hinzufügen
+
+- [x] Funktionales Bild suchen (Technikraum/Serverraum/Back-of-House)
+- [x] Bild herunterladen und in public/images speichern
+- [x] Bild dezent rechts ins Layout integrieren (klein & ruhig)

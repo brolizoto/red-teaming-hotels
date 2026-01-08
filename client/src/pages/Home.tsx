@@ -392,18 +392,27 @@ export default function Home() {
               <p className="text-base font-semibold text-foreground mb-8">
                 Unser Fokus liegt auf den Punkten, die im Ernstfall Entscheidungen verzögern oder verunmöglichen.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <p className="text-sm font-bold text-foreground">Physische Sicherheit & Evakuationsfähigkeit</p>
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+                <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-card border border-border rounded-lg p-4">
+                    <p className="text-sm font-bold text-foreground">Physische Sicherheit & Evakuationsfähigkeit</p>
+                  </div>
+                  <div className="bg-card border border-border rounded-lg p-4">
+                    <p className="text-sm font-bold text-foreground">Cyber-Resilienz & Phishing-Szenarien</p>
+                  </div>
+                  <div className="bg-card border border-border rounded-lg p-4">
+                    <p className="text-sm font-bold text-foreground">Entscheidungswege & Führungsfähigkeit</p>
+                  </div>
+                  <div className="bg-card border border-border rounded-lg p-4">
+                    <p className="text-sm font-bold text-foreground">Kritische Abhängigkeiten (IT, Technik, Personal)</p>
+                  </div>
                 </div>
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <p className="text-sm font-bold text-foreground">Cyber-Resilienz & Phishing-Szenarien</p>
-                </div>
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <p className="text-sm font-bold text-foreground">Entscheidungswege & Führungsfähigkeit</p>
-                </div>
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <p className="text-sm font-bold text-foreground">Kritische Abhängigkeiten (IT, Technik, Personal)</p>
+                <div className="lg:col-span-1 hidden lg:block">
+                  <img 
+                    src="/images/server-room.jpg" 
+                    alt="Hotel Serverraum - Technische Infrastruktur für Hotel Security" 
+                    className="w-full h-full object-cover rounded-lg opacity-80"
+                  />
                 </div>
               </div>
               <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
