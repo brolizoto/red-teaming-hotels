@@ -1,6 +1,6 @@
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X, AlertTriangle, Shield, Target, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
@@ -250,170 +250,175 @@ export default function Home() {
       )}
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[650px] md:min-h-[750px]">
-          {/* Text Content */}
-          <div className="flex flex-col justify-center px-6 md:px-12 py-16 md:py-24 bg-background">
-            <div className="accent-line mb-8"></div>
-            <h1 className="text-display mb-6">
+      <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-card py-20 md:py-32">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+        </div>
+        <div className="container relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="accent-line mb-8 mx-auto" style={{width: '4rem'}}></div>
+            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
               Wenn Vorbereitung über Schaden entscheidet.
             </h1>
-            <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-md">
+            <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
               Professionelle Hotel Security durch Red Teaming: Wir unterstützen Direktionen dabei, Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch.
             </p>
-            <div className="flex gap-4">
-              <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('hero'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base">
-                Gespräch anfragen (30 Minuten)
-                <ArrowRight size={16} />
-              </button>
-            </div>
-          </div>
-
-          {/* Image */}
-          <div className="hidden md:block bg-gray-100 overflow-hidden">
-            <img
-              src="/images/hero-hotel-lobby.jpg"
-              alt="Hotel Security - Moderne Hotellobby mit professionellem Sicherheitskonzept"
-              className="w-full h-full object-cover"
-            />
+            <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('hero'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base mx-auto">
+              Gespräch anfragen (30 Minuten)
+              <ArrowRight size={16} />
+            </button>
           </div>
         </div>
       </section>
 
       {/* Why Now Section - About */}
       <section id="about" className="container py-20 md:py-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:gap-16 items-center">
-          <div className="bg-gray-100 overflow-hidden h-64 md:h-full min-h-96 rounded-lg order-2 md:order-1">
-            <img
-              src="/images/security-corridor.jpg"
-              alt="Hotel Security - Hotelflur mit Sicherheitssystemen und Überwachung"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div className="order-1 md:order-2">
-            <div className="accent-line mb-6"></div>
-            <h2 className="text-heading mb-6">
-              Die unbequeme Wahrheit
-            </h2>
-            <p className="text-base text-muted-foreground mb-4">
-              Hotels scheitern im Ernstfall selten an Technik –
-              sondern an Führung, Vorbereitung und Realität.
-            </p>
-            <ul className="space-y-4 text-sm text-muted-foreground">
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Pläne existieren, wurden aber nie real getestet</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Zuständigkeiten sind unklar oder nicht bekannt</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Cyber-Vorfälle blockieren operative Abläufe</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>IT-Ausfälle verhindern Evakuation und Kommunikation</span>
-              </li>
-            </ul>
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div className="md:col-span-2 flex justify-center md:justify-start">
+              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                <AlertTriangle className="text-primary" size={32} />
+              </div>
+            </div>
+            <div className="md:col-span-10">
+              <div className="accent-line mb-6"></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Die unbequeme Wahrheit
+              </h2>
+              <p className="text-base text-muted-foreground mb-6">
+                Hotels scheitern im Ernstfall selten an Technik –
+                sondern an Führung, Vorbereitung und Realität.
+              </p>
+              <div className="bg-card border border-border rounded-lg p-6">
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Pläne existieren, wurden aber nie real getestet</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Zuständigkeiten sind unklar oder nicht bekannt</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Cyber-Vorfälle blockieren operative Abläufe</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>IT-Ausfälle verhindern Evakuation und Kommunikation</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* The Double Horror Scenario */}
       <section className="container py-20 md:py-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:gap-16 items-center">
-          <div>
-            <div className="accent-line mb-6"></div>
-            <h2 className="text-heading mb-6">
-              Das doppelte Horror-Szenario
-            </h2>
-            <p className="text-base text-muted-foreground mb-6">
-              Was passiert, wenn physische und digitale Ereignisse gleichzeitig eintreten?
-            </p>
-            <div className="space-y-4 mb-8">
-              <div>
-                <h3 className="font-bold text-foreground mb-2">Ereignis</h3>
-                <p className="text-sm text-muted-foreground">Brand, Evakuation, Sonderlage</p>
-              </div>
-              <div>
-                <h3 className="font-bold text-foreground mb-2">Cyber-Vorfall</h3>
-                <p className="text-sm text-muted-foreground">Phishing, Systemzugriff, Ausfall kritischer Systeme</p>
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div className="md:col-span-2 flex justify-center md:justify-start">
+              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                <Shield className="text-primary" size={32} />
               </div>
             </div>
-            <div className="bg-card border border-border p-6 rounded-lg">
-              <p className="text-sm font-bold text-foreground mb-4">Konsequenz:</p>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">•</span>
-                  <span>PMS / Schliesssysteme eingeschränkt</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">•</span>
-                  <span>Evakuationslisten nicht verfügbar</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">•</span>
-                  <span>Kommunikation blockiert</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">•</span>
-                  <span>Haftungsfragen ungeklärt</span>
-                </li>
-              </ul>
+            <div className="md:col-span-10">
+              <div className="accent-line mb-6"></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Das doppelte Horror-Szenario
+              </h2>
+              <p className="text-base text-muted-foreground mb-8">
+                Was passiert, wenn physische und digitale Ereignisse gleichzeitig eintreten?
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="bg-card border border-border rounded-lg p-4">
+                  <h3 className="font-bold text-foreground mb-2">Ereignis</h3>
+                  <p className="text-sm text-muted-foreground">Brand, Evakuation, Sonderlage</p>
+                </div>
+                <div className="bg-card border border-border rounded-lg p-4">
+                  <h3 className="font-bold text-foreground mb-2">Cyber-Vorfall</h3>
+                  <p className="text-sm text-muted-foreground">Phishing, Systemzugriff, Ausfall kritischer Systeme</p>
+                </div>
+              </div>
+              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
+                <p className="text-sm font-bold text-foreground mb-4">Konsequenz:</p>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>PMS / Schliesssysteme eingeschränkt</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Evakuationslisten nicht verfügbar</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Kommunikation blockiert</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Haftungsfragen ungeklärt</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="bg-gray-100 overflow-hidden h-64 md:h-full min-h-96 rounded-lg order-2">
-            <img
-              src="/images/crisis-management.jpg"
-              alt="Hotel Security Krisenmanagement - Entscheidungsfindung im Notfall"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
           </div>
         </div>
       </section>
 
       {/* What We Really Test - NEW SECTION */}
       <section className="container py-20 md:py-32">
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="accent-line mb-8 mx-auto" style={{width: '4rem'}}></div>
-          <h2 className="text-heading mb-6">Was wir real prüfen</h2>
-          <p className="text-base md:text-lg text-muted-foreground mb-12">
-            Wir prüfen Hotels so, wie es ein reales Ereignis tun würde.
-            Nicht theoretisch. Nicht zertifikatsgetrieben.
-          </p>
-          <ul className="space-y-4 text-sm text-muted-foreground text-left max-w-2xl mx-auto mb-12">
-            <li className="flex gap-3">
-              <span className="text-primary font-bold">•</span>
-              <span>Physische Sicherheit & Evakuationsfähigkeit</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-primary font-bold">•</span>
-              <span>Cyber-Resilienz & Phishing-Szenarien</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-primary font-bold">•</span>
-              <span>Entscheidungswege & Führungsfähigkeit</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-primary font-bold">•</span>
-              <span>Kritische Abhängigkeiten (IT, Technik, Personal)</span>
-            </li>
-          </ul>
-          <p className="text-base font-bold text-foreground">
-            Entscheidend ist nicht, ob etwas existiert –
-            sondern ob es im Ernstfall funktioniert.
-          </p>
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div className="md:col-span-2 flex justify-center md:justify-start">
+              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                <Target className="text-primary" size={32} />
+              </div>
+            </div>
+            <div className="md:col-span-10">
+              <div className="accent-line mb-6"></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Was wir real prüfen</h2>
+              <p className="text-base text-muted-foreground mb-8">
+                Wir prüfen Hotels so, wie es ein reales Ereignis tun würde.
+                Nicht theoretisch. Nicht zertifikatsgetrieben.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div className="bg-card border border-border rounded-lg p-4">
+                  <p className="text-sm font-bold text-foreground">Physische Sicherheit & Evakuationsfähigkeit</p>
+                </div>
+                <div className="bg-card border border-border rounded-lg p-4">
+                  <p className="text-sm font-bold text-foreground">Cyber-Resilienz & Phishing-Szenarien</p>
+                </div>
+                <div className="bg-card border border-border rounded-lg p-4">
+                  <p className="text-sm font-bold text-foreground">Entscheidungswege & Führungsfähigkeit</p>
+                </div>
+                <div className="bg-card border border-border rounded-lg p-4">
+                  <p className="text-sm font-bold text-foreground">Kritische Abhängigkeiten (IT, Technik, Personal)</p>
+                </div>
+              </div>
+              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
+                <p className="text-base font-bold text-foreground text-center">
+                  Entscheidend ist nicht, ob etwas existiert –
+                  sondern ob es im Ernstfall funktioniert.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Services Section */}
       <section id="services" className="container py-20 md:py-32">
-        <div className="accent-line mb-8"></div>
-        <h2 className="text-heading mb-12">Unser Ansatz</h2>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="accent-line mb-8 mx-auto" style={{width: '4rem'}}></div>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Unser Ansatz</h2>
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+              Zwei Ansätze, je nach Ausgangslage und Zielsetzung
+            </p>
+          </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* Red Teaming Basic */}
@@ -476,6 +481,7 @@ export default function Home() {
             </p>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Process Section */}
@@ -500,18 +506,23 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="container py-20 md:py-32">
-        <div className="max-w-2xl">
-          <p className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-            Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren.
-          </p>
-          <p className="text-base md:text-lg text-muted-foreground mb-8">
-            Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.
-          </p>
-          <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('cta_section'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base">
-            Gespräch anfragen
-            <ArrowRight size={16} />
-          </button>
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-card py-20 md:py-32">
+        <div className="container relative z-10">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-8">
+              <CheckCircle2 className="text-primary" size={32} />
+            </div>
+            <p className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren.
+            </p>
+            <p className="text-base md:text-lg text-muted-foreground mb-8">
+              Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.
+            </p>
+            <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('cta_section'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base mx-auto">
+              Gespräch anfragen
+              <ArrowRight size={16} />
+            </button>
+          </div>
         </div>
       </section>
 

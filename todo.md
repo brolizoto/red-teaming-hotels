@@ -54,3 +54,11 @@
 - [x] Mehr Weißraum zwischen Sektionen hinzufügen
 - [x] Informationsdichte reduzieren für bessere Lesbarkeit
 - [x] Einheitliches Grid-System und visuelle Hierarchie implementieren
+
+## Home-Seite Redesign - Frisches, modernes Layout
+
+- [x] Gesamte Home-Seite neu gestalten angelehnt an "Über uns" Design
+- [x] Icons für jede Sektion hinzufügen (Shield, Target, AlertTriangle, etc.)
+- [x] Hintergrund-Gradients und visuelle Effekte implementieren
+- [x] Card-Designs mit Borders für bessere Strukturierung
+- [x] Grid-Layouts mit Icons + Content für moderne Optik
