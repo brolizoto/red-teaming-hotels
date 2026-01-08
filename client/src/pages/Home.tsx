@@ -473,9 +473,11 @@ export default function Home() {
         <div className="container py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
-              <div className="text-primary font-bold text-lg mb-2">RED TEAMING</div>
-              <div className="text-sm text-muted-foreground">for Hotels</div>
-              <p className="text-xs text-muted-foreground mt-4">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="text-primary font-bold text-lg">RED TEAMING</div>
+                <div className="text-sm text-muted-foreground">for Hotels</div>
+              </div>
+              <p className="text-xs text-muted-foreground">
                 Hotel Security ist heute ein Führungs- und Entscheidungsthema
               </p>
             </div>

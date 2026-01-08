@@ -27,3 +27,7 @@
 - [x] Content auf Home-Seite anpassen (natürliche Integration von "Hotel Security")
 - [x] Alt-Tags bei Bildern mit "Hotel Security" ergänzen
 - [x] Schema.org JSON-LD aktualisieren
+
+## Footer-Logo Anpassung
+
+- [x] Footer-Logo auf eine Zeile ändern: "RED TEAMING for Hotels" analog Header
