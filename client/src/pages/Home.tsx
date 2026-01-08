@@ -11,6 +11,15 @@ import { useState } from "react";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [contactFormOpen, setContactFormOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    message: ''
+  });
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -18,6 +27,26 @@ export default function Home() {
       element.scrollIntoView({ behavior: 'smooth' });
       setMobileMenuOpen(false);
     }
+  };
+
+  const handleFormChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Here you would typically send the form data to a backend
+    console.log('Form submitted:', formData);
+    setFormSubmitted(true);
+    setTimeout(() => {
+      setContactFormOpen(false);
+      setFormSubmitted(false);
+      setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+    }, 2000);
   };
 
   return (
@@ -41,7 +70,7 @@ export default function Home() {
             <button onClick={() => scrollToSection('contact')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
               Kontakt
             </button>
-            <button onClick={() => scrollToSection('contact')} className="btn-primary text-xs">Gespräch anfragen</button>
+            <button onClick={() => setContactFormOpen(true)} className="btn-primary text-xs">Gespräch anfragen</button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -76,11 +105,124 @@ export default function Home() {
               >
                 Kontakt
               </button>
-              <button onClick={() => scrollToSection('contact')} className="btn-primary text-xs w-full">Gespräch anfragen</button>
+              <button onClick={() => setContactFormOpen(true)} className="btn-primary text-xs w-full">Gespräch anfragen</button>
             </div>
           </div>
         )}
       </nav>
+
+      {/* Contact Form Modal */}
+      {contactFormOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+          <div className="bg-background rounded-lg p-8 max-w-md w-full max-h-[90vh] overflow-y-auto">
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-2xl font-bold text-foreground">Rückruf vereinbaren</h2>
+              <button
+                onClick={() => setContactFormOpen(false)}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <X size={24} />
+              </button>
+            </div>
+
+            {formSubmitted ? (
+              <div className="text-center py-8">
+                <div className="text-primary text-4xl mb-4">✓</div>
+                <p className="text-foreground font-bold mb-2">Vielen Dank!</p>
+                <p className="text-sm text-muted-foreground">
+                  Wir werden Sie in Kürze kontaktieren, um einen Termin zu vereinbaren.
+                </p>
+              </div>
+            ) : (
+              <form onSubmit={handleFormSubmit} className="space-y-4">
+                <div>
+                  <label className="block text-sm font-bold text-foreground mb-2">
+                    Name *
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleFormChange}
+                    required
+                    className="w-full px-4 py-2 border border-border rounded bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="Ihr Name"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-bold text-foreground mb-2">
+                    E-Mail *
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleFormChange}
+                    required
+                    className="w-full px-4 py-2 border border-border rounded bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="ihre@email.ch"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-bold text-foreground mb-2">
+                    Telefon *
+                  </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleFormChange}
+                    required
+                    className="w-full px-4 py-2 border border-border rounded bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="+41 78 XXX XX XX"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-bold text-foreground mb-2">
+                    Hotel / Unternehmen
+                  </label>
+                  <input
+                    type="text"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleFormChange}
+                    className="w-full px-4 py-2 border border-border rounded bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="Ihr Hotel"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-bold text-foreground mb-2">
+                    Nachricht
+                  </label>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleFormChange}
+                    rows={4}
+                    className="w-full px-4 py-2 border border-border rounded bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                    placeholder="Ihre Nachricht..."
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full btn-primary py-3 font-bold"
+                >
+                  Rückruf vereinbaren
+                </button>
+
+                <p className="text-xs text-muted-foreground text-center">
+                  * Erforderliche Felder
+                </p>
+              </form>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
@@ -95,7 +237,7 @@ export default function Home() {
               Red Teaming für Hotels unterstützt Direktionen dabei, Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch.
             </p>
             <div className="flex gap-4">
-              <button onClick={() => scrollToSection('contact')} className="btn-primary flex items-center gap-2 text-sm md:text-base">
+              <button onClick={() => setContactFormOpen(true)} className="btn-primary flex items-center gap-2 text-sm md:text-base">
                 Gespräch anfragen (30 Minuten)
                 <ArrowRight size={16} />
               </button>
@@ -300,7 +442,7 @@ export default function Home() {
           <p className="text-base md:text-lg text-muted-foreground mb-8">
             Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.
           </p>
-          <button onClick={() => scrollToSection('contact')} className="btn-primary flex items-center gap-2 text-sm md:text-base">
+          <button onClick={() => setContactFormOpen(true)} className="btn-primary flex items-center gap-2 text-sm md:text-base">
             Gespräch anfragen
             <ArrowRight size={16} />
           </button>
