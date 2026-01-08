@@ -82,3 +82,7 @@
 ## "Red Teaming Basic" Untertitel anpassen
 
 - [x] Untertitel ändern von "Entscheidungsfähigkeit herstellen" zu "Klarheit schaffen & Risiken sichtbar machen"
+
+## CTA-Sektion Text ergänzen
+
+- [x] CTA-Text ergänzen um "– nicht erst im Ereignis" für stärkere Kontrastierung

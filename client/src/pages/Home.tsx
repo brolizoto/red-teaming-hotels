@@ -521,7 +521,7 @@ export default function Home() {
               <CheckCircle2 className="text-primary" size={32} />
             </div>
             <p className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-              Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren.
+              Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren – nicht erst im Ereignis.
             </p>
             <p className="text-base md:text-lg text-muted-foreground mb-8">
               Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.
