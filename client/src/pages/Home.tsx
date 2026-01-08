@@ -394,7 +394,7 @@ export default function Home() {
           <div className="border border-border rounded-lg overflow-hidden hover:border-primary transition-colors bg-card">
             <div className="relative h-48 overflow-hidden bg-gray-100">
               <img
-                src="/images/crisis-management.jpg"
+                src="/images/security-corridor.jpg"
                 alt="Red Teaming Advanced Service"
                 className="w-full h-full object-cover"
                 loading="lazy"
