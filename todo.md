@@ -16,3 +16,7 @@
 - [x] Abstände zwischen Sektionen reduzieren (py-16 md:py-24 → py-12 md:py-16)
 - [x] "Die unbequeme Wahrheit" Layout umdrehen: Bild links, Text rechts
 - [x] "Das doppelte Horror-Szenario" Layout umdrehen: Text links, Bild rechts
+
+## Abstände konsistent machen
+
+- [x] Section-Divider zwischen Abschnitten entfernen für einheitliche Abstände

@@ -321,8 +321,6 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="section-divider"></div>
-
       {/* The Double Horror Scenario */}
       <section className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:gap-16 items-center">
@@ -364,8 +362,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <div className="section-divider"></div>
 
       {/* Services Section */}
       <section id="services" className="container py-12 md:py-16">
@@ -435,8 +431,6 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="section-divider"></div>
-
       {/* Process Section */}
       <section className="container py-12 md:py-16">
         <div className="accent-line mb-8"></div>
@@ -458,8 +452,6 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="section-divider"></div>
-
       {/* CTA Section */}
       <section className="container py-12 md:py-16">
         <div className="max-w-2xl">
@@ -475,8 +467,6 @@ export default function Home() {
           </button>
         </div>
       </section>
-
-      <div className="section-divider"></div>
 
       {/* Footer - Contact */}
       <footer id="contact" className="bg-card border-t border-border">
