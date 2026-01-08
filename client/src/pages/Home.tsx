@@ -287,11 +287,12 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div className="bg-gray-100 overflow-hidden h-96 md:h-full min-h-96 hidden md:block">
+          <div className="bg-gray-100 overflow-hidden h-64 md:h-full min-h-96 rounded-lg">
             <img
               src="/images/security-corridor.jpg"
               alt="Hotel corridor with security systems"
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
         </div>
@@ -302,11 +303,12 @@ export default function Home() {
       {/* The Double Horror Scenario */}
       <section className="container py-16 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:gap-16 items-center">
-          <div className="bg-gray-100 overflow-hidden h-96 md:h-full min-h-96 order-2 md:order-1 hidden md:block">
+          <div className="bg-gray-100 overflow-hidden h-64 md:h-full min-h-96 order-2 md:order-1 rounded-lg">
             <img
               src="/images/crisis-management.jpg"
               alt="Crisis management and decision-making"
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
           <div className="order-1 md:order-2">
@@ -349,12 +351,21 @@ export default function Home() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* Red Teaming Basic */}
-          <div className="border border-border p-6 md:p-8">
-            <h3 className="text-subheading mb-4">Red Teaming Basic</h3>
-            <p className="text-sm text-muted-foreground mb-6">
-              Entscheidungsfähigkeit herstellen
-            </p>
-            <ul className="space-y-3 text-sm text-muted-foreground mb-8">
+          <div className="border border-border rounded-lg overflow-hidden hover:border-primary transition-colors">
+            <div className="relative h-48 overflow-hidden bg-gray-100">
+              <img
+                src="/images/hero-hotel-lobby.jpg"
+                alt="Red Teaming Basic Service"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="p-6 md:p-8">
+              <h3 className="text-subheading mb-4">Red Teaming Basic</h3>
+              <p className="text-sm text-muted-foreground mb-6">
+                Entscheidungsfähigkeit herstellen
+              </p>
+              <ul className="space-y-3 text-sm text-muted-foreground mb-8">
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
                 <span>Strukturierte Risiko- & Schutz-Standortbestimmung</span>
@@ -371,15 +382,25 @@ export default function Home() {
                 <span className="text-primary font-bold">•</span>
                 <span>Management Summary mit klaren Prioritäten</span>
               </li>
-            </ul>
-            <p className="text-xs font-bold text-foreground">IDEAL FÜR:</p>
-            <p className="text-xs text-muted-foreground">
-              Hotels, die wissen wollen, wo sie stehen – bevor sie vertiefen.
-            </p>
+              </ul>
+              <p className="text-xs font-bold text-foreground">IDEAL FÜR:</p>
+              <p className="text-xs text-muted-foreground">
+                Hotels, die wissen wollen, wo sie stehen – bevor sie vertiefen.
+              </p>
+            </div>
           </div>
 
           {/* Red Teaming Advanced */}
-          <div className="border border-border p-6 md:p-8 bg-card">
+          <div className="border border-border rounded-lg overflow-hidden hover:border-primary transition-colors bg-card">
+            <div className="relative h-48 overflow-hidden bg-gray-100">
+              <img
+                src="/images/crisis-management.jpg"
+                alt="Red Teaming Advanced Service"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="p-6 md:p-8">
             <h3 className="text-subheading mb-4">Red Teaming Advanced</h3>
             <p className="text-sm text-muted-foreground mb-6">
               Haftungs- & Krisenrisiken aktiv reduzieren
@@ -401,11 +422,12 @@ export default function Home() {
                 <span className="text-primary font-bold">•</span>
                 <span>Detaillierter Entscheid- & Massnahmenplan</span>
               </li>
-            </ul>
-            <p className="text-xs font-bold text-foreground">IDEAL FÜR:</p>
-            <p className="text-xs text-muted-foreground">
-              Empfohlen bei erhöhter Sichtbarkeit, Events, komplexer IT oder regulatorischem Druck.
-            </p>
+              </ul>
+              <p className="text-xs font-bold text-foreground">IDEAL FÜR:</p>
+              <p className="text-xs text-muted-foreground">
+                Empfohlen bei erhöhter Sichtbarkeit, Events, komplexer IT oder regulatorischem Druck.
+              </p>
+            </div>
           </div>
         </div>
       </section>
