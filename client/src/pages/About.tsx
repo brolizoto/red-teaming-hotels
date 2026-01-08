@@ -407,11 +407,11 @@ export default function About() {
               Ziel ist es zu klären, ob und wo ein realistischer Prüfbedarf besteht. Und ob Red Teaming der richtige Ansatz dafür ist.
             </p>
           </div>
-          <div className="bg-gradient-to-br from-primary via-primary to-primary opacity-5 rounded-lg p-8 border border-primary border-opacity-20 relative overflow-hidden">
+          <div className="bg-primary rounded-lg p-8 border border-primary relative overflow-hidden">
             <div className="relative z-10">
-              <p className="text-sm font-bold text-primary uppercase mb-2">Kernwert</p>
-              <p className="text-2xl font-bold text-foreground mb-4">Transparenz von Anfang an</p>
-              <p className="text-base text-muted-foreground">
+              <p className="text-sm font-bold text-white uppercase mb-2">Kernwert</p>
+              <p className="text-2xl font-bold text-white mb-4">Transparenz von Anfang an</p>
+              <p className="text-base text-white opacity-95">
                 Wir beraten ehrlich, auch wenn das bedeutet, dass Red Teaming nicht der richtige Weg ist. Ihre Entscheidungsqualität ist wichtiger als unser Auftrag.
               </p>
             </div>
