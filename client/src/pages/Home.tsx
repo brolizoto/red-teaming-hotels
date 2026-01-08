@@ -251,7 +251,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[600px] md:min-h-[700px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[650px] md:min-h-[750px]">
           {/* Text Content */}
           <div className="flex flex-col justify-center px-6 md:px-12 py-16 md:py-24 bg-background">
             <div className="accent-line mb-8"></div>
@@ -281,7 +281,7 @@ export default function Home() {
       </section>
 
       {/* Why Now Section - About */}
-      <section id="about" className="container py-12 md:py-16">
+      <section id="about" className="container py-20 md:py-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:gap-16 items-center">
           <div className="bg-gray-100 overflow-hidden h-64 md:h-full min-h-96 rounded-lg order-2 md:order-1">
             <img
@@ -300,7 +300,7 @@ export default function Home() {
               Hotels scheitern im Ernstfall selten an Technik –
               sondern an Führung, Vorbereitung und Realität.
             </p>
-            <ul className="space-y-3 text-sm text-muted-foreground">
+            <ul className="space-y-4 text-sm text-muted-foreground">
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
                 <span>Pläne existieren, wurden aber nie real getestet</span>
@@ -311,15 +311,11 @@ export default function Home() {
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
-                <span>Dokumentation ist unvollständig oder veraltet</span>
+                <span>Cyber-Vorfälle blockieren operative Abläufe</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
-                <span>Cyber-Vorfälle (z. B. Phishing) blockieren operative Abläufe</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>IT-Ausfälle verhindern Evakuation, Zutritt oder Kommunikation</span>
+                <span>IT-Ausfälle verhindern Evakuation und Kommunikation</span>
               </li>
             </ul>
           </div>
@@ -327,7 +323,7 @@ export default function Home() {
       </section>
 
       {/* The Double Horror Scenario */}
-      <section className="container py-12 md:py-16">
+      <section className="container py-20 md:py-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:gap-16 items-center">
           <div>
             <div className="accent-line mb-6"></div>
@@ -347,14 +343,25 @@ export default function Home() {
                 <p className="text-sm text-muted-foreground">Phishing, Systemzugriff, Ausfall kritischer Systeme</p>
               </div>
             </div>
-            <div className="bg-card border border-border p-6">
-              <p className="text-sm font-bold text-foreground mb-3">Konsequenz:</p>
-              <ul className="space-y-2 text-xs text-muted-foreground">
-                <li>• PMS / Schliesssysteme eingeschränkt</li>
-                <li>• Evakuationslisten nicht verfügbar</li>
-                <li>• Kommunikation blockiert</li>
-                <li>• Versicherer verlangt Nachweise</li>
-                <li>• Versicherungs- & Haftungsfragen ungeklärt</li>
+            <div className="bg-card border border-border p-6 rounded-lg">
+              <p className="text-sm font-bold text-foreground mb-4">Konsequenz:</p>
+              <ul className="space-y-3 text-sm text-muted-foreground">
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>PMS / Schliesssysteme eingeschränkt</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>Evakuationslisten nicht verfügbar</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>Kommunikation blockiert</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>Haftungsfragen ungeklärt</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -370,34 +377,33 @@ export default function Home() {
       </section>
 
       {/* What We Really Test - NEW SECTION */}
-      <section className="container py-12 md:py-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="accent-line mb-8"></div>
+      <section className="container py-20 md:py-32">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="accent-line mb-8 mx-auto" style={{width: '4rem'}}></div>
           <h2 className="text-heading mb-6">Was wir real prüfen</h2>
-          <p className="text-base md:text-lg text-muted-foreground mb-6">
+          <p className="text-base md:text-lg text-muted-foreground mb-12">
             Wir prüfen Hotels so, wie es ein reales Ereignis tun würde.
-          </p>
-          <p className="text-base md:text-lg text-muted-foreground mb-8">
             Nicht theoretisch. Nicht zertifikatsgetrieben.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div className="bg-card border border-border rounded-lg p-4">
-              <p className="text-sm font-bold text-foreground mb-2">Physische Sicherheit & Evakuationsfähigkeit</p>
-            </div>
-            <div className="bg-card border border-border rounded-lg p-4">
-              <p className="text-sm font-bold text-foreground mb-2">Cyber-Resilienz & Phishing-Szenarien</p>
-            </div>
-            <div className="bg-card border border-border rounded-lg p-4">
-              <p className="text-sm font-bold text-foreground mb-2">Entscheidungswege & Führungsfähigkeit</p>
-            </div>
-            <div className="bg-card border border-border rounded-lg p-4">
-              <p className="text-sm font-bold text-foreground mb-2">Kritische Abhängigkeiten (IT, Technik, Personal)</p>
-            </div>
-            <div className="bg-card border border-border rounded-lg p-4 md:col-span-2">
-              <p className="text-sm font-bold text-foreground mb-2">Dokumentation, Nachvollziehbarkeit & Haftung</p>
-            </div>
-          </div>
-          <p className="text-lg font-bold text-foreground text-center">
+          <ul className="space-y-4 text-sm text-muted-foreground text-left max-w-2xl mx-auto mb-12">
+            <li className="flex gap-3">
+              <span className="text-primary font-bold">•</span>
+              <span>Physische Sicherheit & Evakuationsfähigkeit</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-primary font-bold">•</span>
+              <span>Cyber-Resilienz & Phishing-Szenarien</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-primary font-bold">•</span>
+              <span>Entscheidungswege & Führungsfähigkeit</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-primary font-bold">•</span>
+              <span>Kritische Abhängigkeiten (IT, Technik, Personal)</span>
+            </li>
+          </ul>
+          <p className="text-base font-bold text-foreground">
             Entscheidend ist nicht, ob etwas existiert –
             sondern ob es im Ernstfall funktioniert.
           </p>
@@ -405,7 +411,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="container py-12 md:py-16">
+      <section id="services" className="container py-20 md:py-32">
         <div className="accent-line mb-8"></div>
         <h2 className="text-heading mb-12">Unser Ansatz</h2>
         
@@ -416,14 +422,10 @@ export default function Home() {
               <p className="text-sm text-muted-foreground mb-6">
                 Entscheidungsfähigkeit herstellen
               </p>
-              <ul className="space-y-3 text-sm text-muted-foreground mb-8">
+              <ul className="space-y-4 text-sm text-muted-foreground mb-8">
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
-                <span>Strukturierte Risiko- & Schutz-Standortbestimmung</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Grundlegendes Risk Assessment (physisch & digital)</span>
+                <span>Strukturierte Risiko-Standortbestimmung (physisch & digital)</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
@@ -432,10 +434,6 @@ export default function Home() {
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
                 <span>Erkennung kritischer Cyber- & Phishing-Risiken</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Bewertung von Notfall- & Evakuationsfähigkeit</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
@@ -454,18 +452,10 @@ export default function Home() {
             <p className="text-sm text-muted-foreground mb-6">
               Haftungs- & Krisenrisiken aktiv reduzieren
             </p>
-            <ul className="space-y-3 text-sm text-muted-foreground mb-8">
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Erweiterte Szenarien & 24h-Betrachtung</span>
-              </li>
+            <ul className="space-y-4 text-sm text-muted-foreground mb-8">
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
                 <span>Erweiterte Cyber- & Phishing-Szenarien</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Integrierte physische & digitale Eintrittspunkte</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
@@ -510,7 +500,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="container py-12 md:py-16">
+      <section className="container py-20 md:py-32">
         <div className="max-w-2xl">
           <p className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren.

@@ -47,3 +47,10 @@
 - [x] "Das doppelte Horror-Szenario" Untertitel und Konsequenzen ergänzen
 - [x] Neue Sektion "Was wir real prüfen" nach Horror-Szenario hinzufügen
 - [x] "Unser Ansatz" Red Teaming Basic & Advanced Bulletpoints erweitern
+
+## Home-Seite Layout-Überarbeitung
+
+- [x] Gesamte Home-Seite strukturell vereinfachen und aufräumen
+- [x] Mehr Weißraum zwischen Sektionen hinzufügen
+- [x] Informationsdichte reduzieren für bessere Lesbarkeit
+- [x] Einheitliches Grid-System und visuelle Hierarchie implementieren
