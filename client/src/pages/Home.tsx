@@ -94,7 +94,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div className="bg-gray-100 overflow-hidden h-96 md:h-full min-h-96">
+          <div className="bg-gray-100 overflow-hidden h-96 md:h-full min-h-96 hidden md:block">
             <img
               src="/images/security-corridor.jpg"
               alt="Hotel corridor with security systems"
