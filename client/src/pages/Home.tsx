@@ -458,7 +458,7 @@ export default function Home() {
       {/* Footer - Contact */}
       <footer id="contact" className="bg-card border-t border-border">
         <div className="container py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
               <div className="text-primary font-bold text-lg mb-2">RED TEAMING</div>
               <div className="text-sm text-muted-foreground">for Hotels</div>
@@ -466,23 +466,25 @@ export default function Home() {
                 Hotel Security ist heute ein Führungs- und Entscheidungs­thema
               </p>
             </div>
-            <div>
-              <h3 className="font-bold text-foreground mb-4">Location</h3>
-              <p className="text-sm text-muted-foreground">
-                Weberstrasse 16<br />
-                CH-3005 Bern
-              </p>
-            </div>
-            <div>
-              <h3 className="font-bold text-foreground mb-4">Contact</h3>
-              <p className="text-sm text-muted-foreground">
-                <a href="mailto:contact@rt4h.ch" className="hover:text-primary transition-colors">
-                  contact@rt4h.ch
-                </a><br />
-                <a href="tel:+41787401929" className="hover:text-primary transition-colors">
-                  +41 78 740 19 29
-                </a>
-              </p>
+            <div className="flex flex-col md:flex-row gap-12 md:gap-16 md:justify-end">
+              <div>
+                <h3 className="font-bold text-foreground mb-4">Location</h3>
+                <p className="text-sm text-muted-foreground">
+                  Weberstrasse 16<br />
+                  CH-3005 Bern
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-foreground mb-4">Contact</h3>
+                <p className="text-sm text-muted-foreground">
+                  <a href="mailto:contact@rt4h.ch" className="hover:text-primary transition-colors">
+                    contact@rt4h.ch
+                  </a><br />
+                  <a href="tel:+41787401929" className="hover:text-primary transition-colors">
+                    +41 78 740 19 29
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
           <div className="border-t border-border pt-8 text-center text-xs text-muted-foreground">
