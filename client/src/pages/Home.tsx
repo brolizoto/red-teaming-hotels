@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
+import { analytics } from "@/lib/analytics";
 
 /**
  * Red Teaming for Hotels - Home Page
@@ -35,6 +36,7 @@ export default function Home() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       setMobileMenuOpen(false);
+      analytics.trackNavigation(sectionId);
     }
   };
 
@@ -49,6 +51,7 @@ export default function Home() {
   const contactMutation = trpc.contact.submit.useMutation({
     onSuccess: (data) => {
       setFormSubmitted(true);
+      analytics.trackFormSubmit(true);
       if (data.emailSent) {
         toast.success("Ihre Anfrage wurde erfolgreich versendet!");
       } else {
@@ -61,6 +64,7 @@ export default function Home() {
       }, 2000);
     },
     onError: (error) => {
+      analytics.trackFormError(error.message);
       toast.error("Fehler beim Senden der Anfrage: " + error.message);
     },
   });
@@ -91,7 +95,7 @@ export default function Home() {
             <button onClick={() => scrollToSection('contact')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
               Kontakt
             </button>
-            <button onClick={() => setContactFormOpen(true)} className="btn-primary text-xs">Gespräch anfragen</button>
+            <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('header'); analytics.trackFormOpen(); }} className="btn-primary text-xs">Gespräch anfragen</button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -126,7 +130,7 @@ export default function Home() {
               >
                 Kontakt
               </button>
-              <button onClick={() => setContactFormOpen(true)} className="btn-primary text-xs w-full">Gespräch anfragen</button>
+              <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('mobile_menu'); analytics.trackFormOpen(); }} className="btn-primary text-xs w-full">Gespräch anfragen</button>
             </div>
           </div>
         )}
@@ -258,7 +262,7 @@ export default function Home() {
               Red Teaming für Hotels unterstützt Direktionen dabei, Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch.
             </p>
             <div className="flex gap-4">
-              <button onClick={() => setContactFormOpen(true)} className="btn-primary flex items-center gap-2 text-sm md:text-base">
+              <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('hero'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base">
                 Gespräch anfragen (30 Minuten)
                 <ArrowRight size={16} />
               </button>
@@ -465,7 +469,7 @@ export default function Home() {
           <p className="text-base md:text-lg text-muted-foreground mb-8">
             Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.
           </p>
-          <button onClick={() => setContactFormOpen(true)} className="btn-primary flex items-center gap-2 text-sm md:text-base">
+          <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('cta_section'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base">
             Gespräch anfragen
             <ArrowRight size={16} />
           </button>
@@ -496,7 +500,7 @@ export default function Home() {
               <div>
                 <h3 className="font-bold text-foreground mb-4">Contact</h3>
                 <p className="text-sm text-muted-foreground">
-                  <a href="mailto:contact@rt4h.ch" className="hover:text-primary transition-colors">
+                  <a href="mailto:contact@rt4h.ch" onClick={() => analytics.trackExternalLink('mailto:contact@rt4h.ch')} className="hover:text-primary transition-colors">
                     contact@rt4h.ch
                   </a>
                 </p>
@@ -507,10 +511,10 @@ export default function Home() {
             <div className="flex flex-col md:flex-row justify-between items-center text-xs text-muted-foreground gap-4">
               <p>© 2026 Red Teaming for Hotels. All rights reserved.</p>
               <div className="flex gap-6">
-                <a href="/imprint" className="hover:text-primary transition-colors">
+                <a href="/imprint" onClick={() => analytics.trackNavigation('imprint')} className="hover:text-primary transition-colors">
                   Impressum
                 </a>
-                <a href="/privacy" className="hover:text-primary transition-colors">
+                <a href="/privacy" onClick={() => analytics.trackNavigation('privacy')} className="hover:text-primary transition-colors">
                   Datenschutz
                 </a>
               </div>
