@@ -351,16 +351,7 @@ export default function Home() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* Red Teaming Basic */}
-          <div className="border border-border rounded-lg overflow-hidden hover:border-primary transition-colors">
-            <div className="relative h-48 overflow-hidden bg-gray-100">
-              <img
-                src="/images/hero-hotel-lobby.jpg"
-                alt="Red Teaming Basic Service"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-            <div className="p-6 md:p-8">
+          <div className="border border-border rounded-lg hover:border-primary transition-colors p-6 md:p-8">
               <h3 className="text-subheading mb-4">Red Teaming Basic</h3>
               <p className="text-sm text-muted-foreground mb-6">
                 Entscheidungsfähigkeit herstellen
@@ -387,20 +378,10 @@ export default function Home() {
               <p className="text-xs text-muted-foreground">
                 Hotels, die wissen wollen, wo sie stehen – bevor sie vertiefen.
               </p>
-            </div>
           </div>
 
           {/* Red Teaming Advanced */}
-          <div className="border border-border rounded-lg overflow-hidden hover:border-primary transition-colors bg-card">
-            <div className="relative h-48 overflow-hidden bg-gray-100">
-              <img
-                src="/images/advanced-service.jpg"
-                alt="Red Teaming Advanced Service"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-            <div className="p-6 md:p-8">
+          <div className="border border-border rounded-lg hover:border-primary transition-colors bg-card p-6 md:p-8">
             <h3 className="text-subheading mb-4">Red Teaming Advanced</h3>
             <p className="text-sm text-muted-foreground mb-6">
               Haftungs- & Krisenrisiken aktiv reduzieren
@@ -422,12 +403,11 @@ export default function Home() {
                 <span className="text-primary font-bold">•</span>
                 <span>Detaillierter Entscheid- & Massnahmenplan</span>
               </li>
-              </ul>
-              <p className="text-xs font-bold text-foreground">IDEAL FÜR:</p>
-              <p className="text-xs text-muted-foreground">
-                Empfohlen bei erhöhter Sichtbarkeit, Events, komplexer IT oder regulatorischem Druck.
-              </p>
-            </div>
+            </ul>
+            <p className="text-xs font-bold text-foreground">IDEAL FÜR:</p>
+            <p className="text-xs text-muted-foreground">
+              Empfohlen bei erhöhter Sichtbarkeit, Events, komplexer IT oder regulatorischem Druck.
+            </p>
           </div>
         </div>
       </section>
