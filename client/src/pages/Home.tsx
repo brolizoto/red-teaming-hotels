@@ -12,6 +12,14 @@ import { useState } from "react";
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setMobileMenuOpen(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
@@ -24,16 +32,16 @@ export default function Home() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#about" className="text-sm hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection('about')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
               Über uns
-            </a>
-            <a href="#services" className="text-sm hover:text-primary transition-colors">
+            </button>
+            <button onClick={() => scrollToSection('services')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
               Services
-            </a>
-            <a href="#contact" className="text-sm hover:text-primary transition-colors">
+            </button>
+            <button onClick={() => scrollToSection('contact')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
               Kontakt
-            </a>
-            <button className="btn-primary text-xs">Gespräch anfragen</button>
+            </button>
+            <button onClick={() => scrollToSection('contact')} className="btn-primary text-xs">Gespräch anfragen</button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -50,28 +58,25 @@ export default function Home() {
         {mobileMenuOpen && (
           <div className="md:hidden border-t border-border bg-background">
             <div className="container flex flex-col gap-4 py-4">
-              <a
-                href="#about"
-                className="text-sm hover:text-primary transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
+              <button
+                onClick={() => scrollToSection('about')}
+                className="text-sm hover:text-primary transition-colors py-2 text-left bg-transparent border-none cursor-pointer"
               >
                 Über uns
-              </a>
-              <a
-                href="#services"
-                className="text-sm hover:text-primary transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
+              </button>
+              <button
+                onClick={() => scrollToSection('services')}
+                className="text-sm hover:text-primary transition-colors py-2 text-left bg-transparent border-none cursor-pointer"
               >
                 Services
-              </a>
-              <a
-                href="#contact"
-                className="text-sm hover:text-primary transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="text-sm hover:text-primary transition-colors py-2 text-left bg-transparent border-none cursor-pointer"
               >
                 Kontakt
-              </a>
-              <button className="btn-primary text-xs w-full">Gespräch anfragen</button>
+              </button>
+              <button onClick={() => scrollToSection('contact')} className="btn-primary text-xs w-full">Gespräch anfragen</button>
             </div>
           </div>
         )}
@@ -90,7 +95,7 @@ export default function Home() {
               Red Teaming für Hotels unterstützt Direktionen dabei, Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch.
             </p>
             <div className="flex gap-4">
-              <button className="btn-primary flex items-center gap-2 text-sm md:text-base">
+              <button onClick={() => scrollToSection('contact')} className="btn-primary flex items-center gap-2 text-sm md:text-base">
                 Gespräch anfragen (30 Minuten)
                 <ArrowRight size={16} />
               </button>
@@ -108,8 +113,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Now Section */}
-      <section className="container py-16 md:py-24">
+      {/* Why Now Section - About */}
+      <section id="about" className="container py-16 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:gap-16 items-center">
           <div>
             <div className="accent-line mb-6"></div>
@@ -295,7 +300,7 @@ export default function Home() {
           <p className="text-base md:text-lg text-muted-foreground mb-8">
             Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.
           </p>
-          <button className="btn-primary flex items-center gap-2 text-sm md:text-base">
+          <button onClick={() => scrollToSection('contact')} className="btn-primary flex items-center gap-2 text-sm md:text-base">
             Gespräch anfragen
             <ArrowRight size={16} />
           </button>
@@ -304,8 +309,8 @@ export default function Home() {
 
       <div className="section-divider"></div>
 
-      {/* Footer */}
-      <footer className="bg-card border-t border-border">
+      {/* Footer - Contact */}
+      <footer id="contact" className="bg-card border-t border-border">
         <div className="container py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
             <div>
