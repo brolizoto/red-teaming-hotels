@@ -1,19 +1,16 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "wouter";
 
 /**
- * Red Teaming for Hotels - Home Page
- * Design: Minimalist-Institutional with Swiss typography tradition
- * Color: Red (#E63946) as primary accent, white background, dark gray text
- * Typography: Playfair Display (serif) for display, Inter (sans) for body
+ * Red Teaming for Hotels - About Page
+ * Design: Minimalist-Institutional
+ * Comprehensive company information and philosophy
  */
 
-export default function Home() {
+export default function About() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [contactFormOpen, setContactFormOpen] = useState(false);
-  const [, navigate] = useLocation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,6 +19,7 @@ export default function Home() {
     message: ''
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [, navigate] = useLocation();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -41,7 +39,6 @@ export default function Home() {
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to a backend
     console.log('Form submitted:', formData);
     setFormSubmitted(true);
     setTimeout(() => {
@@ -56,17 +53,17 @@ export default function Home() {
       {/* Navigation */}
       <nav className="sticky top-0 bg-background border-b border-border z-50">
         <div className="container flex items-center justify-between py-4 md:py-6">
-          <div className="flex items-center gap-2">
+          <button onClick={() => navigate('/')} className="flex items-center gap-2 bg-transparent border-none cursor-pointer hover:opacity-80">
             <div className="text-primary font-bold text-base md:text-lg">RED TEAMING</div>
             <div className="text-xs md:text-sm text-muted-foreground">for Hotels</div>
-          </div>
+          </button>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => navigate('/about')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
-              Über uns
+            <button onClick={() => navigate('/')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
+              Home
             </button>
-            <button onClick={() => scrollToSection('services')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
+            <button onClick={() => navigate('/')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
               Services
             </button>
             <button onClick={() => scrollToSection('contact')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
@@ -90,13 +87,13 @@ export default function Home() {
           <div className="md:hidden border-t border-border bg-background">
             <div className="container flex flex-col gap-4 py-4">
               <button
-                onClick={() => navigate('/about')}
+                onClick={() => navigate('/')}
                 className="text-sm hover:text-primary transition-colors py-2 text-left bg-transparent border-none cursor-pointer"
               >
-                Über uns
+                Home
               </button>
               <button
-                onClick={() => scrollToSection('services')}
+                onClick={() => navigate('/')}
                 className="text-sm hover:text-primary transition-colors py-2 text-left bg-transparent border-none cursor-pointer"
               >
                 Services
@@ -227,184 +224,77 @@ export default function Home() {
       )}
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[600px] md:min-h-[700px]">
-          {/* Text Content */}
-          <div className="flex flex-col justify-center px-6 md:px-12 py-16 md:py-24 bg-background">
-            <div className="accent-line mb-8"></div>
-            <h1 className="text-display mb-6">
-              Wenn Vorbereitung über Schaden entscheidet.
-            </h1>
-            <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-md">
-              Red Teaming für Hotels unterstützt Direktionen dabei, Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch.
-            </p>
-            <div className="flex gap-4">
-              <button onClick={() => setContactFormOpen(true)} className="btn-primary flex items-center gap-2 text-sm md:text-base">
-                Gespräch anfragen (30 Minuten)
-                <ArrowRight size={16} />
-              </button>
-            </div>
-          </div>
-
-          {/* Image */}
-          <div className="hidden md:block bg-gray-100 overflow-hidden">
-            <img
-              src="/images/hero-hotel-lobby.jpg"
-              alt="Modern hotel lobby with minimalist design"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
+      <section className="container py-16 md:py-24">
+        <div className="accent-line mb-8"></div>
+        <h1 className="text-display mb-6">Über uns</h1>
+        <p className="text-lg text-muted-foreground max-w-2xl">
+          Red Teaming for Hotels versteht sich nicht als klassische Sicherheitsberatung. Unsere Rolle ist es, Klarheit für die Direktion zu schaffen.
+        </p>
       </section>
 
-      {/* Why Now Section - About */}
-      <section id="about" className="container py-16 md:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:gap-16 items-center">
+      <div className="section-divider"></div>
+
+      {/* Our Role */}
+      <section className="container py-16 md:py-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <div className="accent-line mb-6"></div>
-            <h2 className="text-heading mb-6">
-              Die unbequeme Wahrheit
-            </h2>
+            <h2 className="text-heading mb-6">Unsere Rolle</h2>
             <p className="text-base text-muted-foreground mb-4">
-              Sicherheit scheitert selten an Technik – sondern an Führung, Vorbereitung und Realität.
+              Wir prüfen Hotels realistisch – so, wie ein echtes Ereignis es tun würde.
             </p>
+            <p className="text-base text-muted-foreground">
+              Nicht theoretisch. Nicht zertifikatsgetrieben. Sondern unter realen Bedingungen und im laufenden Betrieb.
+            </p>
+          </div>
+          <div className="bg-card border border-border p-8">
+            <h3 className="font-bold text-foreground mb-4">Kernprinzipien</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Pläne existieren, werden aber nie real getestet</span>
+                <span className="text-primary font-bold">✓</span>
+                <span>Realistische Prüfung unter echten Bedingungen</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Zuständigkeiten sind unklar</span>
+                <span className="text-primary font-bold">✓</span>
+                <span>Fokus auf Handlungsfähigkeit, nicht Compliance</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Dokumentation ist unvollständig</span>
+                <span className="text-primary font-bold">✓</span>
+                <span>Unabhängige und diskrete Prüfungen</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>IT-Ausfälle blockieren Krisenabläufe</span>
+                <span className="text-primary font-bold">✓</span>
+                <span>Klare Entscheidungsgrundlagen für die Direktion</span>
               </li>
             </ul>
           </div>
-          <div className="bg-gray-100 overflow-hidden h-96 md:h-full min-h-96 hidden md:block">
-            <img
-              src="/images/security-corridor.jpg"
-              alt="Hotel corridor with security systems"
-              className="w-full h-full object-cover"
-            />
-          </div>
         </div>
       </section>
 
       <div className="section-divider"></div>
 
-      {/* The Double Horror Scenario */}
+      {/* Why Red Teaming */}
       <section className="container py-16 md:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:gap-16 items-center">
-          <div className="bg-gray-100 overflow-hidden h-96 md:h-full min-h-96 order-2 md:order-1 hidden md:block">
-            <img
-              src="/images/crisis-management.jpg"
-              alt="Crisis management and decision-making"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="order-1 md:order-2">
-            <div className="accent-line mb-6"></div>
-            <h2 className="text-heading mb-6">
-              Das doppelte Horror-Szenario
-            </h2>
-            <p className="text-base text-muted-foreground mb-6">
-              Was passiert, wenn zwei Dinge gleichzeitig eintreten?
-            </p>
-            <div className="space-y-4 mb-8">
-              <div>
-                <h3 className="font-bold text-foreground mb-2">Ereignis</h3>
-                <p className="text-sm text-muted-foreground">Brand, Evakuation, Sonderlage</p>
-              </div>
-              <div>
-                <h3 className="font-bold text-foreground mb-2">Cyber-Vorfall</h3>
-                <p className="text-sm text-muted-foreground">Phishing, Systemverlust</p>
-              </div>
-            </div>
-            <div className="bg-card border border-border p-6">
-              <p className="text-sm font-bold text-foreground mb-3">Konsequenz:</p>
-              <ul className="space-y-2 text-xs text-muted-foreground">
-                <li>• PMS / Schliesssysteme eingeschränkt</li>
-                <li>• Evakuationslisten nicht verfügbar</li>
-                <li>• Kommunikation blockiert</li>
-                <li>• Versicherer verlangt Nachweise</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="section-divider"></div>
-
-      {/* Services Section */}
-      <section id="services" className="container py-16 md:py-24">
         <div className="accent-line mb-8"></div>
-        <h2 className="text-heading mb-12">Unser Ansatz</h2>
+        <h2 className="text-heading mb-8">Warum Red Teaming</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-          {/* Red Teaming Basic */}
-          <div className="border border-border p-6 md:p-8">
-            <h3 className="text-subheading mb-4">Red Teaming Basic</h3>
-            <p className="text-sm text-muted-foreground mb-6">
-              Entscheidungsfähigkeit herstellen
+          <div className="border border-border p-8">
+            <h3 className="text-subheading mb-4">Die Lücke</h3>
+            <p className="text-base text-muted-foreground mb-4">
+              In vielen Hotels existieren Konzepte, Richtlinien und Notfallpläne.
             </p>
-            <ul className="space-y-3 text-sm text-muted-foreground mb-8">
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Strukturierte Risiko- & Schutz-Standortbestimmung</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Reale Tests ausgewählter Szenarien</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Bewertung von Notfall- & Evakuationsfähigkeit</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Management Summary mit klaren Prioritäten</span>
-              </li>
-            </ul>
-            <p className="text-xs font-bold text-foreground">IDEAL FÜR:</p>
-            <p className="text-xs text-muted-foreground">
-              Hotels, die wissen wollen, wo sie stehen – bevor sie vertiefen.
+            <p className="text-base text-muted-foreground">
+              Im Ernstfall entscheidet jedoch nicht das Papier, sondern die Vorbereitung.
             </p>
           </div>
-
-          {/* Red Teaming Advanced */}
-          <div className="border border-border p-6 md:p-8 bg-card">
-            <h3 className="text-subheading mb-4">Red Teaming Advanced</h3>
-            <p className="text-sm text-muted-foreground mb-6">
-              Haftungs- & Krisenrisiken aktiv reduzieren
+          <div className="border border-border p-8 bg-card">
+            <h3 className="text-subheading mb-4">Unsere Lösung</h3>
+            <p className="text-base text-muted-foreground mb-4">
+              Red Teaming schliesst die Lücke zwischen Annahme und Realität.
             </p>
-            <ul className="space-y-3 text-sm text-muted-foreground mb-8">
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Erweiterte Szenarien & 24h-Betrachtung</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Integrierte physische & digitale Eintrittspunkte</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Vertiefte Analyse von Krisenmanagement & Governance</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Detaillierter Entscheid- & Massnahmenplan</span>
-              </li>
-            </ul>
-            <p className="text-xs font-bold text-foreground">IDEAL FÜR:</p>
-            <p className="text-xs text-muted-foreground">
-              Empfohlen bei erhöhter Sichtbarkeit, Events, komplexer IT oder regulatorischem Druck.
+            <p className="text-base text-muted-foreground">
+              Wir zeigen auf, was im Ernstfall funktioniert – und was nicht. Bevor Entscheidungen unter Zeitdruck, medialer Aufmerksamkeit oder wirtschaftlichem Druck getroffen werden müssen.
             </p>
           </div>
         </div>
@@ -412,24 +302,103 @@ export default function Home() {
 
       <div className="section-divider"></div>
 
-      {/* Process Section */}
+      {/* How We Work */}
       <section className="container py-16 md:py-24">
         <div className="accent-line mb-8"></div>
-        <h2 className="text-heading mb-12">Ablauf der Zusammenarbeit</h2>
+        <h2 className="text-heading mb-12">Wie wir arbeiten</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
-          {[
-            { step: "01", title: "Gespräch", desc: "30-minütiges Erstgespräch auf Direktionsstufe" },
-            { step: "02", title: "Test", desc: "Diskrete Testphase unter realen Bedingungen" },
-            { step: "03", title: "Summary", desc: "Management-Summary & Priorisierung" },
-            { step: "04", title: "Entscheid", desc: "Entscheid über nächste Schritte" }
-          ].map((item, idx) => (
-            <div key={idx} className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-4">{item.step}</div>
-              <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
-              <p className="text-xs md:text-sm text-muted-foreground">{item.desc}</p>
+        <div className="space-y-8">
+          <div className="border-l-4 border-primary pl-8">
+            <h3 className="text-subheading mb-3">Diskret, strukturiert und unabhängig</h3>
+            <p className="text-base text-muted-foreground">
+              Unsere Prüfungen erfolgen diskret, strukturiert und unabhängig. Wir testen keine Compliance, sondern Handlungsfähigkeit.
+            </p>
+          </div>
+          
+          <div className="border-l-4 border-primary pl-8">
+            <h3 className="text-subheading mb-3">Ganzheitlicher Ansatz</h3>
+            <p className="text-base text-muted-foreground">
+              Dabei betrachten wir physische, digitale und organisatorische Aspekte nicht isoliert, sondern im Zusammenspiel – so, wie sie im Ernstfall auftreten.
+            </p>
+          </div>
+          
+          <div className="border-l-4 border-primary pl-8">
+            <h3 className="text-subheading mb-3">Belastbare Entscheidungsgrundlage</h3>
+            <p className="text-base text-muted-foreground">
+              Das Ergebnis ist keine Bewertung, sondern eine belastbare Entscheidungsgrundlage.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider"></div>
+
+      {/* For Whom */}
+      <section className="container py-16 md:py-24">
+        <div className="accent-line mb-8"></div>
+        <h2 className="text-heading mb-6">Für wen wir arbeiten</h2>
+        
+        <div className="bg-card border border-border p-8 md:p-12">
+          <p className="text-lg text-muted-foreground mb-6">
+            Unsere Arbeit richtet sich an Direktionen, Eigentümer und Entscheidungsträger in der gehobenen Hotellerie.
+          </p>
+          <p className="text-lg text-muted-foreground">
+            Dort, wo Verantwortung nicht delegierbar ist. Und wo Reputation, Betrieb und Sicherheit untrennbar miteinander verbunden sind.
+          </p>
+        </div>
+      </section>
+
+      <div className="section-divider"></div>
+
+      {/* Our Approach */}
+      <section className="container py-16 md:py-24">
+        <div className="accent-line mb-8"></div>
+        <h2 className="text-heading mb-12">Haltung statt Verkaufsagenda</h2>
+        
+        <div className="max-w-2xl">
+          <p className="text-base text-muted-foreground mb-6">
+            Red Teaming for Hotels arbeitet ohne Verkaufsagenda. Ein erstes Gespräch dient der Einordnung – nicht dem Abschluss.
+          </p>
+          <p className="text-base text-muted-foreground mb-6">
+            Ziel ist es zu klären, ob und wo ein realistischer Prüfbedarf besteht. Und ob Red Teaming der richtige Ansatz dafür ist.
+          </p>
+          <div className="bg-primary bg-opacity-10 border border-primary border-opacity-20 p-6">
+            <p className="text-sm text-foreground font-bold">Transparenz von Anfang an</p>
+            <p className="text-sm text-muted-foreground mt-2">
+              Wir beraten ehrlich, auch wenn das bedeutet, dass Red Teaming nicht der richtige Weg ist.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider"></div>
+
+      {/* Organization */}
+      <section className="container py-16 md:py-24">
+        <div className="accent-line mb-8"></div>
+        <h2 className="text-heading mb-12">Organisation</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <div>
+            <h3 className="text-subheading mb-4">Operativer Betrieb</h3>
+            <p className="text-base text-muted-foreground mb-6">
+              Red Teaming for Hotels wird operativ durch die Markwalder Unternehmensgruppe GmbH geführt.
+            </p>
+            <div className="bg-card border border-border p-6">
+              <p className="text-sm font-bold text-foreground mb-2">Sitz</p>
+              <p className="text-sm text-muted-foreground">Bern, Schweiz</p>
             </div>
-          ))}
+          </div>
+          <div>
+            <h3 className="text-subheading mb-4">Verantwortung</h3>
+            <p className="text-base text-muted-foreground mb-6">
+              Die Verantwortung liegt bei erfahrenen Praktikern aus Sicherheits-, Krisen- und Organisationsumfeldern.
+            </p>
+            <div className="bg-card border border-border p-6">
+              <p className="text-sm font-bold text-foreground mb-2">Expertise</p>
+              <p className="text-sm text-muted-foreground">Sicherheit, Krisenmanagement, Organisationsentwicklung</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -439,13 +408,13 @@ export default function Home() {
       <section className="container py-16 md:py-24">
         <div className="max-w-2xl">
           <p className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-            Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren.
+            Der nächste Schritt
           </p>
           <p className="text-base md:text-lg text-muted-foreground mb-8">
-            Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.
+            Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren. Ein 30-minütiges Gespräch reicht aus, um Klarheit zu schaffen.
           </p>
           <button onClick={() => setContactFormOpen(true)} className="btn-primary flex items-center gap-2 text-sm md:text-base">
-            Gespräch anfragen
+            Gespräch anfragen (30 Minuten)
             <ArrowRight size={16} />
           </button>
         </div>
