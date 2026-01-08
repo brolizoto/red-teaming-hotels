@@ -78,3 +78,7 @@
 ## "Was wir real prüfen" Satz ergänzen
 
 - [x] Zusätzlichen Satz nach Subtext einfügen: "Unser Fokus liegt auf den Punkten, die im Ernstfall Entscheidungen verzögern oder verunmöglichen."
+
+## "Red Teaming Basic" Untertitel anpassen
+
+- [x] Untertitel ändern von "Entscheidungsfähigkeit herstellen" zu "Klarheit schaffen & Risiken sichtbar machen"

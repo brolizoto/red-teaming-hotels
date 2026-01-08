@@ -433,7 +433,7 @@ export default function Home() {
           <div className="border border-border rounded-lg hover:border-primary transition-colors p-6 md:p-8">
               <h3 className="text-subheading mb-4">Red Teaming Basic</h3>
               <p className="text-sm text-muted-foreground mb-6">
-                Entscheidungsfähigkeit herstellen
+                Klarheit schaffen & Risiken sichtbar machen
               </p>
               <ul className="space-y-4 text-sm text-muted-foreground mb-8">
               <li className="flex gap-3">
