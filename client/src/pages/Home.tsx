@@ -297,24 +297,29 @@ export default function Home() {
               Die unbequeme Wahrheit
             </h2>
             <p className="text-base text-muted-foreground mb-4">
-              Hotel Security scheitert selten an Technik – sondern an Führung, Vorbereitung und Realität.
+              Hotels scheitern im Ernstfall selten an Technik –
+              sondern an Führung, Vorbereitung und Realität.
             </p>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
-                <span>Pläne existieren, werden aber nie real getestet</span>
+                <span>Pläne existieren, wurden aber nie real getestet</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
-                <span>Zuständigkeiten sind unklar</span>
+                <span>Zuständigkeiten sind unklar oder nicht bekannt</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
-                <span>Dokumentation ist unvollständig</span>
+                <span>Dokumentation ist unvollständig oder veraltet</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
-                <span>IT-Ausfälle blockieren Krisenabläufe</span>
+                <span>Cyber-Vorfälle (z. B. Phishing) blockieren operative Abläufe</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary font-bold">•</span>
+                <span>IT-Ausfälle verhindern Evakuation, Zutritt oder Kommunikation</span>
               </li>
             </ul>
           </div>
@@ -330,7 +335,7 @@ export default function Home() {
               Das doppelte Horror-Szenario
             </h2>
             <p className="text-base text-muted-foreground mb-6">
-              Was passiert, wenn zwei Dinge gleichzeitig eintreten?
+              Was passiert, wenn physische und digitale Ereignisse gleichzeitig eintreten?
             </p>
             <div className="space-y-4 mb-8">
               <div>
@@ -339,7 +344,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-bold text-foreground mb-2">Cyber-Vorfall</h3>
-                <p className="text-sm text-muted-foreground">Phishing, Systemverlust</p>
+                <p className="text-sm text-muted-foreground">Phishing, Systemzugriff, Ausfall kritischer Systeme</p>
               </div>
             </div>
             <div className="bg-card border border-border p-6">
@@ -349,6 +354,7 @@ export default function Home() {
                 <li>• Evakuationslisten nicht verfügbar</li>
                 <li>• Kommunikation blockiert</li>
                 <li>• Versicherer verlangt Nachweise</li>
+                <li>• Versicherungs- & Haftungsfragen ungeklärt</li>
               </ul>
             </div>
           </div>
@@ -360,6 +366,41 @@ export default function Home() {
               loading="lazy"
             />
           </div>
+        </div>
+      </section>
+
+      {/* What We Really Test - NEW SECTION */}
+      <section className="container py-12 md:py-16">
+        <div className="max-w-4xl mx-auto">
+          <div className="accent-line mb-8"></div>
+          <h2 className="text-heading mb-6">Was wir real prüfen</h2>
+          <p className="text-base md:text-lg text-muted-foreground mb-6">
+            Wir prüfen Hotels so, wie es ein reales Ereignis tun würde.
+          </p>
+          <p className="text-base md:text-lg text-muted-foreground mb-8">
+            Nicht theoretisch. Nicht zertifikatsgetrieben.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="bg-card border border-border rounded-lg p-4">
+              <p className="text-sm font-bold text-foreground mb-2">Physische Sicherheit & Evakuationsfähigkeit</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4">
+              <p className="text-sm font-bold text-foreground mb-2">Cyber-Resilienz & Phishing-Szenarien</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4">
+              <p className="text-sm font-bold text-foreground mb-2">Entscheidungswege & Führungsfähigkeit</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4">
+              <p className="text-sm font-bold text-foreground mb-2">Kritische Abhängigkeiten (IT, Technik, Personal)</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 md:col-span-2">
+              <p className="text-sm font-bold text-foreground mb-2">Dokumentation, Nachvollziehbarkeit & Haftung</p>
+            </div>
+          </div>
+          <p className="text-lg font-bold text-foreground text-center">
+            Entscheidend ist nicht, ob etwas existiert –
+            sondern ob es im Ernstfall funktioniert.
+          </p>
         </div>
       </section>
 
@@ -382,7 +423,15 @@ export default function Home() {
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
+                <span>Grundlegendes Risk Assessment (physisch & digital)</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary font-bold">•</span>
                 <span>Reale Tests ausgewählter Szenarien</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary font-bold">•</span>
+                <span>Erkennung kritischer Cyber- & Phishing-Risiken</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
@@ -412,7 +461,15 @@ export default function Home() {
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>
+                <span>Erweiterte Cyber- & Phishing-Szenarien</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary font-bold">•</span>
                 <span>Integrierte physische & digitale Eintrittspunkte</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary font-bold">•</span>
+                <span>Verknüpfung von IT-Ausfällen mit realen Ereignissen</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">•</span>

@@ -40,3 +40,10 @@
 
 - [x] Layout mit Icons, Grid-Layouts und Hintergrund-Effekten verbessern
 - [x] Neue Sektion "Verantwortung & Expertise" hinzufügen
+
+## Home-Seite textliche Anpassungen
+
+- [x] "Die unbequeme Wahrheit" Text und Bulletpoints überarbeiten
+- [x] "Das doppelte Horror-Szenario" Untertitel und Konsequenzen ergänzen
+- [x] Neue Sektion "Was wir real prüfen" nach Horror-Szenario hinzufügen
+- [x] "Unser Ansatz" Red Teaming Basic & Advanced Bulletpoints erweitern
