@@ -487,8 +487,18 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="border-t border-border pt-8 text-center text-xs text-muted-foreground">
-            <p>© 2026 Red Teaming for Hotels. All rights reserved.</p>
+          <div className="border-t border-border pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center text-xs text-muted-foreground gap-4">
+              <p>© 2026 Red Teaming for Hotels. All rights reserved.</p>
+              <div className="flex gap-6">
+                <a href="/imprint" className="hover:text-primary transition-colors">
+                  Impressum
+                </a>
+                <a href="/privacy" className="hover:text-primary transition-colors">
+                  Datenschutz
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
