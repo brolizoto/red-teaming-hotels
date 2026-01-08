@@ -385,9 +385,12 @@ export default function Home() {
             <div className="md:col-span-10">
               <div className="accent-line mb-6"></div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Was wir real prüfen</h2>
-              <p className="text-base text-muted-foreground mb-8">
+              <p className="text-base text-muted-foreground mb-4">
                 Wir prüfen Hotels so, wie es ein reales Ereignis tun würde.
                 Nicht theoretisch. Nicht zertifikatsgetrieben.
+              </p>
+              <p className="text-base font-semibold text-foreground mb-8">
+                Unser Fokus liegt auf den Punkten, die im Ernstfall Entscheidungen verzögern oder verunmöglichen.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div className="bg-card border border-border rounded-lg p-4">

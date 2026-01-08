@@ -74,3 +74,7 @@
 ## Hero-Subtext komplett überarbeiten
 
 - [x] Subtext ersetzen durch: "Red Teaming for Hotels unterstützt Direktionen dabei, die Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch. Damit Entscheidungen im Ernstfall nicht improvisiert werden müssen."
+
+## "Was wir real prüfen" Satz ergänzen
+
+- [x] Zusätzlichen Satz nach Subtext einfügen: "Unser Fokus liegt auf den Punkten, die im Ernstfall Entscheidungen verzögern oder verunmöglichen."
