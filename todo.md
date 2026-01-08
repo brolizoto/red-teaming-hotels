@@ -35,3 +35,8 @@
 ## "Über uns" Seite komplett überarbeiten
 
 - [x] About.tsx mit 7 neuen Sektionen ersetzen (Intro, Was Red Teaming bedeutet, Warum Sicherheit trügt, Was wir prüfen, Abgrenzung, Unsere Rolle, CTA)
+
+## "Über uns" Seite visuell aufwerten
+
+- [x] Layout mit Icons, Grid-Layouts und Hintergrund-Effekten verbessern
+- [x] Neue Sektion "Verantwortung & Expertise" hinzufügen
