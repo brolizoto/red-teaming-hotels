@@ -1,7 +1,10 @@
+import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "wouter";
+import { trpc } from "@/lib/trpc";
+import { toast } from "sonner";
 
 /**
  * Red Teaming for Hotels - Home Page
@@ -11,6 +14,10 @@ import { useLocation } from "wouter";
  */
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [contactFormOpen, setContactFormOpen] = useState(false);
   const [, navigate] = useLocation();
@@ -39,16 +46,28 @@ export default function Home() {
     }));
   };
 
+  const contactMutation = trpc.contact.submit.useMutation({
+    onSuccess: (data) => {
+      setFormSubmitted(true);
+      if (data.emailSent) {
+        toast.success("Ihre Anfrage wurde erfolgreich versendet!");
+      } else {
+        toast.warning("Anfrage gespeichert, aber E-Mail konnte nicht versendet werden.");
+      }
+      setTimeout(() => {
+        setContactFormOpen(false);
+        setFormSubmitted(false);
+        setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+      }, 2000);
+    },
+    onError: (error) => {
+      toast.error("Fehler beim Senden der Anfrage: " + error.message);
+    },
+  });
+
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to a backend
-    console.log('Form submitted:', formData);
-    setFormSubmitted(true);
-    setTimeout(() => {
-      setContactFormOpen(false);
-      setFormSubmitted(false);
-      setFormData({ name: '', email: '', phone: '', company: '', message: '' });
-    }, 2000);
+    contactMutation.mutate(formData);
   };
 
   return (
