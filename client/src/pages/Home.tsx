@@ -373,57 +373,45 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* What We Really Test - NEW SECTION */}
-      <section className="relative py-20 md:py-32 overflow-hidden">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/server-room.jpg" 
-            alt="Hotel Serverraum - Technische Infrastruktur für Hotel Security" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-background/90"></div>
-        </div>
-        
-        {/* Content */}
-        <div className="container relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-              <div className="md:col-span-2 flex justify-center md:justify-start">
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Target className="text-primary" size={32} />
+      <section className="container py-20 md:py-32">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div className="md:col-span-2 flex justify-center md:justify-start">
+              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                <Target className="text-primary" size={32} />
+              </div>
+            </div>
+            <div className="md:col-span-10">
+              <div className="accent-line mb-6"></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Was wir real prüfen</h2>
+              <p className="text-base text-muted-foreground mb-4">
+                Wir prüfen Hotels so, wie es ein reales Ereignis tun würde.
+                Nicht theoretisch. Nicht zertifikatsgetrieben.
+              </p>
+              <p className="text-base font-semibold text-foreground mb-8">
+                Unser Fokus liegt auf den Punkten, die im Ernstfall Entscheidungen verzögern oder verunmöglichen.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div className="bg-card border border-border rounded-lg p-4">
+                  <p className="text-sm font-bold text-foreground">Physische Sicherheit & Evakuationsfähigkeit</p>
+                </div>
+                <div className="bg-card border border-border rounded-lg p-4">
+                  <p className="text-sm font-bold text-foreground">Cyber-Resilienz & Phishing-Szenarien</p>
+                </div>
+                <div className="bg-card border border-border rounded-lg p-4">
+                  <p className="text-sm font-bold text-foreground">Entscheidungswege & Führungsfähigkeit</p>
+                </div>
+                <div className="bg-card border border-border rounded-lg p-4">
+                  <p className="text-sm font-bold text-foreground">Kritische Abhängigkeiten (IT, Technik, Personal)</p>
                 </div>
               </div>
-              <div className="md:col-span-10">
-                <div className="accent-line mb-6"></div>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Was wir real prüfen</h2>
-                <p className="text-base text-muted-foreground mb-4">
-                  Wir prüfen Hotels so, wie es ein reales Ereignis tun würde.
-                  Nicht theoretisch. Nicht zertifikatsgetrieben.
+              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
+                <p className="text-base font-bold text-foreground text-center">
+                  Entscheidend ist nicht, ob etwas existiert –
+                  sondern ob es im Ernstfall funktioniert.
                 </p>
-                <p className="text-base font-semibold text-foreground mb-8">
-                  Unser Fokus liegt auf den Punkten, die im Ernstfall Entscheidungen verzögern oder verunmöglichen.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                  <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-4">
-                    <p className="text-sm font-bold text-foreground">Physische Sicherheit & Evakuationsfähigkeit</p>
-                  </div>
-                  <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-4">
-                    <p className="text-sm font-bold text-foreground">Cyber-Resilienz & Phishing-Szenarien</p>
-                  </div>
-                  <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-4">
-                    <p className="text-sm font-bold text-foreground">Entscheidungswege & Führungsfähigkeit</p>
-                  </div>
-                  <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-4">
-                    <p className="text-sm font-bold text-foreground">Kritische Abhängigkeiten (IT, Technik, Personal)</p>
-                  </div>
-                </div>
-                <div className="bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-lg p-6">
-                  <p className="text-base font-bold text-foreground text-center">
-                    Entscheidend ist nicht, ob etwas existiert –
-                    sondern ob es im Ernstfall funktioniert.
-                  </p>
-                </div>
               </div>
             </div>
           </div>

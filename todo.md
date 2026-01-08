@@ -96,3 +96,7 @@
 ## Serverraum-Bild als Hintergrundbild umgestalten
 
 - [x] Bild von Seitenplatzierung zu Hintergrundbild mit Overlay ändern für mehr Impact
+
+## Serverraum-Bild komplett entfernen
+
+- [x] Bild und Hintergrund-Effekte entfernen, zurück zur cleanen Version ohne Bild
