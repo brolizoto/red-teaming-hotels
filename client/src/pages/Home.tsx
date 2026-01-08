@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
+import { useState } from "react";
 
 /**
  * Red Teaming for Hotels - Home Page
@@ -9,16 +10,20 @@ import { ArrowRight } from "lucide-react";
  */
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
       <nav className="sticky top-0 bg-background border-b border-border z-50">
-        <div className="container flex items-center justify-between py-6">
+        <div className="container flex items-center justify-between py-4 md:py-6">
           <div className="flex items-center gap-2">
-            <div className="text-primary font-bold text-lg">RED TEAMING</div>
-            <div className="text-sm text-muted-foreground">for Hotels</div>
+            <div className="text-primary font-bold text-base md:text-lg">RED TEAMING</div>
+            <div className="text-xs md:text-sm text-muted-foreground">for Hotels</div>
           </div>
-          <div className="flex items-center gap-8">
+          
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8">
             <a href="#about" className="text-sm hover:text-primary transition-colors">
               Über uns
             </a>
@@ -30,23 +35,62 @@ export default function Home() {
             </a>
             <button className="btn-primary text-xs">Gespräch anfragen</button>
           </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden p-2"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
+
+        {/* Mobile Navigation */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-border bg-background">
+            <div className="container flex flex-col gap-4 py-4">
+              <a
+                href="#about"
+                className="text-sm hover:text-primary transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Über uns
+              </a>
+              <a
+                href="#services"
+                className="text-sm hover:text-primary transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Services
+              </a>
+              <a
+                href="#contact"
+                className="text-sm hover:text-primary transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Kontakt
+              </a>
+              <button className="btn-primary text-xs w-full">Gespräch anfragen</button>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[600px] md:min-h-[700px]">
           {/* Text Content */}
-          <div className="flex flex-col justify-center px-8 md:px-12 py-16 md:py-24 bg-background">
+          <div className="flex flex-col justify-center px-6 md:px-12 py-16 md:py-24 bg-background">
             <div className="accent-line mb-8"></div>
             <h1 className="text-display mb-6">
               Wenn Vorbereitung über Schaden entscheidet.
             </h1>
-            <p className="text-lg text-muted-foreground mb-8 max-w-md">
+            <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-md">
               Red Teaming für Hotels unterstützt Direktionen dabei, Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch.
             </p>
             <div className="flex gap-4">
-              <button className="btn-primary flex items-center gap-2">
+              <button className="btn-primary flex items-center gap-2 text-sm md:text-base">
                 Gespräch anfragen (30 Minuten)
                 <ArrowRight size={16} />
               </button>
@@ -66,7 +110,7 @@ export default function Home() {
 
       {/* Why Now Section */}
       <section className="container py-16 md:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:gap-16 items-center">
           <div>
             <div className="accent-line mb-6"></div>
             <h2 className="text-heading mb-6">
@@ -108,8 +152,8 @@ export default function Home() {
 
       {/* The Double Horror Scenario */}
       <section className="container py-16 md:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-          <div className="bg-gray-100 overflow-hidden h-96 md:h-full min-h-96 order-2 md:order-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 md:gap-16 items-center">
+          <div className="bg-gray-100 overflow-hidden h-96 md:h-full min-h-96 order-2 md:order-1 hidden md:block">
             <img
               src="/images/crisis-management.jpg"
               alt="Crisis management and decision-making"
@@ -154,9 +198,9 @@ export default function Home() {
         <div className="accent-line mb-8"></div>
         <h2 className="text-heading mb-12">Unser Ansatz</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* Red Teaming Basic */}
-          <div className="border border-border p-8">
+          <div className="border border-border p-6 md:p-8">
             <h3 className="text-subheading mb-4">Red Teaming Basic</h3>
             <p className="text-sm text-muted-foreground mb-6">
               Entscheidungsfähigkeit herstellen
@@ -186,7 +230,7 @@ export default function Home() {
           </div>
 
           {/* Red Teaming Advanced */}
-          <div className="border border-border p-8 bg-card">
+          <div className="border border-border p-6 md:p-8 bg-card">
             <h3 className="text-subheading mb-4">Red Teaming Advanced</h3>
             <p className="text-sm text-muted-foreground mb-6">
               Haftungs- & Krisenrisiken aktiv reduzieren
@@ -224,7 +268,7 @@ export default function Home() {
         <div className="accent-line mb-8"></div>
         <h2 className="text-heading mb-12">Ablauf der Zusammenarbeit</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
           {[
             { step: "01", title: "Gespräch", desc: "30-minütiges Erstgespräch auf Direktionsstufe" },
             { step: "02", title: "Test", desc: "Diskrete Testphase unter realen Bedingungen" },
@@ -232,9 +276,9 @@ export default function Home() {
             { step: "04", title: "Entscheid", desc: "Entscheid über nächste Schritte" }
           ].map((item, idx) => (
             <div key={idx} className="text-center">
-              <div className="text-4xl font-bold text-primary mb-4">{item.step}</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-4">{item.step}</div>
               <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
-              <p className="text-xs text-muted-foreground">{item.desc}</p>
+              <p className="text-xs md:text-sm text-muted-foreground">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -248,10 +292,10 @@ export default function Home() {
           <p className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren.
           </p>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-base md:text-lg text-muted-foreground mb-8">
             Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.
           </p>
-          <button className="btn-primary flex items-center gap-2">
+          <button className="btn-primary flex items-center gap-2 text-sm md:text-base">
             Gespräch anfragen
             <ArrowRight size={16} />
           </button>
@@ -263,7 +307,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-card border-t border-border">
         <div className="container py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
             <div>
               <div className="text-primary font-bold text-lg mb-2">RED TEAMING</div>
               <div className="text-sm text-muted-foreground">for Hotels</div>
