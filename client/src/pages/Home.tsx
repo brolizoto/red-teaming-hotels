@@ -250,7 +250,7 @@ export default function Home() {
       )}
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-card py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-card py-12 md:py-20">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
@@ -274,7 +274,7 @@ export default function Home() {
       </section>
 
       {/* Why Now Section - About */}
-      <section id="about" className="container py-20 md:py-32">
+      <section id="about" className="container py-12 md:py-20">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
             <div className="md:col-span-2 flex justify-center md:justify-start">
@@ -321,7 +321,7 @@ export default function Home() {
       </section>
 
       {/* The Double Horror Scenario */}
-      <section className="container py-20 md:py-32">
+      <section className="container py-12 md:py-20">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
             <div className="md:col-span-2 flex justify-center md:justify-start">
@@ -375,7 +375,7 @@ export default function Home() {
 
 
       {/* What We Really Test - NEW SECTION */}
-      <section className="container py-20 md:py-32">
+      <section className="container py-12 md:py-20">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
             <div className="md:col-span-2 flex justify-center md:justify-start">
@@ -419,7 +419,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="container py-20 md:py-32">
+      <section id="services" className="container py-12 md:py-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <div className="accent-line mb-8 mx-auto" style={{width: '4rem'}}></div>
@@ -515,7 +515,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-card py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-card py-12 md:py-20">
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-8">

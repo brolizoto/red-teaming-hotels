@@ -100,3 +100,7 @@
 ## Serverraum-Bild komplett entfernen
 
 - [x] Bild und Hintergrund-Effekte entfernen, zurück zur cleanen Version ohne Bild
+
+## Abstände zwischen Sektionen reduzieren
+
+- [x] Abstände zwischen allen Blöcken auf Home-Seite reduzieren für kompakteres Layout
