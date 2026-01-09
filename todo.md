@@ -119,3 +119,10 @@
 - [x] Grafik 2 (Roadmap) ins Projekt kopieren und optimieren
 - [x] Venn-Diagramm in "Was wir real prüfen" Sektion einbauen
 - [x] Roadmap in "Unser Ansatz" Sektion einbauen
+
+## Roadmap-Grafik ins Layout integrieren
+
+- [x] Roadmap als HTML/CSS-Komponente neu erstellen (statt 1:1 Bild)
+- [x] Farben an Website-Design anpassen (Primary Red statt Grau)
+- [x] Typografie und Spacing angleichen
+- [x] In "Unser Ansatz" Sektion integrieren

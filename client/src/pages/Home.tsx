@@ -502,14 +502,110 @@ export default function Home() {
           </div>
         </div>
         
-        {/* Roadmap-Grafik */}
-        <div className="mt-16 max-w-5xl mx-auto">
-          <img 
-            src="/images/roadmap.png" 
-            alt="Sicherheit als Führungsaufgabe: Red Teaming macht Entscheidungsfähigkeit entwickelbar - von Basic über Advanced zur Roadmap" 
-            className="w-full rounded-lg shadow-lg"
-            loading="lazy"
-          />
+        {/* Roadmap-Grafik als HTML/CSS-Komponente */}
+        <div className="mt-16 max-w-6xl mx-auto">
+          <div className="bg-gradient-to-br from-background to-muted/20 border border-border rounded-xl p-8 md:p-12">
+            <div className="text-center mb-12">
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">Sicherheit als Führungsaufgabe</h3>
+              <p className="text-base text-muted-foreground">Red Teaming macht Entscheidungsfähigkeit entwickelbar</p>
+            </div>
+            
+            {/* Roadmap Visualization */}
+            <div className="relative">
+              {/* Y-Axis Label */}
+              <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-8 -rotate-90 origin-center">
+                <p className="text-xs md:text-sm font-bold text-muted-foreground whitespace-nowrap">Entscheidungsfähigkeit</p>
+              </div>
+              
+              {/* X-Axis Label */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-8 md:translate-y-12">
+                <p className="text-xs md:text-sm font-bold text-muted-foreground">Zeit / Sicherheitsreife</p>
+              </div>
+              
+              {/* Roadmap Steps */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 relative">
+                {/* Connecting Line */}
+                <div className="hidden md:block absolute top-1/3 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/30 via-primary/50 to-primary/30" style={{zIndex: 0}}></div>
+                <div className="hidden md:block absolute top-1/3 left-0 right-0 h-1 border-t-2 border-dashed border-primary/40" style={{zIndex: 0}}></div>
+                
+                {/* BASIC */}
+                <div className="relative z-10">
+                  <div className="bg-card border-2 border-border rounded-lg p-6 hover:border-primary transition-all hover:shadow-lg">
+                    <div className="bg-primary/10 rounded-t-lg -mx-6 -mt-6 px-6 py-4 mb-4">
+                      <h4 className="text-xl font-bold text-foreground">BASIC</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex gap-2">
+                        <span className="text-primary font-bold">•</span>
+                        <span>Erste strukturierte Sicherheit</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-primary font-bold">•</span>
+                        <span>Reaktive Maßnahmen</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-primary font-bold">•</span>
+                        <span>Begrenzte Entscheidungsfähigkeit</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+                {/* ADVANCED */}
+                <div className="relative z-10 md:mt-[-3rem]">
+                  <div className="bg-card border-2 border-primary/50 rounded-lg p-6 hover:border-primary transition-all hover:shadow-lg">
+                    <div className="bg-primary/20 rounded-t-lg -mx-6 -mt-6 px-6 py-4 mb-4">
+                      <h4 className="text-xl font-bold text-foreground">ADVANCED</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex gap-2">
+                        <span className="text-primary font-bold">•</span>
+                        <span>Getestete Abläufe</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-primary font-bold">•</span>
+                        <span>Klarere Rollen und Abhängigkeiten</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-primary font-bold">•</span>
+                        <span>Deutlich höhere Handlungsfähigkeit</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+                {/* ROADMAP */}
+                <div className="relative z-10 md:mt-[-6rem]">
+                  <div className="bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary rounded-lg p-6 hover:shadow-xl transition-all">
+                    <div className="bg-primary rounded-t-lg -mx-6 -mt-6 px-6 py-4 mb-4">
+                      <h4 className="text-xl font-bold text-white">ROADMAP</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-foreground font-medium">
+                      <li className="flex gap-2">
+                        <span className="text-primary font-bold">•</span>
+                        <span>Kontinuierliche Weiterentwicklung</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-primary font-bold">•</span>
+                        <span>Sicherheit wird geführt, nicht verwaltet</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-primary font-bold">•</span>
+                        <span>Entscheidungsfähigkeit ist stabil</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Bottom Message */}
+            <div className="mt-12 text-center">
+              <p className="text-sm md:text-base font-bold text-foreground">
+                Ohne Tests bleibt Sicherheit Theorie. Red Teaming übersetzt Risiken in Entscheidungsfähigkeit.
+              </p>
+            </div>
+          </div>
         </div>
         </div>
       </section>
