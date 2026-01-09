@@ -126,3 +126,7 @@
 - [x] Farben an Website-Design anpassen (Primary Red statt Grau)
 - [x] Typografie und Spacing angleichen
 - [x] In "Unser Ansatz" Sektion integrieren
+
+## Roadmap-Überlappung korrigieren
+
+- [x] Negative Margins in Roadmap reduzieren damit Text vollständig sichtbar bleibt

@@ -552,7 +552,7 @@ export default function Home() {
                 </div>
                 
                 {/* ADVANCED */}
-                <div className="relative z-10 md:mt-[-3rem]">
+                <div className="relative z-10 md:mt-[-1.5rem]">
                   <div className="bg-card border-2 border-primary/50 rounded-lg p-6 hover:border-primary transition-all hover:shadow-lg">
                     <div className="bg-primary/20 rounded-t-lg -mx-6 -mt-6 px-6 py-4 mb-4">
                       <h4 className="text-xl font-bold text-foreground">ADVANCED</h4>
@@ -575,7 +575,7 @@ export default function Home() {
                 </div>
                 
                 {/* ROADMAP */}
-                <div className="relative z-10 md:mt-[-6rem]">
+                <div className="relative z-10 md:mt-[-3rem]">
                   <div className="bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary rounded-lg p-6 hover:shadow-xl transition-all">
                     <div className="bg-primary rounded-t-lg -mx-6 -mt-6 px-6 py-4 mb-4">
                       <h4 className="text-xl font-bold text-white">ROADMAP</h4>
