@@ -104,3 +104,18 @@
 ## Abstände zwischen Sektionen reduzieren
 
 - [x] Abstände zwischen allen Blöcken auf Home-Seite reduzieren für kompakteres Layout
+
+## Kontaktformular E-Mail-Versand implementieren
+
+- [ ] E-Mail-Service konfigurieren (Resend oder SMTP)
+- [ ] Backend API-Route für Kontaktformular anpassen
+- [ ] E-Mail-Template für Anfragen erstellen
+- [ ] Frontend-Formular mit Backend verbinden
+- [ ] E-Mail-Versand testen an contact@rt4h.ch
+
+## Grafiken in Webseite einbauen
+
+- [x] Grafik 1 (Venn-Diagramm) ins Projekt kopieren und optimieren
+- [x] Grafik 2 (Roadmap) ins Projekt kopieren und optimieren
+- [x] Venn-Diagramm in "Was wir real prüfen" Sektion einbauen
+- [x] Roadmap in "Unser Ansatz" Sektion einbauen

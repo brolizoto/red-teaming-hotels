@@ -407,6 +407,17 @@ export default function Home() {
                   <p className="text-sm font-bold text-foreground">Kritische Abhängigkeiten (IT, Technik, Personal)</p>
                 </div>
               </div>
+              
+              {/* Venn-Diagramm */}
+              <div className="my-12">
+                <img 
+                  src="/images/venn-diagram.png" 
+                  alt="Ganzheitliche Hotelsicherheit entsteht in den Schnittstellen: Physische Sicherheit, Digitale Sicherheit und Organisation & Führung" 
+                  className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
+                  loading="lazy"
+                />
+              </div>
+              
               <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
                 <p className="text-base font-bold text-foreground text-center">
                   Entscheidend ist nicht, ob etwas existiert –
@@ -489,6 +500,16 @@ export default function Home() {
               Empfohlen bei erhöhter Sichtbarkeit, Events, komplexer IT oder regulatorischem Druck.
             </p>
           </div>
+        </div>
+        
+        {/* Roadmap-Grafik */}
+        <div className="mt-16 max-w-5xl mx-auto">
+          <img 
+            src="/images/roadmap.png" 
+            alt="Sicherheit als Führungsaufgabe: Red Teaming macht Entscheidungsfähigkeit entwickelbar - von Basic über Advanced zur Roadmap" 
+            className="w-full rounded-lg shadow-lg"
+            loading="lazy"
+          />
         </div>
         </div>
       </section>
