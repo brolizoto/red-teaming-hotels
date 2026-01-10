@@ -143,3 +143,10 @@
 - [x] Favicon-Dateien in public/ Verzeichnis speichern
 - [x] HTML-Head mit Favicon-Links aktualisieren
 - [x] Favicon im Browser testen
+
+## Favicon Design ändern (Schild → Abstraktes geometrisches Symbol)
+
+- [x] Neues abstraktes geometrisches Favicon erstellen (kein Schild)
+- [x] Alle Favicon-Größen neu generieren
+- [x] Favicon-Dateien ersetzen
+- [x] Im Browser testen
