@@ -150,3 +150,11 @@
 - [x] Alle Favicon-Größen neu generieren
 - [x] Favicon-Dateien ersetzen
 - [x] Im Browser testen
+
+## Domain-Änderung: rt4h.ch → redteaming.ch
+
+- [x] Domain-Referenzen in index.html aktualisieren (Meta-Tags, Schema.org)
+- [x] E-Mail-Adresse im Footer auf contact@redteaming.ch ändern
+- [x] E-Mail-Adresse in server/email.ts aktualisieren
+- [x] Canonical URL und Open Graph URLs anpassen
+- [x] E-Mail-Adressen in allen Pages aktualisieren (Home, About, Imprint, Privacy)

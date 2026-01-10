@@ -598,8 +598,8 @@ export default function Home() {
               <div>
                 <h3 className="font-bold text-foreground mb-4">Contact</h3>
                 <p className="text-sm text-muted-foreground">
-                  <a href="mailto:contact@rt4h.ch" onClick={() => analytics.trackExternalLink('mailto:contact@rt4h.ch')} className="hover:text-primary transition-colors">
-                    contact@rt4h.ch
+                  <a href="mailto:contact@redteaming.ch" onClick={() => analytics.trackExternalLink('mailto:contact@redteaming.ch')} className="hover:text-primary transition-colors">
+                    contact@redteaming.ch
                   </a>
                 </p>
               </div>

@@ -36,8 +36,8 @@ export default function Imprint() {
                 <p className="text-sm text-muted-foreground space-y-2">
                   <div>
                     E-Mail:{' '}
-                    <a href="mailto:contact@rt4h.ch" className="text-primary hover:underline">
-                      contact@rt4h.ch
+                    <a href="mailto:contact@redteaming.ch" className="text-primary hover:underline">
+                      contact@redteaming.ch
                     </a>
                   </div>
                 </p>

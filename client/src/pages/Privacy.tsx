@@ -35,8 +35,8 @@ export default function Privacy() {
                   <div>UID: CHE-313.293.712</div>
                   <div>
                     E-Mail:{' '}
-                    <a href="mailto:contact@rt4h.ch" className="text-primary hover:underline">
-                      contact@rt4h.ch
+                    <a href="mailto:contact@redteaming.ch" className="text-primary hover:underline">
+                      contact@redteaming.ch
                     </a>
                   </div>
                 </p>
@@ -110,8 +110,8 @@ export default function Privacy() {
                 </ul>
                 <p>
                   Anfragen richten Sie bitte an:{' '}
-                  <a href="mailto:contact@rt4h.ch" className="text-primary hover:underline">
-                    contact@rt4h.ch
+                  <a href="mailto:contact@redteaming.ch" className="text-primary hover:underline">
+                    contact@redteaming.ch
                   </a>
                 </p>
               </div>

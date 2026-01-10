@@ -30,7 +30,7 @@ Eingegangen am: ${new Date().toLocaleString('de-CH', { timeZone: 'Europe/Zurich'
     // Send via Manus notification system
     const notificationSuccess = await notifyOwner({ title, content });
     
-    // Send via email to contact@rt4h.ch
+    // Send via email to contact@redteaming.ch
     const emailSuccess = await sendEmailToContact(data);
     
     return notificationSuccess || emailSuccess;
@@ -104,7 +104,7 @@ export async function sendEmailToContact(data: ContactFormData): Promise<boolean
               </div>
             </div>
             <div class="footer">
-              <p>Diese E-Mail wurde automatisch über das Kontaktformular auf rt4h.ch generiert.</p>
+              <p>Diese E-Mail wurde automatisch über das Kontaktformular auf redteaming.ch generiert.</p>
             </div>
           </div>
         </body>
@@ -112,8 +112,8 @@ export async function sendEmailToContact(data: ContactFormData): Promise<boolean
     `;
 
     const { data: result, error } = await resend.emails.send({
-      from: 'Red Teaming for Hotels <noreply@rt4h.ch>',
-      to: ['contact@rt4h.ch'],
+      from: 'Red Teaming for Hotels <noreply@redteaming.ch>',
+      to: ['contact@redteaming.ch'],
       subject: `Neue Kontaktanfrage von ${data.name}`,
       html: htmlContent,
       replyTo: data.email,
@@ -124,7 +124,7 @@ export async function sendEmailToContact(data: ContactFormData): Promise<boolean
       return false;
     }
 
-    console.log("[Email] Successfully sent to contact@rt4h.ch:", result);
+    console.log("[Email] Successfully sent to contact@redteaming.ch:", result);
     return true;
   } catch (error) {
     console.error("[Email] Failed to send email via Resend:", error);
