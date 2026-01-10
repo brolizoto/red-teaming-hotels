@@ -144,9 +144,9 @@
 - [x] HTML-Head mit Favicon-Links aktualisieren
 - [x] Favicon im Browser testen
 
-## Favicon Design ändern (Schild → Abstraktes geometrisches Symbol)
+## Favicon Design ändern (Schild → Typography "RT")
 
-- [x] Neues abstraktes geometrisches Favicon erstellen (kein Schild)
+- [x] Typography-Favicon mit "RT" Initialen erstellen
 - [x] Alle Favicon-Größen neu generieren
 - [x] Favicon-Dateien ersetzen
 - [x] Im Browser testen
