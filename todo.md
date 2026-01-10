@@ -135,3 +135,11 @@
 
 - [x] Neue Venn-Diagramm Grafik (mit dunklem Hintergrund) in Webseite einbetten
 - [x] Neue Roadmap Grafik (3 Zonen) in Webseite einbetten
+
+## Favicon (Browser-Icon) anpassen
+
+- [x] Favicon im Red Teaming Design erstellen (minimalistisch, rot-schwarz)
+- [x] Favicon in verschiedenen Größen generieren (16x16, 32x32, 180x180, 192x192, 512x512)
+- [x] Favicon-Dateien in public/ Verzeichnis speichern
+- [x] HTML-Head mit Favicon-Links aktualisieren
+- [x] Favicon im Browser testen
