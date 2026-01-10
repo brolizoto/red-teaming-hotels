@@ -130,3 +130,8 @@
 ## Roadmap-Überlappung korrigieren
 
 - [x] Negative Margins in Roadmap reduzieren damit Text vollständig sichtbar bleibt
+
+## Neue korrigierte Grafiken einbetten
+
+- [x] Neue Venn-Diagramm Grafik (mit dunklem Hintergrund) in Webseite einbetten
+- [x] Neue Roadmap Grafik (3 Zonen) in Webseite einbetten
