@@ -7,6 +7,7 @@ import { z } from "zod";
 import { createContactRequest, getAllContactRequests, updateContactRequestStatus, getContactRequestById } from "./contact";
 import { sendContactNotification } from "./email";
 import { ENV } from "./_core/env";
+import { verifyTurnstileToken } from "./turnstile";
 
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -31,9 +32,24 @@ export const appRouter = router({
           phone: z.string().min(1, "Telefon ist erforderlich"),
           company: z.string().optional(),
           message: z.string().optional(),
+          turnstileToken: z.string().optional(),
         })
       )
-      .mutation(async ({ input }) => {
+      .mutation(async ({ input, ctx }) => {
+        // Verify Turnstile token if provided
+        if (input.turnstileToken) {
+          const verification = await verifyTurnstileToken(
+            input.turnstileToken,
+            ctx.req.ip || ctx.req.socket.remoteAddress
+          );
+          
+          if (!verification.success) {
+            throw new TRPCError({
+              code: "BAD_REQUEST",
+              message: "Spam-Schutz-Verifizierung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+            });
+          }
+        }
         // Save to database
         await createContactRequest({
           name: input.name,

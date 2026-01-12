@@ -5,6 +5,7 @@ import { analytics } from "../lib/analytics";
 import { SEO } from "@/components/SEO";
 import { trpc } from "../lib/trpc";
 import { toast } from "sonner";
+import { TurnstileWidget } from "@/components/TurnstileWidget";
 
 /**
  * Red Teaming - Generische Dachmarken-Homepage
@@ -47,9 +48,11 @@ export default function Home() {
     email: '',
     phone: '',
     company: '',
-    message: ''
+    message: '',
+    turnstileToken: ''
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [turnstileVerified, setTurnstileVerified] = useState(false);
   const [, navigate] = useLocation();
 
   const scrollToSection = (sectionId: string) => {
@@ -80,7 +83,8 @@ export default function Home() {
       setTimeout(() => {
         setContactFormOpen(false);
         setFormSubmitted(false);
-        setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+        setTurnstileVerified(false);
+        setFormData({ name: '', email: '', phone: '', company: '', message: '', turnstileToken: '' });
       }, 2000);
     },
     onError: (error) => {
@@ -89,8 +93,17 @@ export default function Home() {
     },
   });
 
+  const handleTurnstileVerify = (token: string) => {
+    setFormData(prev => ({ ...prev, turnstileToken: token }));
+    setTurnstileVerified(true);
+  };
+
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!turnstileVerified) {
+      toast.error("Bitte bestätigen Sie, dass Sie kein Roboter sind.");
+      return;
+    }
     contactMutation.mutate(formData);
   };
 
@@ -273,9 +286,15 @@ export default function Home() {
                   />
                 </div>
 
+                <TurnstileWidget
+                  onVerify={handleTurnstileVerify}
+                  onError={() => toast.error("Verifizierung fehlgeschlagen. Bitte versuchen Sie es erneut.")}
+                />
+
                 <button
                   type="submit"
                   className="w-full btn-primary py-3 font-bold"
+                  disabled={!turnstileVerified}
                 >
                   Gespräch anfragen
                 </button>

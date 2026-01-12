@@ -285,3 +285,13 @@
 - [x] Frontend Formular-Submission überprüfen - Fehler gefunden
 - [x] Fehler behoben: Home, Ansatz, WeitereEinsatzfelder verwenden jetzt tRPC statt fetch
 - [x] Alle Seiten verwenden jetzt trpc.contact.submit.useMutation
+
+## Spam-Schutz für Kontaktformular (Cloudflare Turnstile)
+
+- [x] Cloudflare Turnstile Frontend-Widget integrieren (Home-Seite)
+- [x] Turnstile Token im Formular-State speichern
+- [x] Backend-Verifizierung implementieren (server/turnstile.ts)
+- [x] tRPC contact.submit Route um Turnstile-Verifizierung erweitern
+- [x] Fehlerbehandlung für fehlgeschlagene Verifizierung
+- [ ] Anleitung für Turnstile-Setup erstellen (TURNSTILE_SETUP.md)
+- [ ] Turnstile auf andere Seiten erweitern (Ansatz, Hotels, WeitereEinsatzfelder)
