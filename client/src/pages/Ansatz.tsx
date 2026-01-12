@@ -70,6 +70,7 @@ export default function Ansatz() {
         <div className="container flex items-center justify-between py-4 md:py-6">
           <button onClick={() => navigate('/')} className="flex items-center gap-2 bg-transparent border-none cursor-pointer hover:opacity-80">
             <div className="text-primary font-bold text-base md:text-lg">RED TEAMING</div>
+            <div className="text-xs md:text-sm text-muted-foreground">Switzerland</div>
           </button>
           
           {/* Desktop Navigation */}
@@ -267,7 +268,12 @@ export default function Ansatz() {
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
               Unser Ansatz
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+            <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6 mb-8">
+              <p className="text-xl md:text-2xl font-bold text-foreground italic">
+                "Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren."
+              </p>
+            </div>
+            <p className="text-lg md:text-xl text-muted-foreground">
               Red Teaming ist keine Theorie, kein Audit und kein Zertifikat. 
               Es ist eine realitätsnahe Prüfung, die zeigt, was wirklich passiert, 
               wenn etwas schiefgeht.
@@ -636,7 +642,10 @@ export default function Ansatz() {
         <div className="container py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div className="md:col-span-2">
-              <div className="text-primary font-bold text-lg mb-4">RED TEAMING</div>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="text-primary font-bold text-lg">RED TEAMING</div>
+                <div className="text-sm text-muted-foreground">Switzerland</div>
+              </div>
               <p className="text-sm text-muted-foreground">
                 Realitätsnahe Prüfung von Sicherheit, Prozessen und Krisenbereitschaft
               </p>

@@ -72,6 +72,7 @@ export default function WeitereEinsatzfelder() {
         <div className="container flex items-center justify-between py-4 md:py-6">
           <button onClick={() => navigate('/')} className="flex items-center gap-2 bg-transparent border-none cursor-pointer hover:opacity-80">
             <div className="text-primary font-bold text-base md:text-lg">RED TEAMING</div>
+            <div className="text-xs md:text-sm text-muted-foreground">Switzerland</div>
           </button>
           
           {/* Desktop Navigation */}
@@ -502,7 +503,10 @@ export default function WeitereEinsatzfelder() {
         <div className="container py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div className="md:col-span-2">
-              <div className="text-primary font-bold text-lg mb-4">RED TEAMING</div>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="text-primary font-bold text-lg">RED TEAMING</div>
+                <div className="text-sm text-muted-foreground">Switzerland</div>
+              </div>
               <p className="text-sm text-muted-foreground">
                 Realitätsnahe Prüfung von Sicherheit, Prozessen und Krisenbereitschaft
               </p>

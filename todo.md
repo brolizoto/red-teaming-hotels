@@ -195,3 +195,10 @@
 - [x] Was unterscheidet Red Teaming von Audits/Penetration Tests?
 - [x] Warum realitätsnahe Prüfung statt Checklisten?
 - [x] Hotel-spezifische Inhalte entfernen (bleiben auf Hotels-Seite)
+
+## Zitat und Titel-Anpassungen
+
+- [x] Zitat auf Ansatz-Seite Hero einbauen: "Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren."
+- [x] Home-Seite Logo/Titel ändern zu "Red Teaming Switzerland"
+- [x] Hotels-Seite Logo/Titel bleibt "Red Teaming for Hotels"
+- [x] Weitere Einsatzfelder und Ansatz-Seite: "Red Teaming Switzerland"
