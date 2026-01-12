@@ -274,7 +274,7 @@ export default function Home() {
               Realitätsnahe Prüfung von Sicherheit, Prozessen und Krisenbereitschaft
             </p>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Wir testen Organisationen so, wie es ein echtes Ereignis tun würde – 
+              Wir testen Organisationen so, wie es ein echtes Ereignis tun würde, 
               physisch, digital und organisatorisch. Nicht theoretisch, sondern real.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -304,7 +304,7 @@ export default function Home() {
               eines echten Ereignisses betrachtet werden.
             </p>
             <p>
-              Nicht entlang von Checklisten – sondern entlang von Risiko, Abläufen, 
+              Nicht entlang von Checklisten, sondern entlang von Risiko, Abläufen, 
               Abhängigkeiten und Entscheidungswegen. Red Teaming verbindet physische, 
               digitale und organisatorische Aspekte zu einem Gesamtbild.
             </p>
@@ -325,11 +325,12 @@ export default function Home() {
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground mb-12">
               <p>
-                In vielen Organisationen existiert Sicherheit auf dem Papier – aber nicht im Ernstfall. 
-                Pläne wurden nie real getestet, Zuständigkeiten sind unklar, Dokumentation ist veraltet.
+                In vielen Organisationen existiert Sicherheit auf dem Papier, aber nicht im Ernstfall. 
+                Pläne wurden nie real getestet, Zuständigkeiten sind unklar, 
+                Dokumentation ist veraltet.
               </p>
               <p>
-                Red Teaming macht diese Lücken sichtbar – bevor sie Schaden verursachen. 
+                Red Teaming macht diese Lücken sichtbar, bevor sie Schaden verursachen. 
                 Es zeigt, wo Theorie und Praxis auseinanderklaffen, wo Abhängigkeiten kritisch sind 
                 und wo Entscheidungen unter Druck versagen.
               </p>
@@ -369,8 +370,8 @@ export default function Home() {
             Einsatzfelder
           </h2>
           <p className="text-lg text-muted-foreground mb-12">
-            Red Teaming ist branchenübergreifend einsetzbar – überall dort, 
-            wo Sicherheit, Krisenbereitschaft und Prozessqualität entscheidend sind.
+              Red Teaming ist branchenübergreifend einsetzbar, überall dort, 
+              wo Sicherheit, Krisenbereitschaft und Prozessqualität entscheidend sind.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <button

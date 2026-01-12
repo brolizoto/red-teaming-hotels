@@ -202,3 +202,7 @@
 - [x] Home-Seite Logo/Titel ändern zu "Red Teaming Switzerland"
 - [x] Hotels-Seite Logo/Titel bleibt "Red Teaming for Hotels"
 - [x] Weitere Einsatzfelder und Ansatz-Seite: "Red Teaming Switzerland"
+
+## Interpunktions-Korrekturen (Gedankenstriche → Kommas)
+
+- [x] Home-Seite: Gedankenstriche durch Kommas ersetzen (5 Stellen)
