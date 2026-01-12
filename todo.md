@@ -248,3 +248,9 @@
 
 - [x] "Red Teaming for Hotels" durch "Red Teaming Switzerland" ersetzen (Privacy.tsx)
 - [x] Impressum Header aktualisieren (Imprint.tsx)
+
+## Google Search Console Verifizierung
+
+- [x] Google Verifizierungsdatei in public/ Verzeichnis kopieren (google49fc98047e63f67f.html)
+- [ ] Nach Publishing: Verifizierung in Google Search Console abschließen
+- [ ] Sitemap in Google Search Console einreichen (https://redteaming.ch/sitemap.xml)
