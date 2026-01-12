@@ -260,3 +260,14 @@
 - [x] Neues Favicon mit RT Initialen erstellen
 - [x] Alle Favicon-Größen neu generieren (16x16, 32x32, 180x180, 192x192, 512x512)
 - [x] Alte Favicon-Dateien ersetzen
+
+## Google Search Console Sitemap-Fehler beheben
+
+- [ ] sitemap.xml überprüfen und URLs korrigieren
+- [ ] Routing in App.tsx überprüfen
+- [ ] URLs in sitemap.xml mit tatsächlichen Routen abgleichen
+
+## Meta-Tags für Home-Seite anpassen
+
+- [x] Titel ändern: "Red Teaming Switzerland | Sicherheit realistisch testen"
+- [x] Description ändern: "Red Teaming Switzerland testet Ihre Sicherheit, Prozesse und Krisenbereitschaft realistisch – physisch, digital und organisatorisch. Nicht theoretisch, sondern real."

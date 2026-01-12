@@ -11,8 +11,8 @@ import { SEO } from "@/components/SEO";
 
 export default function Home() {
   const seoData = {
-    title: "Home",
-    description: "Red Teaming Switzerland: Realitätsnahe Prüfung von Sicherheit, Prozessen und Krisenbereitschaft. Wir testen Organisationen physisch, digital und organisatorisch – nicht theoretisch, sondern real.",
+    title: "Red Teaming Switzerland | Sicherheit realistisch testen",
+    description: "Red Teaming Switzerland testet Ihre Sicherheit, Prozesse und Krisenbereitschaft realistisch – physisch, digital und organisatorisch. Nicht theoretisch, sondern real.",
     canonical: "https://redteaming.ch/",
     keywords: "Red Teaming, Red Teaming Switzerland, Sicherheitsprüfung, Krisenmanagement, Security Assessment, Penetration Test, Physical Security, Cyber Security, Organisationssicherheit",
     schemaData: {
