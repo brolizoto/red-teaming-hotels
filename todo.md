@@ -213,3 +213,33 @@
 - [x] Ansatz-Seite: Gedankenstriche durch Kommas ersetzen (7 Stellen)
 - [x] WeitereEinsatzfelder-Seite: Gedankenstriche durch Kommas ersetzen (3 Stellen)
 - [ ] Imprint & Privacy: Gedankenstriche durch Kommas ersetzen (falls vorhanden)
+
+## SEO-Optimierung und hotelsecurity.ch Integration
+
+### Aktuelle SEO-Probleme
+- [ ] index.html hat generische Meta-Tags für alle Seiten (nicht seitenspezifisch)
+- [ ] Keine dynamischen Page Titles pro Route
+- [ ] Keine seitenspezifischen Meta-Descriptions
+- [ ] Schema.org nur in index.html, nicht seitenspezifisch
+- [ ] Canonical URLs nicht dynamisch
+- [ ] Open Graph Images nicht vorhanden (404)
+
+### SEO-Verbesserungen
+- [x] React Helmet Async für dynamische Meta-Tags pro Seite implementieren
+- [x] Seitenspezifische Titles: "Home | Red Teaming Switzerland", "Ansatz | Red Teaming Switzerland", "Hotels | Hotel Security Schweiz", etc.
+- [x] Seitenspezifische Meta-Descriptions (max 160 Zeichen)
+- [x] Schema.org strukturierte Daten pro Seite
+- [x] Canonical URLs pro Seite
+- [x] Sitemap.xml generieren
+- [x] robots.txt erstellen
+- [ ] H1-Tags pro Seite überprüfen (nur ein H1 pro Seite)
+- [ ] Alt-Tags für alle Bilder hinzufügen
+
+### hotelsecurity.ch Integration
+- [x] Hotels-Seite: Canonical URL auf redteaming.ch/hotels gesetzt
+- [x] Open Graph URLs für Hotels-Seite korrekt
+- [x] Schema.org für Hotels-Seite implementiert
+- [x] Dokumentation erstellt: HOTELSECURITY_REDIRECT.md
+- [ ] DNS-Redirect konfigurieren: hotelsecurity.ch → redteaming.ch/hotels (301 Permanent Redirect)
+- [ ] Redirect testen und verifizieren
+- [ ] Google Search Console: Beide Domains hinzufügen

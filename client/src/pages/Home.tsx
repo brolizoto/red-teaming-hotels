@@ -2,6 +2,7 @@ import { ArrowRight, Menu, X, Shield, Target, Users, Building2, Home as HomeIcon
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { analytics } from "../lib/analytics";
+import { SEO } from "@/components/SEO";
 
 /**
  * Red Teaming - Generische Dachmarken-Homepage
@@ -9,6 +10,34 @@ import { analytics } from "../lib/analytics";
  */
 
 export default function Home() {
+  const seoData = {
+    title: "Home",
+    description: "Red Teaming Switzerland: Realitätsnahe Prüfung von Sicherheit, Prozessen und Krisenbereitschaft. Wir testen Organisationen physisch, digital und organisatorisch – nicht theoretisch, sondern real.",
+    canonical: "https://redteaming.ch/",
+    keywords: "Red Teaming, Red Teaming Switzerland, Sicherheitsprüfung, Krisenmanagement, Security Assessment, Penetration Test, Physical Security, Cyber Security, Organisationssicherheit",
+    schemaData: {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Red Teaming Switzerland",
+      "description": "Red Teaming Switzerland: Realitätsnahe Prüfung von Sicherheit, Prozessen und Krisenbereitschaft für Organisationen in der Schweiz.",
+      "url": "https://redteaming.ch/",
+      "telephone": "+41787401929",
+      "email": "contact@redteaming.ch",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Weberstrasse 16",
+        "addressLocality": "Bern",
+        "postalCode": "3005",
+        "addressCountry": "CH"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Switzerland"
+      },
+      "serviceType": ["Red Teaming", "Security Consulting", "Crisis Management"]
+    }
+  };
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [contactFormOpen, setContactFormOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -66,7 +95,9 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <>
+      <SEO {...seoData} />
+      <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
       <nav className="sticky top-0 bg-background border-b border-border z-50">
         <div className="container flex items-center justify-between py-4 md:py-6">
@@ -480,5 +511,6 @@ export default function Home() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

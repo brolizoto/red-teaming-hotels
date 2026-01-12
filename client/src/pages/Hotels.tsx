@@ -6,6 +6,7 @@ import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 import { analytics } from "@/lib/analytics";
+import { SEO } from "@/components/SEO";
 
 /**
  * Red Teaming for Hotels - Home Page
@@ -15,6 +16,29 @@ import { analytics } from "@/lib/analytics";
  */
 
 export default function Hotels() {
+  const seoData = {
+    title: "Hotels | Hotel Security Schweiz",
+    description: "Red Teaming for Hotels: Professionelle Hotel Security durch realitätsnahe Prüfung von Krisen- und Notfallfähigkeit. Physisch, digital und organisatorisch. Hotel Security ist heute ein Führungsthema.",
+    canonical: "https://redteaming.ch/hotels",
+    keywords: "Hotel Security, Hotel Sicherheit, Red Teaming Hotels, Krisenmanagement Hotels, Notfallplanung Hotellerie, Security Assessment Hotels, Sicherheitsberatung Hotels, Hotellerie Schweiz, Hotel Security Schweiz",
+    schemaData: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Red Teaming for Hotels - Hotel Security Schweiz",
+      "description": "Professionelle Hotel Security durch Red Teaming: Wir unterstützen Hoteldirektionen dabei, Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch.",
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "Red Teaming Switzerland",
+        "url": "https://redteaming.ch/"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Switzerland"
+      },
+      "serviceType": "Hotel Security"
+    }
+  };
+
   // The userAuth hooks provides authentication state
   // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
   let { user, loading, error, isAuthenticated, logout } = useAuth();
@@ -75,7 +99,9 @@ export default function Hotels() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <>
+      <SEO {...seoData} />
+      <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
       <nav className="sticky top-0 bg-background border-b border-border z-50">
         <div className="container flex items-center justify-between py-4 md:py-6">
@@ -639,5 +665,6 @@ export default function Hotels() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

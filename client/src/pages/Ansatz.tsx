@@ -1,6 +1,7 @@
 import { ArrowRight, Menu, X, Shield, Target, AlertTriangle, CheckCircle2, Users, Layers, FileText } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "wouter";
+import { SEO } from "@/components/SEO";
 
 /**
  * Red Teaming - Ansatz/Methodik Seite
@@ -8,6 +9,13 @@ import { useLocation } from "wouter";
  */
 
 export default function Ansatz() {
+  const seoData = {
+    title: "Ansatz",
+    description: "Red Teaming Methodik: Realitätsnahe Prüfung von Organisationen aus der Perspektive eines echten Ereignisses. Physisch, digital und organisatorisch – nicht entlang von Checklisten, sondern entlang von Risiko und Abhängigkeiten.",
+    canonical: "https://redteaming.ch/ansatz",
+    keywords: "Red Teaming Methodik, Red Teaming Ansatz, Security Assessment Methodik, Krisenmanagement Methodik, Penetration Test, Physical Security Testing, Cyber Security Assessment"
+  };
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [contactFormOpen, setContactFormOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -64,7 +72,9 @@ export default function Ansatz() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <>
+      <SEO {...seoData} />
+      <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
       <nav className="sticky top-0 bg-background border-b border-border z-50">
         <div className="container flex items-center justify-between py-4 md:py-6">
@@ -690,5 +700,6 @@ export default function Ansatz() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

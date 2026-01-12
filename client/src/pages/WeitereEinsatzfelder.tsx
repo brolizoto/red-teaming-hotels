@@ -2,6 +2,7 @@ import { ArrowRight, Menu, X, Building2, MapPin, Home as HomeIcon, Flame, Shield
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { analytics } from "../lib/analytics";
+import { SEO } from "@/components/SEO";
 
 /**
  * Weitere Einsatzfelder - Gebündelte Seite für nicht-Hotel Anwendungen
@@ -9,6 +10,13 @@ import { analytics } from "../lib/analytics";
  */
 
 export default function WeitereEinsatzfelder() {
+  const seoData = {
+    title: "Weitere Einsatzfelder",
+    description: "Red Teaming für Unternehmen, Standorte, private Liegenschaften und Fire Checks. Branchenübergreifend einsetzbar überall dort, wo Sicherheit, Krisenbereitschaft und Prozessqualität entscheidend sind.",
+    canonical: "https://redteaming.ch/weitere-einsatzfelder",
+    keywords: "Red Teaming Unternehmen, Security Assessment, Standortsicherheit, Liegenschaften Sicherheit, Fire Checks, Krisenmanagement, Physical Security"
+  };
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [contactFormOpen, setContactFormOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -66,7 +74,9 @@ export default function WeitereEinsatzfelder() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <>
+      <SEO {...seoData} />
+      <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
       <nav className="sticky top-0 bg-background border-b border-border z-50">
         <div className="container flex items-center justify-between py-4 md:py-6">
@@ -551,5 +561,6 @@ export default function WeitereEinsatzfelder() {
         </div>
       </footer>
     </div>
+    </>
   );
 }
