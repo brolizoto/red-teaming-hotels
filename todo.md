@@ -185,3 +185,13 @@
 - [x] Alle internen Links auf neue Struktur anpassen
 - [x] Footer-Navigation aktualisieren
 - [x] Mobile Navigation testen
+
+## Ansatz-Seite methodisch umbauen
+
+- [x] Content neu strukturieren: Fokus auf Methodik, nicht auf Branchen/Tätigkeitsbereiche
+- [x] Was ist Red Teaming? (Methodik definieren)
+- [x] Wie funktioniert ein Red Teaming Assessment? (Phasen: Vorbereitung, Durchführung, Analyse, Reporting)
+- [x] Welche Dimensionen werden geprüft? (Physisch, Digital, Organisatorisch)
+- [x] Was unterscheidet Red Teaming von Audits/Penetration Tests?
+- [x] Warum realitätsnahe Prüfung statt Checklisten?
+- [x] Hotel-spezifische Inhalte entfernen (bleiben auf Hotels-Seite)

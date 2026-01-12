@@ -1,10 +1,10 @@
-import { ArrowRight, Menu, X, Shield, Target, AlertTriangle, CheckCircle2, XCircle, Users } from "lucide-react";
+import { ArrowRight, Menu, X, Shield, Target, AlertTriangle, CheckCircle2, Users, Layers, FileText } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "wouter";
 
 /**
- * Red Teaming for Hotels - About Page
- * Redesigned with enhanced visual hierarchy and "Verantwortung & Expertise" section
+ * Red Teaming - Ansatz/Methodik Seite
+ * Branchenunabhängig, fokussiert auf die Red Teaming Methodik
  */
 
 export default function Ansatz() {
@@ -36,15 +36,31 @@ export default function Ansatz() {
     }));
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setFormSubmitted(true);
-    setTimeout(() => {
-      setContactFormOpen(false);
-      setFormSubmitted(false);
-      setFormData({ name: '', email: '', phone: '', company: '', message: '' });
-    }, 2000);
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setFormSubmitted(true);
+        setTimeout(() => {
+          setContactFormOpen(false);
+          setFormSubmitted(false);
+          setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+        }, 2000);
+      } else {
+        console.error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   };
 
   return (
@@ -145,7 +161,7 @@ export default function Ansatz() {
                 <div className="text-primary text-4xl mb-4">✓</div>
                 <p className="text-foreground font-bold mb-2">Vielen Dank!</p>
                 <p className="text-sm text-muted-foreground">
-                  Wir werden Sie in Kürze kontaktieren, um einen Termin zu vereinbaren.
+                  Wir werden Sie in Kürze kontaktieren.
                 </p>
               </div>
             ) : (
@@ -197,7 +213,7 @@ export default function Ansatz() {
 
                 <div>
                   <label className="block text-sm font-bold text-foreground mb-2">
-                    Hotel / Unternehmen
+                    Unternehmen
                   </label>
                   <input
                     type="text"
@@ -205,7 +221,7 @@ export default function Ansatz() {
                     value={formData.company}
                     onChange={handleFormChange}
                     className="w-full px-4 py-2 border border-border rounded bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="Ihr Hotel"
+                    placeholder="Ihr Unternehmen"
                   />
                 </div>
 
@@ -239,37 +255,28 @@ export default function Ansatz() {
         </div>
       )}
 
-      {/* SECTION 1 – INTRO with Background */}
-      <section className="relative bg-gradient-to-br from-background via-background to-card py-16 md:py-24 overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         </div>
         <div className="container relative z-10">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div className="accent-line mb-8"></div>
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Über uns
+              Unser Ansatz
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-4">
-              Red Teaming for Hotels versteht sich nicht als klassische Sicherheitsberatung.
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+              Red Teaming ist keine Theorie, kein Audit und kein Zertifikat. 
+              Es ist eine realitätsnahe Prüfung, die zeigt, was wirklich passiert, 
+              wenn etwas schiefgeht.
             </p>
-            <p className="text-lg md:text-xl text-muted-foreground mb-4">
-              Unsere Rolle ist es, Klarheit für Direktionen zu schaffen – dort, wo Entscheidungen unter Druck getroffen werden müssen.
-            </p>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Wir prüfen Hotels nicht theoretisch, sondern so, wie es ein reales Ereignis tun würde:
-              unter realen Bedingungen, im laufenden Betrieb und mit Fokus auf tatsächliche Handlungsfähigkeit.
-            </p>
-            <button onClick={() => setContactFormOpen(true)} className="btn-primary flex items-center gap-2">
-              Gespräch anfragen
-              <ArrowRight size={16} />
-            </button>
           </div>
         </div>
       </section>
 
-      {/* SECTION 2 – WAS RED TEAMING BEDEUTET with Icon */}
+      {/* Was ist Red Teaming */}
       <section className="container py-12 md:py-16">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
@@ -281,30 +288,29 @@ export default function Ansatz() {
             <div className="md:col-span-10">
               <div className="accent-line mb-6"></div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Was Red Teaming für Hotels bedeutet
+                Was ist Red Teaming?
               </h2>
               <p className="text-base text-muted-foreground mb-4">
-                Red Teaming ist keine Theorie, kein Audit und kein Zertifikat.
-              </p>
-              <p className="text-base text-muted-foreground mb-4">
-                Es ist eine realitätsnahe Prüfung, bei der wir Hotels aus Sicht eines echten Ereignisses betrachten.
-              </p>
-              <p className="text-base text-muted-foreground mb-4">
-                Nicht entlang von Checklisten –
+                Red Teaming ist eine Methode, bei der Organisationen aus der Perspektive 
+                eines echten Ereignisses betrachtet werden. Nicht entlang von Checklisten – 
                 sondern entlang von Risiko, Abläufen, Abhängigkeiten und Entscheidungswegen.
               </p>
               <p className="text-base text-muted-foreground mb-4">
-                Red Teaming verbindet physische, digitale und organisatorische Aspekte zu einem Gesamtbild:
+                Der Begriff stammt aus dem militärischen Kontext: Ein "Red Team" simuliert 
+                gegnerisches Verhalten, um die eigenen Verteidigungslinien zu testen. 
+                Übertragen auf Organisationen bedeutet das: Wir agieren wie ein reales Ereignis – 
+                physisch, digital oder organisatorisch.
               </p>
               <p className="text-lg font-bold text-foreground">
-                Was passiert wirklich, wenn etwas schiefgeht?
+                Red Teaming verbindet physische, digitale und organisatorische Aspekte 
+                zu einem Gesamtbild.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 3 – WARUM KLASSISCHE SICHERHEIT NICHT REICHT with Card */}
+      {/* Warum Red Teaming */}
       <section className="container py-12 md:py-16">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
@@ -316,16 +322,18 @@ export default function Ansatz() {
             <div className="md:col-span-10">
               <div className="accent-line mb-6"></div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Warum Sicherheit oft trügt
+                Warum Red Teaming?
               </h2>
               <p className="text-base text-muted-foreground mb-6">
-                In vielen Hotels existiert Sicherheit auf dem Papier – aber nicht im Ernstfall.
+                In vielen Organisationen existiert Sicherheit auf dem Papier – aber nicht im Ernstfall. 
+                Pläne wurden nie real getestet, Zuständigkeiten sind unklar, Dokumentation ist veraltet.
               </p>
               <div className="bg-card border border-border rounded-lg p-6 mb-6">
+                <h3 className="text-lg font-bold text-foreground mb-4">Typische Lücken:</h3>
                 <ul className="space-y-3 text-sm text-muted-foreground">
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>Pläne existieren, wurden aber nie real getestet</span>
+                    <span>Pläne existieren, wurden aber nie unter realen Bedingungen getestet</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
@@ -333,15 +341,15 @@ export default function Ansatz() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>Dokumentation ist unvollständig oder veraltet</span>
+                    <span>Dokumentation ist unvollständig, veraltet oder nicht zugänglich</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>Cyber-Vorfälle (z. B. Phishing) blockieren operative Abläufe</span>
+                    <span>Abhängigkeiten zwischen Systemen und Prozessen sind nicht bekannt</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>Evakuation, Technik und Kommunikation sind nicht abgestimmt</span>
+                    <span>Entscheidungswege versagen unter Druck</span>
                   </li>
                 </ul>
               </div>
@@ -353,255 +361,321 @@ export default function Ansatz() {
         </div>
       </section>
 
-      {/* SECTION 4 – WAS WIR KONKRET PRÜFEN with Grid */}
-      <section className="container py-12 md:py-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-            <div className="md:col-span-2 flex justify-center md:justify-start">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                <Shield className="text-primary" size={32} />
+      {/* Drei Dimensionen */}
+      <section className="bg-card py-16 md:py-24">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-12">
+              <div className="md:col-span-2 flex justify-center md:justify-start">
+                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Layers className="text-primary" size={32} />
+                </div>
+              </div>
+              <div className="md:col-span-10">
+                <div className="accent-line mb-6"></div>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                  Drei Dimensionen
+                </h2>
+                <p className="text-base text-muted-foreground mb-6">
+                  Red Teaming prüft Organisationen entlang dreier Dimensionen, 
+                  die im Ernstfall zusammenwirken:
+                </p>
               </div>
             </div>
-            <div className="md:col-span-10">
-              <div className="accent-line mb-6"></div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Was wir real prüfen
-              </h2>
-              <p className="text-base text-muted-foreground mb-6">
-                Unsere Prüfungen orientieren sich an realen Szenarien – nicht an Modellen.
-              </p>
-              <p className="text-base text-muted-foreground mb-4">
-                Wir analysieren unter anderem:
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <p className="text-sm font-bold text-foreground mb-2">Physische Sicherheit</p>
-                  <p className="text-xs text-muted-foreground">Zutritt, Zonen, Perimeter, Evakuation</p>
-                </div>
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <p className="text-sm font-bold text-foreground mb-2">Cyber & Phishing</p>
-                  <p className="text-xs text-muted-foreground">Systemzugriffe, Abhängigkeiten, Reaktionsfähigkeit</p>
-                </div>
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <p className="text-sm font-bold text-foreground mb-2">Organisation & Führung</p>
-                  <p className="text-xs text-muted-foreground">Rollen, Entscheidungswege, Eskalation</p>
-                </div>
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <p className="text-sm font-bold text-foreground mb-2">Dokumentation</p>
-                  <p className="text-xs text-muted-foreground">Nachvollziehbarkeit, Versicherungs- und Haftungsrelevanz</p>
-                </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-background border border-border rounded-lg p-6">
+                <Shield className="text-primary mb-4" size={32} />
+                <h3 className="text-lg font-bold text-foreground mb-3">Physisch</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Zutrittskontrolle, Perimeter, Evakuierung, physische Sicherheitskonzepte
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  Wir prüfen, ob physische Sicherheitsmaßnahmen unter realen Bedingungen funktionieren – 
+                  nicht nur auf dem Papier.
+                </p>
               </div>
-              <p className="text-lg font-bold text-foreground">
-                Entscheidend ist nicht, ob etwas existiert –
-                sondern ob es im Ernstfall funktioniert.
-              </p>
+
+              <div className="bg-background border border-border rounded-lg p-6">
+                <Target className="text-primary mb-4" size={32} />
+                <h3 className="text-lg font-bold text-foreground mb-3">Digital</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Phishing, Social Engineering, IT-Infrastruktur, Datensicherheit
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  Wir testen, wie Organisationen auf digitale Angriffe reagieren und 
+                  ob IT-Sicherheitskonzepte im Ernstfall greifen.
+                </p>
+              </div>
+
+              <div className="bg-background border border-border rounded-lg p-6">
+                <Users className="text-primary mb-4" size={32} />
+                <h3 className="text-lg font-bold text-foreground mb-3">Organisatorisch</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Krisenmanagement, Kommunikation, Entscheidungswege, Prozesse
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  Wir analysieren, ob Organisationen handlungsfähig bleiben, 
+                  wenn Entscheidungen unter Druck getroffen werden müssen.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 5 – KLARE ABGRENZUNG with Two Columns */}
-      <section className="container py-12 md:py-16">
+      {/* Wie funktioniert Red Teaming */}
+      <section className="container py-16 md:py-24">
         <div className="max-w-4xl mx-auto">
-          <div className="accent-line mb-6"></div>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
-            Was Red Teaming bewusst nicht ist
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Left Column - What it's NOT */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-12">
+            <div className="md:col-span-2 flex justify-center md:justify-start">
+              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                <FileText className="text-primary" size={32} />
+              </div>
+            </div>
+            <div className="md:col-span-10">
+              <div className="accent-line mb-6"></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Wie funktioniert ein Red Teaming Assessment?
+              </h2>
+              <p className="text-base text-muted-foreground mb-6">
+                Ein Red Teaming Assessment folgt einem strukturierten Ablauf, 
+                der auf die spezifischen Risiken und Anforderungen der Organisation abgestimmt wird.
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-6">
+            {/* Phase 1 */}
             <div className="bg-card border border-border rounded-lg p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <XCircle className="text-muted-foreground" size={24} />
-                <h3 className="text-lg font-bold text-foreground">Red Teaming ist nicht:</h3>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-primary font-bold">1</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground mb-2">Vorbereitung & Scoping</h3>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Gemeinsam definieren wir Ziele, Scope und Rahmenbedingungen des Assessments. 
+                    Welche Szenarien sind relevant? Welche Bereiche sollen geprüft werden? 
+                    Welche Einschränkungen gibt es?
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    Ergebnis: Klares Verständnis der Risiken, Ziele und Erwartungen
+                  </p>
+                </div>
               </div>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li className="flex gap-3">
-                  <span className="text-muted-foreground">•</span>
-                  <span>kein Zertifizierungsprozess</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-muted-foreground">•</span>
-                  <span>kein klassisches IT-Audit</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-muted-foreground">•</span>
-                  <span>keine Beratung aus dem Konferenzraum</span>
-                </li>
-              </ul>
             </div>
-            {/* Right Column - What it IS */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <CheckCircle2 className="text-primary" size={24} />
-                <h3 className="text-lg font-bold text-foreground">Red Teaming ist:</h3>
-              </div>
-              <ul className="space-y-3 text-sm text-foreground">
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">•</span>
-                  <span>realitätsnah</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">•</span>
-                  <span>unabhängig</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">•</span>
-                  <span>unangenehm ehrlich</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">•</span>
-                  <span>auf Entscheidungssicherheit ausgelegt</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <p className="text-lg font-bold text-foreground text-center mt-8">
-            Unser Ziel ist Klarheit – nicht Beruhigung.
-          </p>
-        </div>
-      </section>
 
-      {/* SECTION 6 – UNSERE ROLLE */}
-      <section className="container py-12 md:py-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-            <div className="md:col-span-2 flex justify-center md:justify-start">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                <CheckCircle2 className="text-primary" size={32} />
-              </div>
-            </div>
-            <div className="md:col-span-10">
-              <div className="accent-line mb-6"></div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Unsere Rolle
-              </h2>
-              <p className="text-base text-muted-foreground mb-6">
-                Wir unterstützen Direktionen dabei, Risiken vor dem Ereignis zu verstehen –
-                nicht danach erklären zu müssen, warum etwas nicht funktioniert hat.
-              </p>
-              <p className="text-base text-muted-foreground mb-4">
-                Red Teaming schafft:
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                <div className="bg-card border border-border rounded-lg p-4 text-center">
-                  <p className="text-sm font-bold text-foreground">belastbare Entscheidungsgrundlagen</p>
+            {/* Phase 2 */}
+            <div className="bg-card border border-border rounded-lg p-6">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-primary font-bold">2</span>
                 </div>
-                <div className="bg-card border border-border rounded-lg p-4 text-center">
-                  <p className="text-sm font-bold text-foreground">klare Prioritäten</p>
-                </div>
-                <div className="bg-card border border-border rounded-lg p-4 text-center">
-                  <p className="text-sm font-bold text-foreground">Transparenz gegenüber Stakeholdern</p>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground mb-2">Durchführung</h3>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Wir führen das Assessment unter realen Bedingungen durch – 
+                    physisch, digital oder organisatorisch. Dabei simulieren wir realistische Szenarien 
+                    und dokumentieren alle Beobachtungen.
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    Ergebnis: Realitätsnahe Prüfung der Sicherheitskonzepte und Prozesse
+                  </p>
                 </div>
               </div>
-              <p className="text-lg font-bold text-foreground">
-                Kurz: Handlungsfähigkeit, wenn sie zählt.
-              </p>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* SECTION 7 – VERANTWORTUNG & EXPERTISE (NEW) */}
-      <section className="container py-12 md:py-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-            <div className="md:col-span-2 flex justify-center md:justify-start">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                <Users className="text-primary" size={32} />
+            {/* Phase 3 */}
+            <div className="bg-card border border-border rounded-lg p-6">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-primary font-bold">3</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground mb-2">Analyse & Bewertung</h3>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Wir analysieren die Ergebnisse und bewerten Schwachstellen nach Risiko und Auswirkung. 
+                    Wo sind kritische Lücken? Welche Abhängigkeiten wurden sichtbar? 
+                    Was funktioniert bereits gut?
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    Ergebnis: Klare Priorisierung von Handlungsfeldern
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="md:col-span-10">
-              <div className="accent-line mb-6"></div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Verantwortung
-              </h2>
-              <p className="text-base text-muted-foreground mb-8">
-                Die Verantwortung liegt bei erfahrenen Praktikern aus Sicherheits-, Krisen- und Organisationsumfeldern.
-              </p>
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-lg font-bold text-foreground mb-4">Expertise</h3>
-                <p className="text-base text-muted-foreground">
-                  Sicherheit & Krisenmanagement
-                </p>
+
+            {/* Phase 4 */}
+            <div className="bg-card border border-border rounded-lg p-6">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-primary font-bold">4</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground mb-2">Reporting & Empfehlungen</h3>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Wir liefern einen detaillierten Bericht mit konkreten, umsetzbaren Empfehlungen. 
+                    Keine theoretischen Konzepte – sondern praktische Maßnahmen, 
+                    die die Handlungsfähigkeit im Ernstfall verbessern.
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    Ergebnis: Handlungsplan mit priorisierten Maßnahmen
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 8 – ABSCHLUSS / CTA with Background */}
-      <section className="relative bg-gradient-to-br from-card via-card to-background py-16 md:py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
-        </div>
-        <div className="container relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="accent-line mb-8 mx-auto" style={{width: '4rem'}}></div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Der nächste Schritt
+      {/* Red Teaming vs. Audits */}
+      <section className="bg-card py-16 md:py-24">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="accent-line mb-8"></div>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+              Red Teaming vs. Audits & Penetration Tests
             </h2>
-            <p className="text-lg text-muted-foreground mb-4">
-              Wenn Sie im Ernstfall entscheiden müssen,
-              sollte die Entscheidungsgrundlage vorher existieren.
+            <p className="text-base text-muted-foreground mb-8">
+              Red Teaming unterscheidet sich grundlegend von klassischen Audits und Penetration Tests:
             </p>
-            <p className="text-lg text-muted-foreground mb-4">
-              Ein 30-minütiges Gespräch reicht aus, um zu klären,
-              ob und wo realistischer Prüfbedarf besteht.
-            </p>
-            <div className="flex flex-col items-center gap-2 mb-8">
-              <p className="text-base text-muted-foreground">Kein Verkaufsgespräch.</p>
-              <p className="text-base text-muted-foreground">Keine Verpflichtung.</p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-background border border-border rounded-lg p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <CheckCircle2 className="text-primary" size={24} />
+                  <h3 className="text-lg font-bold text-foreground">Red Teaming</h3>
+                </div>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Realitätsnahe Simulation von Ereignissen</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Ganzheitliche Betrachtung (physisch, digital, organisatorisch)</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Fokus auf Handlungsfähigkeit im Ernstfall</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Keine Checklisten, sondern szenariobasiert</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Zeigt, was wirklich passiert</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-background border border-border rounded-lg p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <AlertTriangle className="text-muted-foreground" size={24} />
+                  <h3 className="text-lg font-bold text-foreground">Audits & Pen Tests</h3>
+                </div>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex gap-3">
+                    <span className="text-muted-foreground font-bold">•</span>
+                    <span>Prüfung entlang von Standards und Checklisten</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-muted-foreground font-bold">•</span>
+                    <span>Fokus auf einzelne Bereiche (z.B. nur IT)</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-muted-foreground font-bold">•</span>
+                    <span>Dokumentation und Compliance-Nachweis</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-muted-foreground font-bold">•</span>
+                    <span>Theoretische Bewertung von Maßnahmen</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-muted-foreground font-bold">•</span>
+                    <span>Zeigt, was dokumentiert ist</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <button onClick={() => setContactFormOpen(true)} className="btn-primary flex items-center gap-2 mx-auto">
-              Gespräch anfragen (30 Minuten)
-              <ArrowRight size={16} />
-            </button>
+
+            <div className="mt-8 bg-primary/5 border border-primary/20 rounded-lg p-6">
+              <p className="text-base text-foreground font-bold mb-2">
+                Red Teaming ersetzt keine Audits oder Penetration Tests.
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Es ergänzt sie durch eine realitätsnahe Perspektive: 
+                Was passiert wirklich, wenn Theorie auf Praxis trifft?
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Footer - Contact */}
-      <footer id="contact" className="bg-card border-t border-border">
+      {/* Contact Section */}
+      <section className="container py-16 md:py-24" id="contact">
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="accent-line mb-8 mx-auto"></div>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Gespräch anfragen
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Lassen Sie uns unverbindlich besprechen, wie Red Teaming 
+            Ihre Organisation weiterbringen kann.
+          </p>
+          <button onClick={() => setContactFormOpen(true)} className="btn-primary text-lg px-8 py-4">
+            Kontakt aufnehmen
+          </button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-background border-t border-border">
         <div className="container py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="text-primary font-bold text-lg">RED TEAMING</div>
-                <div className="text-sm text-muted-foreground">for Hotels</div>
-              </div>
-              <p className="text-xs text-muted-foreground">
-                Hotel Security ist heute ein Führungs- und Entscheidungsthema
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div className="md:col-span-2">
+              <div className="text-primary font-bold text-lg mb-4">RED TEAMING</div>
+              <p className="text-sm text-muted-foreground">
+                Realitätsnahe Prüfung von Sicherheit, Prozessen und Krisenbereitschaft
               </p>
             </div>
-            <div className="flex flex-col md:flex-row gap-12 md:gap-16 md:justify-end">
-              <div>
-                <h3 className="font-bold text-foreground mb-4">Location</h3>
-                <p className="text-sm text-muted-foreground">
-                  Weberstrasse 16<br />
-                  CH-3005 Bern
-                </p>
-              </div>
-              <div>
-                <h3 className="font-bold text-foreground mb-4">Contact</h3>
-                <p className="text-sm text-muted-foreground">
-                  <a href="mailto:contact@redteaming.ch" className="hover:text-primary transition-colors">
-                    contact@redteaming.ch
-                  </a>
-                </p>
+            <div>
+              <h3 className="font-bold text-foreground mb-4">Navigation</h3>
+              <div className="flex flex-col gap-2 text-sm text-muted-foreground">
+                <button onClick={() => navigate('/')} className="hover:text-primary transition-colors text-left bg-transparent border-none cursor-pointer">
+                  Home
+                </button>
+                <button onClick={() => navigate('/ansatz')} className="hover:text-primary transition-colors text-left bg-transparent border-none cursor-pointer">
+                  Ansatz
+                </button>
+                <button onClick={() => navigate('/hotels')} className="hover:text-primary transition-colors text-left bg-transparent border-none cursor-pointer">
+                  Hotels
+                </button>
+                <button onClick={() => navigate('/weitere-einsatzfelder')} className="hover:text-primary transition-colors text-left bg-transparent border-none cursor-pointer">
+                  Weitere Einsatzfelder
+                </button>
               </div>
             </div>
+            <div>
+              <h3 className="font-bold text-foreground mb-4">Contact</h3>
+              <p className="text-sm text-muted-foreground">
+                <a href="mailto:contact@redteaming.ch" className="hover:text-primary transition-colors">
+                  contact@redteaming.ch
+                </a>
+              </p>
+            </div>
           </div>
-          <div className="border-t border-border pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center text-xs text-muted-foreground gap-4">
-              <p>© 2026 Red Teaming for Hotels. All rights reserved.</p>
-              <div className="flex gap-6">
-                <a href="/imprint" className="hover:text-primary transition-colors">
-                  Impressum
-                </a>
-                <a href="/privacy" className="hover:text-primary transition-colors">
-                  Datenschutz
-                </a>
-              </div>
+          <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
+            <p>© 2026 Red Teaming. All rights reserved.</p>
+            <div className="flex gap-6">
+              <button onClick={() => navigate('/impressum')} className="hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
+                Impressum
+              </button>
+              <button onClick={() => navigate('/datenschutz')} className="hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
+                Datenschutz
+              </button>
             </div>
           </div>
         </div>
