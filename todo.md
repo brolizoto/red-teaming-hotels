@@ -254,3 +254,9 @@
 - [x] Google Verifizierungsdatei in public/ Verzeichnis kopieren (google49fc98047e63f67f.html)
 - [ ] Nach Publishing: Verifizierung in Google Search Console abschließen
 - [ ] Sitemap in Google Search Console einreichen (https://redteaming.ch/sitemap.xml)
+
+## Favicon korrigieren (RT Initialen)
+
+- [x] Neues Favicon mit RT Initialen erstellen
+- [x] Alle Favicon-Größen neu generieren (16x16, 32x32, 180x180, 192x192, 512x512)
+- [x] Alte Favicon-Dateien ersetzen
