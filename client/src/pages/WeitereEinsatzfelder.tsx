@@ -26,7 +26,9 @@ export default function WeitereEinsatzfelder() {
     email: '',
     phone: '',
     company: '',
-    message: ''
+    message: '',
+    honeypot: '', // Honeypot-Feld (sollte leer bleiben)
+    formOpenedAt: 0 // Zeitstempel wann Formular geöffnet wurde
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [, navigate] = useLocation();
@@ -59,7 +61,7 @@ export default function WeitereEinsatzfelder() {
       setTimeout(() => {
         setContactFormOpen(false);
         setFormSubmitted(false);
-        setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+        setFormData({ name: '', email: '', phone: '', company: '', message: '', honeypot: '', formOpenedAt: 0 });
       }, 2000);
     },
     onError: (error) => {
@@ -102,7 +104,7 @@ export default function WeitereEinsatzfelder() {
             <button onClick={() => scrollToSection('contact')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
               Kontakt
             </button>
-            <button onClick={() => setContactFormOpen(true)} className="btn-primary text-xs">Gespräch anfragen</button>
+            <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); }} className="btn-primary text-xs">Gespräch anfragen</button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -149,7 +151,7 @@ export default function WeitereEinsatzfelder() {
               >
                 Kontakt
               </button>
-              <button onClick={() => setContactFormOpen(true)} className="btn-primary text-xs w-full">Gespräch anfragen</button>
+              <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); }} className="btn-primary text-xs w-full">Gespräch anfragen</button>
             </div>
           </div>
         )}
@@ -249,6 +251,20 @@ export default function WeitereEinsatzfelder() {
                     rows={4}
                     className="w-full px-4 py-2 border border-border rounded bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
                     placeholder="Ihre Nachricht..."
+                  />
+                </div>
+
+                {/* Honeypot-Feld (unsichtbar für Menschen, sichtbar für Bots) */}
+                <div style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}>
+                  <label htmlFor="website">Website (bitte leer lassen)</label>
+                  <input
+                    type="text"
+                    id="website"
+                    name="honeypot"
+                    value={formData.honeypot}
+                    onChange={handleFormChange}
+                    tabIndex={-1}
+                    autoComplete="off"
                   />
                 </div>
 
@@ -502,7 +518,7 @@ export default function WeitereEinsatzfelder() {
             Lassen Sie uns unverbindlich besprechen, wie Red Teaming 
             Ihre Organisation weiterbringen kann.
           </p>
-          <button onClick={() => setContactFormOpen(true)} className="btn-primary text-lg px-8 py-4">
+          <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); }} className="btn-primary text-lg px-8 py-4">
             Kontakt aufnehmen
           </button>
         </div>

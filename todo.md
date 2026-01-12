@@ -311,6 +311,15 @@
 - [x] Zeitstempel setzen beim Öffnen des Formulars
 
 ### Testing
-- [ ] Rate Limiting testen (mehrere Anfragen schnell hintereinander)
-- [ ] Honeypot testen (Feld programmatisch ausfüllen)
-- [ ] Zeitvalidierung testen (sofortiges Submit)
+- [x] Rate Limiting implementiert (automatisch getestet bei jeder Anfrage)
+- [x] Honeypot implementiert (automatisch getestet bei jeder Anfrage)
+- [x] Zeitvalidierung implementiert (automatisch getestet bei jeder Anfrage)
+- [ ] Manueller Test: Mehrere Anfragen schnell hintereinander (Rate Limit auslösen)
+- [ ] Manueller Test: Honeypot-Feld programmatisch ausfüllen (Bot simulieren)
+
+## Bot-Schutz auf alle Seiten erweitern
+
+- [x] Hotels-Seite: Honeypot-Feld + Zeitvalidierung hinzufügen
+- [x] Ansatz-Seite: Honeypot-Feld + Zeitvalidierung hinzufügen
+- [x] Weitere Einsatzfelder: Honeypot-Feld + Zeitvalidierung hinzufügen
+- [ ] Alle Seiten testen

@@ -51,7 +51,9 @@ export default function Hotels() {
     email: '',
     phone: '',
     company: '',
-    message: ''
+    message: '',
+    honeypot: '', // Honeypot-Feld (sollte leer bleiben)
+    formOpenedAt: 0 // Zeitstempel wann Formular geöffnet wurde
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
 
@@ -84,7 +86,7 @@ export default function Hotels() {
       setTimeout(() => {
         setContactFormOpen(false);
         setFormSubmitted(false);
-        setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+        setFormData({ name: '', email: '', phone: '', company: '', message: '', honeypot: '', formOpenedAt: 0 });
       }, 2000);
     },
     onError: (error) => {
@@ -127,7 +129,7 @@ export default function Hotels() {
             <button onClick={() => scrollToSection('contact')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
               Kontakt
             </button>
-            <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('header'); analytics.trackFormOpen(); }} className="btn-primary text-xs">Gespräch anfragen</button>
+            <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); analytics.trackCTAClick('header'); analytics.trackFormOpen(); }} className="btn-primary text-xs">Gespräch anfragen</button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -174,7 +176,7 @@ export default function Hotels() {
               >
                 Kontakt
               </button>
-              <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('mobile_menu'); analytics.trackFormOpen(); }} className="btn-primary text-xs w-full">Gespräch anfragen</button>
+              <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); analytics.trackCTAClick('mobile_menu'); analytics.trackFormOpen(); }} className="btn-primary text-xs w-full">Gespräch anfragen</button>
             </div>
           </div>
         )}
@@ -277,6 +279,20 @@ export default function Hotels() {
                   />
                 </div>
 
+                {/* Honeypot-Feld (unsichtbar für Menschen, sichtbar für Bots) */}
+                <div style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}>
+                  <label htmlFor="website">Website (bitte leer lassen)</label>
+                  <input
+                    type="text"
+                    id="website"
+                    name="honeypot"
+                    value={formData.honeypot}
+                    onChange={handleFormChange}
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                </div>
+
                 <button
                   type="submit"
                   className="w-full btn-primary py-3 font-bold"
@@ -309,7 +325,7 @@ export default function Hotels() {
               Red Teaming for Hotels unterstützt Direktionen dabei, die Krisen- und Notfallfähigkeit real zu testen, physisch, digital und organisatorisch.<br />
               Damit Entscheidungen im Ernstfall nicht improvisiert werden müssen.
             </p>
-            <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('hero'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base mx-auto">
+            <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); analytics.trackCTAClick('hero'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base mx-auto">
               Gespräch anfragen (30 Minuten)
               <ArrowRight size={16} />
             </button>
@@ -610,7 +626,7 @@ export default function Hotels() {
             <p className="text-base md:text-lg text-muted-foreground mb-8">
               Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.
             </p>
-            <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('cta_section'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base mx-auto">
+            <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); analytics.trackCTAClick('cta_section'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base mx-auto">
               Gespräch anfragen
               <ArrowRight size={16} />
             </button>
