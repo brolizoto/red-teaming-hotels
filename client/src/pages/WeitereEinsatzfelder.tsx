@@ -1,14 +1,14 @@
-import { ArrowRight, Menu, X, Shield, Target, Users, Building2, Home as HomeIcon } from "lucide-react";
+import { ArrowRight, Menu, X, Building2, MapPin, Home as HomeIcon, Flame, Shield, Target, Users } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { analytics } from "../lib/analytics";
 
 /**
- * Red Teaming - Generische Dachmarken-Homepage
- * Beschreibt Red Teaming als Methode branchenübergreifend
+ * Weitere Einsatzfelder - Gebündelte Seite für nicht-Hotel Anwendungen
+ * Unternehmen, Standorte, private Liegenschaften, Fire Checks
  */
 
-export default function Home() {
+export default function WeitereEinsatzfelder() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [contactFormOpen, setContactFormOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -264,164 +264,236 @@ export default function Home() {
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         </div>
         <div className="container relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="accent-line mb-8 mx-auto"></div>
-            <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6">
-              Red Teaming
+          <div className="max-w-4xl mx-auto">
+            <div className="accent-line mb-8"></div>
+            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
+              Weitere Einsatzfelder
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-              Realitätsnahe Prüfung von Sicherheit, Prozessen und Krisenbereitschaft
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+              Red Teaming ist branchenübergreifend einsetzbar – überall dort, 
+              wo Sicherheit, Krisenbereitschaft und Prozessqualität entscheidend sind.
             </p>
-            <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Wir testen Organisationen so, wie es ein echtes Ereignis tun würde – 
-              physisch, digital und organisatorisch. Nicht theoretisch, sondern real.
+            <p className="text-lg text-muted-foreground">
+              Neben der spezialisierten Anwendung in der Hotellerie bieten wir Red Teaming 
+              für Unternehmen, Standorte, private Liegenschaften und als Teil physischer 
+              Sicherheitsüberprüfungen an.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button onClick={() => navigate('/ansatz')} className="btn-primary flex items-center gap-2 justify-center">
-                Unseren Ansatz verstehen
-                <ArrowRight size={16} />
-              </button>
-              <button onClick={() => setContactFormOpen(true)} className="btn-secondary">
-                Gespräch anfragen
-              </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Unternehmen */}
+      <section className="container py-16 md:py-24">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div className="md:col-span-2 flex justify-center md:justify-start">
+              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                <Building2 className="text-primary" size={32} />
+              </div>
+            </div>
+            <div className="md:col-span-10">
+              <div className="accent-line mb-6"></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Unternehmen
+              </h2>
+              <p className="text-base text-muted-foreground mb-4">
+                Red Teaming für Unternehmen prüft die Widerstandsfähigkeit von Organisationen 
+                gegenüber physischen, digitalen und organisatorischen Bedrohungen.
+              </p>
+              <p className="text-base text-muted-foreground mb-6">
+                Wir testen Zutrittskontrolle, IT-Sicherheit, Krisenmanagement und 
+                Kommunikationswege unter realen Bedingungen – nicht theoretisch, sondern so, 
+                wie es ein Angreifer oder ein Notfall tun würde.
+              </p>
+              <div className="bg-card border border-border rounded-lg p-6">
+                <h3 className="text-lg font-bold text-foreground mb-4">Typische Prüfbereiche:</h3>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Physische Sicherheit: Zutrittskontrolle, Perimeter, Besuchermanagement</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Digitale Sicherheit: Phishing, Social Engineering, IT-Infrastruktur</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Organisatorische Resilienz: Krisenmanagement, Notfallpläne, Kommunikation</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Prozessqualität: Abhängigkeiten, Entscheidungswege, Dokumentation</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Was ist Red Teaming */}
-      <section className="container py-16 md:py-24">
-        <div className="max-w-4xl mx-auto">
-          <div className="accent-line mb-8"></div>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-            Was ist Red Teaming?
-          </h2>
-          <div className="space-y-6 text-lg text-muted-foreground">
-            <p>
-              Red Teaming ist keine Theorie, kein Audit und kein Zertifikat. 
-              Es ist eine realitätsnahe Prüfung, bei der Organisationen aus der Perspektive 
-              eines echten Ereignisses betrachtet werden.
-            </p>
-            <p>
-              Nicht entlang von Checklisten – sondern entlang von Risiko, Abläufen, 
-              Abhängigkeiten und Entscheidungswegen. Red Teaming verbindet physische, 
-              digitale und organisatorische Aspekte zu einem Gesamtbild.
-            </p>
-            <p className="text-xl font-bold text-foreground">
-              Was passiert wirklich, wenn etwas schiefgeht?
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Warum Red Teaming */}
+      {/* Standorte */}
       <section className="bg-card py-16 md:py-24">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <div className="accent-line mb-8"></div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-              Warum Red Teaming?
-            </h2>
-            <div className="space-y-6 text-lg text-muted-foreground mb-12">
-              <p>
-                In vielen Organisationen existiert Sicherheit auf dem Papier – aber nicht im Ernstfall. 
-                Pläne wurden nie real getestet, Zuständigkeiten sind unklar, Dokumentation ist veraltet.
-              </p>
-              <p>
-                Red Teaming macht diese Lücken sichtbar – bevor sie Schaden verursachen. 
-                Es zeigt, wo Theorie und Praxis auseinanderklaffen, wo Abhängigkeiten kritisch sind 
-                und wo Entscheidungen unter Druck versagen.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-background border border-border rounded-lg p-6">
-                <Shield className="text-primary mb-4" size={32} />
-                <h3 className="text-lg font-bold text-foreground mb-2">Physisch</h3>
-                <p className="text-sm text-muted-foreground">
-                  Zutrittskontrolle, Perimeter, Evakuation, physische Sicherheitskonzepte
-                </p>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+              <div className="md:col-span-2 flex justify-center md:justify-start">
+                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <MapPin className="text-primary" size={32} />
+                </div>
               </div>
-              <div className="bg-background border border-border rounded-lg p-6">
-                <Target className="text-primary mb-4" size={32} />
-                <h3 className="text-lg font-bold text-foreground mb-2">Digital</h3>
-                <p className="text-sm text-muted-foreground">
-                  Phishing, Social Engineering, IT-Infrastruktur, Datensicherheit
+              <div className="md:col-span-10">
+                <div className="accent-line mb-6"></div>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                  Standorte & Betriebsstätten
+                </h2>
+                <p className="text-base text-muted-foreground mb-4">
+                  Für Unternehmen mit mehreren Standorten oder kritischen Betriebsstätten 
+                  prüfen wir standortspezifische Sicherheitskonzepte und deren Umsetzung.
                 </p>
-              </div>
-              <div className="bg-background border border-border rounded-lg p-6">
-                <Users className="text-primary mb-4" size={32} />
-                <h3 className="text-lg font-bold text-foreground mb-2">Organisatorisch</h3>
-                <p className="text-sm text-muted-foreground">
-                  Krisenmanagement, Kommunikation, Entscheidungswege, Prozesse
+                <p className="text-base text-muted-foreground mb-6">
+                  Besonders relevant für Produktionsstandorte, Logistikzentren, 
+                  Rechenzentren oder Standorte mit besonderen Sicherheitsanforderungen.
                 </p>
+                <div className="bg-background border border-border rounded-lg p-6">
+                  <h3 className="text-lg font-bold text-foreground mb-4">Fokus:</h3>
+                  <ul className="space-y-3 text-sm text-muted-foreground">
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>Standortspezifische Risiken und Schwachstellen</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>Koordination zwischen Standorten im Krisenfall</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>Evakuierungskonzepte und Notfallpläne</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>Lokale vs. zentrale Sicherheitsverantwortung</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Einsatzfelder */}
-      <section className="container py-16 md:py-24" id="einsatzfelder">
+      {/* Private Liegenschaften */}
+      <section className="container py-16 md:py-24">
         <div className="max-w-4xl mx-auto">
-          <div className="accent-line mb-8"></div>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-            Einsatzfelder
-          </h2>
-          <p className="text-lg text-muted-foreground mb-12">
-            Red Teaming ist branchenübergreifend einsetzbar – überall dort, 
-            wo Sicherheit, Krisenbereitschaft und Prozessqualität entscheidend sind.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <button
-              onClick={() => navigate('/hotels')}
-              className="bg-card border border-border rounded-lg p-8 text-left hover:border-primary transition-colors group"
-            >
-              <HomeIcon className="text-primary mb-4 group-hover:scale-110 transition-transform" size={40} />
-              <h3 className="text-2xl font-bold text-foreground mb-3">Hotels</h3>
-              <p className="text-muted-foreground mb-4">
-                Spezialisiert auf Hotellerie: Gästesicherheit, Reputation, 
-                Krisenmanagement und operative Kontinuität.
-              </p>
-              <div className="flex items-center gap-2 text-primary font-bold">
-                Mehr erfahren
-                <ArrowRight size={16} />
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div className="md:col-span-2 flex justify-center md:justify-start">
+              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                <HomeIcon className="text-primary" size={32} />
               </div>
-            </button>
-            <button
-              onClick={() => navigate('/weitere-einsatzfelder')}
-              className="bg-card border border-border rounded-lg p-8 text-left hover:border-primary transition-colors group"
-            >
-              <Building2 className="text-primary mb-4 group-hover:scale-110 transition-transform" size={40} />
-              <h3 className="text-2xl font-bold text-foreground mb-3">Weitere Einsatzfelder</h3>
-              <p className="text-muted-foreground mb-4">
-                Unternehmen, Standorte, private Liegenschaften, 
-                Fire Checks und weitere Anwendungsbereiche.
+            </div>
+            <div className="md:col-span-10">
+              <div className="accent-line mb-6"></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Private Liegenschaften
+              </h2>
+              <p className="text-base text-muted-foreground mb-4">
+                Für private Liegenschaften, Wohnanlagen oder Immobilien mit besonderen 
+                Sicherheitsanforderungen bieten wir diskrete Red Teaming Assessments an.
               </p>
-              <div className="flex items-center gap-2 text-primary font-bold">
-                Mehr erfahren
-                <ArrowRight size={16} />
+              <p className="text-base text-muted-foreground mb-6">
+                Wir prüfen physische Sicherheitskonzepte, Zutrittskontrolle, 
+                Überwachungssysteme und Notfallpläne unter realen Bedingungen.
+              </p>
+              <div className="bg-card border border-border rounded-lg p-6">
+                <h3 className="text-lg font-bold text-foreground mb-4">Leistungen:</h3>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Diskrete Prüfung physischer Sicherheitsmaßnahmen</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Bewertung von Zutrittskontrolle und Perimeter</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Überprüfung von Überwachungs- und Alarmsystemen</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Notfallplanung und Evakuierungskonzepte</span>
+                  </li>
+                </ul>
               </div>
-            </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fire Checks */}
+      <section className="bg-card py-16 md:py-24">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+              <div className="md:col-span-2 flex justify-center md:justify-start">
+                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Flame className="text-primary" size={32} />
+                </div>
+              </div>
+              <div className="md:col-span-10">
+                <div className="accent-line mb-6"></div>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                  Fire Checks
+                </h2>
+                <p className="text-base text-muted-foreground mb-4">
+                  Fire Checks sind ein untergeordneter Baustein innerhalb physischer 
+                  Red Teaming Tests – kein eigenständiges Hauptangebot.
+                </p>
+                <p className="text-base text-muted-foreground mb-6">
+                  Im Rahmen von Red Teaming Assessments prüfen wir Brandschutzkonzepte, 
+                  Evakuierungswege, Alarmierungssysteme und die praktische Umsetzung 
+                  von Brandschutzmaßnahmen unter realen Bedingungen.
+                </p>
+                <div className="bg-background border border-border rounded-lg p-6">
+                  <h3 className="text-lg font-bold text-foreground mb-4">Prüfbereiche:</h3>
+                  <ul className="space-y-3 text-sm text-muted-foreground">
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>Evakuierungswege und Notausgänge (Zugänglichkeit, Beschilderung)</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>Alarmierungssysteme und Kommunikation im Brandfall</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>Brandschutzausrüstung (Feuerlöscher, Sprinkler, Rauchmelder)</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>Praktische Umsetzung von Brandschutzplänen</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="bg-card py-16 md:py-24" id="contact">
-        <div className="container">
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="accent-line mb-8 mx-auto"></div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Gespräch anfragen
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Lassen Sie uns unverbindlich besprechen, wie Red Teaming 
-              Ihre Organisation weiterbringen kann.
-            </p>
-            <button onClick={() => setContactFormOpen(true)} className="btn-primary text-lg px-8 py-4">
-              Kontakt aufnehmen
-            </button>
-          </div>
+      <section className="container py-16 md:py-24" id="contact">
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="accent-line mb-8 mx-auto"></div>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Gespräch anfragen
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Lassen Sie uns unverbindlich besprechen, wie Red Teaming 
+            Ihre Organisation weiterbringen kann.
+          </p>
+          <button onClick={() => setContactFormOpen(true)} className="btn-primary text-lg px-8 py-4">
+            Kontakt aufnehmen
+          </button>
         </div>
       </section>
 

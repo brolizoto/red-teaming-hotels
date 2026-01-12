@@ -5,6 +5,9 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import Hotels from "./pages/Hotels";
+import Ansatz from "./pages/Ansatz";
+import WeitereEinsatzfelder from "./pages/WeitereEinsatzfelder";
 import About from "./pages/About";
 import Imprint from "./pages/Imprint";
 import Privacy from "./pages/Privacy";
@@ -15,7 +18,12 @@ function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/hotels"} component={Hotels} />
+      <Route path={"/ansatz"} component={Ansatz} />
+      <Route path={"/weitere-einsatzfelder"} component={WeitereEinsatzfelder} />
       <Route path={"/about"} component={About} />
+      <Route path={"/impressum"} component={Imprint} />
+      <Route path={"/datenschutz"} component={Privacy} />
       <Route path={"/imprint"} component={Imprint} />
       <Route path={"/privacy"} component={Privacy} />
       <Route path={"/admin"} component={AdminDashboard} />

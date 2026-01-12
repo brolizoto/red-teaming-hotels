@@ -158,3 +158,30 @@
 - [x] E-Mail-Adresse in server/email.ts aktualisieren
 - [x] Canonical URL und Open Graph URLs anpassen
 - [x] E-Mail-Adressen in allen Pages aktualisieren (Home, About, Imprint, Privacy)
+
+## Webseiten-Struktur umbauen (Dachmarke vs. Hotel-spezifisch)
+
+### Neue Seiten erstellen
+- [x] Neue generische Home-Seite erstellen (branchenübergreifend, erklärt Red Teaming als Methode)
+- [x] "Ansatz" Seite erstellen (erklärt die Red Teaming Methodik)
+- [x] "Weitere Einsatzfelder" Seite erstellen (bündelt: Unternehmen, Standorte, private Liegenschaften, Fire Checks)
+
+### Bestehende Seiten umwandeln
+- [x] Aktuelle Home.tsx als Hotels.tsx speichern (wird zur Hotel-Landingpage)
+- [x] About.tsx als Ansatz.tsx umbenennen/anpassen
+
+### Navigation anpassen
+- [x] "Services" Menüpunkt entfernen
+- [x] Neue Navigation implementieren: Home | Ansatz | Hotels | Weitere Einsatzfelder | Kontakt
+- [x] Routing in App.tsx anpassen
+
+### Content-Anpassungen
+- [x] Neue Home: Red Teaming allgemein beschreiben (was, warum, Einsatzfelder)
+- [x] Hotels-Seite: Fokus auf Hotellerie behalten (aktuelle Home-Inhalte)
+- [x] Weitere Einsatzfelder: Unternehmen, Standorte, Liegenschaften, Fire Checks bündeln
+- [x] Fire Checks als untergeordneter Baustein positionieren (nicht Hauptangebot)
+
+### Technische Anpassungen
+- [x] Alle internen Links auf neue Struktur anpassen
+- [x] Footer-Navigation aktualisieren
+- [x] Mobile Navigation testen
