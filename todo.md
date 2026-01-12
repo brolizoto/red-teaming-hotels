@@ -277,3 +277,11 @@
 - [x] OG Image (1200x630px) mit Logo und Tagline erstellen
 - [x] Image in public/ Verzeichnis speichern (og-image.png)
 - [x] Meta-Tags in SEO-Komponente aktualisieren (Default: https://redteaming.ch/og-image.png)
+
+## Kontaktformular-Bug beheben
+
+- [x] Problem: Keine Einträge in contact_request Datenbank nach Formular-Absendung
+- [x] Backend API-Route überprüfen (server/routes.ts) - korrekt
+- [x] Frontend Formular-Submission überprüfen - Fehler gefunden
+- [x] Fehler behoben: Home, Ansatz, WeitereEinsatzfelder verwenden jetzt tRPC statt fetch
+- [x] Alle Seiten verwenden jetzt trpc.contact.submit.useMutation

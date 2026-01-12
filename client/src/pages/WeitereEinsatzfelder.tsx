@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useLocation } from "wouter";
 import { analytics } from "../lib/analytics";
 import { SEO } from "@/components/SEO";
+import { trpc } from "../lib/trpc";
+import { toast } from "sonner";
 
 /**
  * Weitere Einsatzfelder - Gebündelte Seite für nicht-Hotel Anwendungen
@@ -45,32 +47,30 @@ export default function WeitereEinsatzfelder() {
     }));
   };
 
-  const handleFormSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setFormSubmitted(true);
-        analytics.trackFormSubmit(true);
-        setTimeout(() => {
-          setContactFormOpen(false);
-          setFormSubmitted(false);
-          setFormData({ name: '', email: '', phone: '', company: '', message: '' });
-        }, 2000);
+  const contactMutation = trpc.contact.submit.useMutation({
+    onSuccess: (data) => {
+      setFormSubmitted(true);
+      analytics.trackFormSubmit(true);
+      if (data.emailSent) {
+        toast.success("Ihre Anfrage wurde erfolgreich versendet!");
       } else {
-        console.error('Form submission failed');
+        toast.warning("Anfrage gespeichert, aber E-Mail konnte nicht versendet werden.");
       }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    }
+      setTimeout(() => {
+        setContactFormOpen(false);
+        setFormSubmitted(false);
+        setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+      }, 2000);
+    },
+    onError: (error) => {
+      analytics.trackFormError(error.message);
+      toast.error("Fehler beim Senden der Anfrage: " + error.message);
+    },
+  });
+
+  const handleFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    contactMutation.mutate(formData);
   };
 
   return (
