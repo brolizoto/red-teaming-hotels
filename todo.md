@@ -271,3 +271,9 @@
 
 - [x] Titel ändern: "Red Teaming Switzerland | Sicherheit realistisch testen"
 - [x] Description ändern: "Red Teaming Switzerland testet Ihre Sicherheit, Prozesse und Krisenbereitschaft realistisch – physisch, digital und organisatorisch. Nicht theoretisch, sondern real."
+
+## Open Graph Image für Social Media erstellen
+
+- [x] OG Image (1200x630px) mit Logo und Tagline erstellen
+- [x] Image in public/ Verzeichnis speichern (og-image.png)
+- [x] Meta-Tags in SEO-Komponente aktualisieren (Default: https://redteaming.ch/og-image.png)

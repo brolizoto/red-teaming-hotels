@@ -13,7 +13,7 @@ export function SEO({
   title, 
   description, 
   canonical, 
-  ogImage = 'https://redteaming.ch/images/og-default.jpg',
+  ogImage = 'https://redteaming.ch/og-image.png',
   keywords,
   schemaData 
 }: SEOProps) {
