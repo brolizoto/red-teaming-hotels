@@ -5,7 +5,7 @@ export default function Privacy() {
       <header className="border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50">
         <div className="container py-4 flex justify-between items-center">
           <a href="/" className="text-primary font-bold text-lg">
-            RED TEAMING <span className="text-sm text-muted-foreground">for Hotels</span>
+            RED TEAMING <span className="text-sm text-muted-foreground">Switzerland</span>
           </a>
           <a href="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
             ← Zurück
@@ -28,7 +28,7 @@ export default function Privacy() {
               <div>
                 <h2 className="text-subheading mb-4">1. Verantwortliche Stelle</h2>
                 <p className="space-y-1">
-                  <div>Red Teaming for Hotels</div>
+                  <div>Red Teaming Switzerland</div>
                   <div>Markwalder Unternehmensgruppe GmbH</div>
                   <div>Weihergasse 16</div>
                   <div>CH-3005 Bern</div>

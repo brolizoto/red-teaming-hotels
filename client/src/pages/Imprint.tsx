@@ -5,7 +5,7 @@ export default function Imprint() {
       <header className="border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50">
         <div className="container py-4 flex justify-between items-center">
           <a href="/" className="text-primary font-bold text-lg">
-            RED TEAMING <span className="text-sm text-muted-foreground">for Hotels</span>
+            RED TEAMING <span className="text-sm text-muted-foreground">Switzerland</span>
           </a>
           <a href="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
             ← Zurück

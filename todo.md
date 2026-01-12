@@ -243,3 +243,8 @@
 - [ ] DNS-Redirect konfigurieren: hotelsecurity.ch → redteaming.ch/hotels (301 Permanent Redirect)
 - [ ] Redirect testen und verifizieren
 - [ ] Google Search Console: Beide Domains hinzufügen
+
+## Datenschutzerklärung aktualisieren
+
+- [x] "Red Teaming for Hotels" durch "Red Teaming Switzerland" ersetzen (Privacy.tsx)
+- [x] Impressum Header aktualisieren (Imprint.tsx)
