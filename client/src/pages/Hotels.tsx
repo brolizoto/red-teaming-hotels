@@ -280,7 +280,7 @@ export default function Hotels() {
               Wenn Vorbereitung über Schaden entscheidet.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Red Teaming for Hotels unterstützt Direktionen dabei, die Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch.<br />
+              Red Teaming for Hotels unterstützt Direktionen dabei, die Krisen- und Notfallfähigkeit real zu testen, physisch, digital und organisatorisch.<br />
               Damit Entscheidungen im Ernstfall nicht improvisiert werden müssen.
             </p>
             <button onClick={() => { setContactFormOpen(true); analytics.trackCTAClick('hero'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base mx-auto">
@@ -306,7 +306,7 @@ export default function Hotels() {
                 Die unbequeme Wahrheit
               </h2>
               <p className="text-base text-muted-foreground mb-6">
-                Hotels scheitern im Ernstfall selten an Technik –
+                Hotels scheitern im Ernstfall selten an Technik,
                 sondern an Führung, Vorbereitung und Realität.
               </p>
               <div className="bg-card border border-border rounded-lg p-6">
@@ -329,7 +329,7 @@ export default function Hotels() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>Entscheidungen sind vorbereitet – oder werden im Ernstfall improvisiert</span>
+                    <span>Entscheidungen sind vorbereitet, oder werden im Ernstfall improvisiert</span>
                   </li>
                 </ul>
               </div>
@@ -438,7 +438,7 @@ export default function Hotels() {
               
               <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
                 <p className="text-base font-bold text-foreground text-center">
-                  Entscheidend ist nicht, ob etwas existiert –
+                  Entscheidend ist nicht, ob etwas existiert,
                   sondern ob es im Ernstfall funktioniert.
                 </p>
               </div>
@@ -485,7 +485,7 @@ export default function Hotels() {
               </ul>
               <p className="text-xs font-bold text-foreground">IDEAL FÜR:</p>
               <p className="text-xs text-muted-foreground">
-                Hotels, die wissen wollen, wo sie stehen – bevor sie vertiefen.
+                Hotels, die wissen wollen, wo sie stehen, bevor sie vertiefen.
               </p>
           </div>
 
@@ -543,7 +543,7 @@ export default function Hotels() {
             {/* Bottom Message */}
             <div className="mt-12 text-center">
               <p className="text-sm md:text-base font-bold text-foreground">
-                Red Teaming schafft Entscheidungsfähigkeit – bevor sie gebraucht wird.
+                Red Teaming schafft Entscheidungsfähigkeit, bevor sie gebraucht wird.
               </p>
             </div>
           </div>
@@ -579,7 +579,7 @@ export default function Hotels() {
               <CheckCircle2 className="text-primary" size={32} />
             </div>
             <p className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-              Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren – nicht erst im Ereignis.
+              Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren, nicht erst im Ereignis.
             </p>
             <p className="text-base md:text-lg text-muted-foreground mb-8">
               Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.

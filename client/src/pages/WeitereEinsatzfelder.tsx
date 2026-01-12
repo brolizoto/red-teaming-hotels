@@ -271,7 +271,7 @@ export default function WeitereEinsatzfelder() {
               Weitere Einsatzfelder
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Red Teaming ist branchenübergreifend einsetzbar – überall dort, 
+              Red Teaming ist branchenübergreifend einsetzbar, überall dort, 
               wo Sicherheit, Krisenbereitschaft und Prozessqualität entscheidend sind.
             </p>
             <p className="text-lg text-muted-foreground">
@@ -303,7 +303,7 @@ export default function WeitereEinsatzfelder() {
               </p>
               <p className="text-base text-muted-foreground mb-6">
                 Wir testen Zutrittskontrolle, IT-Sicherheit, Krisenmanagement und 
-                Kommunikationswege unter realen Bedingungen – nicht theoretisch, sondern so, 
+                Kommunikationswege unter realen Bedingungen, nicht theoretisch, sondern so, 
                 wie es ein Angreifer oder ein Notfall tun würde.
               </p>
               <div className="bg-card border border-border rounded-lg p-6">
@@ -447,7 +447,7 @@ export default function WeitereEinsatzfelder() {
                 </h2>
                 <p className="text-base text-muted-foreground mb-4">
                   Fire Checks sind ein untergeordneter Baustein innerhalb physischer 
-                  Red Teaming Tests – kein eigenständiges Hauptangebot.
+                  Red Teaming Tests, kein eigenständiges Hauptangebot.
                 </p>
                 <p className="text-base text-muted-foreground mb-6">
                   Im Rahmen von Red Teaming Assessments prüfen wir Brandschutzkonzepte, 

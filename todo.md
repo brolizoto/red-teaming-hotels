@@ -206,3 +206,10 @@
 ## Interpunktions-Korrekturen (Gedankenstriche → Kommas)
 
 - [x] Home-Seite: Gedankenstriche durch Kommas ersetzen (5 Stellen)
+
+## Alle Gedankenstriche durch Kommas ersetzen
+
+- [x] Hotels-Seite: Gedankenstriche durch Kommas ersetzen (7 Stellen)
+- [x] Ansatz-Seite: Gedankenstriche durch Kommas ersetzen (7 Stellen)
+- [x] WeitereEinsatzfelder-Seite: Gedankenstriche durch Kommas ersetzen (3 Stellen)
+- [ ] Imprint & Privacy: Gedankenstriche durch Kommas ersetzen (falls vorhanden)

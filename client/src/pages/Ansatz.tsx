@@ -298,13 +298,13 @@ export default function Ansatz() {
               </h2>
               <p className="text-base text-muted-foreground mb-4">
                 Red Teaming ist eine Methode, bei der Organisationen aus der Perspektive 
-                eines echten Ereignisses betrachtet werden. Nicht entlang von Checklisten – 
+                eines echten Ereignisses betrachtet werden. Nicht entlang von Checklisten, 
                 sondern entlang von Risiko, Abläufen, Abhängigkeiten und Entscheidungswegen.
               </p>
               <p className="text-base text-muted-foreground mb-4">
                 Der Begriff stammt aus dem militärischen Kontext: Ein "Red Team" simuliert 
                 gegnerisches Verhalten, um die eigenen Verteidigungslinien zu testen. 
-                Übertragen auf Organisationen bedeutet das: Wir agieren wie ein reales Ereignis – 
+                Übertragen auf Organisationen bedeutet das: Wir agieren wie ein reales Ereignis, 
                 physisch, digital oder organisatorisch.
               </p>
               <p className="text-lg font-bold text-foreground">
@@ -331,7 +331,7 @@ export default function Ansatz() {
                 Warum Red Teaming?
               </h2>
               <p className="text-base text-muted-foreground mb-6">
-                In vielen Organisationen existiert Sicherheit auf dem Papier – aber nicht im Ernstfall. 
+                In vielen Organisationen existiert Sicherheit auf dem Papier, aber nicht im Ernstfall. 
                 Pläne wurden nie real getestet, Zuständigkeiten sind unklar, Dokumentation ist veraltet.
               </p>
               <div className="bg-card border border-border rounded-lg p-6 mb-6">
@@ -360,7 +360,7 @@ export default function Ansatz() {
                 </ul>
               </div>
               <p className="text-lg font-bold text-foreground">
-                Red Teaming macht diese Lücken sichtbar – bevor sie Schaden verursachen.
+                Red Teaming macht diese Lücken sichtbar, bevor sie Schaden verursachen.
               </p>
             </div>
           </div>
@@ -397,7 +397,7 @@ export default function Ansatz() {
                   Zutrittskontrolle, Perimeter, Evakuierung, physische Sicherheitskonzepte
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  Wir prüfen, ob physische Sicherheitsmaßnahmen unter realen Bedingungen funktionieren – 
+                  Wir prüfen, ob physische Sicherheitsmaßnahmen unter realen Bedingungen funktionieren, 
                   nicht nur auf dem Papier.
                 </p>
               </div>
@@ -481,7 +481,7 @@ export default function Ansatz() {
                 <div>
                   <h3 className="text-lg font-bold text-foreground mb-2">Durchführung</h3>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Wir führen das Assessment unter realen Bedingungen durch – 
+                    Wir führen das Assessment unter realen Bedingungen durch, 
                     physisch, digital oder organisatorisch. Dabei simulieren wir realistische Szenarien 
                     und dokumentieren alle Beobachtungen.
                   </p>
@@ -522,7 +522,7 @@ export default function Ansatz() {
                   <h3 className="text-lg font-bold text-foreground mb-2">Reporting & Empfehlungen</h3>
                   <p className="text-sm text-muted-foreground mb-3">
                     Wir liefern einen detaillierten Bericht mit konkreten, umsetzbaren Empfehlungen. 
-                    Keine theoretischen Konzepte – sondern praktische Maßnahmen, 
+                    Keine theoretischen Konzepte, sondern praktische Maßnahmen, 
                     die die Handlungsfähigkeit im Ernstfall verbessern.
                   </p>
                   <p className="text-xs text-muted-foreground">
