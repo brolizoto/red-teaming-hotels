@@ -70,7 +70,7 @@ export async function sendEmailToContact(data: ContactFormData): Promise<boolean
         <body>
           <div class="container">
             <div class="header">
-              <h1>RED TEAMING for Hotels</h1>
+              <h1>RED TEAMING Switzerland</h1>
               <p>Neue Kontaktanfrage</p>
             </div>
             <div class="content">
@@ -112,7 +112,7 @@ export async function sendEmailToContact(data: ContactFormData): Promise<boolean
     `;
 
     const { data: result, error } = await resend.emails.send({
-      from: 'Red Teaming for Hotels <noreply@redteaming.ch>',
+      from: 'Red Teaming Switzerland <noreply@redteaming.ch>',
       to: ['contact@redteaming.ch'],
       subject: `Neue Kontaktanfrage von ${data.name}`,
       html: htmlContent,

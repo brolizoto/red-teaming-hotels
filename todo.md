@@ -322,4 +322,15 @@
 - [x] Hotels-Seite: Honeypot-Feld + Zeitvalidierung hinzufügen
 - [x] Ansatz-Seite: Honeypot-Feld + Zeitvalidierung hinzufügen
 - [x] Weitere Einsatzfelder: Honeypot-Feld + Zeitvalidierung hinzufügen
-- [ ] Alle Seiten testen
+- [x] Alle Seiten testen
+
+## Resend E-Mail-Integration testen
+
+- [x] Vitest-Test für Resend E-Mail-Versand erstellen
+- [x] Test ausführen und Secrets validieren
+- [x] Bei Fehler: Secrets korrigieren lassen
+
+## E-Mail-Template Branding aktualisieren
+
+- [x] E-Mail-Header von "RED TEAMING for Hotels" auf "RED TEAMING Switzerland" ändern
+- [x] Test-E-Mail versenden und verifizieren
