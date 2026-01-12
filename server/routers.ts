@@ -8,6 +8,7 @@ import { createContactRequest, getAllContactRequests, updateContactRequestStatus
 import { sendContactNotification } from "./email";
 import { ENV } from "./_core/env";
 import { verifyTurnstileToken } from "./turnstile";
+import { checkRateLimit, getClientIp } from "./rateLimit";
 
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -33,9 +34,44 @@ export const appRouter = router({
           company: z.string().optional(),
           message: z.string().optional(),
           turnstileToken: z.string().optional(),
+          honeypot: z.string().optional(), // Honeypot-Feld
+          formOpenedAt: z.number().optional(), // Zeitstempel
         })
       )
       .mutation(async ({ input, ctx }) => {
+        // 1. Rate Limiting prüfen
+        const clientIp = getClientIp(ctx.req);
+        const rateLimit = checkRateLimit(clientIp);
+        
+        if (!rateLimit.allowed) {
+          throw new TRPCError({
+            code: "TOO_MANY_REQUESTS",
+            message: `Zu viele Anfragen. Bitte versuchen Sie es in ${rateLimit.retryAfter} Sekunden erneut.`,
+          });
+        }
+
+        // 2. Honeypot-Feld prüfen (sollte leer sein)
+        if (input.honeypot && input.honeypot.trim() !== '') {
+          console.warn(`⚠️  Honeypot triggered from IP ${clientIp}`);
+          throw new TRPCError({
+            code: "BAD_REQUEST",
+            message: "Ungültige Anfrage.",
+          });
+        }
+
+        // 3. Zeitbasierte Validierung (mindestens 3 Sekunden)
+        if (input.formOpenedAt) {
+          const now = Date.now();
+          const timeDiff = now - input.formOpenedAt;
+          
+          if (timeDiff < 3000) {
+            console.warn(`⚠️  Form submitted too fast (${timeDiff}ms) from IP ${clientIp}`);
+            throw new TRPCError({
+              code: "BAD_REQUEST",
+              message: "Bitte nehmen Sie sich etwas mehr Zeit zum Ausfüllen des Formulars.",
+            });
+          }
+        }
         // Verify Turnstile token if provided
         if (input.turnstileToken) {
           const verification = await verifyTurnstileToken(

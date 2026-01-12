@@ -49,7 +49,9 @@ export default function Home() {
     phone: '',
     company: '',
     message: '',
-    turnstileToken: ''
+    turnstileToken: '',
+    honeypot: '', // Honeypot-Feld (sollte leer bleiben)
+    formOpenedAt: 0 // Zeitstempel wann Formular geöffnet wurde
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [turnstileVerified, setTurnstileVerified] = useState(false);
@@ -84,7 +86,7 @@ export default function Home() {
         setContactFormOpen(false);
         setFormSubmitted(false);
         setTurnstileVerified(false);
-        setFormData({ name: '', email: '', phone: '', company: '', message: '', turnstileToken: '' });
+        setFormData({ name: '', email: '', phone: '', company: '', message: '', turnstileToken: '', honeypot: '', formOpenedAt: 0 });
       }, 2000);
     },
     onError: (error) => {
@@ -136,7 +138,7 @@ export default function Home() {
             <button onClick={() => scrollToSection('contact')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
               Kontakt
             </button>
-            <button onClick={() => setContactFormOpen(true)} className="btn-primary text-xs">Gespräch anfragen</button>
+            <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); }} className="btn-primary text-xs">Gespräch anfragen</button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -183,7 +185,7 @@ export default function Home() {
               >
                 Kontakt
               </button>
-              <button onClick={() => setContactFormOpen(true)} className="btn-primary text-xs w-full">Gespräch anfragen</button>
+              <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); }} className="btn-primary text-xs w-full">Gespräch anfragen</button>
             </div>
           </div>
         )}
@@ -286,6 +288,20 @@ export default function Home() {
                   />
                 </div>
 
+                {/* Honeypot-Feld (unsichtbar für Menschen, sichtbar für Bots) */}
+                <div style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}>
+                  <label htmlFor="website">Website (bitte leer lassen)</label>
+                  <input
+                    type="text"
+                    id="website"
+                    name="honeypot"
+                    value={formData.honeypot}
+                    onChange={handleFormChange}
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                </div>
+
                 <TurnstileWidget
                   onVerify={handleTurnstileVerify}
                   onError={() => toast.error("Verifizierung fehlgeschlagen. Bitte versuchen Sie es erneut.")}
@@ -332,7 +348,7 @@ export default function Home() {
                 Unseren Ansatz verstehen
                 <ArrowRight size={16} />
               </button>
-              <button onClick={() => setContactFormOpen(true)} className="btn-secondary">
+              <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); }} className="btn-secondary">
                 Gespräch anfragen
               </button>
             </div>
@@ -470,7 +486,7 @@ export default function Home() {
               Lassen Sie uns unverbindlich besprechen, wie Red Teaming 
               Ihre Organisation weiterbringen kann.
             </p>
-            <button onClick={() => setContactFormOpen(true)} className="btn-primary text-lg px-8 py-4">
+            <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); }} className="btn-primary text-lg px-8 py-4">
               Kontakt aufnehmen
             </button>
           </div>

@@ -293,5 +293,24 @@
 - [x] Backend-Verifizierung implementieren (server/turnstile.ts)
 - [x] tRPC contact.submit Route um Turnstile-Verifizierung erweitern
 - [x] Fehlerbehandlung für fehlgeschlagene Verifizierung
-- [ ] Anleitung für Turnstile-Setup erstellen (TURNSTILE_SETUP.md)
+- [x] Anleitung für Turnstile-Setup erstellen (TURNSTILE_SETUP.md)
 - [ ] Turnstile auf andere Seiten erweitern (Ansatz, Hotels, WeitereEinsatzfelder)
+
+## Erweiterter Bot-Schutz (Rate Limiting + Honeypot)
+
+### Rate Limiting
+- [x] Rate Limiting Middleware implementieren (server/rateLimit.ts)
+- [x] IP-basiertes Tracking (max. 5 Anfragen pro Stunde)
+- [x] Rate Limit in contact.submit Route integrieren
+- [x] Fehlerbehandlung für Rate Limit Überschreitung
+
+### Honeypot-Felder
+- [x] Unsichtbares Honeypot-Feld im Formular hinzufügen (Home-Seite)
+- [x] Backend-Validierung: Anfrage ablehnen wenn Honeypot ausgefüllt
+- [x] Zeitbasierte Validierung: Mindestens 3 Sekunden Formular-Öffnungszeit
+- [x] Zeitstempel setzen beim Öffnen des Formulars
+
+### Testing
+- [ ] Rate Limiting testen (mehrere Anfragen schnell hintereinander)
+- [ ] Honeypot testen (Feld programmatisch ausfüllen)
+- [ ] Zeitvalidierung testen (sofortiges Submit)
