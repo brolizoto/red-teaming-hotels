@@ -319,11 +319,11 @@ export default function Hotels() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="accent-line mb-8 mx-auto" style={{width: '4rem'}}></div>
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Wenn Vorbereitung über Schaden entscheidet.
+              Vorbereitung bestimmt das Schadenausmass.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Red Teaming for Hotels unterstützt Direktionen dabei, die Krisen- und Notfallfähigkeit real zu testen, physisch, digital und organisatorisch.<br />
-              Damit Entscheidungen im Ernstfall nicht improvisiert werden müssen.
+              Red Teaming for Hotels unterstützt Direktionen dabei, die Notfall- und Krisenbereitschaft ihrer Standorte realistisch zu testen - physisch, digital und organisatorisch.<br /><br />
+              Damit Entscheidungen vorbereitet sind – nicht improvisiert.
             </p>
             <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); analytics.trackCTAClick('hero'); analytics.trackFormOpen(); }} className="btn-primary flex items-center gap-2 text-sm md:text-base mx-auto">
               Gespräch anfragen (30 Minuten)
@@ -348,8 +348,7 @@ export default function Hotels() {
                 Die unbequeme Wahrheit
               </h2>
               <p className="text-base text-muted-foreground mb-6">
-                Hotels scheitern im Ernstfall selten an Technik,
-                sondern an Führung, Vorbereitung und Realität.
+                Red Teaming prüft Resilienz eines Hotels dort, wo sie zählt: unter realistischen Bedingungen.
               </p>
               <div className="bg-card border border-border rounded-lg p-6">
                 <ul className="space-y-3 text-sm text-muted-foreground">
@@ -392,7 +391,7 @@ export default function Hotels() {
             <div className="md:col-span-10">
               <div className="accent-line mb-6"></div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Das doppelte Horror-Szenario
+                Das doppelte Schreckensszenario
               </h2>
               <p className="text-base text-muted-foreground mb-8">
                 Was passiert, wenn physische und digitale Ereignisse gleichzeitig eintreten?
@@ -494,9 +493,9 @@ export default function Hotels() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <div className="accent-line mb-8 mx-auto" style={{width: '4rem'}}></div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Unser Ansatz</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Unser Ansatz für Hotels</h2>
             <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-              Zwei Ansätze, je nach Ausgangslage und Zielsetzung
+              Je nach Ausgangslage und Zielsetzung
             </p>
           </div>
         
@@ -585,7 +584,7 @@ export default function Hotels() {
             {/* Bottom Message */}
             <div className="mt-12 text-center">
               <p className="text-sm md:text-base font-bold text-foreground">
-                Red Teaming schafft Entscheidungsfähigkeit, bevor sie gebraucht wird.
+                
               </p>
             </div>
           </div>
@@ -644,7 +643,7 @@ export default function Hotels() {
                 <div className="text-sm text-muted-foreground">for Hotels</div>
               </div>
               <p className="text-xs text-muted-foreground">
-                Hotel Security ist heute ein Führungs- und Entscheidungsthema
+                Verantwortung für Hotelsicherheit ist heute auf Direktionsebene.
               </p>
             </div>
             <div className="flex flex-col md:flex-row gap-12 md:gap-16 md:justify-end">
