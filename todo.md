@@ -360,5 +360,8 @@
 
 ## Layout-Korrektur für Hotels & Weitere Einsatzfelder
 
-- [ ] Hotels-Seite: Original Layout mit Bildern und Grid-Struktur wiederherstellen (mit i18n)
-- [ ] Weitere Einsatzfelder-Seite: Original Layout mit Bildern und Grid-Struktur wiederherstellen (mit i18n)
+HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig, haben aber vereinfachtes Layout ohne originale Bilder/Grid-Strukturen. Original-Layouts sind in Checkpoint 078c1651 gesichert.
+
+- [x] Hotels-Seite: Original Layout mit Bildern und Grid-Struktur wiederherstellen (685 Zeilen, mit i18n) - IN ARBEIT
+- [ ] Weitere Einsatzfelder-Seite: Original Layout mit Bildern und Grid-Struktur wiederherstellen (579 Zeilen, mit i18n)
+- [ ] Manuelle Integration erforderlich: Navigation Component, ContactFormModal Component, t() Aufrufe für alle Texte
