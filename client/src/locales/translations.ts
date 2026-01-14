@@ -90,11 +90,11 @@ export const translations = {
       },
       "phase2": {
         "title": "Durchführung",
-        "desc": "Wir führen das Assessment unter realen Bedingungen durch, physisch, digital oder organisatorisch. Dabei simulieren wir realistische Szenarien und dokumentieren alle Beobachtungen",
+        "desc": "Wir führen das Assessment unter realen Bedingungen durch, physisch, digital oder organisatorisch. Dabei simulieren wir realistische Szenarien und dokumentieren alle Beobachtungen.",
         "details": "Ergebnis: Realitätsnahe Prüfung der Sicherheitskonzepte und Prozesse"
       },
       "phase3": {
-        "title": "Analyse & Reporting",
+        "title": "Analyse & Bewertung",
         "desc": "Wir analysieren die Ergebnisse und bewerten Schwachstellen nach Risiko und Auswirkung. Wo sind kritische Lücken? Welche Abhängigkeiten wurden sichtbar? Was funktioniert bereits gut?",
         "details": "Ergebnis: Klare Priorisierung von Handlungsfeldern"
       },
@@ -106,27 +106,28 @@ export const translations = {
     },
     "comparison": {
       "title": "Red Teaming vs. Audits & Penetration Tests",
+      "subtitle": "Wie unterscheidet sich Red Teaming von klassischen Audits und Penetration Tests?",
       "redTeaming": {
         "title": "Red Teaming",
-        "point1": "Prüft die reale Handlungsfähigkeit im Ereignisfall.",
-        "point2": "Fokus auf Resilienz, nicht auf Compliance.",
-        "point3": "Deckt Lücken in Führung, Prozessen und Technik auf.",
-        "point4": "Verbindet physische, digitale und organisatorische Sicherheit.",
-        "point5": "Liefert Entscheidungsgrundlagen, keine Checklisten."
+        "point1": "Realitätsnahe Simulation von Ereignissen",
+        "point2": "Ganzheitliche Betrachtung (physisch, digital, organisatorisch)",
+        "point3": "Fokus auf Handlungsfähigkeit im Ernstfall",
+        "point4": "Keine Checklisten, sondern szenariobasiert",
+        "point5": "Zeigt, was wirklich passiert"
       },
       "audits": {
         "title": "Audits & Pen Tests",
-        "point1": "Prüfen einzelne Bereiche oder Standards.",
-        "point2": "Fokus auf Compliance und Dokumentation.",
-        "point3": "Liefern oft keine Antwort auf Realitätsfragen.",
-        "point4": "Betrachten Dimensionen isoliert voneinander.",
-        "point5": "Liefern Checklisten, keine Entscheidungsgrundlagen."
+        "point1": "Prüfung entlang von Standards und Checklisten",
+        "point2": "Fokus auf einzelne Bereiche",
+        "point3": "Dokumentation und Compliance-Nachweis",
+        "point4": "Theoretische Bewertung von Massnahmen",
+        "point5": "Zeigt, was dokumentiert ist"
       },
-      "note": "Red Teaming ersetzt keine Audits oder Penetration Tests. Es ergänzt sie durch eine realitätsnahe Perspektive: Was passiert wirklich, wenn Theorie auf Praxis trifft?"
+      "note": "Red Teaming ersetzt keine Audits oder Penetration Tests.\n\nEs ergänzt sie durch eine realitätsnahe Perspektive: Was passiert wirklich, wenn Theorie auf Praxis trifft?"
     },
     "cta": {
       "title": "Gespräch anfragen",
-      "subtitle": "Lassen Sie uns gemeinsam herausfinden, wie Red Teaming Ihre Organisation unterstützen kann.",
+      "subtitle": "Lassen Sie uns unverbindlich besprechen, wie Red Teaming Ihre Organisation weiterbringen kann.",
       "button": "Kontakt aufnehmen"
     }
   },
@@ -237,7 +238,7 @@ export const translations = {
   "otherFields": {
     "hero": {
       "title": "Weitere Einsatzfelder",
-      "subtitle": "Red Teaming ist branchenunabhängig einsetzbar, überall dort, wo Sicherheit, Krisenbereitschaft und Prozessqualität entscheidend sind.",
+      "subtitle": "Red Teaming ist branchenübergreifend einsetzbar, überall dort, wo Sicherheit, Krisenbereitschaft und Prozessqualität entscheidend sind.",
       "description": "Neben der spezialisierten Anwendung in der Hotellerie bieten wir Red Teaming für Unternehmen, Standorte, private Liegenschaften und als Teil physischer Sicherheitsüberprüfungen an."
     },
     "companies": {
@@ -288,18 +289,18 @@ export const translations = {
     },
     "fire": {
       "title": "Brandschutz",
-      "intro": "Red Teaming prüft Brandschutzmaßnahmen aus grundsätzlicher Perspektive. Nicht als Ersatz für behördliche Kontrollen, sondern als Ergänzung zur Vorbereitung.",
-      "note": "Wichtig: Ein Red Teaming Assessment ersetzt keine behördliche Kontrolle, trägt aber zu einer erhöhten Vorbereitung bei.",
+      "intro": "Red Teaming prüft im Rahmen von Assessments Brandschutzmassnahmen aus grundsätzlicher Perspektive, d.h. die Anwendbarkeit von Brandschutzkonzepten, Evakuierungspläne und Alarmierungssysteme.",
+      "note": "Wichtig: Das Assessment ersetzt keine behördliche Kontrolle, trägt aber zu einer erhöhten Vorbereitung bei.",
       "areasTitle": "Prüfbereiche:",
-      "area1": "Anwendbarkeit von Brandschutzkonzepten",
-      "area2": "Evakuierungspläne und Fluchtwege",
-      "area3": "Alarmierungssysteme und Eskalationsprozesse im Brandfall",
+      "area1": "Evakuierungswege und Notausgänge (Zugänglichkeit, Beschilderung)",
+      "area2": "Alarmierungssysteme und Eskalationsprozesse im Brandfall",
+      "area3": "Brandschutzausrüstung (Feuerlöscher, Sprinkler, Rauchmelder)",
       "area4": "Durchsicht und Einschätzung von Brandschutzplänen"
     },
     "cta": {
-      "title": "Interesse an einer Standortbestimmung?",
-      "subtitle": "Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.",
-      "button": "Gespräch anfragen"
+      "title": "Gespräch anfragen",
+      "subtitle": "Lassen Sie uns unverbindlich besprechen, wie Red Teaming Ihre Organisation weiterbringen kann.",
+      "button": "Kontakt aufnehmen"
     }
   },
   "contact": {
@@ -502,11 +503,11 @@ export const translations = {
       },
       "phase2": {
         "title": "Execution",
-        "desc": "We conduct the assessment under real conditions, physically, digitally or organizationally. We simulate realistic scenarios and document all observations",
+        "desc": "We conduct the assessment under real conditions, physically, digitally or organizationally. We simulate realistic scenarios and document all observations.",
         "details": "Result: Realistic testing of security concepts and processes"
       },
       "phase3": {
-        "title": "Analysis & Reporting",
+        "title": "Analysis & Assessment",
         "desc": "We analyze the results and assess vulnerabilities by risk and impact. Where are critical gaps? Which dependencies became visible? What already works well?",
         "details": "Result: Clear prioritization of action areas"
       },
@@ -518,27 +519,28 @@ export const translations = {
     },
     "comparison": {
       "title": "Red Teaming vs. Audits & Penetration Tests",
+      "subtitle": "How does Red Teaming differ from traditional audits and penetration tests?",
       "redTeaming": {
         "title": "Red Teaming",
-        "point1": "Tests real capability to act in an event.",
-        "point2": "Focus on resilience, not compliance.",
-        "point3": "Uncovers gaps in leadership, processes and technology.",
-        "point4": "Combines physical, digital and organizational security.",
-        "point5": "Delivers decision-making foundations, not checklists."
+        "point1": "Realistic simulation of events",
+        "point2": "Holistic view (physical, digital, organizational)",
+        "point3": "Focus on capability to act in an emergency",
+        "point4": "No checklists, but scenario-based",
+        "point5": "Shows what really happens"
       },
       "audits": {
         "title": "Audits & Pen Tests",
-        "point1": "Test individual areas or standards.",
-        "point2": "Focus on compliance and documentation.",
-        "point3": "Often provide no answer to reality questions.",
-        "point4": "Consider dimensions in isolation.",
-        "point5": "Deliver checklists, not decision-making foundations."
+        "point1": "Testing along standards and checklists",
+        "point2": "Focus on individual areas",
+        "point3": "Documentation and compliance proof",
+        "point4": "Theoretical assessment of measures",
+        "point5": "Shows what is documented"
       },
-      "note": "Red Teaming does not replace audits or penetration tests. It complements them with a realistic perspective: What really happens when theory meets practice?"
+      "note": "Red Teaming does not replace audits or penetration tests.\n\nIt complements them with a realistic perspective: What really happens when theory meets practice?"
     },
     "cta": {
       "title": "Request a conversation",
-      "subtitle": "Let's find out together how Red Teaming can support your organization.",
+      "subtitle": "Let's discuss without obligation how Red Teaming can advance your organization.",
       "button": "Get in touch"
     }
   },
@@ -684,18 +686,18 @@ export const translations = {
     },
     "fire": {
       "title": "Fire Protection",
-      "intro": "Red Teaming tests fire protection measures from a fundamental perspective. Not as a replacement for official inspections, but as a supplement to preparation.",
-      "note": "Important: A Red Teaming assessment does not replace an official inspection, but contributes to increased preparation.",
+      "intro": "Red Teaming tests fire protection measures as part of assessments from a fundamental perspective, i.e. the applicability of fire protection concepts, evacuation plans and alarm systems.",
+      "note": "Important: The assessment does not replace an official inspection, but contributes to increased preparation.",
       "areasTitle": "Test areas:",
-      "area1": "Applicability of fire protection concepts",
-      "area2": "Evacuation plans and escape routes",
-      "area3": "Alarm systems and escalation processes in case of fire",
+      "area1": "Evacuation routes and emergency exits (accessibility, signage)",
+      "area2": "Alarm systems and escalation processes in case of fire",
+      "area3": "Fire protection equipment (fire extinguishers, sprinklers, smoke detectors)",
       "area4": "Review and assessment of fire protection plans"
     },
     "cta": {
-      "title": "Interested in an assessment?",
-      "subtitle": "A 30-minute conversation is enough to create clarity.",
-      "button": "Request Call"
+      "title": "Request a conversation",
+      "subtitle": "Let's discuss without obligation how Red Teaming can advance your organization.",
+      "button": "Get in touch"
     }
   },
   "contact": {

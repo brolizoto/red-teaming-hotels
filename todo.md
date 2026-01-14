@@ -437,3 +437,12 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Home-Seite: Drei weiße Boxen (Physisch/Digital/Organisatorisch) mit Live-Website-Text aktualisieren (1:1)
 - [x] Home-Seite: CTA-Sektion mit "Gespräch anfragen" Text von Live-Website ersetzen (1:1)
 - [x] Englische Übersetzungen für alle Home-Seite Änderungen erstellen
+
+- [x] Hotels-Seite: Hero-Beschreibung mit Live-Website-Text aktualisieren (1:1) - Already correct
+- [x] Hotels-Seite: Truth-Sektion mit 5 neuen Punkten von Live-Website aktualisieren (1:1) - Already correct
+- [x] Hotels-Seite: Testing-Sektion "Unser Fokus" Text von Live-Website übernehmen (1:1) - Already correct
+- [x] Hotels-Seite: CTA-Text "nicht erst im Ereignis" hinzufügen (1:1) - Already correct
+- [x] Englische Übersetzungen für alle Hotels-Seite Änderungen erstellen - Already correct- [x] Ansatz-Seite: Alle Texte 1:1 von Live-Website übernehmenund 1:1 übernehmen
+- [ ] Ansatz-Seite: Englische Übersetzungen erstelle- [x] Weitere-Einsatzfelder-Seite: Alle Texte 1:1 von Live-Website übernehmenund 1:1 übernehmen
+- [ ] Weitere Einsatzfelder-Seite: Englische Übersetzungen erstellen
+- [ ] Weitere Einsatzfelder-Seite: Grauen Hintergrund-Rahmen bei Bulletpoints hinzufügen (wie bei Hotels-Seite)
