@@ -366,3 +366,12 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Weitere Einsatzfelder-Seite: Original Layout mit 4 Sektionen und Icons wiederherstellen + i18n
 - [x] Translation-Keys in translations.ts korrigiert (point1-5 statt item1-4, companies/locations/properties hinzugefügt)
 - [ ] Language Switcher testen (DE/EN) - Optional
+
+## Language Switcher Testing & Fixes
+
+- [x] Hotels.tsx: Verwendet bereits vollständig t() calls (keine Änderung nötig)
+- [x] English translations in translations.ts angepasst (item1-4 → point1-5)
+- [x] English translations erweitert: testing, roadmap, footer Sektionen hinzugefügt
+- [x] WeitereEinsatzfelder.tsx: Verwendet bereits vollständig t() calls (keine Änderung nötig)
+- [x] English translations für otherFields erweitert (companies, locations, properties, fire)
+- [x] Language Switcher getestet (DE/EN) auf beiden Seiten - funktioniert perfekt
