@@ -469,16 +469,13 @@ export default function WeitereEinsatzfelder() {
               <div className="md:col-span-10">
                 <div className="accent-line mb-6"></div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                  Fire Checks
+                  Brandschutz
                 </h2>
                 <p className="text-base text-muted-foreground mb-4">
-                  Fire Checks sind ein untergeordneter Baustein innerhalb physischer 
-                  Red Teaming Tests, kein eigenständiges Hauptangebot.
+                  Red Teaming prüft im Rahmen von Assessments Brandschutzmassnahmen aus grundsätzlicher Perspektive, d.h. die Anwendbarkeit von Brandschutzkonzepten, Evakuierungspläne und Alarmierungssysteme.
                 </p>
                 <p className="text-base text-muted-foreground mb-6">
-                  Im Rahmen von Red Teaming Assessments prüfen wir Brandschutzkonzepte, 
-                  Evakuierungswege, Alarmierungssysteme und die praktische Umsetzung 
-                  von Brandschutzmaßnahmen unter realen Bedingungen.
+                  Wichtig: Das Assessment ersetzt keine behördliche Kontrolle, trägt aber zu einer erhöhten Vorbereitung bei.
                 </p>
                 <div className="bg-background border border-border rounded-lg p-6">
                   <h3 className="text-lg font-bold text-foreground mb-4">Prüfbereiche:</h3>
