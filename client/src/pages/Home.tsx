@@ -6,6 +6,8 @@ import { SEO } from "@/components/SEO";
 import { trpc } from "../lib/trpc";
 import { toast } from "sonner";
 import { TurnstileWidget } from "@/components/TurnstileWidget";
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 /**
  * Red Teaming - Generische Dachmarken-Homepage
@@ -13,6 +15,8 @@ import { TurnstileWidget } from "@/components/TurnstileWidget";
  */
 
 export default function Home() {
+  const { t } = useTranslation();
+  
   const seoData = {
     title: "Red Teaming Switzerland | Sicherheit realistisch testen",
     description: "Red Teaming Switzerland testet Ihre Sicherheit, Prozesse und Krisenbereitschaft realistisch – physisch, digital und organisatorisch. Nicht theoretisch, sondern real.",
@@ -103,7 +107,7 @@ export default function Home() {
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!turnstileVerified) {
-      toast.error("Bitte bestätigen Sie, dass Sie kein Roboter sind.");
+      toast.error(t('contact.verifyNotRobot'));
       return;
     }
     contactMutation.mutate(formData);
@@ -124,21 +128,22 @@ export default function Home() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <button onClick={() => navigate('/')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
-              Home
+              {t('nav.home')}
             </button>
             <button onClick={() => navigate('/ansatz')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
-              Ansatz
+              {t('nav.approach')}
             </button>
             <button onClick={() => navigate('/hotels')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
-              Hotels
+              {t('nav.hotels')}
             </button>
             <button onClick={() => navigate('/weitere-einsatzfelder')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
-              Weitere Einsatzfelder
+              {t('nav.otherFields')}
             </button>
             <button onClick={() => scrollToSection('contact')} className="text-sm hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
-              Kontakt
+              {t('nav.contact')}
             </button>
-            <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); }} className="btn-primary text-xs">Gespräch anfragen</button>
+            <LanguageSwitcher />
+            <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); }} className="btn-primary text-xs">{t('nav.requestCall')}</button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -159,33 +164,34 @@ export default function Home() {
                 onClick={() => navigate('/')}
                 className="text-sm hover:text-primary transition-colors py-2 text-left bg-transparent border-none cursor-pointer"
               >
-                Home
+                {t('nav.home')}
               </button>
               <button
                 onClick={() => navigate('/ansatz')}
                 className="text-sm hover:text-primary transition-colors py-2 text-left bg-transparent border-none cursor-pointer"
               >
-                Ansatz
+                {t('nav.approach')}
               </button>
               <button
                 onClick={() => navigate('/hotels')}
                 className="text-sm hover:text-primary transition-colors py-2 text-left bg-transparent border-none cursor-pointer"
               >
-                Hotels
+                {t('nav.hotels')}
               </button>
               <button
                 onClick={() => navigate('/weitere-einsatzfelder')}
                 className="text-sm hover:text-primary transition-colors py-2 text-left bg-transparent border-none cursor-pointer"
               >
-                Weitere Einsatzfelder
+                {t('nav.otherFields')}
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-sm hover:text-primary transition-colors py-2 text-left bg-transparent border-none cursor-pointer"
               >
-                Kontakt
+                {t('nav.contact')}
               </button>
-              <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); }} className="btn-primary text-xs w-full">Gespräch anfragen</button>
+              <LanguageSwitcher />
+              <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); }} className="btn-primary text-xs w-full">{t('nav.requestCall')}</button>
             </div>
           </div>
         )}
@@ -196,7 +202,7 @@ export default function Home() {
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
           <div className="bg-background rounded-lg p-8 max-w-md w-full max-h-[90vh] overflow-y-auto">
             <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-bold text-foreground">Gespräch anfragen</h2>
+              <h2 className="text-2xl font-bold text-foreground">{t('contact.title')}</h2>
               <button
                 onClick={() => setContactFormOpen(false)}
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -208,16 +214,16 @@ export default function Home() {
             {formSubmitted ? (
               <div className="text-center py-8">
                 <div className="text-primary text-4xl mb-4">✓</div>
-                <p className="text-foreground font-bold mb-2">Vielen Dank!</p>
+                <p className="text-foreground font-bold mb-2">{t('contact.thankYou')}</p>
                 <p className="text-sm text-muted-foreground">
-                  Wir werden Sie in Kürze kontaktieren.
+                  {t('contact.thankYouMessage')}
                 </p>
               </div>
             ) : (
               <form onSubmit={handleFormSubmit} className="space-y-4">
                 <div>
                   <label className="block text-sm font-bold text-foreground mb-2">
-                    Name *
+                    {t('contact.name')} *
                   </label>
                   <input
                     type="text"
@@ -226,13 +232,13 @@ export default function Home() {
                     onChange={handleFormChange}
                     required
                     className="w-full px-4 py-2 border border-border rounded bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="Ihr Name"
+                    placeholder={t('contact.namePlaceholder')}
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-bold text-foreground mb-2">
-                    E-Mail *
+                    {t('contact.email')} *
                   </label>
                   <input
                     type="email"
@@ -241,13 +247,13 @@ export default function Home() {
                     onChange={handleFormChange}
                     required
                     className="w-full px-4 py-2 border border-border rounded bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="ihre@email.ch"
+                    placeholder={t('contact.emailPlaceholder')}
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-bold text-foreground mb-2">
-                    Telefon *
+                    {t('contact.phone')} *
                   </label>
                   <input
                     type="tel"
@@ -256,13 +262,13 @@ export default function Home() {
                     onChange={handleFormChange}
                     required
                     className="w-full px-4 py-2 border border-border rounded bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="+41 78 XXX XX XX"
+                    placeholder={t('contact.phonePlaceholder')}
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-bold text-foreground mb-2">
-                    Unternehmen
+                    {t('contact.company')}
                   </label>
                   <input
                     type="text"
@@ -270,13 +276,13 @@ export default function Home() {
                     value={formData.company}
                     onChange={handleFormChange}
                     className="w-full px-4 py-2 border border-border rounded bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="Ihr Unternehmen"
+                    placeholder={t('contact.companyPlaceholder')}
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-bold text-foreground mb-2">
-                    Nachricht
+                    {t('contact.message')}
                   </label>
                   <textarea
                     name="message"
@@ -284,7 +290,7 @@ export default function Home() {
                     onChange={handleFormChange}
                     rows={4}
                     className="w-full px-4 py-2 border border-border rounded bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                    placeholder="Ihre Nachricht..."
+                    placeholder={t('contact.messagePlaceholder')}
                   />
                 </div>
 
@@ -312,11 +318,11 @@ export default function Home() {
                   className="w-full btn-primary py-3 font-bold"
                   disabled={!turnstileVerified}
                 >
-                  Gespräch anfragen
+                  {t('contact.submit')}
                 </button>
 
                 <p className="text-xs text-muted-foreground text-center">
-                  * Erforderliche Felder
+                  {t('contact.required')}
                 </p>
               </form>
             )}
@@ -334,22 +340,21 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="accent-line mb-8 mx-auto"></div>
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6">
-              Red Teaming
+              {t('home.hero.title')}
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-              Realitätsnahe Prüfung von Sicherheit, Prozessen und Krisenbereitschaft
+              {t('home.hero.subtitle')}
             </p>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Wir testen Organisationen so, wie es ein echtes Ereignis tun würde, 
-              physisch, digital und organisatorisch. Nicht theoretisch, sondern real.
+              {t('home.hero.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button onClick={() => navigate('/ansatz')} className="btn-primary flex items-center gap-2 justify-center">
-                Unseren Ansatz verstehen
+                {t('home.hero.ctaApproach')}
                 <ArrowRight size={16} />
               </button>
               <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); }} className="btn-secondary">
-                Gespräch anfragen
+                {t('home.hero.ctaContact')}
               </button>
             </div>
           </div>
@@ -361,17 +366,17 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="accent-line mb-8"></div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-            Was ist Red Teaming?
+            {t('home.whatIsRedTeaming.title')}
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground">
             <p>
-              Red Teaming prüft die Resilienz einer Organisation anhand realistischer Ereignisszenarien. Keine Theorie und kein Audit - aber der direkte Weg zu einer umfassende Sicherheitsstrategie, die individuellen Risiken, Abläufen, Abhängigkeiten und Entscheidungswegen im Alltag entspricht.
+              {t('home.whatIsRedTeaming.description1')}
             </p>
             <p>
-              Red Teaming verbindet physische, digitale und organisatorische Sicherheit zu einem verständlichen Gesamtbild.
+              {t('home.whatIsRedTeaming.description2')}
             </p>
             <p className="text-xl font-bold text-foreground">
-              Wir fragen: Was passiert wirklich, wenn etwas passiert?
+              {t('home.whatIsRedTeaming.question')}
             </p>
           </div>
         </div>
@@ -383,40 +388,33 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="accent-line mb-8"></div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-              Warum Red Teaming?
+              {t('home.whyRedTeaming.title')}
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground mb-12">
               <p>
-                In vielen Organisationen existiert Sicherheit auf dem Papier, aber nicht im Ernstfall. 
-                Pläne wurden nie real getestet, Zuständigkeiten sind unklar, 
-                Dokumentation ist veraltet.
-              </p>
-              <p>
-                Red Teaming macht diese Lücken sichtbar, bevor sie Schaden verursachen. 
-                Es zeigt, wo Theorie und Praxis auseinanderklaffen, welche Abhängigkeiten kritisch sind 
-                und wann Entscheidungen unter Druck versagen.
+                {t('home.whyRedTeaming.description')}
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-background border border-border rounded-lg p-6">
                 <Shield className="text-primary mb-4" size={32} />
-                <h3 className="text-lg font-bold text-foreground mb-2">Physisch</h3>
+                <h3 className="text-lg font-bold text-foreground mb-2">{t('home.whyRedTeaming.physical')}</h3>
                 <p className="text-sm text-muted-foreground">
-                  Zutrittskontrolle, Perimeter, Evakuation, physische Sicherheitskonzepte
+                  {t('home.whyRedTeaming.physicalDesc')}
                 </p>
               </div>
               <div className="bg-background border border-border rounded-lg p-6">
                 <Target className="text-primary mb-4" size={32} />
-                <h3 className="text-lg font-bold text-foreground mb-2">Digital</h3>
+                <h3 className="text-lg font-bold text-foreground mb-2">{t('home.whyRedTeaming.digital')}</h3>
                 <p className="text-sm text-muted-foreground">
-                  Phishing, Social Engineering, IT-Infrastruktur, Datensicherheit
+                  {t('home.whyRedTeaming.digitalDesc')}
                 </p>
               </div>
               <div className="bg-background border border-border rounded-lg p-6">
                 <Users className="text-primary mb-4" size={32} />
-                <h3 className="text-lg font-bold text-foreground mb-2">Organisatorisch</h3>
+                <h3 className="text-lg font-bold text-foreground mb-2">{t('home.whyRedTeaming.organizational')}</h3>
                 <p className="text-sm text-muted-foreground">
-                  Notfall- und Krisenmanagement, Kommunikation, Entscheidungswege, Prozesse
+                  {t('home.whyRedTeaming.organizationalDesc')}
                 </p>
               </div>
             </div>
@@ -476,14 +474,13 @@ export default function Home() {
           <div className="max-w-2xl mx-auto text-center">
             <div className="accent-line mb-8 mx-auto"></div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Gespräch anfragen
+              {t('home.cta.title')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Lassen Sie uns unverbindlich besprechen, wie Red Teaming 
-              Ihre Organisation weiterbringen kann.
+              {t('home.cta.description')}
             </p>
             <button onClick={() => { setContactFormOpen(true); setFormData(prev => ({ ...prev, formOpenedAt: Date.now() })); }} className="btn-primary text-lg px-8 py-4">
-              Kontakt aufnehmen
+              {t('home.cta.button')}
             </button>
           </div>
         </div>
@@ -506,21 +503,21 @@ export default function Home() {
               <h3 className="font-bold text-foreground mb-4">Navigation</h3>
               <div className="flex flex-col gap-2 text-sm text-muted-foreground">
                 <button onClick={() => navigate('/')} className="hover:text-primary transition-colors text-left bg-transparent border-none cursor-pointer">
-                  Home
+                  {t('nav.home')}
                 </button>
                 <button onClick={() => navigate('/ansatz')} className="hover:text-primary transition-colors text-left bg-transparent border-none cursor-pointer">
-                  Ansatz
+                  {t('nav.approach')}
                 </button>
                 <button onClick={() => navigate('/hotels')} className="hover:text-primary transition-colors text-left bg-transparent border-none cursor-pointer">
-                  Hotels
+                  {t('nav.hotels')}
                 </button>
                 <button onClick={() => navigate('/weitere-einsatzfelder')} className="hover:text-primary transition-colors text-left bg-transparent border-none cursor-pointer">
-                  Weitere Einsatzfelder
+                  {t('nav.otherFields')}
                 </button>
               </div>
             </div>
             <div>
-              <h3 className="font-bold text-foreground mb-4">Contact</h3>
+              <h3 className="font-bold text-foreground mb-4">{t('footer.contact')}</h3>
               <p className="text-sm text-muted-foreground">
                 <a href="mailto:contact@redteaming.ch" onClick={() => analytics.trackExternalLink('mailto:contact@redteaming.ch')} className="hover:text-primary transition-colors">
                   contact@redteaming.ch
@@ -529,13 +526,13 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-            <p>© 2026 Red Teaming. All rights reserved.</p>
+            <p>{t('footer.copyright')}</p>
             <div className="flex gap-6">
               <button onClick={() => navigate('/impressum')} className="hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
-                Impressum
+                {t('footer.imprint')}
               </button>
               <button onClick={() => navigate('/datenschutz')} className="hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
-                Datenschutz
+                {t('footer.privacy')}
               </button>
             </div>
           </div>

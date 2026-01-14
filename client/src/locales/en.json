@@ -1,0 +1,277 @@
+{
+  "nav": {
+    "home": "Home",
+    "approach": "Approach",
+    "hotels": "Hotels",
+    "otherFields": "Other Fields",
+    "contact": "Contact",
+    "requestCall": "Request Call"
+  },
+  "home": {
+    "hero": {
+      "title": "Red Teaming",
+      "subtitle": "Realistic Testing of Security, Processes and Crisis Preparedness",
+      "description": "We test organizations the way a real event would – physically, digitally and organizationally. Not theoretically, but for real.",
+      "ctaApproach": "Understand Our Approach",
+      "ctaContact": "Request Call"
+    },
+    "whatIsRedTeaming": {
+      "title": "What is Red Teaming?",
+      "description1": "Red Teaming tests an organization's resilience based on realistic event scenarios. No theory and no audit, but the direct path to a comprehensive security strategy that corresponds to individual risks, processes, dependencies and decision-making paths in everyday life.",
+      "description2": "Red Teaming combines physical, digital and organizational security into an understandable overall picture.",
+      "question": "We ask: What really happens when something happens?"
+    },
+    "whyRedTeaming": {
+      "title": "Why Red Teaming?",
+      "description": "Red Teaming makes these gaps visible before they cause damage. It shows where theory and practice diverge, which dependencies are critical and when decisions fail under pressure.",
+      "physical": "Physical",
+      "physicalDesc": "Access control, perimeter protection, evacuation routes",
+      "digital": "Digital",
+      "digitalDesc": "IT systems, network security, data integrity",
+      "organizational": "Organizational",
+      "organizationalDesc": "Emergency and crisis management, communication, decision-making paths, processes"
+    },
+    "cta": {
+      "title": "If you have to make decisions in an emergency, the basis for decision-making should exist beforehand.",
+      "description": "A 30-minute conversation is enough to create clarity.",
+      "button": "Request Call"
+    }
+  },
+  "ansatz": {
+    "hero": {
+      "title": "Approach",
+      "subtitle": "Red Teaming tests organizations the way a real event would",
+      "description": "Not along checklists, but along risk and dependencies."
+    },
+    "quote": {
+      "text": "Decision-making foundations must be developed before a security event – not during a crisis."
+    },
+    "whatIsRedTeaming": {
+      "title": "What is Red Teaming?",
+      "description": "Red Teaming tests an organization's resilience based on realistic event scenarios. No theory and no audit, but the direct path to a comprehensive security strategy that corresponds to individual risks, processes, dependencies and decision-making paths in everyday life."
+    },
+    "redTeam": {
+      "title": "What is a Red Team?",
+      "description": "The term Red Team comes from the security sector. A Red Team is a group that, on behalf of an organization, conducts an artificially induced security event to uncover vulnerabilities, process gaps and decision-making deficits. The Red Team works closely with management to develop and conduct realistic scenarios."
+    },
+    "threeDimensions": {
+      "title": "Red Teaming along three dimensions",
+      "intro": "Red Teaming combines physical, digital and organizational security into an understandable overall picture. The three dimensions are not considered in isolation, but along three dimensions:",
+      "physical": {
+        "title": "Physical Security",
+        "description": "Testing of access control, perimeter protection, evacuation routes and physical measures under realistic conditions."
+      },
+      "digital": {
+        "title": "Digital Security",
+        "description": "Testing of IT systems, network security, data integrity and digital dependencies under realistic conditions."
+      },
+      "organizational": {
+        "title": "Organizational Security",
+        "description": "Testing of emergency and crisis management, communication, decision-making paths and processes under realistic conditions."
+      }
+    },
+    "process": {
+      "title": "Process of a Red Teaming Assessment",
+      "step1": {
+        "title": "Conversation",
+        "description": "Initial conversation at management level to clarify goals, scope and framework conditions."
+      },
+      "step2": {
+        "title": "Preparation",
+        "description": "Development of realistic scenarios based on individual risks and dependencies."
+      },
+      "step3": {
+        "title": "Test",
+        "description": "Discreet test phase under real conditions – physically, digitally and organizationally."
+      },
+      "step4": {
+        "title": "Reporting",
+        "description": "Management summary with clear priorities and action recommendations."
+      }
+    },
+    "vsOthers": {
+      "title": "Red Teaming vs. Audits & Penetration Tests",
+      "intro": "How does Red Teaming differ from traditional audits and penetration tests?",
+      "audit": {
+        "title": "Audits",
+        "description": "Focus on compliance and checklists. Review of documentation and processes against standards."
+      },
+      "pentest": {
+        "title": "Penetration Tests",
+        "description": "Focus on individual areas. Testing of IT systems and network security."
+      },
+      "redteaming": {
+        "title": "Red Teaming",
+        "description": "Focus on resilience and reality. Testing of physical, digital and organizational dependencies under realistic conditions."
+      }
+    },
+    "whatIsNot": {
+      "title": "What Red Teaming is not",
+      "item1": "Not an audit: Red Teaming does not test against checklists, but against reality.",
+      "item2": "Not a penetration test: Red Teaming does not only test IT systems, but physical, digital and organizational dependencies.",
+      "item3": "Not consulting: Red Teaming does not deliver measures, but decision-making foundations."
+    }
+  },
+  "hotels": {
+    "hero": {
+      "title": "Red Teaming for Hotels",
+      "subtitle": "Preparation determines the extent of damage.",
+      "description": "Red Teaming for hotels tests emergency and crisis preparedness under realistic conditions – physically, digitally and organizationally. Not theoretically, but for real. Preparation instead of improvisation."
+    },
+    "truth": {
+      "title": "The uncomfortable truth",
+      "description": "Security rarely fails due to technology – but due to leadership, preparation and reality. Red Teaming tests the resilience of hotels under realistic conditions – not along checklists, but along risk and dependencies.",
+      "item1": "Plans exist, but are never really tested",
+      "item2": "Responsibilities are unclear",
+      "item3": "Documentation is incomplete",
+      "item4": "IT failures block crisis processes"
+    },
+    "nightmare": {
+      "title": "The nightmare scenario",
+      "description": "What happens when two things occur simultaneously?",
+      "event": "Event",
+      "eventDesc": "Fire, evacuation, special situation",
+      "cyber": "Cyber incident",
+      "cyberDesc": "Phishing, system loss",
+      "consequence": "Consequence:",
+      "item1": "PMS / locking systems restricted",
+      "item2": "Evacuation lists not available",
+      "item3": "Communication blocked",
+      "item4": "Insurer demands evidence"
+    },
+    "approaches": {
+      "title": "Our approach for hotels",
+      "basic": {
+        "title": "Red Teaming Basic",
+        "subtitle": "Establish decision-making capability",
+        "item1": "Structured risk & protection assessment",
+        "item2": "Real tests of selected scenarios",
+        "item3": "Evaluation of emergency & evacuation capability",
+        "item4": "Management summary with clear priorities",
+        "idealFor": "IDEAL FOR:",
+        "idealDesc": "Hotels that want to know where they stand – before they deepen."
+      },
+      "advanced": {
+        "title": "Red Teaming Advanced",
+        "subtitle": "Actively reduce liability & crisis risks",
+        "item1": "Extended scenarios & 24h consideration",
+        "item2": "Integrated physical & digital entry points",
+        "item3": "In-depth analysis of crisis management & governance",
+        "item4": "Detailed decision & action plan",
+        "idealFor": "IDEAL FOR:",
+        "idealDesc": "Recommended for increased visibility, events, complex IT or regulatory pressure."
+      }
+    },
+    "process": {
+      "title": "Collaboration process",
+      "step1": "Conversation",
+      "step1Desc": "30-minute initial conversation at management level",
+      "step2": "Test",
+      "step2Desc": "Discreet test phase under real conditions",
+      "step3": "Summary",
+      "step3Desc": "Management summary & prioritization",
+      "step4": "Decision",
+      "step4Desc": "Decision on next steps"
+    },
+    "cta": {
+      "title": "If you have to make decisions in an emergency, the basis for decision-making should exist beforehand.",
+      "description": "A 30-minute conversation is enough to create clarity.",
+      "button": "Request Call"
+    },
+    "footer": {
+      "tagline": "Responsibility for hotel security is now at management level."
+    }
+  },
+  "otherFields": {
+    "hero": {
+      "title": "Other Fields",
+      "subtitle": "Red Teaming beyond hotels",
+      "description": "Red Teaming is not limited to hotels. The methodology can be applied to all organizations that want to test their resilience under realistic conditions."
+    },
+    "crisis": {
+      "title": "Crisis Management",
+      "description": "Red Teaming tests crisis management structures under realistic conditions. Not along checklists, but along risk and dependencies.",
+      "item1": "Crisis management structures and decision-making paths",
+      "item2": "Communication and escalation processes",
+      "item3": "Availability of information and systems",
+      "item4": "Cooperation between departments and external partners"
+    },
+    "evacuation": {
+      "title": "Evacuations",
+      "description": "Red Teaming tests evacuation capability under realistic conditions. Not along checklists, but along risk and dependencies.",
+      "item1": "Evacuation plans and escape routes",
+      "item2": "Alarm systems and communication",
+      "item3": "Availability of evacuation lists and information",
+      "item4": "Cooperation between departments and external partners"
+    },
+    "fire": {
+      "title": "Fire Protection",
+      "description": "Red Teaming tests fire protection measures from a fundamental perspective. Not as a replacement for official inspections, but as a supplement to preparation.",
+      "note": "Important: A Red Teaming assessment does not replace an official inspection, but contributes to increased preparation.",
+      "item1": "Applicability of fire protection concepts",
+      "item2": "Evacuation plans and escape routes",
+      "item3": "Alarm systems and escalation processes in case of fire",
+      "item4": "Review and assessment of fire protection plans"
+    },
+    "authority": {
+      "title": "Official Inspections",
+      "description": "Red Teaming prepares organizations for official inspections. Not as a replacement, but as preparation.",
+      "item1": "Availability of documentation and evidence",
+      "item2": "Responsibilities and accountabilities",
+      "item3": "Communication and cooperation with authorities",
+      "item4": "Preparation for unannounced inspections"
+    }
+  },
+  "contact": {
+    "title": "Request Call",
+    "thankYou": "Thank you!",
+    "thankYouMessage": "We will contact you shortly.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Hotel / Company",
+    "message": "Message",
+    "submit": "Request Call",
+    "required": "* Required fields",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "phonePlaceholder": "+41 78 XXX XX XX",
+    "companyPlaceholder": "Your hotel",
+    "messagePlaceholder": "Your message...",
+    "verifyNotRobot": "Please verify that you are not a robot."
+  },
+  "footer": {
+    "tagline": "Hotel security is now a management and decision-making issue",
+    "location": "Location",
+    "contact": "Contact",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "copyright": "© 2026 Red Teaming for Hotels. All rights reserved."
+  },
+  "imprint": {
+    "title": "Imprint",
+    "company": "Markwalder Unternehmensgruppe GmbH",
+    "address": "Bernastrasse 8",
+    "city": "CH-3005 Bern",
+    "contact": "Contact",
+    "email": "contact@redteaming.ch",
+    "phone": "+41 78 740 19 29",
+    "register": "Commercial Register",
+    "registerNumber": "CHE-XXX.XXX.XXX"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This privacy policy informs you about the type, scope and purpose of the processing of personal data within our online offering and the associated websites, functions and content.",
+    "responsible": "Responsible",
+    "company": "Markwalder Unternehmensgruppe GmbH",
+    "address": "Bernastrasse 8",
+    "city": "CH-3005 Bern",
+    "email": "contact@redteaming.ch",
+    "dataCollection": "Data Collection",
+    "dataCollectionText": "When you visit our website, information of a general nature is automatically collected. This information (server log files) includes the type of web browser, the operating system used, the domain name of your Internet service provider and similar.",
+    "contactForm": "Contact Form",
+    "contactFormText": "If you send us inquiries via the contact form, your details from the inquiry form including the contact data you provided there will be stored with us for the purpose of processing the inquiry and in case of follow-up questions.",
+    "rights": "Your Rights",
+    "rightsText": "You have the right at any time to information about the data stored about you, their origin and recipients as well as the purpose of data processing. You also have a right to correction, blocking or deletion of this data."
+  }
+}

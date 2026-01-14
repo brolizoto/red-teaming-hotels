@@ -343,3 +343,17 @@
 
 - [x] Schriftart in index.css auf Calibri Light ändern
 - [x] Fallback-Schriften konfigurieren
+
+## Zweisprachige Website (Deutsch/Englisch) implementieren
+
+- [ ] react-i18next installieren und konfigurieren
+- [ ] Übersetzungsdateien für alle Seiten erstellen (de.json, en.json)
+- [ ] Sprachwechsel-Button in Navigation implementieren
+- [ ] Home-Seite auf i18n umstellen
+- [ ] Ansatz-Seite auf i18n umstellen
+- [ ] Hotels-Seite auf i18n umstellen
+- [ ] Weitere Einsatzfelder-Seite auf i18n umstellen
+- [ ] Kontakt-Seite auf i18n umstellen
+- [ ] Impressum und Datenschutz auf i18n umstellen
+- [ ] Sprachwahl im localStorage speichern
+- [ ] Alle Texte testen und validieren
