@@ -30,7 +30,7 @@ export default function Privacy() {
                 <p className="space-y-1">
                   <div>Red Teaming Switzerland</div>
                   <div>Markwalder Unternehmensgruppe GmbH</div>
-                  <div>Weihergasse 16</div>
+                  <div>Bernastrasse 8</div>
                   <div>CH-3005 Bern</div>
                   <div>UID: CHE-313.293.712</div>
                   <div>
