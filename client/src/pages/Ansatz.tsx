@@ -49,7 +49,7 @@ export default function Ansatz() {
             </h1>
             <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6 mb-8">
               <p className="text-xl md:text-2xl font-bold text-foreground italic">
-                {t('approach.hero.quote')}
+                {t('approach.quote.text')}
               </p>
             </div>
 
@@ -69,13 +69,13 @@ export default function Ansatz() {
             <div className="md:col-span-10">
               <div className="accent-line mb-6"></div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                {t('approach.whatIs.title')}
+                {t('approach.whatIsRedTeaming.title')}
               </h2>
               <p className="text-base text-muted-foreground mb-4">
-                {t('approach.whatIs.description1')}
+                {t('approach.whatIsRedTeaming.description')}
               </p>
               <p className="text-base text-muted-foreground mb-4">
-                {t('approach.whatIs.description2')}
+                {t('approach.redTeam.description')}
               </p>
 
             </div>
@@ -95,38 +95,38 @@ export default function Ansatz() {
             <div className="md:col-span-10">
               <div className="accent-line mb-6"></div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                {t('approach.why.title')}
+                {t('approach.whatIsNot.title')}
               </h2>
               <p className="text-base text-muted-foreground mb-6">
-                {t('approach.why.description')}
+                {t('approach.whatIsNot.item1')}
               </p>
               <div className="bg-card border border-border rounded-lg p-6 mb-6">
-                <h3 className="text-lg font-bold text-foreground mb-4">{t('approach.why.gapsTitle')}</h3>
+                <h3 className="text-lg font-bold text-foreground mb-4">{t('approach.whatIsNot.title')}</h3>
                 <ul className="space-y-3 text-sm text-muted-foreground">
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.why.gap1')}</span>
+                    <span>{t('approach.whatIsNot.item1')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.why.gap2')}</span>
+                    <span>{t('approach.whatIsNot.item2')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.why.gap3')}</span>
+                    <span>{t('approach.whatIsNot.item3')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.why.gap4')}</span>
+                    <span>{t('approach.whatIsNot.item1')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.why.gap5')}</span>
+                    <span>{t('approach.whatIsNot.item2')}</span>
                   </li>
                 </ul>
               </div>
               <p className="text-lg font-bold text-foreground">
-                {t('approach.why.conclusion')}
+                {t('approach.whatIsNot.item3')}
               </p>
             </div>
           </div>
@@ -146,10 +146,10 @@ export default function Ansatz() {
               <div className="md:col-span-10">
                 <div className="accent-line mb-6"></div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                  {t('approach.dimensions.title')}
+                  {t('approach.threeDimensions.title')}
                 </h2>
                 <p className="text-base text-muted-foreground mb-6">
-                  {t('approach.dimensions.description')}
+                  {t('approach.threeDimensions.intro')}
                 </p>
               </div>
             </div>
@@ -157,34 +157,34 @@ export default function Ansatz() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-background border border-border rounded-lg p-6">
                 <Shield className="text-primary mb-4" size={32} />
-                <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.dimensions.physical')}</h3>
+                <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.threeDimensions.physical.title')}</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  {t('approach.dimensions.physicalDesc')}
+                  {t('approach.threeDimensions.physical.description')}
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  {t('approach.dimensions.physicalDetail')}
+                  {t('approach.threeDimensions.physical.description')}
                 </p>
               </div>
 
               <div className="bg-background border border-border rounded-lg p-6">
                 <Target className="text-primary mb-4" size={32} />
-                <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.dimensions.digital')}</h3>
+                <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.threeDimensions.digital.title')}</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  {t('approach.dimensions.digitalDesc')}
+                  {t('approach.threeDimensions.digital.description')}
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  {t('approach.dimensions.digitalDetail')}
+                  {t('approach.threeDimensions.digital.description')}
                 </p>
               </div>
 
               <div className="bg-background border border-border rounded-lg p-6">
                 <Users className="text-primary mb-4" size={32} />
-                <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.dimensions.organizational')}</h3>
+                <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.threeDimensions.organizational.title')}</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  {t('approach.dimensions.organizationalDesc')}
+                  {t('approach.threeDimensions.organizational.description')}
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  {t('approach.dimensions.organizationalDetail')}
+                  {t('approach.threeDimensions.organizational.description')}
                 </p>
               </div>
             </div>
@@ -207,7 +207,7 @@ export default function Ansatz() {
                 {t('approach.process.title')}
               </h2>
               <p className="text-base text-muted-foreground mb-6">
-                {t('approach.process.description')}
+                {t('approach.process.title')}
               </p>
             </div>
           </div>
@@ -220,12 +220,12 @@ export default function Ansatz() {
                   <span className="text-primary font-bold">1</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">{t('approach.process.phase1Title')}</h3>
+                  <h3 className="text-lg font-bold text-foreground mb-2">{t('approach.process.step1.title')}</h3>
                   <p className="text-sm text-muted-foreground mb-3">
-                    {t('approach.process.phase1Desc')}
+                    {t('approach.process.step1.description')}
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    {t('approach.process.phase1Result')}
+                    {t('approach.process.step1.description')}
                   </p>
                 </div>
               </div>
@@ -238,12 +238,12 @@ export default function Ansatz() {
                   <span className="text-primary font-bold">2</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">{t('approach.process.phase2Title')}</h3>
+                  <h3 className="text-lg font-bold text-foreground mb-2">{t('approach.process.step2.title')}</h3>
                   <p className="text-sm text-muted-foreground mb-3">
-                    {t('approach.process.phase2Desc')}
+                    {t('approach.process.step2.description')}
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    {t('approach.process.phase2Result')}
+                    {t('approach.process.step2.description')}
                   </p>
                 </div>
               </div>
@@ -256,12 +256,12 @@ export default function Ansatz() {
                   <span className="text-primary font-bold">3</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">{t('approach.process.phase3Title')}</h3>
+                  <h3 className="text-lg font-bold text-foreground mb-2">{t('approach.process.step3.title')}</h3>
                   <p className="text-sm text-muted-foreground mb-3">
-                    {t('approach.process.phase3Desc')}
+                    {t('approach.process.step3.description')}
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    {t('approach.process.phase3Result')}
+                    {t('approach.process.step3.description')}
                   </p>
                 </div>
               </div>
@@ -274,12 +274,12 @@ export default function Ansatz() {
                   <span className="text-primary font-bold">4</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">{t('approach.process.phase4Title')}</h3>
+                  <h3 className="text-lg font-bold text-foreground mb-2">{t('approach.process.step4.title')}</h3>
                   <p className="text-sm text-muted-foreground mb-3">
-                    {t('approach.process.phase4Desc')}
+                    {t('approach.process.step4.description')}
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    {t('approach.process.phase4Result')}
+                    {t('approach.process.step4.description')}
                   </p>
                 </div>
               </div>
@@ -294,38 +294,38 @@ export default function Ansatz() {
           <div className="max-w-4xl mx-auto">
             <div className="accent-line mb-8"></div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              {t('approach.comparison.title')}
+              {t('approach.vsOthers.title')}
             </h2>
             <p className="text-base text-muted-foreground mb-8">
-              {t('approach.comparison.description')}
+              {t('approach.vsOthers.intro')}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-background border border-border rounded-lg p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <CheckCircle2 className="text-primary" size={24} />
-                  <h3 className="text-lg font-bold text-foreground">{t('approach.comparison.redTeaming')}</h3>
+                  <h3 className="text-lg font-bold text-foreground">{t('approach.vsOthers.redteaming.title')}</h3>
                 </div>
                 <ul className="space-y-3 text-sm text-muted-foreground">
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.rt1')}</span>
+                    <span>{t('approach.vsOthers.redteaming.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.rt2')}</span>
+                    <span>{t('approach.vsOthers.redteaming.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.rt3')}</span>
+                    <span>{t('approach.vsOthers.redteaming.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.rt4')}</span>
+                    <span>{t('approach.vsOthers.redteaming.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.rt5')}</span>
+                    <span>{t('approach.vsOthers.redteaming.description')}</span>
                   </li>
                 </ul>
               </div>
@@ -333,28 +333,28 @@ export default function Ansatz() {
               <div className="bg-background border border-border rounded-lg p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <AlertTriangle className="text-muted-foreground" size={24} />
-                  <h3 className="text-lg font-bold text-foreground">{t('approach.comparison.audits')}</h3>
+                  <h3 className="text-lg font-bold text-foreground">{t('approach.vsOthers.audit.title')}</h3>
                 </div>
                 <ul className="space-y-3 text-sm text-muted-foreground">
                   <li className="flex gap-3">
                     <span className="text-muted-foreground font-bold">•</span>
-                    <span>{t('approach.comparison.audit1')}</span>
+                    <span>{t('approach.vsOthers.audit.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-muted-foreground font-bold">•</span>
-                    <span>{t('approach.comparison.audit2')}</span>
+                    <span>{t('approach.vsOthers.audit.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-muted-foreground font-bold">•</span>
-                    <span>{t('approach.comparison.audit3')}</span>
+                    <span>{t('approach.vsOthers.audit.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-muted-foreground font-bold">•</span>
-                    <span>{t('approach.comparison.audit4')}</span>
+                    <span>{t('approach.vsOthers.audit.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-muted-foreground font-bold">•</span>
-                    <span>{t('approach.comparison.audit5')}</span>
+                    <span>{t('approach.vsOthers.audit.description')}</span>
                   </li>
                 </ul>
               </div>
@@ -362,10 +362,10 @@ export default function Ansatz() {
 
             <div className="mt-8 bg-primary/5 border border-primary/20 rounded-lg p-6">
               <p className="text-base text-foreground font-bold mb-2">
-                {t('approach.comparison.note')}
+                {t('approach.vsOthers.intro')}
               </p>
               <p className="text-sm text-muted-foreground">
-                {t('approach.comparison.noteDetail')}
+                {t('approach.vsOthers.intro')}
               </p>
             </div>
           </div>
@@ -377,13 +377,13 @@ export default function Ansatz() {
         <div className="max-w-2xl mx-auto text-center">
           <div className="accent-line mb-8 mx-auto"></div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            {t('approach.cta.title')}
+            {t('approach.quote.text')}
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            {t('approach.cta.description')}
+            {t('approach.hero.subtitle')}
           </p>
           <button onClick={() => setContactFormOpen(true)} className="btn-primary text-lg px-8 py-4">
-            {t('approach.cta.button')}
+            {t('nav.requestCall')}
           </button>
         </div>
       </section>
