@@ -133,21 +133,21 @@ export const translations = {
     "hero": {
       "title": "Red Teaming für Hotels",
       "subtitle": "Vorbereitung bestimmt das Schadenausmass.",
-      "description": "Red Teaming for Hotels unterstützt Direktionen dabei, die Notfall- und Krisenbereitschaft ihrer Standorte realistisch zu testen - physisch, digital und organisatorisch. Damit Entscheidungen vorbereitet sind – nicht improvisiert.",
+      "description": "Red Teaming für Hotels unterstützt Direktionen dabei, Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch.",
       "cta": "Gespräch anfragen"
     },
     "truth": {
       "title": "Die unbequeme Wahrheit",
-      "intro": "Sicherheit scheitert selten an Technik – sondern an Führung, Vorbereitung und Realität.",
-      "point1": "Pläne existieren, werden aber nie real getestet",
-      "point2": "Zuständigkeiten sind unklar",
-      "point3": "Dokumentation ist unvollständig",
-      "point4": "IT-Ausfälle blockieren Krisenabläufe",
-      "point5": "Entscheidungen werden im Ernstfall improvisiert"
+      "intro": "Bei Entscheidungen unter Stress zählt nur, was vorher geprüft wurde. Nicht, was auf dem Papier steht.",
+      "point1": "Pläne existieren, wurden aber nie real getestet",
+      "point2": "Zuständigkeiten sind unklar oder überschneiden sich",
+      "point3": "Dokumentation ist unvollständig oder nicht zugänglich",
+      "point4": "Abhängigkeiten zwischen Systemen sind nicht bekannt",
+      "point5": "Entscheidungswege versagen unter Druck"
     },
     "scenario": {
       "title": "Das doppelte Schreckensszenario",
-      "question": "Was passiert, wenn zwei Dinge gleichzeitig eintreten?",
+      "question": "Was passiert, wenn zwei Dinge gleichzeitig eintreten und voneinander abhängen?",
       "event": {
         "title": "Ereignis",
         "description": "Brand, Evakuation, Sonderlage"
@@ -166,12 +166,17 @@ export const translations = {
     },
     "testing": {
       "title": "Was wir real prüfen",
-      "intro": "Wir prüfen Hotels so, wie es ein reales Ereignis tun würde. Nicht theoretisch. Nicht zertifikatsgetrieben.",
-      "focus": "Unser Fokus liegt auf den Punkten, die im Ernstfall Entscheidungen verzögern oder verunmöglichen.",
-      "area1": "Physische Sicherheit & Evakuationsfähigkeit",
-      "area2": "Cyber-Resilienz & Phishing-Szenarien",
-      "area3": "Entscheidungswege & Führungsfähigkeit",
-      "area4": "Kritische Abhängigkeiten (IT, Technik, Personal)",
+      "intro": "Wir testen nicht Theorie, sondern die tatsächliche Reaktionsfähigkeit. Nicht simuliert, sondern im laufenden Betrieb. Nicht isoliert, sondern vernetzt.",
+      "focus": "Sicherheit ist keine Checkliste – sie zeigt sich erst, wenn sie gebraucht wird.",
+      "physicalTitle": "Physische Tests (Vor Ort & Evakuierung)",
+      "physical1": "Zutrittskontrolle & Perimeterschutz",
+      "physical2": "Evakuierungswege & Notfallpläne",
+      "digitalTitle": "Digitale Tests (Phishing & IT-Resilienz)",
+      "digital1": "Phishing-Resilienz",
+      "digital2": "IT-Ausfallsicherheit",
+      "organizationalTitle": "Organisatorische Tests (Krisenmanagement)",
+      "organizational1": "Krisenmanagement & Kommunikation",
+      "organizational2": "Entscheidungsprozesse",
       "vennAlt": "Ganzheitliche Hotelsicherheit entsteht in den Schnittstellen: Physische Sicherheit, Digitale Sicherheit und Organisation & Führung",
       "quote": "Entscheidend ist nicht, ob etwas existiert, sondern ob es im Ernstfall funktioniert."
     },
@@ -544,21 +549,21 @@ export const translations = {
     "hero": {
       "title": "Red Teaming for Hotels",
       "subtitle": "Preparation determines the extent of damage.",
-      "description": "Red Teaming for hotels tests emergency and crisis preparedness under realistic conditions – physically, digitally and organizationally. Not theoretically, but for real. Preparation instead of improvisation.",
+      "description": "Red Teaming for hotels supports management in testing crisis and emergency capabilities in real conditions – physically, digitally and organizationally.",
       "cta": "Request Call"
     },
     "truth": {
       "title": "The uncomfortable truth",
-      "intro": "Security rarely fails due to technology – but due to leadership, preparation and reality.",
-      "point1": "Plans exist, but are never really tested",
-      "point2": "Responsibilities are unclear",
-      "point3": "Documentation is incomplete",
-      "point4": "IT failures block crisis processes",
-      "point5": "Decisions are improvised in emergencies"
+      "intro": "In decisions under stress, only what has been tested beforehand counts. Not what's written on paper.",
+      "point1": "Plans exist, but have never been tested in reality",
+      "point2": "Responsibilities are unclear or overlap",
+      "point3": "Documentation is incomplete or inaccessible",
+      "point4": "Dependencies between systems are unknown",
+      "point5": "Decision-making paths fail under pressure"
     },
     "scenario": {
       "title": "The nightmare scenario",
-      "question": "What happens when two things occur simultaneously?",
+      "question": "What happens when two things occur simultaneously and depend on each other?",
       "event": {
         "title": "Event",
         "description": "Fire, evacuation, special situation"
@@ -577,12 +582,17 @@ export const translations = {
     },
     "testing": {
       "title": "What we really test",
-      "intro": "We test hotels the way a real event would. Not theoretically. Not certificate-driven.",
-      "focus": "Our focus is on the points that delay or prevent decisions in an emergency.",
-      "area1": "Physical security & evacuation capability",
-      "area2": "Cyber resilience & phishing scenarios",
-      "area3": "Decision-making paths & leadership capability",
-      "area4": "Critical dependencies (IT, technology, personnel)",
+      "intro": "We don't test theory, but actual response capability. Not simulated, but during operations. Not isolated, but interconnected.",
+      "focus": "Security is not a checklist – it only shows itself when it's needed.",
+      "physicalTitle": "Physical Tests (On-site & Evacuation)",
+      "physical1": "Access control & perimeter protection",
+      "physical2": "Evacuation routes & emergency plans",
+      "digitalTitle": "Digital Tests (Phishing & IT Resilience)",
+      "digital1": "Phishing resilience",
+      "digital2": "IT failure safety",
+      "organizationalTitle": "Organizational Tests (Crisis Management)",
+      "organizational1": "Crisis management & communication",
+      "organizational2": "Decision-making processes",
       "vennAlt": "Comprehensive hotel security emerges at the intersections: Physical Security, Digital Security and Organization & Leadership",
       "quote": "What matters is not whether something exists, but whether it works in an emergency."
     },

@@ -422,3 +422,11 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [ ] Layout-Struktur exakt nachbauen: Hero mit Zitat, 7 Sektionen, Icons, Cards
 - [ ] Ansatz translations in translations.ts aktualisieren
 - [ ] Ansatz-Seite testen (DE/EN)
+
+## Hotels-Seite Original-Texte übernehmen (Screenshot 19:50)
+
+- [ ] Deutsche Hotels-Translations aus Screenshot extrahieren (alle Sektionen außer blaue Bilder)
+- [ ] Hotels translations in translations.ts aktualisieren (hero, truth, scenario, testing, approach, roadmap, process, cta)
+- [ ] English Hotels-Translations entsprechend anpassen
+- [ ] Hotels-Seite in beiden Sprachen testen (DE/EN)
+- [ ] Checkpoint erstellen
