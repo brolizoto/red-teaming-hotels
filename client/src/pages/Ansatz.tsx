@@ -301,11 +301,7 @@ export default function Ansatz() {
                 "Entscheidungsgrundlagen müssen vor einem Sicherheitsereignis erarbeitet sein – nicht erst im Krisenfall."
               </p>
             </div>
-            <p className="text-lg md:text-xl text-muted-foreground">
-              Red Teaming ist keine Theorie, kein Audit und kein Zertifikat. 
-              Es ist eine realitätsnahe Prüfung, die zeigt, was wirklich passiert, 
-              wenn etwas schiefgeht.
-            </p>
+
           </div>
         </div>
       </section>
@@ -325,20 +321,12 @@ export default function Ansatz() {
                 Was ist Red Teaming?
               </h2>
               <p className="text-base text-muted-foreground mb-4">
-                Red Teaming ist eine Methode, bei der Organisationen aus der Perspektive 
-                eines echten Ereignisses betrachtet werden. Nicht entlang von Checklisten, 
-                sondern entlang von Risiko, Abläufen, Abhängigkeiten und Entscheidungswegen.
+                Red Teaming prüft die Resilienz einer Organisation anhand realistischer Ereignisszenarien. Keine Theorie und kein Audit - aber der direkte Weg zu einer umfassende Sicherheitsstrategie, die individuellen Risiken, Abläufen, Abhängigkeiten und Entscheidungswegen im Alltag entspricht.
               </p>
               <p className="text-base text-muted-foreground mb-4">
-                Der Begriff stammt aus dem militärischen Kontext: Ein "Red Team" simuliert 
-                gegnerisches Verhalten, um die eigenen Verteidigungslinien zu testen. 
-                Übertragen auf Organisationen bedeutet das: Wir agieren wie ein reales Ereignis, 
-                physisch, digital oder organisatorisch.
+                Im Sicherheitssektor simuliert "Red Team" ein gegnerisches Verhalten, um die eigene Abwehr zu testen. Übertragen auf Organisationen bedeutet das: In Absprache mit der Direktion evaluieren wir die Reaktion auf ein künstlich herbeigeführtes Sicherheitsereignis - physisch, digital und organisatorisch, um ein umfassendes und massgeschneidertes Sicherheitskonzept zu ermöglichen.
               </p>
-              <p className="text-lg font-bold text-foreground">
-                Red Teaming verbindet physische, digitale und organisatorische Aspekte 
-                zu einem Gesamtbild.
-              </p>
+
             </div>
           </div>
         </div>
