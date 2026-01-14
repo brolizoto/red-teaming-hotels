@@ -456,7 +456,14 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 
 - [x] Hotels-Seite: Englisches Venn-Diagramm nach "What we really test" Sektion einfügen
 
-- [ ] CTA-Bereich: Layout auf allen Seiten vereinheitlichen (Home-Seite als Vorlage)
-- [ ] Hotels-Seite: CTA-Layout an Home-Seite anpassen
-- [ ] Ansatz-Seite: CTA-Layout überprüfen und ggf. anpassen
-- [ ] Weitere-Einsatzfelder-Seite: CTA-Layout überprüfen und ggf. anpassen
+- [x] CTA-Bereich: Layout auf allen Seiten vereinheitlichen (Home-Seite als Vorlage)
+- [x] Hotels-Seite: CTA-Layout an Home-Seite anpassen
+- [x] Ansatz-Seite: CTA-Layout überprüfen und ggf. anpassen
+- [x] Weitere-Einsatzfelder-Seite: CTA-Layout überprüfen und ggf. anpassen
+
+## Weitere Einsatzfelder Seite Layout überarbeiten
+
+- [x] Layout-Probleme analysieren (Übergang zum CTA-Bereich)
+- [x] Graue Hintergründe von Standorte und Brandschutz Sektionen entfernt (folgt Hotels-Seite Muster)
+- [x] Visuelle Hierarchie und Konsistenz verbessert (weiße Sektionen + graue Cards für Bulletpoints)
+- [x] Gesamte Seite auf harmonisches Layout überprüft (DE + EN)

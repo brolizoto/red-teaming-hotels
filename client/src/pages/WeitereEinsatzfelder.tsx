@@ -101,8 +101,7 @@ export default function WeitereEinsatzfelder() {
         </section>
 
         {/* Standorte */}
-        <section className="bg-card py-16 md:py-24">
-          <div className="container">
+        <section className="container py-16 md:py-24">
             <div className="max-w-4xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
                 <div className="md:col-span-2 flex justify-center md:justify-start">
@@ -145,7 +144,6 @@ export default function WeitereEinsatzfelder() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Private Liegenschaften */}
@@ -195,8 +193,7 @@ export default function WeitereEinsatzfelder() {
         </section>
 
         {/* Brandschutz */}
-        <section className="bg-card py-16 md:py-24">
-          <div className="container">
+        <section className="container py-16 md:py-24">
             <div className="max-w-4xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
                 <div className="md:col-span-2 flex justify-center md:justify-start">
@@ -239,7 +236,6 @@ export default function WeitereEinsatzfelder() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Contact Section */}
