@@ -25,18 +25,19 @@ export const translations = {
     },
     "whyRedTeaming": {
       "title": "Warum Red Teaming?",
-      "description": "Red Teaming macht diese Lücken sichtbar, bevor sie Schaden verursachen. Es zeigt, wo Theorie und Praxis auseinanderklaffen, welche Abhängigkeiten kritisch sind und wann Entscheidungen unter Druck versagen.",
+      "paragraph1": "In vielen Organisationen existiert Sicherheit auf dem Papier, aber nicht im Ernstfall. Pläne wurden nie real getestet, Zuständigkeiten sind unklar, Dokumentation ist veraltet.",
+      "paragraph2": "Red Teaming macht diese Lücken sichtbar, bevor sie Schaden verursachen. Es zeigt, wo Theorie und Praxis auseinanderklaffen, welche Abhängigkeiten kritisch sind und wann Entscheidungen unter Druck versagen.",
       "physical": "Physisch",
-      "physicalDesc": "Zutrittskontrolle, Perimeterschutz, Evakuierungswege",
+      "physicalDesc": "Zutrittskontrolle, Perimeter, Evakuation, physische Sicherheitskonzepte",
       "digital": "Digital",
-      "digitalDesc": "IT-Systeme, Netzwerksicherheit, Datenintegrität",
+      "digitalDesc": "Phishing, Social Engineering, IT-Infrastruktur, Datensicherheit",
       "organizational": "Organisatorisch",
       "organizationalDesc": "Notfall- und Krisenmanagement, Kommunikation, Entscheidungswege, Prozesse"
     },
     "cta": {
-      "title": "Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren.",
-      "description": "Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.",
-      "button": "Gespräch anfragen"
+      "title": "Gespräch anfragen",
+      "description": "Lassen Sie uns unverbindlich besprechen, wie Red Teaming Ihre Organisation weiterbringen kann.",
+      "button": "Kontakt aufnehmen"
     }
   },
   "approach": {
@@ -436,18 +437,19 @@ export const translations = {
     },
     "whyRedTeaming": {
       "title": "Why Red Teaming?",
-      "description": "Red Teaming makes these gaps visible before they cause damage. It shows where theory and practice diverge, which dependencies are critical and when decisions fail under pressure.",
+      "paragraph1": "In many organizations, security exists on paper but not in an emergency. Plans have never been tested in reality, responsibilities are unclear, documentation is outdated.",
+      "paragraph2": "Red Teaming makes these gaps visible before they cause damage. It shows where theory and practice diverge, which dependencies are critical and when decisions fail under pressure.",
       "physical": "Physical",
-      "physicalDesc": "Access control, perimeter protection, evacuation routes",
+      "physicalDesc": "Access control, perimeter, evacuation, physical security concepts",
       "digital": "Digital",
-      "digitalDesc": "IT systems, network security, data integrity",
+      "digitalDesc": "Phishing, social engineering, IT infrastructure, data security",
       "organizational": "Organizational",
       "organizationalDesc": "Emergency and crisis management, communication, decision-making paths, processes"
     },
     "cta": {
-      "title": "If you have to make decisions in an emergency, the basis for decision-making should exist beforehand.",
-      "description": "A 30-minute conversation is enough to create clarity.",
-      "button": "Request Call"
+      "title": "Request Call",
+      "description": "Let us discuss without obligation how Red Teaming can advance your organization.",
+      "button": "Contact Us"
     }
   },
   "approach": {

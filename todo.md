@@ -432,3 +432,8 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [ ] Checkpoint erstellen
 
 - [x] Hotels-Seite: Grauen Rahmen-Hintergrund bei Bulletpoints in "Die unbequeme Wahrheit" Sektion hinzufügen (wie auf Live-Website)
+
+- [x] Home-Seite: "Warum Red Teaming?" Sektion mit Live-Website-Text aktualisieren (1:1)
+- [x] Home-Seite: Drei weiße Boxen (Physisch/Digital/Organisatorisch) mit Live-Website-Text aktualisieren (1:1)
+- [x] Home-Seite: CTA-Sektion mit "Gespräch anfragen" Text von Live-Website ersetzen (1:1)
+- [x] Englische Übersetzungen für alle Home-Seite Änderungen erstellen

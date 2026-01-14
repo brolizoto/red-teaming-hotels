@@ -393,7 +393,10 @@ export default function Home() {
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground mb-12">
               <p>
-                {t('home.whyRedTeaming.description')}
+                {t('home.whyRedTeaming.paragraph1')}
+              </p>
+              <p>
+                {t('home.whyRedTeaming.paragraph2')}
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
