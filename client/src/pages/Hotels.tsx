@@ -1,446 +1,307 @@
-import { ArrowRight, Shield, Target, AlertTriangle, CheckCircle2, Layers, Users, FileText } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { SEO } from "@/components/SEO";
 import { useTranslation } from "react-i18next";
 import { Navigation } from "@/components/Navigation";
 import { ContactFormModal } from "@/components/ContactFormModal";
+import { AlertTriangle, Shield, Target, CheckCircle2 } from "lucide-react";
 
-/**
- * Red Teaming - Ansatz/Methodik Seite
- * Branchenunabhängig, fokussiert auf die Red Teaming Methodik
- */
-
-export default function Ansatz() {
+export default function Hotels() {
   const { t } = useTranslation();
-  const [, navigate] = useLocation();
-  
-  const seoData = {
-    title: "Ansatz",
-    description: "Red Teaming Methodik: Realitätsnahe Prüfung von Organisationen aus der Perspektive eines echten Ereignisses. Physisch, digital und organisatorisch – nicht entlang von Checklisten, sondern entlang von Risiko und Abhängigkeiten.",
-    canonical: "https://redteaming.ch/hotels",
-    keywords: "Red Teaming Methodik, Red Teaming Ansatz, Security Assessment Methodik, Krisenmanagement Methodik, Penetration Test, Physical Security Testing, Cyber Security Assessment"
-  };
-
   const [contactFormOpen, setContactFormOpen] = useState(false);
+  const [, navigate] = useLocation();
+
+  const seoData = {
+    title: "Hotels | Hotel Security Schweiz",
+    description: "Red Teaming for Hotels: Professionelle Hotel Security durch realitätsnahe Prüfung von Krisen- und Notfallfähigkeit.",
+    canonical: "https://redteaming.ch/hotels",
+    keywords: "Hotel Security, Hotel Sicherheit, Red Teaming Hotels, Krisenmanagement Hotels",
+  };
 
   return (
     <>
       <SEO {...seoData} />
       <div className="min-h-screen bg-background text-foreground">
-      <Navigation onRequestCall={() => setContactFormOpen(true)} />
+        <Navigation onRequestCall={() => setContactFormOpen(true)} />
+        <ContactFormModal 
+          isOpen={contactFormOpen} 
+          onClose={() => setContactFormOpen(false)} 
+        />
 
-      <ContactFormModal 
-        isOpen={contactFormOpen} 
-        onClose={() => setContactFormOpen(false)} 
-      />
+        {/* Hero Section */}
+        <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-card py-12 md:py-20">
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+          </div>
+          <div className="container relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="accent-line mb-8 mx-auto" style={{width: '4rem'}}></div>
+              <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
+                {t('hotels.hero.title')}
+              </h1>
+              <blockquote className="text-xl md:text-2xl italic text-muted-foreground border-l-4 border-primary pl-6 mb-8">
+                {t('hotels.hero.subtitle')}
+              </blockquote>
+              <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
+                {t('hotels.hero.description')}
+              </p>
+              <button 
+                onClick={() => setContactFormOpen(true)} 
+                className="btn-primary flex items-center gap-2 text-sm md:text-base mx-auto"
+              >
+                {t('hotels.hero.cta')}
+              </button>
+            </div>
+          </div>
+        </section>
 
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
-        </div>
-        <div className="container relative z-10">
+        {/* Truth Section */}
+        <section className="container py-12 md:py-20">
           <div className="max-w-4xl mx-auto">
-            <div className="accent-line mb-8"></div>
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              {t('hotels.hero.title')}
-            </h1>
-            <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6 mb-8">
-              <p className="text-xl md:text-2xl font-bold text-foreground italic">
-                {t('hotels.quote.text')}
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* Was ist Red Teaming */}
-      <section className="container py-12 md:py-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-            <div className="md:col-span-2 flex justify-center md:justify-start">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                <Target className="text-primary" size={32} />
-              </div>
-            </div>
-            <div className="md:col-span-10">
-              <div className="accent-line mb-6"></div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                {t('hotels.whatIsRedTeaming.title')}
-              </h2>
-              <p className="text-base text-muted-foreground mb-4">
-                {t('hotels.whatIsRedTeaming.description')}
-              </p>
-              <p className="text-base text-muted-foreground mb-4">
-                {t('hotels.redTeam.description')}
-              </p>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Warum Red Teaming */}
-      <section className="container py-12 md:py-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-            <div className="md:col-span-2 flex justify-center md:justify-start">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                <AlertTriangle className="text-primary" size={32} />
-              </div>
-            </div>
-            <div className="md:col-span-10">
-              <div className="accent-line mb-6"></div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                {t('hotels.whatIsNot.title')}
-              </h2>
-              <p className="text-base text-muted-foreground mb-6">
-                {t('hotels.whatIsNot.item1')}
-              </p>
-              <div className="bg-card border border-border rounded-lg p-6 mb-6">
-                <h3 className="text-lg font-bold text-foreground mb-4">{t('hotels.whatIsNot.title')}</h3>
-                <ul className="space-y-3 text-sm text-muted-foreground">
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.whatIsNot.item1')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.whatIsNot.item2')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.whatIsNot.item3')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.whatIsNot.item1')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.whatIsNot.item2')}</span>
-                  </li>
-                </ul>
-              </div>
-              <p className="text-lg font-bold text-foreground">
-                {t('hotels.whatIsNot.item3')}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Drei Dimensionen */}
-      <section className="bg-card py-16 md:py-24">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
               <div className="md:col-span-2 flex justify-center md:justify-start">
                 <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Layers className="text-primary" size={32} />
+                  <AlertTriangle className="text-primary" size={32} />
                 </div>
               </div>
               <div className="md:col-span-10">
                 <div className="accent-line mb-6"></div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                  {t('hotels.threeDimensions.title')}
+                  {t('hotels.truth.title')}
                 </h2>
                 <p className="text-base text-muted-foreground mb-6">
-                  {t('hotels.threeDimensions.intro')}
+                  {t('hotels.truth.description')}
                 </p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-background border border-border rounded-lg p-6">
-                <Shield className="text-primary mb-4" size={32} />
-                <h3 className="text-lg font-bold text-foreground mb-3">{t('hotels.threeDimensions.physical.title')}</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  {t('hotels.threeDimensions.physical.description')}
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  {t('hotels.threeDimensions.physical.description')}
-                </p>
-              </div>
-
-              <div className="bg-background border border-border rounded-lg p-6">
-                <Target className="text-primary mb-4" size={32} />
-                <h3 className="text-lg font-bold text-foreground mb-3">{t('hotels.threeDimensions.digital.title')}</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  {t('hotels.threeDimensions.digital.description')}
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  {t('hotels.threeDimensions.digital.description')}
-                </p>
-              </div>
-
-              <div className="bg-background border border-border rounded-lg p-6">
-                <Users className="text-primary mb-4" size={32} />
-                <h3 className="text-lg font-bold text-foreground mb-3">{t('hotels.threeDimensions.organizational.title')}</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  {t('hotels.threeDimensions.organizational.description')}
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  {t('hotels.threeDimensions.organizational.description')}
-                </p>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>{t('hotels.truth.item1')}</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>{t('hotels.truth.item2')}</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>{t('hotels.truth.item3')}</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold">•</span>
+                    <span>{t('hotels.truth.item4')}</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Wie funktioniert Red Teaming */}
-      <section className="container py-16 md:py-24">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-12">
-            <div className="md:col-span-2 flex justify-center md:justify-start">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                <FileText className="text-primary" size={32} />
-              </div>
-            </div>
-            <div className="md:col-span-10">
-              <div className="accent-line mb-6"></div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                {t('hotels.process.title')}
-              </h2>
-              <p className="text-base text-muted-foreground mb-6">
-                {t('hotels.process.title')}
-              </p>
-            </div>
-          </div>
+        <div className="section-divider"></div>
 
-          <div className="space-y-6">
-            {/* Phase 1 */}
-            <div className="bg-card border border-border rounded-lg p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-primary font-bold">1</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">{t('hotels.process.step1.title')}</h3>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    {t('hotels.process.step1.description')}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {t('hotels.process.step1.description')}
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Phase 2 */}
-            <div className="bg-card border border-border rounded-lg p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-primary font-bold">2</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">{t('hotels.process.step2.title')}</h3>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    {t('hotels.process.step2.description')}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {t('hotels.process.step2.description')}
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Phase 3 */}
-            <div className="bg-card border border-border rounded-lg p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-primary font-bold">3</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">{t('hotels.process.step3.title')}</h3>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    {t('hotels.process.step3.description')}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {t('hotels.process.step3.description')}
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Phase 4 */}
-            <div className="bg-card border border-border rounded-lg p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-primary font-bold">4</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">{t('hotels.process.step4.title')}</h3>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    {t('hotels.process.step4.description')}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {t('hotels.process.step4.description')}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Red Teaming vs. Audits */}
-      <section className="bg-card py-16 md:py-24">
-        <div className="container">
+        {/* Scenario Section */}
+        <section className="container py-12 md:py-20">
           <div className="max-w-4xl mx-auto">
             <div className="accent-line mb-8"></div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              {t('hotels.vsOthers.title')}
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-center">
+              {t('hotels.scenario.title')}
             </h2>
-            <p className="text-base text-muted-foreground mb-8">
-              {t('hotels.vsOthers.intro')}
+            <p className="text-lg text-muted-foreground mb-12 text-center">
+              {t('hotels.scenario.description')}
             </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-background border border-border rounded-lg p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <CheckCircle2 className="text-primary" size={24} />
-                  <h3 className="text-lg font-bold text-foreground">{t('hotels.vsOthers.redteaming.title')}</h3>
-                </div>
-                <ul className="space-y-3 text-sm text-muted-foreground">
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.vsOthers.redteaming.description')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.vsOthers.redteaming.description')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.vsOthers.redteaming.description')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.vsOthers.redteaming.description')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.vsOthers.redteaming.description')}</span>
-                  </li>
-                </ul>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-card border border-border p-6 rounded-lg">
+                <h3 className="font-bold text-foreground mb-3">{t('hotels.scenario.event.title')}</h3>
+                <p className="text-sm text-muted-foreground">{t('hotels.scenario.event.description')}</p>
               </div>
-
-              <div className="bg-background border border-border rounded-lg p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <AlertTriangle className="text-muted-foreground" size={24} />
-                  <h3 className="text-lg font-bold text-foreground">{t('hotels.vsOthers.audit.title')}</h3>
-                </div>
-                <ul className="space-y-3 text-sm text-muted-foreground">
-                  <li className="flex gap-3">
-                    <span className="text-muted-foreground font-bold">•</span>
-                    <span>{t('hotels.vsOthers.audit.description')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-muted-foreground font-bold">•</span>
-                    <span>{t('hotels.vsOthers.audit.description')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-muted-foreground font-bold">•</span>
-                    <span>{t('hotels.vsOthers.audit.description')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-muted-foreground font-bold">•</span>
-                    <span>{t('hotels.vsOthers.audit.description')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-muted-foreground font-bold">•</span>
-                    <span>{t('hotels.vsOthers.audit.description')}</span>
-                  </li>
-                </ul>
+              <div className="bg-card border border-border p-6 rounded-lg">
+                <h3 className="font-bold text-foreground mb-3">{t('hotels.scenario.cyber.title')}</h3>
+                <p className="text-sm text-muted-foreground">{t('hotels.scenario.cyber.description')}</p>
               </div>
             </div>
 
-            <div className="mt-8 bg-primary/5 border border-primary/20 rounded-lg p-6">
-              <p className="text-base text-foreground font-bold mb-2">
-                {t('hotels.vsOthers.intro')}
-              </p>
-              <p className="text-sm text-muted-foreground">
-                {t('hotels.vsOthers.intro')}
-              </p>
+            <div className="bg-card border border-border p-6">
+              <p className="text-sm font-bold text-foreground mb-3">{t('hotels.scenario.consequence.title')}</p>
+              <ul className="space-y-2 text-xs text-muted-foreground">
+                <li>• {t('hotels.scenario.consequence.item1')}</li>
+                <li>• {t('hotels.scenario.consequence.item2')}</li>
+                <li>• {t('hotels.scenario.consequence.item3')}</li>
+                <li>• {t('hotels.scenario.consequence.item4')}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Contact Section */}
-      <section className="container py-16 md:py-24" id="contact">
-        <div className="max-w-2xl mx-auto text-center">
-          <div className="accent-line mb-8 mx-auto"></div>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            {t('hotels.quote.text')}
+        <div className="section-divider"></div>
+
+        {/* Approach Section */}
+        <section className="container py-12 md:py-20">
+          <div className="accent-line mb-8"></div>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">
+            {t('hotels.approach.title')}
           </h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            {t('hotels.hero.subtitle')}
-          </p>
-          <button onClick={() => setContactFormOpen(true)} className="btn-primary text-lg px-8 py-4">
-            {t('nav.requestCall')}
-          </button>
-        </div>
-      </section>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            {/* Basic */}
+            <div className="border border-border rounded-lg hover:border-primary transition-colors p-6 md:p-8">
+              <h3 className="text-2xl font-bold text-foreground mb-4">{t('hotels.approach.basic.title')}</h3>
+              <p className="text-sm text-muted-foreground mb-6">
+                {t('hotels.approach.basic.subtitle')}
+              </p>
+              <ul className="space-y-3 text-sm text-muted-foreground mb-8">
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>{t('hotels.approach.basic.item1')}</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>{t('hotels.approach.basic.item2')}</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>{t('hotels.approach.basic.item3')}</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>{t('hotels.approach.basic.item4')}</span>
+                </li>
+              </ul>
+              <p className="text-xs font-bold text-foreground">{t('hotels.approach.basic.ideal')}</p>
+              <p className="text-xs text-muted-foreground">
+                {t('hotels.approach.basic.idealText')}
+              </p>
+            </div>
 
-      {/* Footer */}
-      <footer className="bg-background border-t border-border">
-        <div className="container py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div className="md:col-span-2">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="text-primary font-bold text-lg">RED TEAMING</div>
-                <div className="text-sm text-muted-foreground">Switzerland</div>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                {t('footer.tagline')}
+            {/* Advanced */}
+            <div className="border border-border rounded-lg hover:border-primary transition-colors bg-card p-6 md:p-8">
+              <h3 className="text-2xl font-bold text-foreground mb-4">{t('hotels.approach.advanced.title')}</h3>
+              <p className="text-sm text-muted-foreground mb-6">
+                {t('hotels.approach.advanced.subtitle')}
               </p>
-            </div>
-            <div>
-              <h3 className="font-bold text-foreground mb-4">{t('footer.navigation')}</h3>
-              <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-                <button onClick={() => navigate('/')} className="hover:text-primary transition-colors text-left bg-transparent border-none cursor-pointer">
-                  {t('nav.home')}
-                </button>
-                <button onClick={() => navigate('/ansatz')} className="hover:text-primary transition-colors text-left bg-transparent border-none cursor-pointer">
-                  {t('nav.approach')}
-                </button>
-                <button onClick={() => navigate('/hotels')} className="hover:text-primary transition-colors text-left bg-transparent border-none cursor-pointer">
-                  {t('nav.hotels')}
-                </button>
-                <button onClick={() => navigate('/weitere-einsatzfelder')} className="hover:text-primary transition-colors text-left bg-transparent border-none cursor-pointer">
-                  {t('nav.otherFields')}
-                </button>
-              </div>
-            </div>
-            <div>
-              <h3 className="font-bold text-foreground mb-4">{t('footer.contact')}</h3>
-              <p className="text-sm text-muted-foreground">
-                <a href="mailto:contact@redteaming.ch" className="hover:text-primary transition-colors">
-                  contact@redteaming.ch
-                </a>
+              <ul className="space-y-3 text-sm text-muted-foreground mb-8">
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>{t('hotels.approach.advanced.item1')}</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>{t('hotels.approach.advanced.item2')}</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>{t('hotels.approach.advanced.item3')}</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>{t('hotels.approach.advanced.item4')}</span>
+                </li>
+              </ul>
+              <p className="text-xs font-bold text-foreground">{t('hotels.approach.advanced.ideal')}</p>
+              <p className="text-xs text-muted-foreground">
+                {t('hotels.approach.advanced.idealText')}
               </p>
             </div>
           </div>
-          <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-            <p>{t('footer.copyright')}</p>
-            <div className="flex gap-6">
-              <button onClick={() => navigate('/impressum')} className="hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
-                {t('footer.imprint')}
-              </button>
-              <button onClick={() => navigate('/datenschutz')} className="hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
-                {t('footer.privacy')}
-              </button>
+        </section>
+
+        <div className="section-divider"></div>
+
+        {/* Process Section */}
+        <section className="container py-12 md:py-20">
+          <div className="accent-line mb-8"></div>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">
+            {t('hotels.process.title')}
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
+            {['step1', 'step2', 'step3', 'step4'].map((step) => (
+              <div key={step} className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                  {t(`hotels.process.${step}.number`)}
+                </div>
+                <h3 className="font-bold text-foreground mb-2">
+                  {t(`hotels.process.${step}.title`)}
+                </h3>
+                <p className="text-xs md:text-sm text-muted-foreground">
+                  {t(`hotels.process.${step}.description`)}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <div className="section-divider"></div>
+
+        {/* CTA Section */}
+        <section className="container py-12 md:py-20">
+          <div className="max-w-2xl">
+            <p className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              {t('hotels.cta.title')}
+            </p>
+            <p className="text-base md:text-lg text-muted-foreground mb-8">
+              {t('hotels.cta.description')}
+            </p>
+            <button 
+              onClick={() => setContactFormOpen(true)} 
+              className="btn-primary flex items-center gap-2 text-sm md:text-base"
+            >
+              {t('hotels.cta.button')}
+            </button>
+          </div>
+        </section>
+
+        <div className="section-divider"></div>
+
+        {/* Footer */}
+        <footer id="contact" className="bg-card border-t border-border">
+          <div className="container py-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+              <div>
+                <button onClick={() => navigate('/')} className="flex items-center gap-2 mb-2 bg-transparent border-none cursor-pointer hover:opacity-80">
+                  <div className="text-primary font-bold text-lg">{t('nav.brand')}</div>
+                  <div className="text-sm text-muted-foreground">{t('nav.tagline')}</div>
+                </button>
+                <p className="text-xs text-muted-foreground mt-4">
+                  {t('footer.tagline')}
+                </p>
+              </div>
+              <div className="flex flex-col md:flex-row gap-12 md:gap-16 md:justify-end">
+                <div>
+                  <h3 className="font-bold text-foreground mb-4">{t('footer.location.title')}</h3>
+                  <p className="text-sm text-muted-foreground">
+                    {t('footer.location.address')}<br />
+                    {t('footer.location.city')}
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-bold text-foreground mb-4">{t('footer.contact.title')}</h3>
+                  <p className="text-sm text-muted-foreground">
+                    <a href={`mailto:${t('footer.contact.email')}`} className="hover:text-primary transition-colors">
+                      {t('footer.contact.email')}
+                    </a><br />
+                    <a href={`tel:${t('footer.contact.phone')}`} className="hover:text-primary transition-colors">
+                      {t('footer.contact.phone')}
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="border-t border-border pt-8">
+              <div className="flex flex-col md:flex-row justify-between items-center text-xs text-muted-foreground gap-4">
+                <p>{t('footer.copyright')}</p>
+                <div className="flex gap-6">
+                  <button onClick={() => navigate('/imprint')} className="hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
+                    {t('footer.imprint')}
+                  </button>
+                  <button onClick={() => navigate('/privacy')} className="hover:text-primary transition-colors bg-transparent border-none cursor-pointer">
+                    {t('footer.privacy')}
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
-    </div>
+        </footer>
+      </div>
     </>
   );
 }
