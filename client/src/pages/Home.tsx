@@ -365,17 +365,13 @@ export default function Home() {
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground">
             <p>
-              Red Teaming ist keine Theorie, kein Audit und kein Zertifikat. 
-              Es ist eine realitätsnahe Prüfung, bei der Organisationen aus der Perspektive 
-              eines echten Ereignisses betrachtet werden.
+              Red Teaming prüft die Resilienz einer Organisation anhand realistischer Ereignisszenarien. Keine Theorie und kein Audit - aber der direkte Weg zu einer umfassende Sicherheitsstrategie, die individuellen Risiken, Abläufen, Abhängigkeiten und Entscheidungswegen im Alltag entspricht.
             </p>
             <p>
-              Nicht entlang von Checklisten, sondern entlang von Risiko, Abläufen, 
-              Abhängigkeiten und Entscheidungswegen. Red Teaming verbindet physische, 
-              digitale und organisatorische Aspekte zu einem Gesamtbild.
+              Red Teaming verbindet physische, digitale und organisatorische Sicherheit zu einem verständlichen Gesamtbild.
             </p>
             <p className="text-xl font-bold text-foreground">
-              Was passiert wirklich, wenn etwas schiefgeht?
+              Wir fragen: Was passiert wirklich, wenn etwas passiert?
             </p>
           </div>
         </div>
