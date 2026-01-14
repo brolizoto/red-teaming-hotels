@@ -486,7 +486,7 @@ export default function WeitereEinsatzfelder() {
                     </li>
                     <li className="flex gap-3">
                       <span className="text-primary font-bold">•</span>
-                      <span>Alarmierungssysteme und Kommunikation im Brandfall</span>
+                      <span>Alarmierungssysteme und Eskalationsprozesse im Brandfall</span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-primary font-bold">•</span>
@@ -494,7 +494,7 @@ export default function WeitereEinsatzfelder() {
                     </li>
                     <li className="flex gap-3">
                       <span className="text-primary font-bold">•</span>
-                      <span>Praktische Umsetzung von Brandschutzplänen</span>
+                      <span>Durchsicht und Einschätzung von Brandschutzplänen</span>
                     </li>
                   </ul>
                 </div>

@@ -334,3 +334,7 @@
 
 - [x] E-Mail-Header von "RED TEAMING for Hotels" auf "RED TEAMING Switzerland" ändern
 - [x] Test-E-Mail versenden und verifizieren
+
+## Brandschutz Bulletpoints korrigieren
+
+- [x] Prüfbereiche-Bulletpoints auf Weitere Einsatzfelder Seite aktualisieren
