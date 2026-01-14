@@ -420,7 +420,7 @@ export default function Home() {
                 <Users className="text-primary mb-4" size={32} />
                 <h3 className="text-lg font-bold text-foreground mb-2">Organisatorisch</h3>
                 <p className="text-sm text-muted-foreground">
-                  Krisenmanagement, Kommunikation, Entscheidungswege, Prozesse
+                  Notfall- und Krisenmanagement, Kommunikation, Entscheidungswege, Prozesse
                 </p>
               </div>
             </div>
