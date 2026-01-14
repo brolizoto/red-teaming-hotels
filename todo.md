@@ -430,3 +430,5 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [ ] English Hotels-Translations entsprechend anpassen
 - [ ] Hotels-Seite in beiden Sprachen testen (DE/EN)
 - [ ] Checkpoint erstellen
+
+- [x] Hotels-Seite: Grauen Rahmen-Hintergrund bei Bulletpoints in "Die unbequeme Wahrheit" Sektion hinzufügen (wie auf Live-Website)

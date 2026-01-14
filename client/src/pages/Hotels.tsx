@@ -76,28 +76,30 @@ export default function Hotels() {
                 <p className="text-base text-muted-foreground mb-6">
                   {t('hotels.truth.intro')}
                 </p>
-                <ul className="space-y-3 text-sm text-muted-foreground">
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.truth.point1')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.truth.point2')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.truth.point3')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.truth.point4')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.truth.point5')}</span>
-                  </li>
-                </ul>
+                <div className="bg-card border border-border rounded-lg p-6">
+                  <ul className="space-y-3 text-sm text-muted-foreground">
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('hotels.truth.point1')}</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('hotels.truth.point2')}</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('hotels.truth.point3')}</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('hotels.truth.point4')}</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('hotels.truth.point5')}</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
