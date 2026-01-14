@@ -131,52 +131,47 @@ export const translations = {
   },
   "hotels": {
     "hero": {
-      "title": "Red Teaming für Hotels",
-      "subtitle": "Vorbereitung bestimmt das Schadenausmass.",
-      "description": "Red Teaming für Hotels unterstützt Direktionen dabei, Krisen- und Notfallfähigkeit real zu testen – physisch, digital und organisatorisch.",
-      "cta": "Gespräch anfragen"
+      "title": "Vorbereitung bestimmt das Schadenausmass.",
+      "subtitle": "Red Teaming for Hotels unterstützt Direktionen dabei, die Notfall- und Krisenbereitschaft ihrer Standorte realistisch zu testen - physisch, digital und organisatorisch.",
+      "description": "Damit Entscheidungen vorbereitet sind – nicht improvisiert.",
+      "cta": "Gespräch anfragen (30 Minuten)"
     },
     "truth": {
       "title": "Die unbequeme Wahrheit",
-      "intro": "Bei Entscheidungen unter Stress zählt nur, was vorher geprüft wurde. Nicht, was auf dem Papier steht.",
+      "intro": "Red Teaming prüft Resilienz eines Hotels dort, wo sie zählt: unter realistischen Bedingungen.",
       "point1": "Pläne existieren, wurden aber nie real getestet",
-      "point2": "Zuständigkeiten sind unklar oder überschneiden sich",
-      "point3": "Dokumentation ist unvollständig oder nicht zugänglich",
-      "point4": "Abhängigkeiten zwischen Systemen sind nicht bekannt",
-      "point5": "Entscheidungswege versagen unter Druck"
+      "point2": "Zuständigkeiten sind unklar oder nicht bekannt",
+      "point3": "Cyber-Vorfälle blockieren operative Abläufe",
+      "point4": "IT-Ausfälle verhindern Evakuation und Kommunikation",
+      "point5": "Entscheidungen sind vorbereitet, oder werden im Ernstfall improvisiert"
     },
     "scenario": {
       "title": "Das doppelte Schreckensszenario",
-      "question": "Was passiert, wenn zwei Dinge gleichzeitig eintreten und voneinander abhängen?",
+      "question": "Was passiert, wenn physische und digitale Ereignisse gleichzeitig eintreten?",
       "event": {
         "title": "Ereignis",
         "description": "Brand, Evakuation, Sonderlage"
       },
       "cyber": {
         "title": "Cyber-Vorfall",
-        "description": "Phishing, Systemverlust"
+        "description": "Phishing, Systemzugriff, Ausfall kritischer Systeme"
       },
       "consequence": {
         "title": "Konsequenz:",
         "point1": "PMS / Schliesssysteme eingeschränkt",
         "point2": "Evakuationslisten nicht verfügbar",
         "point3": "Kommunikation blockiert",
-        "point4": "Versicherer verlangt Nachweise"
+        "point4": "Haftungsfragen ungeklärt"
       }
     },
     "testing": {
       "title": "Was wir real prüfen",
-      "intro": "Wir testen nicht Theorie, sondern die tatsächliche Reaktionsfähigkeit. Nicht simuliert, sondern im laufenden Betrieb. Nicht isoliert, sondern vernetzt.",
-      "focus": "Sicherheit ist keine Checkliste – sie zeigt sich erst, wenn sie gebraucht wird.",
-      "physicalTitle": "Physische Tests (Vor Ort & Evakuierung)",
-      "physical1": "Zutrittskontrolle & Perimeterschutz",
-      "physical2": "Evakuierungswege & Notfallpläne",
-      "digitalTitle": "Digitale Tests (Phishing & IT-Resilienz)",
-      "digital1": "Phishing-Resilienz",
-      "digital2": "IT-Ausfallsicherheit",
-      "organizationalTitle": "Organisatorische Tests (Krisenmanagement)",
-      "organizational1": "Krisenmanagement & Kommunikation",
-      "organizational2": "Entscheidungsprozesse",
+      "intro": "Wir prüfen Hotels so, wie es ein reales Ereignis tun würde. Nicht theoretisch. Nicht zertifikatsgetrieben.",
+      "focus": "Unser Fokus liegt auf den Punkten, die im Ernstfall Entscheidungen verzögern oder verunmöglichen.",
+      "area1": "Physische Sicherheit & Evakuationsfähigkeit",
+      "area2": "Cyber-Resilienz & Phishing-Szenarien",
+      "area3": "Entscheidungswege & Führungsfähigkeit",
+      "area4": "Kritische Abhängigkeiten (IT, Technik, Personal)",
       "vennAlt": "Ganzheitliche Hotelsicherheit entsteht in den Schnittstellen: Physische Sicherheit, Digitale Sicherheit und Organisation & Führung",
       "quote": "Entscheidend ist nicht, ob etwas existiert, sondern ob es im Ernstfall funktioniert."
     },
@@ -185,19 +180,19 @@ export const translations = {
       "subtitle": "Je nach Ausgangslage und Zielsetzung",
       "basic": {
         "title": "Red Teaming Basic",
-        "subtitle": "Entscheidungsfähigkeit herstellen",
-        "point1": "Strukturierte Risiko- & Schutz-Standortbestimmung",
+        "subtitle": "Klarheit schaffen & Risiken sichtbar machen",
+        "point1": "Strukturierte Risiko-Standortbestimmung (physisch & digital)",
         "point2": "Reale Tests ausgewählter Szenarien",
-        "point3": "Bewertung von Notfall- & Evakuationsfähigkeit",
+        "point3": "Erkennung kritischer Cyber- & Phishing-Risiken",
         "point4": "Management Summary mit klaren Prioritäten",
         "idealFor": "IDEAL FÜR:",
-        "idealForText": "Hotels, die wissen wollen, wo sie stehen – bevor sie vertiefen."
+        "idealForText": "Hotels, die wissen wollen, wo sie stehen, bevor sie vertiefen."
       },
       "advanced": {
         "title": "Red Teaming Advanced",
         "subtitle": "Haftungs- & Krisenrisiken aktiv reduzieren",
-        "point1": "Erweiterte Szenarien & 24h-Betrachtung",
-        "point2": "Integrierte physische & digitale Eintrittspunkte",
+        "point1": "Erweiterte Cyber- & Phishing-Szenarien",
+        "point2": "Verknüpfung von IT-Ausfällen mit realen Ereignissen",
         "point3": "Vertiefte Analyse von Krisenmanagement & Governance",
         "point4": "Detaillierter Entscheid- & Massnahmenplan",
         "idealFor": "IDEAL FÜR:",
@@ -233,7 +228,7 @@ export const translations = {
       }
     },
     "cta": {
-      "title": "Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren.",
+      "title": "Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren, nicht erst im Ereignis.",
       "subtitle": "Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.",
       "button": "Gespräch anfragen"
     }
@@ -547,52 +542,47 @@ export const translations = {
   },
   "hotels": {
     "hero": {
-      "title": "Red Teaming for Hotels",
-      "subtitle": "Preparation determines the extent of damage.",
-      "description": "Red Teaming for hotels supports management in testing crisis and emergency capabilities in real conditions – physically, digitally and organizationally.",
-      "cta": "Request Call"
+      "title": "Preparation determines the extent of damage.",
+      "subtitle": "Red Teaming for Hotels supports management in testing the emergency and crisis preparedness of their locations realistically - physically, digitally and organizationally.",
+      "description": "So that decisions are prepared – not improvised.",
+      "cta": "Request Call (30 Minutes)"
     },
     "truth": {
       "title": "The uncomfortable truth",
-      "intro": "In decisions under stress, only what has been tested beforehand counts. Not what's written on paper.",
+      "intro": "Red Teaming tests a hotel's resilience where it counts: under realistic conditions.",
       "point1": "Plans exist, but have never been tested in reality",
-      "point2": "Responsibilities are unclear or overlap",
-      "point3": "Documentation is incomplete or inaccessible",
-      "point4": "Dependencies between systems are unknown",
-      "point5": "Decision-making paths fail under pressure"
+      "point2": "Responsibilities are unclear or unknown",
+      "point3": "Cyber incidents block operational processes",
+      "point4": "IT failures prevent evacuation and communication",
+      "point5": "Decisions are prepared, or improvised in an emergency"
     },
     "scenario": {
       "title": "The nightmare scenario",
-      "question": "What happens when two things occur simultaneously and depend on each other?",
+      "question": "What happens when physical and digital events occur simultaneously?",
       "event": {
         "title": "Event",
         "description": "Fire, evacuation, special situation"
       },
       "cyber": {
         "title": "Cyber incident",
-        "description": "Phishing, system loss"
+        "description": "Phishing, system access, failure of critical systems"
       },
       "consequence": {
         "title": "Consequence:",
         "point1": "PMS / locking systems restricted",
         "point2": "Evacuation lists not available",
         "point3": "Communication blocked",
-        "point4": "Insurer demands evidence"
+        "point4": "Liability issues unclear"
       }
     },
     "testing": {
       "title": "What we really test",
-      "intro": "We don't test theory, but actual response capability. Not simulated, but during operations. Not isolated, but interconnected.",
-      "focus": "Security is not a checklist – it only shows itself when it's needed.",
-      "physicalTitle": "Physical Tests (On-site & Evacuation)",
-      "physical1": "Access control & perimeter protection",
-      "physical2": "Evacuation routes & emergency plans",
-      "digitalTitle": "Digital Tests (Phishing & IT Resilience)",
-      "digital1": "Phishing resilience",
-      "digital2": "IT failure safety",
-      "organizationalTitle": "Organizational Tests (Crisis Management)",
-      "organizational1": "Crisis management & communication",
-      "organizational2": "Decision-making processes",
+      "intro": "We test hotels the way a real event would. Not theoretically. Not certificate-driven.",
+      "focus": "Our focus is on the points that delay or prevent decisions in an emergency.",
+      "area1": "Physical security & evacuation capability",
+      "area2": "Cyber resilience & phishing scenarios",
+      "area3": "Decision-making paths & leadership capability",
+      "area4": "Critical dependencies (IT, technology, personnel)",
       "vennAlt": "Comprehensive hotel security emerges at the intersections: Physical Security, Digital Security and Organization & Leadership",
       "quote": "What matters is not whether something exists, but whether it works in an emergency."
     },
@@ -601,19 +591,19 @@ export const translations = {
       "subtitle": "Depending on the initial situation and objectives",
       "basic": {
         "title": "Red Teaming Basic",
-        "subtitle": "Establishing decision-making capability",
-        "point1": "Structured risk & protection assessment",
+        "subtitle": "Create clarity & make risks visible",
+        "point1": "Structured risk assessment (physical & digital)",
         "point2": "Real tests of selected scenarios",
-        "point3": "Assessment of emergency & evacuation capability",
+        "point3": "Detection of critical cyber & phishing risks",
         "point4": "Management summary with clear priorities",
         "idealFor": "IDEAL FOR:",
-        "idealForText": "Hotels that want to know where they stand – before they deepen."
+        "idealForText": "Hotels that want to know where they stand before they deepen."
       },
       "advanced": {
         "title": "Red Teaming Advanced",
         "subtitle": "Actively reducing liability & crisis risks",
-        "point1": "Extended scenarios & 24h consideration",
-        "point2": "Integrated physical & digital entry points",
+        "point1": "Extended cyber & phishing scenarios",
+        "point2": "Linking IT failures with real events",
         "point3": "In-depth analysis of crisis management & governance",
         "point4": "Detailed decision & action plan",
         "idealFor": "IDEAL FOR:",
@@ -649,7 +639,7 @@ export const translations = {
       }
     },
     "cta": {
-      "title": "If you have to make decisions in an emergency, the basis for decision-making should exist beforehand.",
+      "title": "If you have to make decisions in an emergency, the basis for decision-making should exist beforehand, not only during the event.",
       "subtitle": "A 30-minute conversation is enough to create clarity.",
       "button": "Request Call"
     }

@@ -174,48 +174,18 @@ export default function Hotels() {
                 <p className="text-base font-semibold text-foreground mb-8">
                   {t('hotels.testing.focus')}
                 </p>
-                <div className="space-y-6 mb-8">
-                  {/* Physical Tests */}
-                  <div className="bg-card border border-border rounded-lg p-6">
-                    <h3 className="text-base font-bold text-foreground mb-3">{t('hotels.testing.physicalTitle')}</h3>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex gap-3">
-                        <span className="text-primary font-bold">•</span>
-                        <span>{t('hotels.testing.physical1')}</span>
-                      </li>
-                      <li className="flex gap-3">
-                        <span className="text-primary font-bold">•</span>
-                        <span>{t('hotels.testing.physical2')}</span>
-                      </li>
-                    </ul>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                  <div className="bg-card border border-border rounded-lg p-4">
+                    <p className="text-sm font-bold text-foreground">{t('hotels.testing.area1')}</p>
                   </div>
-                  {/* Digital Tests */}
-                  <div className="bg-card border border-border rounded-lg p-6">
-                    <h3 className="text-base font-bold text-foreground mb-3">{t('hotels.testing.digitalTitle')}</h3>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex gap-3">
-                        <span className="text-primary font-bold">•</span>
-                        <span>{t('hotels.testing.digital1')}</span>
-                      </li>
-                      <li className="flex gap-3">
-                        <span className="text-primary font-bold">•</span>
-                        <span>{t('hotels.testing.digital2')}</span>
-                      </li>
-                    </ul>
+                  <div className="bg-card border border-border rounded-lg p-4">
+                    <p className="text-sm font-bold text-foreground">{t('hotels.testing.area2')}</p>
                   </div>
-                  {/* Organizational Tests */}
-                  <div className="bg-card border border-border rounded-lg p-6">
-                    <h3 className="text-base font-bold text-foreground mb-3">{t('hotels.testing.organizationalTitle')}</h3>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex gap-3">
-                        <span className="text-primary font-bold">•</span>
-                        <span>{t('hotels.testing.organizational1')}</span>
-                      </li>
-                      <li className="flex gap-3">
-                        <span className="text-primary font-bold">•</span>
-                        <span>{t('hotels.testing.organizational2')}</span>
-                      </li>
-                    </ul>
+                  <div className="bg-card border border-border rounded-lg p-4">
+                    <p className="text-sm font-bold text-foreground">{t('hotels.testing.area3')}</p>
+                  </div>
+                  <div className="bg-card border border-border rounded-lg p-4">
+                    <p className="text-sm font-bold text-foreground">{t('hotels.testing.area4')}</p>
                   </div>
                 </div>
                 
