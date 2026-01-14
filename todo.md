@@ -455,3 +455,8 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Hotels-Seite: Englische Red Teaming Roadmap Grafik nach "Security as a Leadership" Sektion einfügen
 
 - [x] Hotels-Seite: Englisches Venn-Diagramm nach "What we really test" Sektion einfügen
+
+- [ ] CTA-Bereich: Layout auf allen Seiten vereinheitlichen (Home-Seite als Vorlage)
+- [ ] Hotels-Seite: CTA-Layout an Home-Seite anpassen
+- [ ] Ansatz-Seite: CTA-Layout überprüfen und ggf. anpassen
+- [ ] Weitere-Einsatzfelder-Seite: CTA-Layout überprüfen und ggf. anpassen

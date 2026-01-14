@@ -335,24 +335,21 @@ export default function Hotels() {
         </section>
 
         {/* CTA Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-card py-12 md:py-20">
-          <div className="container relative z-10">
-            <div className="max-w-3xl mx-auto text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-8">
-                <CheckCircle2 className="text-primary" size={32} />
-              </div>
-              <p className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+        <section className="bg-card py-16 md:py-24" id="contact">
+          <div className="container">
+            <div className="max-w-2xl mx-auto text-center">
+              <div className="accent-line mb-8 mx-auto"></div>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
                 {t('hotels.cta.title')}
-              </p>
-              <p className="text-base md:text-lg text-muted-foreground mb-8">
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
                 {t('hotels.cta.subtitle')}
               </p>
               <button 
                 onClick={() => setContactFormOpen(true)} 
-                className="btn-primary flex items-center gap-2 text-sm md:text-base mx-auto"
+                className="btn-primary text-lg px-8 py-4"
               >
                 {t('hotels.cta.button')}
-                <ArrowRight size={16} />
               </button>
             </div>
           </div>

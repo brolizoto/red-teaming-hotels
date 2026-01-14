@@ -365,21 +365,23 @@ export default function Ansatz() {
         </section>
 
         {/* CTA Section */}
-        <section className="container py-16 md:py-24">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              {t('approach.cta.title')}
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              {t('approach.cta.subtitle')}
-            </p>
-            <button 
-              onClick={() => setContactFormOpen(true)}
-              className="btn-primary flex items-center gap-2 mx-auto text-sm md:text-base"
-            >
-              {t('approach.cta.button')}
-              <ArrowRight size={16} />
-            </button>
+        <section className="bg-card py-16 md:py-24" id="contact">
+          <div className="container">
+            <div className="max-w-2xl mx-auto text-center">
+              <div className="accent-line mb-8 mx-auto"></div>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                {t('approach.cta.title')}
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                {t('approach.cta.subtitle')}
+              </p>
+              <button 
+                onClick={() => setContactFormOpen(true)}
+                className="btn-primary text-lg px-8 py-4"
+              >
+                {t('approach.cta.button')}
+              </button>
+            </div>
           </div>
         </section>
 

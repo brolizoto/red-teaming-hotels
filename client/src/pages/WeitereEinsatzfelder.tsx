@@ -243,7 +243,8 @@ export default function WeitereEinsatzfelder() {
         </section>
 
         {/* Contact Section */}
-        <section className="container py-16 md:py-24" id="contact">
+        <section className="bg-card py-16 md:py-24" id="contact">
+          <div className="container">
           <div className="max-w-2xl mx-auto text-center">
             <div className="accent-line mb-8 mx-auto"></div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -258,6 +259,7 @@ export default function WeitereEinsatzfelder() {
             >
               {t('otherFields.cta.button')}
             </button>
+          </div>
           </div>
         </section>
 
