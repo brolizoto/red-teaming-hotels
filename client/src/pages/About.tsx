@@ -1,6 +1,7 @@
 import { ArrowRight, Menu, X, Shield, Target, AlertTriangle, CheckCircle2, XCircle, Users } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "wouter";
+import { UnifiedFooter } from "@/components/UnifiedFooter";
 
 /**
  * Red Teaming for Hotels - About Page

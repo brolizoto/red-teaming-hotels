@@ -4,6 +4,7 @@ import { SEO } from "@/components/SEO";
 import { useTranslation } from "react-i18next";
 import { Navigation } from "@/components/Navigation";
 import { ContactFormModal } from "@/components/ContactFormModal";
+import { UnifiedFooter } from "@/components/UnifiedFooter";
 
 /**
  * Red Teaming for Hotels - Hotels Page
@@ -356,44 +357,7 @@ export default function Hotels() {
         </section>
 
         {/* Footer */}
-        <footer id="contact" className="bg-card border-t border-border">
-          <div className="container py-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-              <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="text-primary font-bold text-lg">RED TEAMING</div>
-                  <div className="text-sm text-muted-foreground">for Hotels</div>
-                </div>
-                <p className="text-xs text-muted-foreground">
-                  {t('hotels.footer.tagline')}
-                </p>
-              </div>
-              <div className="flex flex-col md:flex-row gap-12 md:gap-16 md:justify-end">
-                <div>
-                  <h3 className="font-bold text-foreground mb-4">{t('hotels.footer.contact')}</h3>
-                  <p className="text-sm text-muted-foreground">
-                    <a href="mailto:contact@redteaming.ch" className="hover:text-primary transition-colors">
-                      contact@redteaming.ch
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="border-t border-border pt-8">
-              <div className="flex flex-col md:flex-row justify-between items-center text-xs text-muted-foreground gap-4">
-                <p>{t('hotels.footer.copyright')}</p>
-                <div className="flex gap-6">
-                  <a href="/imprint" className="hover:text-primary transition-colors">
-                    {t('hotels.footer.imprint')}
-                  </a>
-                  <a href="/privacy" className="hover:text-primary transition-colors">
-                    {t('hotels.footer.privacy')}
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
+        <UnifiedFooter />
       </div>
     </>
   );

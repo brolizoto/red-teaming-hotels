@@ -4,6 +4,7 @@ import { SEO } from "@/components/SEO";
 import { useTranslation } from "react-i18next";
 import { Navigation } from "@/components/Navigation";
 import { ContactFormModal } from "@/components/ContactFormModal";
+import { UnifiedFooter } from "@/components/UnifiedFooter";
 
 /**
  * Weitere Einsatzfelder - Gebündelte Seite für nicht-Hotel Anwendungen
@@ -261,57 +262,7 @@ export default function WeitereEinsatzfelder() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-background border-t border-border">
-          <div className="container py-12">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-              <div className="md:col-span-2">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="text-primary font-bold text-lg">RED TEAMING</div>
-                  <div className="text-sm text-muted-foreground">Switzerland</div>
-                </div>
-                <p className="text-sm text-muted-foreground">
-                  {t('otherFields.footer.tagline')}
-                </p>
-              </div>
-              <div>
-                <h3 className="font-bold text-foreground mb-4">{t('otherFields.footer.navigation')}</h3>
-                <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-                  <a href="/" className="hover:text-primary transition-colors">
-                    {t('otherFields.footer.home')}
-                  </a>
-                  <a href="/ansatz" className="hover:text-primary transition-colors">
-                    {t('otherFields.footer.approach')}
-                  </a>
-                  <a href="/hotels" className="hover:text-primary transition-colors">
-                    {t('otherFields.footer.hotels')}
-                  </a>
-                  <a href="/weitere-einsatzfelder" className="hover:text-primary transition-colors">
-                    {t('otherFields.footer.otherFields')}
-                  </a>
-                </div>
-              </div>
-              <div>
-                <h3 className="font-bold text-foreground mb-4">{t('otherFields.footer.contact')}</h3>
-                <p className="text-sm text-muted-foreground">
-                  <a href="mailto:contact@redteaming.ch" className="hover:text-primary transition-colors">
-                    contact@redteaming.ch
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-              <p>{t('otherFields.footer.copyright')}</p>
-              <div className="flex gap-6">
-                <a href="/imprint" className="hover:text-primary transition-colors">
-                  {t('otherFields.footer.imprint')}
-                </a>
-                <a href="/privacy" className="hover:text-primary transition-colors">
-                  {t('otherFields.footer.privacy')}
-                </a>
-              </div>
-            </div>
-          </div>
-        </footer>
+        <UnifiedFooter />
       </div>
     </>
   );

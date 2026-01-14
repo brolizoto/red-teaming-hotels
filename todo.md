@@ -382,3 +382,35 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Hotels-Seite: Location-Sektion entfernt (nur E-Mail bleibt)
 - [x] Weitere Einsatzfelder: Footer bereits korrekt (nur E-Mail, keine Tel/Adresse)
 - [x] Alle Seiten getestet - Footer korrekt (nur E-Mail, keine Tel/Adresse)
+
+## Complete Website Rebuild (Bilingual DE/EN)
+
+### Phase 1: Component Architecture
+- [x] Unified Footer Component erstellt (UnifiedFooter.tsx)
+- [x] Unified Navigation Component bereits vorhanden (Navigation.tsx) - vollständig i18n
+- [ ] ContactFormModal Component (bereits vorhanden, prüfen)
+
+### Phase 2: Complete translations.ts Structure
+- [ ] Home page translations (DE/EN)
+- [ ] Ansatz page translations (DE/EN)
+- [ ] Hotels page translations (DE/EN)
+- [ ] Weitere Einsatzfelder translations (DE/EN)
+- [ ] Impressum page translations (DE/EN)
+- [ ] Datenschutz page translations (DE/EN)
+- [ ] Shared components translations (nav, footer, contact form)
+
+### Phase 3: Rebuild All Pages
+- [ ] Home.tsx: Vollständig i18n, einheitliche Komponenten
+- [ ] Ansatz.tsx: Vollständig i18n, einheitliche Komponenten
+- [ ] Hotels.tsx: Vollständig i18n, einheitliche Komponenten
+- [ ] WeitereEinsatzfelder.tsx: Vollständig i18n, einheitliche Komponenten
+- [ ] Impressum.tsx: Vollständig i18n
+- [ ] Datenschutz.tsx: Vollständig i18n
+
+### Phase 4: Testing & Validation
+- [ ] Alle Seiten in Deutsch testen
+- [ ] Alle Seiten in Englisch testen
+- [ ] Footer identisch auf allen Seiten prüfen
+- [ ] Navigation identisch auf allen Seiten prüfen
+- [ ] Language Switcher auf allen Seiten testen
+- [ ] Final Checkpoint erstellen

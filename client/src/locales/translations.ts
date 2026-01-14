@@ -216,14 +216,6 @@ export const translations = {
       "title": "Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren.",
       "subtitle": "Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.",
       "button": "Gespräch anfragen"
-    },
-    "footer": {
-      "tagline": "Hotel Security ist heute ein Führungs- und Entscheidungsthema",
-      "location": "Location",
-      "contact": "Contact",
-      "copyright": "© 2026 Red Teaming for Hotels. All rights reserved.",
-      "imprint": "Impressum",
-      "privacy": "Datenschutz"
     }
   },
   "otherFields": {
@@ -292,24 +284,6 @@ export const translations = {
       "title": "Interesse an einer Standortbestimmung?",
       "subtitle": "Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.",
       "button": "Gespräch anfragen"
-    },
-    "footer": {
-      "home": "Home",
-      "approach": "Ansatz",
-      "hotels": "Hotels",
-      "otherFields": "Weitere Einsatzfelder",
-      "contact": "Kontakt",
-      "imprint": "Impressum",
-      "privacy": "Datenschutz",
-      "copyright": "© 2026 Red Teaming Switzerland. All rights reserved."
-    },
-    "authority": {
-      "title": "Behördliche Kontrollen",
-      "description": "Red Teaming bereitet Organisationen auf behördliche Kontrollen vor. Nicht als Ersatz, sondern als Vorbereitung.",
-      "item1": "Verfügbarkeit von Dokumentation und Nachweisen",
-      "item2": "Zuständigkeiten und Verantwortlichkeiten",
-      "item3": "Kommunikation und Zusammenarbeit mit Behörden",
-      "item4": "Vorbereitung auf unangekündigte Kontrollen"
     }
   },
   "contact": {
@@ -331,12 +305,12 @@ export const translations = {
     "verifyNotRobot": "Bitte bestätigen Sie, dass Sie kein Roboter sind."
   },
   "footer": {
-    "tagline": "Hotel Security ist heute ein Führungs- und Entscheidungsthema",
-    "location": "Location",
-    "contact": "Contact",
+    "tagline": "Realitätsnahe Prüfung von Sicherheit, Prozessen und Krisenbereitschaft",
+    "navigation": "Navigation",
+    "contact": "Kontakt",
     "imprint": "Impressum",
     "privacy": "Datenschutz",
-    "copyright": "© 2026 Red Teaming for Hotels. All rights reserved."
+    "copyright": "© 2026 Red Teaming Switzerland. All rights reserved."
   },
   "imprint": {
     "back": "← Zurück",
@@ -638,14 +612,6 @@ export const translations = {
       "title": "If you have to make decisions in an emergency, the basis for decision-making should exist beforehand.",
       "subtitle": "A 30-minute conversation is enough to create clarity.",
       "button": "Request Call"
-    },
-    "footer": {
-      "tagline": "Hotel Security is now a leadership and decision-making issue",
-      "location": "Location",
-      "contact": "Contact",
-      "copyright": "© 2026 Red Teaming for Hotels. All rights reserved.",
-      "imprint": "Imprint",
-      "privacy": "Privacy"
     }
   },
   "otherFields": {
@@ -698,16 +664,6 @@ export const translations = {
       "title": "Interested in an assessment?",
       "subtitle": "A 30-minute conversation is enough to create clarity.",
       "button": "Request Call"
-    },
-    "footer": {
-      "home": "Home",
-      "approach": "Approach",
-      "hotels": "Hotels",
-      "otherFields": "Other Fields",
-      "contact": "Contact",
-      "imprint": "Imprint",
-      "privacy": "Privacy",
-      "copyright": "© 2026 Red Teaming Switzerland. All rights reserved."
     }
   },
   "contact": {
@@ -729,12 +685,12 @@ export const translations = {
     "verifyNotRobot": "Please verify that you are not a robot."
   },
   "footer": {
-    "tagline": "Hotel security is now a management and decision-making issue",
-    "location": "Location",
+    "tagline": "Realistic Testing of Security, Processes and Crisis Preparedness",
+    "navigation": "Navigation",
     "contact": "Contact",
     "imprint": "Imprint",
     "privacy": "Privacy",
-    "copyright": "© 2026 Red Teaming for Hotels. All rights reserved."
+    "copyright": "© 2026 Red Teaming Switzerland. All rights reserved."
   },
   "imprint": {
     "back": "← Back",

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { UnifiedFooter } from "@/components/UnifiedFooter";
 
 export default function Privacy() {
   const { t } = useTranslation();
@@ -136,11 +137,9 @@ export default function Privacy() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-card border-t border-border mt-12">
-        <div className="container py-8 text-center text-xs text-muted-foreground">
-          <p>{t('privacy.copyright')}</p>
-        </div>
-      </footer>
+
+
+      <UnifiedFooter />
     </div>
   );
 }
