@@ -560,7 +560,7 @@ export default function Ansatz() {
               Red Teaming vs. Audits & Penetration Tests
             </h2>
             <p className="text-base text-muted-foreground mb-8">
-              Red Teaming unterscheidet sich grundlegend von klassischen Audits und Penetration Tests:
+              Wie unterscheidet sich Red Teaming von klassischen Audits und Penetration Tests?
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -605,7 +605,7 @@ export default function Ansatz() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-muted-foreground font-bold">•</span>
-                    <span>Fokus auf einzelne Bereiche (z.B. nur IT)</span>
+                    <span>Fokus auf einzelne Bereiche</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-muted-foreground font-bold">•</span>
