@@ -399,7 +399,7 @@ export default function Ansatz() {
                   Drei Dimensionen
                 </h2>
                 <p className="text-base text-muted-foreground mb-6">
-                  Red Teaming prüft Organisationen entlang dreier Dimensionen, 
+                  Red Teaming prüft Organisationen entlang von drei Dimensionen, 
                   die im Ernstfall zusammenwirken:
                 </p>
               </div>
@@ -413,7 +413,7 @@ export default function Ansatz() {
                   Zutrittskontrolle, Perimeter, Evakuierung, physische Sicherheitskonzepte
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  Wir prüfen, ob physische Sicherheitsmaßnahmen unter realen Bedingungen funktionieren, 
+                  Wir prüfen, ob physische Sicherheitsmassnahmen unter realen Bedingungen funktionieren, 
                   nicht nur auf dem Papier.
                 </p>
               </div>
@@ -538,11 +538,11 @@ export default function Ansatz() {
                   <h3 className="text-lg font-bold text-foreground mb-2">Reporting & Empfehlungen</h3>
                   <p className="text-sm text-muted-foreground mb-3">
                     Wir liefern einen detaillierten Bericht mit konkreten, umsetzbaren Empfehlungen. 
-                    Keine theoretischen Konzepte, sondern praktische Maßnahmen, 
+                    Keine theoretischen Konzepte, sondern praktische Massnahmen, 
                     die die Handlungsfähigkeit im Ernstfall verbessern.
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    Ergebnis: Handlungsplan mit priorisierten Maßnahmen
+                    Ergebnis: Handlungsplan mit priorisierten Massnahmen
                   </p>
                 </div>
               </div>
@@ -613,7 +613,7 @@ export default function Ansatz() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-muted-foreground font-bold">•</span>
-                    <span>Theoretische Bewertung von Maßnahmen</span>
+                    <span>Theoretische Bewertung von Massnahmen</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-muted-foreground font-bold">•</span>
