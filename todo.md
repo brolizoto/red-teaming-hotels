@@ -448,3 +448,6 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [ ] Weitere Einsatzfelder-Seite: Grauen Hintergrund-Rahmen bei Bulletpoints hinzufügen (wie bei Hotels-Seite)
 
 - [x] Impressum & Datenschutz Seiten: Schriftart auf Calibri Light anpassen (wie Rest der Website)
+
+- [x] Home-Seite: Englische Übersetzungen in translations.ts korrigieren (waren noch auf Deutsch)
+- [x] Home.tsx: Hardcoded englische Texte wieder auf Translation-Keys umstellen

@@ -34,6 +34,20 @@ export const translations = {
       "organizational": "Organisatorisch",
       "organizationalDesc": "Notfall- und Krisenmanagement, Kommunikation, Entscheidungswege, Prozesse"
     },
+    "areas": {
+      "title": "Einsatzfelder",
+      "description": "Red Teaming ist branchenübergreifend einsetzbar, überall dort, wo Sicherheit, Krisenbereitschaft und Prozessqualität entscheidend sind.",
+      "hotels": {
+        "title": "Hotels",
+        "description": "Spezialisiert auf Hotellerie: Gästesicherheit, Reputation, Krisenmanagement und operative Kontinuität.",
+        "cta": "Mehr erfahren"
+      },
+      "otherFields": {
+        "title": "Weitere Einsatzfelder",
+        "description": "Unternehmen, Standorte, private Liegenschaften, Fire Checks und weitere Anwendungsbereiche.",
+        "cta": "Mehr erfahren"
+      }
+    },
     "cta": {
       "title": "Gespräch anfragen",
       "description": "Lassen Sie uns unverbindlich besprechen, wie Red Teaming Ihre Organisation weiterbringen kann.",
@@ -446,6 +460,20 @@ export const translations = {
       "digitalDesc": "Phishing, social engineering, IT infrastructure, data security",
       "organizational": "Organizational",
       "organizationalDesc": "Emergency and crisis management, communication, decision-making paths, processes"
+    },
+    "areas": {
+      "title": "Areas of Application",
+      "description": "Red Teaming can be used across industries, wherever safety, crisis preparedness and process quality are crucial.",
+      "hotels": {
+        "title": "Hotels",
+        "description": "Specializing in the hotel industry: guest safety, reputation, crisis management and operational continuity.",
+        "cta": "Learn more"
+      },
+      "otherFields": {
+        "title": "Other Fields",
+        "description": "Businesses, sites, private properties, fire checks and other areas of application.",
+        "cta": "Learn more"
+      }
     },
     "cta": {
       "title": "Request Call",

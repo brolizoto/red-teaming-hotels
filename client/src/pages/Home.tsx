@@ -431,11 +431,10 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="accent-line mb-8"></div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-            Einsatzfelder
+            {t('home.areas.title')}
           </h2>
           <p className="text-lg text-muted-foreground mb-12">
-              Red Teaming ist branchenübergreifend einsetzbar, überall dort, 
-              wo Sicherheit, Krisenbereitschaft und Prozessqualität entscheidend sind.
+            {t('home.areas.description')}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <button
@@ -445,11 +444,10 @@ export default function Home() {
               <HomeIcon className="text-primary mb-4 group-hover:scale-110 transition-transform" size={40} />
               <h3 className="text-2xl font-bold text-foreground mb-3">Hotels</h3>
               <p className="text-muted-foreground mb-4">
-                Spezialisiert auf Hotellerie: Gästesicherheit, Reputation, 
-                Krisenmanagement und operative Kontinuität.
+                {t('home.areas.hotels.description')}
               </p>
               <div className="flex items-center gap-2 text-primary font-bold">
-                Mehr erfahren
+                {t('home.areas.hotels.cta')}
                 <ArrowRight size={16} />
               </div>
             </button>
@@ -460,11 +458,10 @@ export default function Home() {
               <Building2 className="text-primary mb-4 group-hover:scale-110 transition-transform" size={40} />
               <h3 className="text-2xl font-bold text-foreground mb-3">Weitere Einsatzfelder</h3>
               <p className="text-muted-foreground mb-4">
-                Unternehmen, Standorte, private Liegenschaften, 
-                Fire Checks und weitere Anwendungsbereiche.
+                {t('home.areas.otherFields.description')}
               </p>
               <div className="flex items-center gap-2 text-primary font-bold">
-                Mehr erfahren
+                {t('home.areas.otherFields.cta')}
                 <ArrowRight size={16} />
               </div>
             </button>
