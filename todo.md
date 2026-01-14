@@ -375,3 +375,10 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] WeitereEinsatzfelder.tsx: Verwendet bereits vollständig t() calls (keine Änderung nötig)
 - [x] English translations für otherFields erweitert (companies, locations, properties, fire)
 - [x] Language Switcher getestet (DE/EN) auf beiden Seiten - funktioniert perfekt
+
+## Footer Anpassungen
+
+- [x] Home-Seite: Footer bereits korrekt (nur E-Mail, keine Tel/Adresse)
+- [x] Hotels-Seite: Location-Sektion entfernt (nur E-Mail bleibt)
+- [x] Weitere Einsatzfelder: Footer bereits korrekt (nur E-Mail, keine Tel/Adresse)
+- [x] Alle Seiten getestet - Footer korrekt (nur E-Mail, keine Tel/Adresse)

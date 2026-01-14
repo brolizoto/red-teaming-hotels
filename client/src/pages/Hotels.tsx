@@ -370,13 +370,6 @@ export default function Hotels() {
               </div>
               <div className="flex flex-col md:flex-row gap-12 md:gap-16 md:justify-end">
                 <div>
-                  <h3 className="font-bold text-foreground mb-4">{t('hotels.footer.location')}</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Weberstrasse 16<br />
-                    CH-3005 Bern
-                  </p>
-                </div>
-                <div>
                   <h3 className="font-bold text-foreground mb-4">{t('hotels.footer.contact')}</h3>
                   <p className="text-sm text-muted-foreground">
                     <a href="mailto:contact@redteaming.ch" className="hover:text-primary transition-colors">
