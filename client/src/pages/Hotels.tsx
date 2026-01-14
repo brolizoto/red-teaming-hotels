@@ -13,7 +13,7 @@ import { UnifiedFooter } from "@/components/UnifiedFooter";
  */
 
 export default function Hotels() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [contactFormOpen, setContactFormOpen] = useState(false);
 
   const seoData = {
@@ -295,7 +295,7 @@ export default function Hotels() {
               
               <div className="my-12">
                 <img 
-                  src="/images/roadmap.png" 
+                  src={i18n.language === 'en' ? '/images/roadmap-en.png' : '/images/roadmap.png'}
                   alt={t('hotels.approach.roadmap.alt')}
                   className="w-full max-w-5xl mx-auto rounded-lg shadow-lg"
                   loading="lazy"

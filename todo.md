@@ -451,3 +451,5 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 
 - [x] Home-Seite: Englische Übersetzungen in translations.ts korrigieren (waren noch auf Deutsch)
 - [x] Home.tsx: Hardcoded englische Texte wieder auf Translation-Keys umstellen
+
+- [x] Hotels-Seite: Englische Red Teaming Roadmap Grafik nach "Security as a Leadership" Sektion einfügen
