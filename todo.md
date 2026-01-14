@@ -338,3 +338,8 @@
 ## Brandschutz Bulletpoints korrigieren
 
 - [x] Prüfbereiche-Bulletpoints auf Weitere Einsatzfelder Seite aktualisieren
+
+## Schriftart auf Calibri Light ändern
+
+- [x] Schriftart in index.css auf Calibri Light ändern
+- [x] Fallback-Schriften konfigurieren
