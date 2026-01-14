@@ -23,7 +23,7 @@ export default function Privacy() {
         <section className="container py-16 md:py-24">
           <div className="max-w-2xl">
             <div className="accent-line mb-8"></div>
-            <h1 className="text-heading mb-12">{t('privacy.title')}</h1>
+            <h1 className="text-3xl md:text-4xl font-light mb-12">{t('privacy.title')}</h1>
 
             <div className="space-y-8 text-sm text-muted-foreground">
               <p className="text-base">
@@ -31,7 +31,7 @@ export default function Privacy() {
               </p>
 
               <div>
-                <h2 className="text-subheading mb-4">{t('privacy.responsible.title')}</h2>
+                <h2 className="text-2xl md:text-3xl font-light mb-4">{t('privacy.responsible.title')}</h2>
                 <p className="space-y-1">
                   <div>{t('privacy.responsible.company')}</div>
                   <div>{t('privacy.responsible.name')}</div>
@@ -48,7 +48,7 @@ export default function Privacy() {
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">{t('privacy.collection.title')}</h2>
+                <h2 className="text-2xl md:text-3xl font-light mb-4">{t('privacy.collection.title')}</h2>
                 <p className="mb-4">
                   {t('privacy.collection.intro')}
                 </p>
@@ -70,7 +70,7 @@ export default function Privacy() {
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">{t('privacy.purpose.title')}</h2>
+                <h2 className="text-2xl md:text-3xl font-light mb-4">{t('privacy.purpose.title')}</h2>
                 <p className="mb-4">{t('privacy.purpose.intro')}</p>
                 <ul className="list-disc list-inside space-y-2">
                   <li>{t('privacy.purpose.item1')}</li>
@@ -83,14 +83,14 @@ export default function Privacy() {
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">{t('privacy.hosting.title')}</h2>
+                <h2 className="text-2xl md:text-3xl font-light mb-4">{t('privacy.hosting.title')}</h2>
                 <p>
                   {t('privacy.hosting.text')}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">{t('privacy.cookies.title')}</h2>
+                <h2 className="text-2xl md:text-3xl font-light mb-4">{t('privacy.cookies.title')}</h2>
                 <p className="mb-4">{t('privacy.cookies.text1')}</p>
                 <p className="mb-4">{t('privacy.cookies.text2')}</p>
                 <p>
@@ -99,14 +99,14 @@ export default function Privacy() {
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">{t('privacy.storage.title')}</h2>
+                <h2 className="text-2xl md:text-3xl font-light mb-4">{t('privacy.storage.title')}</h2>
                 <p>
                   {t('privacy.storage.text')}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">{t('privacy.rights.title')}</h2>
+                <h2 className="text-2xl md:text-3xl font-light mb-4">{t('privacy.rights.title')}</h2>
                 <p className="mb-4">{t('privacy.rights.intro')}</p>
                 <ul className="list-disc list-inside space-y-2 mb-4">
                   <li>{t('privacy.rights.item1')}</li>
@@ -122,7 +122,7 @@ export default function Privacy() {
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">{t('privacy.changes.title')}</h2>
+                <h2 className="text-2xl md:text-3xl font-light mb-4">{t('privacy.changes.title')}</h2>
                 <p>
                   {t('privacy.changes.text')}
                 </p>

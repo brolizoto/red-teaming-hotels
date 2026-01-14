@@ -446,3 +446,5 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [ ] Ansatz-Seite: Englische Übersetzungen erstelle- [x] Weitere-Einsatzfelder-Seite: Alle Texte 1:1 von Live-Website übernehmenund 1:1 übernehmen
 - [ ] Weitere Einsatzfelder-Seite: Englische Übersetzungen erstellen
 - [ ] Weitere Einsatzfelder-Seite: Grauen Hintergrund-Rahmen bei Bulletpoints hinzufügen (wie bei Hotels-Seite)
+
+- [x] Impressum & Datenschutz Seiten: Schriftart auf Calibri Light anpassen (wie Rest der Website)

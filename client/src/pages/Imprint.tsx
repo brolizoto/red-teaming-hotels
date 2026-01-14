@@ -23,11 +23,11 @@ export default function Imprint() {
         <section className="container py-16 md:py-24">
           <div className="max-w-2xl">
             <div className="accent-line mb-8"></div>
-            <h1 className="text-heading mb-12">{t('imprint.title')}</h1>
+            <h1 className="text-3xl md:text-4xl font-light mb-12">{t('imprint.title')}</h1>
 
             <div className="space-y-8">
               <div>
-                <h2 className="text-subheading mb-4">{t('imprint.company.title')}</h2>
+                <h2 className="text-2xl md:text-3xl font-light mb-4">{t('imprint.company.title')}</h2>
                 <p className="text-sm text-muted-foreground space-y-2">
                   <div>{t('imprint.company.name')}</div>
                   <div>{t('imprint.company.address')}</div>
@@ -37,7 +37,7 @@ export default function Imprint() {
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">{t('imprint.contact.title')}</h2>
+                <h2 className="text-2xl md:text-3xl font-light mb-4">{t('imprint.contact.title')}</h2>
                 <p className="text-sm text-muted-foreground space-y-2">
                   <div>
                     {t('imprint.contact.email')}{' '}
@@ -49,7 +49,7 @@ export default function Imprint() {
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">{t('imprint.uid.title')}</h2>
+                <h2 className="text-2xl md:text-3xl font-light mb-4">{t('imprint.uid.title')}</h2>
                 <p className="text-sm text-muted-foreground">
                   {t('imprint.uid.value')}
                 </p>
