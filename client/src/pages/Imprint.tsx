@@ -50,12 +50,7 @@ export default function Imprint() {
                 </p>
               </div>
 
-              <div>
-                <h2 className="text-subheading mb-4">Geschäftsführung</h2>
-                <p className="text-sm text-muted-foreground">
-                  R. Markwalder
-                </p>
-              </div>
+
             </div>
           </div>
         </section>
