@@ -116,30 +116,37 @@
     "hero": {
       "title": "Red Teaming für Hotels",
       "subtitle": "Vorbereitung bestimmt das Schadenausmass.",
-      "description": "Red Teaming für Hotels prüft Notfall- und Krisenbereitschaft unter realistischen Bedingungen – physisch, digital und organisatorisch. Nicht theoretisch, sondern real. Vorbereitung statt Improvisation."
+      "description": "Red Teaming for Hotels unterstützt Direktionen dabei, die Notfall- und Krisenbereitschaft ihrer Standorte realistisch zu testen - physisch, digital und organisatorisch. Damit Entscheidungen vorbereitet sind – nicht improvisiert.",
+      "cta": "Gespräch anfragen (30 Minuten)"
     },
     "truth": {
       "title": "Die unbequeme Wahrheit",
-      "description": "Sicherheit scheitert selten an Technik – sondern an Führung, Vorbereitung und Realität. Red Teaming prüft die Resilienz von Hotels unter realistischen Bedingungen – nicht entlang von Checklisten, sondern entlang von Risiko und Abhängigkeiten.",
+      "description": "Sicherheit scheitert selten an Technik – sondern an Führung, Vorbereitung und Realität. Red Teaming testet die Resilienz von Hotels unter realistischen Bedingungen – nicht entlang von Checklisten, sondern entlang von Risiko und Abhängigkeiten.",
       "item1": "Pläne existieren, werden aber nie real getestet",
       "item2": "Zuständigkeiten sind unklar",
       "item3": "Dokumentation ist unvollständig",
       "item4": "IT-Ausfälle blockieren Krisenabläufe"
     },
-    "nightmare": {
+    "scenario": {
       "title": "Das Schreckensszenario",
       "description": "Was passiert, wenn zwei Dinge gleichzeitig eintreten?",
-      "event": "Ereignis",
-      "eventDesc": "Brand, Evakuation, Sonderlage",
-      "cyber": "Cyber-Vorfall",
-      "cyberDesc": "Phishing, Systemverlust",
-      "consequence": "Konsequenz:",
-      "item1": "PMS / Schliesssysteme eingeschränkt",
-      "item2": "Evakuationslisten nicht verfügbar",
-      "item3": "Kommunikation blockiert",
-      "item4": "Versicherer verlangt Nachweise"
+      "event": {
+        "title": "Ereignis",
+        "description": "Brand, Evakuation, Sonderlage"
+      },
+      "cyber": {
+        "title": "Cyber-Vorfall",
+        "description": "Phishing, Systemverlust"
+      },
+      "consequence": {
+        "title": "Konsequenz:",
+        "item1": "PMS / Schliesssysteme eingeschränkt",
+        "item2": "Evakuationslisten nicht verfügbar",
+        "item3": "Kommunikation blockiert",
+        "item4": "Versicherer verlangt Nachweise"
+      }
     },
-    "approaches": {
+    "approach": {
       "title": "Unser Ansatz für Hotels",
       "basic": {
         "title": "Red Teaming Basic",
@@ -148,8 +155,8 @@
         "item2": "Reale Tests ausgewählter Szenarien",
         "item3": "Bewertung von Notfall- & Evakuationsfähigkeit",
         "item4": "Management Summary mit klaren Prioritäten",
-        "idealFor": "IDEAL FÜR:",
-        "idealDesc": "Hotels, die wissen wollen, wo sie stehen – bevor sie vertiefen."
+        "ideal": "IDEAL FÜR:",
+        "idealText": "Hotels, die wissen wollen, wo sie stehen – bevor sie vertiefen."
       },
       "advanced": {
         "title": "Red Teaming Advanced",
@@ -158,28 +165,37 @@
         "item2": "Integrierte physische & digitale Eintrittspunkte",
         "item3": "Vertiefte Analyse von Krisenmanagement & Governance",
         "item4": "Detaillierter Entscheid- & Massnahmenplan",
-        "idealFor": "IDEAL FÜR:",
-        "idealDesc": "Empfohlen bei erhöhter Sichtbarkeit, Events, komplexer IT oder regulatorischem Druck."
+        "ideal": "IDEAL FÜR:",
+        "idealText": "Empfohlen bei erhöhter Sichtbarkeit, Events, komplexer IT oder regulatorischem Druck."
       }
     },
     "process": {
       "title": "Ablauf der Zusammenarbeit",
-      "step1": "Gespräch",
-      "step1Desc": "30-minütiges Erstgespräch auf Direktionsstufe",
-      "step2": "Test",
-      "step2Desc": "Diskrete Testphase unter realen Bedingungen",
-      "step3": "Summary",
-      "step3Desc": "Management-Summary & Priorisierung",
-      "step4": "Entscheid",
-      "step4Desc": "Entscheid über nächste Schritte"
+      "step1": {
+        "number": "01",
+        "title": "Gespräch",
+        "description": "30-minütiges Erstgespräch auf Direktionsstufe"
+      },
+      "step2": {
+        "number": "02",
+        "title": "Test",
+        "description": "Diskrete Testphase unter realen Bedingungen"
+      },
+      "step3": {
+        "number": "03",
+        "title": "Summary",
+        "description": "Management-Summary & Priorisierung"
+      },
+      "step4": {
+        "number": "04",
+        "title": "Entscheid",
+        "description": "Entscheid über nächste Schritte"
+      }
     },
     "cta": {
       "title": "Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren.",
       "description": "Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.",
       "button": "Gespräch anfragen"
-    },
-    "footer": {
-      "tagline": "Verantwortung für Hotelsicherheit ist heute auf Direktionsebene."
     }
   },
   "otherFields": {

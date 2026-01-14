@@ -116,7 +116,8 @@
     "hero": {
       "title": "Red Teaming for Hotels",
       "subtitle": "Preparation determines the extent of damage.",
-      "description": "Red Teaming for hotels tests emergency and crisis preparedness under realistic conditions – physically, digitally and organizationally. Not theoretically, but for real. Preparation instead of improvisation."
+      "description": "Red Teaming for hotels tests emergency and crisis preparedness under realistic conditions – physically, digitally and organizationally. Not theoretically, but for real. Preparation instead of improvisation.",
+      "cta": "Request Call (30 Minutes)"
     },
     "truth": {
       "title": "The uncomfortable truth",
@@ -126,20 +127,26 @@
       "item3": "Documentation is incomplete",
       "item4": "IT failures block crisis processes"
     },
-    "nightmare": {
+    "scenario": {
       "title": "The nightmare scenario",
       "description": "What happens when two things occur simultaneously?",
-      "event": "Event",
-      "eventDesc": "Fire, evacuation, special situation",
-      "cyber": "Cyber incident",
-      "cyberDesc": "Phishing, system loss",
-      "consequence": "Consequence:",
-      "item1": "PMS / locking systems restricted",
-      "item2": "Evacuation lists not available",
-      "item3": "Communication blocked",
-      "item4": "Insurer demands evidence"
+      "event": {
+        "title": "Event",
+        "description": "Fire, evacuation, special situation"
+      },
+      "cyber": {
+        "title": "Cyber incident",
+        "description": "Phishing, system loss"
+      },
+      "consequence": {
+        "title": "Consequence:",
+        "item1": "PMS / locking systems restricted",
+        "item2": "Evacuation lists not available",
+        "item3": "Communication blocked",
+        "item4": "Insurer demands evidence"
+      }
     },
-    "approaches": {
+    "approach": {
       "title": "Our approach for hotels",
       "basic": {
         "title": "Red Teaming Basic",
@@ -148,8 +155,8 @@
         "item2": "Real tests of selected scenarios",
         "item3": "Evaluation of emergency & evacuation capability",
         "item4": "Management summary with clear priorities",
-        "idealFor": "IDEAL FOR:",
-        "idealDesc": "Hotels that want to know where they stand – before they deepen."
+        "ideal": "IDEAL FOR:",
+        "idealText": "Hotels that want to know where they stand – before they deepen."
       },
       "advanced": {
         "title": "Red Teaming Advanced",
@@ -158,28 +165,37 @@
         "item2": "Integrated physical & digital entry points",
         "item3": "In-depth analysis of crisis management & governance",
         "item4": "Detailed decision & action plan",
-        "idealFor": "IDEAL FOR:",
-        "idealDesc": "Recommended for increased visibility, events, complex IT or regulatory pressure."
+        "ideal": "IDEAL FOR:",
+        "idealText": "Recommended for increased visibility, events, complex IT or regulatory pressure."
       }
     },
     "process": {
       "title": "Collaboration process",
-      "step1": "Conversation",
-      "step1Desc": "30-minute initial conversation at management level",
-      "step2": "Test",
-      "step2Desc": "Discreet test phase under real conditions",
-      "step3": "Summary",
-      "step3Desc": "Management summary & prioritization",
-      "step4": "Decision",
-      "step4Desc": "Decision on next steps"
+      "step1": {
+        "number": "01",
+        "title": "Conversation",
+        "description": "30-minute initial conversation at management level"
+      },
+      "step2": {
+        "number": "02",
+        "title": "Test",
+        "description": "Discreet test phase under real conditions"
+      },
+      "step3": {
+        "number": "03",
+        "title": "Summary",
+        "description": "Management summary & prioritization"
+      },
+      "step4": {
+        "number": "04",
+        "title": "Decision",
+        "description": "Decision on next steps"
+      }
     },
     "cta": {
       "title": "If you have to make decisions in an emergency, the basis for decision-making should exist beforehand.",
       "description": "A 30-minute conversation is enough to create clarity.",
       "button": "Request Call"
-    },
-    "footer": {
-      "tagline": "Responsibility for hotel security is now at management level."
     }
   },
   "otherFields": {
