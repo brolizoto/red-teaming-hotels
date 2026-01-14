@@ -123,15 +123,16 @@ export const translations = {
     },
     "truth": {
       "title": "Die unbequeme Wahrheit",
-      "description": "Sicherheit scheitert selten an Technik – sondern an Führung, Vorbereitung und Realität. Red Teaming testet die Resilienz von Hotels unter realistischen Bedingungen – nicht entlang von Checklisten, sondern entlang von Risiko und Abhängigkeiten.",
-      "item1": "Pläne existieren, werden aber nie real getestet",
-      "item2": "Zuständigkeiten sind unklar",
-      "item3": "Dokumentation ist unvollständig",
-      "item4": "IT-Ausfälle blockieren Krisenabläufe"
+      "intro": "Sicherheit scheitert selten an Technik – sondern an Führung, Vorbereitung und Realität.",
+      "point1": "Pläne existieren, werden aber nie real getestet",
+      "point2": "Zuständigkeiten sind unklar",
+      "point3": "Dokumentation ist unvollständig",
+      "point4": "IT-Ausfälle blockieren Krisenabläufe",
+      "point5": "Entscheidungen werden im Ernstfall improvisiert"
     },
     "scenario": {
-      "title": "Das Schreckensszenario",
-      "description": "Was passiert, wenn zwei Dinge gleichzeitig eintreten?",
+      "title": "Das doppelte Schreckensszenario",
+      "question": "Was passiert, wenn zwei Dinge gleichzeitig eintreten?",
       "event": {
         "title": "Ereignis",
         "description": "Brand, Evakuation, Sonderlage"
@@ -142,33 +143,50 @@ export const translations = {
       },
       "consequence": {
         "title": "Konsequenz:",
-        "item1": "PMS / Schliesssysteme eingeschränkt",
-        "item2": "Evakuationslisten nicht verfügbar",
-        "item3": "Kommunikation blockiert",
-        "item4": "Versicherer verlangt Nachweise"
+        "point1": "PMS / Schliesssysteme eingeschränkt",
+        "point2": "Evakuationslisten nicht verfügbar",
+        "point3": "Kommunikation blockiert",
+        "point4": "Versicherer verlangt Nachweise"
       }
+    },
+    "testing": {
+      "title": "Was wir real prüfen",
+      "intro": "Wir prüfen Hotels so, wie es ein reales Ereignis tun würde. Nicht theoretisch. Nicht zertifikatsgetrieben.",
+      "focus": "Unser Fokus liegt auf den Punkten, die im Ernstfall Entscheidungen verzögern oder verunmöglichen.",
+      "area1": "Physische Sicherheit & Evakuationsfähigkeit",
+      "area2": "Cyber-Resilienz & Phishing-Szenarien",
+      "area3": "Entscheidungswege & Führungsfähigkeit",
+      "area4": "Kritische Abhängigkeiten (IT, Technik, Personal)",
+      "vennAlt": "Ganzheitliche Hotelsicherheit entsteht in den Schnittstellen: Physische Sicherheit, Digitale Sicherheit und Organisation & Führung",
+      "quote": "Entscheidend ist nicht, ob etwas existiert, sondern ob es im Ernstfall funktioniert."
     },
     "approach": {
       "title": "Unser Ansatz für Hotels",
+      "subtitle": "Je nach Ausgangslage und Zielsetzung",
       "basic": {
         "title": "Red Teaming Basic",
         "subtitle": "Entscheidungsfähigkeit herstellen",
-        "item1": "Strukturierte Risiko- & Schutz-Standortbestimmung",
-        "item2": "Reale Tests ausgewählter Szenarien",
-        "item3": "Bewertung von Notfall- & Evakuationsfähigkeit",
-        "item4": "Management Summary mit klaren Prioritäten",
-        "ideal": "IDEAL FÜR:",
-        "idealText": "Hotels, die wissen wollen, wo sie stehen – bevor sie vertiefen."
+        "point1": "Strukturierte Risiko- & Schutz-Standortbestimmung",
+        "point2": "Reale Tests ausgewählter Szenarien",
+        "point3": "Bewertung von Notfall- & Evakuationsfähigkeit",
+        "point4": "Management Summary mit klaren Prioritäten",
+        "idealFor": "IDEAL FÜR:",
+        "idealForText": "Hotels, die wissen wollen, wo sie stehen – bevor sie vertiefen."
       },
       "advanced": {
         "title": "Red Teaming Advanced",
         "subtitle": "Haftungs- & Krisenrisiken aktiv reduzieren",
-        "item1": "Erweiterte Szenarien & 24h-Betrachtung",
-        "item2": "Integrierte physische & digitale Eintrittspunkte",
-        "item3": "Vertiefte Analyse von Krisenmanagement & Governance",
-        "item4": "Detaillierter Entscheid- & Massnahmenplan",
-        "ideal": "IDEAL FÜR:",
-        "idealText": "Empfohlen bei erhöhter Sichtbarkeit, Events, komplexer IT oder regulatorischem Druck."
+        "point1": "Erweiterte Szenarien & 24h-Betrachtung",
+        "point2": "Integrierte physische & digitale Eintrittspunkte",
+        "point3": "Vertiefte Analyse von Krisenmanagement & Governance",
+        "point4": "Detaillierter Entscheid- & Massnahmenplan",
+        "idealFor": "IDEAL FÜR:",
+        "idealForText": "Empfohlen bei erhöhter Sichtbarkeit, Events, komplexer IT oder regulatorischem Druck."
+      },
+      "roadmap": {
+        "title": "Sicherheit als Führungsaufgabe",
+        "subtitle": "Red Teaming macht Entscheidungsfähigkeit entwickelbar",
+        "alt": "Red Teaming Roadmap: Von formaler Sicherheit über getestete Realität zur geführten Sicherheit"
       }
     },
     "process": {
@@ -196,15 +214,53 @@ export const translations = {
     },
     "cta": {
       "title": "Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren.",
-      "description": "Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.",
+      "subtitle": "Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.",
       "button": "Gespräch anfragen"
+    },
+    "footer": {
+      "tagline": "Hotel Security ist heute ein Führungs- und Entscheidungsthema",
+      "location": "Location",
+      "contact": "Contact",
+      "copyright": "© 2026 Red Teaming for Hotels. All rights reserved.",
+      "imprint": "Impressum",
+      "privacy": "Datenschutz"
     }
   },
   "otherFields": {
     "hero": {
       "title": "Weitere Einsatzfelder",
-      "subtitle": "Red Teaming über Hotels hinaus",
-      "description": "Red Teaming ist nicht auf Hotels beschränkt. Die Methodik lässt sich auf alle Organisationen anwenden, die ihre Resilienz unter realistischen Bedingungen prüfen wollen."
+      "subtitle": "Red Teaming ist branchenunabhängig einsetzbar, überall dort, wo Sicherheit, Krisenbereitschaft und Prozessqualität entscheidend sind.",
+      "description": "Neben der spezialisierten Anwendung in der Hotellerie bieten wir Red Teaming für Unternehmen, Standorte, private Liegenschaften und als Teil physischer Sicherheitsüberprüfungen an."
+    },
+    "companies": {
+      "title": "Unternehmen",
+      "intro": "Red Teaming für Unternehmen prüft die Widerstandsfähigkeit von Organisationen gegenüber physischen, digitalen und organisatorischen Bedrohungen.",
+      "description": "Wir testen Zutrittskontrolle, IT-Sicherheit, Krisenmanagement und Kommunikationswege unter realen Bedingungen, nicht theoretisch, sondern so, wie es ein Angreifer oder ein Notfall tun würde.",
+      "areasTitle": "Typische Prüfbereiche:",
+      "area1": "Physische Sicherheit: Zutrittskontrolle, Perimeter, Besuchermanagement",
+      "area2": "Digitale Sicherheit: Phishing, Social Engineering, IT-Infrastruktur",
+      "area3": "Organisatorische Resilienz: Krisenmanagement, Notfallpläne, Kommunikation",
+      "area4": "Prozessqualität: Abhängigkeiten, Entscheidungswege, Dokumentation"
+    },
+    "locations": {
+      "title": "Standorte & Betriebsstätten",
+      "intro": "Für Unternehmen mit mehreren Standorten oder kritischen Betriebsstätten prüfen wir standortspezifische Sicherheitskonzepte und deren Umsetzung.",
+      "description": "Besonders relevant für Produktionsstandorte, Logistikzentren, Rechenzentren oder Standorte mit besonderen Sicherheitsanforderungen.",
+      "focusTitle": "Fokus:",
+      "focus1": "Standortspezifische Risiken und Schwachstellen",
+      "focus2": "Koordination zwischen Standorten im Krisenfall",
+      "focus3": "Evakuierungskonzepte und Notfallpläne",
+      "focus4": "Lokale vs. zentrale Sicherheitsverantwortung"
+    },
+    "properties": {
+      "title": "Private Liegenschaften",
+      "intro": "Für private Liegenschaften, Wohnanlagen oder Immobilien mit besonderen Sicherheitsanforderungen bieten wir diskrete Red Teaming Assessments an.",
+      "description": "Wir prüfen physische Sicherheitskonzepte, Zutrittskontrolle, Überwachungssysteme und Notfallpläne unter realen Bedingungen.",
+      "servicesTitle": "Leistungen:",
+      "service1": "Diskrete Prüfung physischer Sicherheitsmaßnahmen",
+      "service2": "Bewertung von Zutrittskontrolle und Perimeter",
+      "service3": "Überprüfung von Überwachungs- und Alarmsystemen",
+      "service4": "Notfallplanung und Evakuierungskonzepte"
     },
     "crisis": {
       "title": "Krisenmanagement",
@@ -224,12 +280,28 @@ export const translations = {
     },
     "fire": {
       "title": "Brandschutz",
-      "description": "Red Teaming prüft Brandschutzmassnahmen aus grundsätzlicher Perspektive. Nicht als Ersatz für behördliche Kontrollen, sondern als Ergänzung zur Vorbereitung.",
+      "intro": "Red Teaming prüft Brandschutzmaßnahmen aus grundsätzlicher Perspektive. Nicht als Ersatz für behördliche Kontrollen, sondern als Ergänzung zur Vorbereitung.",
       "note": "Wichtig: Ein Red Teaming Assessment ersetzt keine behördliche Kontrolle, trägt aber zu einer erhöhten Vorbereitung bei.",
-      "item1": "Anwendbarkeit von Brandschutzkonzepten",
-      "item2": "Evakuierungspläne und Fluchtwege",
-      "item3": "Alarmierungssysteme und Eskalationsprozesse im Brandfall",
-      "item4": "Durchsicht und Einschätzung von Brandschutzplänen"
+      "areasTitle": "Prüfbereiche:",
+      "area1": "Anwendbarkeit von Brandschutzkonzepten",
+      "area2": "Evakuierungspläne und Fluchtwege",
+      "area3": "Alarmierungssysteme und Eskalationsprozesse im Brandfall",
+      "area4": "Durchsicht und Einschätzung von Brandschutzplänen"
+    },
+    "cta": {
+      "title": "Interesse an einer Standortbestimmung?",
+      "subtitle": "Ein 30-minütiges Gespräch reicht, um Klarheit zu schaffen.",
+      "button": "Gespräch anfragen"
+    },
+    "footer": {
+      "home": "Home",
+      "approach": "Ansatz",
+      "hotels": "Hotels",
+      "otherFields": "Weitere Einsatzfelder",
+      "contact": "Kontakt",
+      "imprint": "Impressum",
+      "privacy": "Datenschutz",
+      "copyright": "© 2026 Red Teaming Switzerland. All rights reserved."
     },
     "authority": {
       "title": "Behördliche Kontrollen",

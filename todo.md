@@ -362,6 +362,7 @@
 
 HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig, haben aber vereinfachtes Layout ohne originale Bilder/Grid-Strukturen. Original-Layouts sind in Checkpoint 078c1651 gesichert.
 
-- [x] Hotels-Seite: Original Layout mit Bildern und Grid-Struktur wiederherstellen (685 Zeilen, mit i18n) - IN ARBEIT
-- [ ] Weitere Einsatzfelder-Seite: Original Layout mit Bildern und Grid-Struktur wiederherstellen (579 Zeilen, mit i18n)
-- [ ] Manuelle Integration erforderlich: Navigation Component, ContactFormModal Component, t() Aufrufe für alle Texte
+- [x] Hotels-Seite: Original Layout mit allen visuellen Elementen wiederherstellen (Icons, Infografik, Prozess-Diagramm) + i18n
+- [x] Weitere Einsatzfelder-Seite: Original Layout mit 4 Sektionen und Icons wiederherstellen + i18n
+- [x] Translation-Keys in translations.ts korrigiert (point1-5 statt item1-4, companies/locations/properties hinzugefügt)
+- [ ] Language Switcher testen (DE/EN) - Optional
