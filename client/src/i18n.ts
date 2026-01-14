@@ -2,8 +2,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-import de from './locales/de.json';
-import en from './locales/en.json';
+import { de, en } from './locales/translations';
 
 i18n
   .use(LanguageDetector)
@@ -22,6 +21,16 @@ i18n
     interpolation: {
       escapeValue: false,
     },
+    debug: true, // Enable debugging
   });
+
+// Debug: Log loaded resources
+console.log('[i18n] Initialized with resources:', i18n.store.data);
+console.log('[i18n] Current language:', i18n.language);
+
+// Make i18n available globally for debugging
+if (typeof window !== 'undefined') {
+  (window as any).i18n = i18n;
+}
 
 export default i18n;

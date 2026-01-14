@@ -1,3 +1,6 @@
+// Initialize i18n FIRST before any other imports
+import "./i18n";
+
 import { trpc } from "@/lib/trpc";
 import { UNAUTHED_ERR_MSG } from '@shared/const';
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -7,7 +10,6 @@ import superjson from "superjson";
 import App from "./App";
 import { getLoginUrl } from "./const";
 import "./index.css";
-import "./i18n";
 
 const queryClient = new QueryClient();
 

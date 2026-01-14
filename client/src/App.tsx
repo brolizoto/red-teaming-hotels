@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -50,7 +51,9 @@ function App() {
         >
           <TooltipProvider>
             <Toaster />
-            <Router />
+            <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+              <Router />
+            </Suspense>
           </TooltipProvider>
         </ThemeProvider>
       </HelmetProvider>
