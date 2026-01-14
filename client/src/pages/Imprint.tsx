@@ -25,7 +25,7 @@ export default function Imprint() {
                 <h2 className="text-subheading mb-4">Firmenangaben</h2>
                 <p className="text-sm text-muted-foreground space-y-2">
                   <div>Markwalder Unternehmensgruppe GmbH</div>
-                  <div>Weiheregasse 16</div>
+                  <div>Bernastrasse 8</div>
                   <div>3005 Bern</div>
                   <div>Schweiz</div>
                 </p>
