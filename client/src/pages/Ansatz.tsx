@@ -298,7 +298,7 @@ export default function Ansatz() {
             </h1>
             <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6 mb-8">
               <p className="text-xl md:text-2xl font-bold text-foreground italic">
-                "Wenn Sie im Ernstfall entscheiden müssen, sollte die Entscheidungsgrundlage vorher existieren."
+                "Entscheidungsgrundlagen müssen vor einem Sicherheitsereignis erarbeitet sein – nicht erst im Krisenfall."
               </p>
             </div>
             <p className="text-lg md:text-xl text-muted-foreground">
