@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 export default function Privacy() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
@@ -8,7 +12,7 @@ export default function Privacy() {
             RED TEAMING <span className="text-sm text-muted-foreground">Switzerland</span>
           </a>
           <a href="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-            ← Zurück
+            {t('privacy.back')}
           </a>
         </div>
       </header>
@@ -18,23 +22,23 @@ export default function Privacy() {
         <section className="container py-16 md:py-24">
           <div className="max-w-2xl">
             <div className="accent-line mb-8"></div>
-            <h1 className="text-heading mb-12">Datenschutzerklärung</h1>
+            <h1 className="text-heading mb-12">{t('privacy.title')}</h1>
 
             <div className="space-y-8 text-sm text-muted-foreground">
               <p className="text-base">
-                Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den geltenden gesetzlichen Datenschutzvorschriften der Schweiz (DSG).
+                {t('privacy.intro')}
               </p>
 
               <div>
-                <h2 className="text-subheading mb-4">1. Verantwortliche Stelle</h2>
+                <h2 className="text-subheading mb-4">{t('privacy.responsible.title')}</h2>
                 <p className="space-y-1">
-                  <div>Red Teaming Switzerland</div>
-                  <div>Markwalder Unternehmensgruppe GmbH</div>
-                  <div>Bernastrasse 8</div>
-                  <div>CH-3005 Bern</div>
-                  <div>UID: CHE-313.293.712</div>
+                  <div>{t('privacy.responsible.company')}</div>
+                  <div>{t('privacy.responsible.name')}</div>
+                  <div>{t('privacy.responsible.address')}</div>
+                  <div>{t('privacy.responsible.city')}</div>
+                  <div>{t('privacy.responsible.uid')}</div>
                   <div>
-                    E-Mail:{' '}
+                    {t('privacy.responsible.email')}{' '}
                     <a href="mailto:contact@redteaming.ch" className="text-primary hover:underline">
                       contact@redteaming.ch
                     </a>
@@ -43,73 +47,73 @@ export default function Privacy() {
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">2. Erhebung und Verarbeitung personenbezogener Daten</h2>
+                <h2 className="text-subheading mb-4">{t('privacy.collection.title')}</h2>
                 <p className="mb-4">
-                  Wir verarbeiten personenbezogene Daten nur, wenn Sie uns diese freiwillig zur Verfügung stellen, insbesondere:
+                  {t('privacy.collection.intro')}
                 </p>
                 <ul className="list-disc list-inside space-y-2 mb-4">
-                  <li>bei der Kontaktaufnahme per E-Mail</li>
-                  <li>über ein Kontaktformular</li>
-                  <li>bei der Anfrage eines Gesprächstermins</li>
+                  <li>{t('privacy.collection.item1')}</li>
+                  <li>{t('privacy.collection.item2')}</li>
+                  <li>{t('privacy.collection.item3')}</li>
                 </ul>
-                <p className="mb-4">Zu den verarbeiteten Daten können gehören:</p>
+                <p className="mb-4">{t('privacy.collection.dataTitle')}</p>
                 <ul className="list-disc list-inside space-y-2">
-                  <li>Name</li>
-                  <li>E-Mail-Adresse</li>
-                  <li>Telefonnummer</li>
-                  <li>Inhalt Ihrer Anfrage</li>
+                  <li>{t('privacy.collection.data1')}</li>
+                  <li>{t('privacy.collection.data2')}</li>
+                  <li>{t('privacy.collection.data3')}</li>
+                  <li>{t('privacy.collection.data4')}</li>
                 </ul>
                 <p className="mt-4">
-                  Diese Daten werden ausschliesslich zur Bearbeitung Ihrer Anfrage und zur Kommunikation mit Ihnen verwendet.
+                  {t('privacy.collection.usage')}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">3. Zweck der Datenverarbeitung</h2>
-                <p className="mb-4">Die Verarbeitung Ihrer Daten erfolgt zu folgenden Zwecken:</p>
+                <h2 className="text-subheading mb-4">{t('privacy.purpose.title')}</h2>
+                <p className="mb-4">{t('privacy.purpose.intro')}</p>
                 <ul className="list-disc list-inside space-y-2">
-                  <li>Beantwortung von Anfragen</li>
-                  <li>Terminvereinbarung und Kommunikation</li>
-                  <li>Einordnung eines möglichen Prüfbedarfs</li>
+                  <li>{t('privacy.purpose.item1')}</li>
+                  <li>{t('privacy.purpose.item2')}</li>
+                  <li>{t('privacy.purpose.item3')}</li>
                 </ul>
                 <p className="mt-4">
-                  Eine Weitergabe Ihrer Daten an Dritte erfolgt nicht, ausser wenn dies zur technischen Abwicklung notwendig ist oder gesetzlich vorgeschrieben wird.
+                  {t('privacy.purpose.sharing')}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">4. Hosting der Website</h2>
+                <h2 className="text-subheading mb-4">{t('privacy.hosting.title')}</h2>
                 <p>
-                  Unsere Website wird bei Manus gehostet. Manus verarbeitet Daten in unserem Auftrag und stellt den technischen Betrieb der Website sicher. Dabei können technisch notwendige Zugriffsdaten (z. B. IP-Adresse, Zeitpunkt des Zugriffs, Browsertyp) erfasst werden. Diese Daten dienen ausschliesslich der Sicherstellung eines stabilen und sicheren Betriebs der Website.
+                  {t('privacy.hosting.text')}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">5. Cookies und Tracking</h2>
-                <p className="mb-4">Unsere Website verwendet keine Tracking- oder Marketing-Cookies.</p>
-                <p className="mb-4">Es werden keine Profile erstellt und kein Nutzerverhalten ausgewertet.</p>
+                <h2 className="text-subheading mb-4">{t('privacy.cookies.title')}</h2>
+                <p className="mb-4">{t('privacy.cookies.text1')}</p>
+                <p className="mb-4">{t('privacy.cookies.text2')}</p>
                 <p>
-                  Technisch notwendige Cookies können eingesetzt werden, um die Funktionalität der Website sicherzustellen.
+                  {t('privacy.cookies.text3')}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">6. Dauer der Speicherung</h2>
+                <h2 className="text-subheading mb-4">{t('privacy.storage.title')}</h2>
                 <p>
-                  Personenbezogene Daten werden nur so lange gespeichert, wie dies für die Bearbeitung Ihrer Anfrage erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.
+                  {t('privacy.storage.text')}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">7. Ihre Rechte</h2>
-                <p className="mb-4">Sie haben jederzeit das Recht:</p>
+                <h2 className="text-subheading mb-4">{t('privacy.rights.title')}</h2>
+                <p className="mb-4">{t('privacy.rights.intro')}</p>
                 <ul className="list-disc list-inside space-y-2 mb-4">
-                  <li>Auskunft über die zu Ihrer Person gespeicherten Daten zu erhalten</li>
-                  <li>die Berichtigung unrichtiger Daten zu verlangen</li>
-                  <li>die Löschung Ihrer Daten zu verlangen, sofern keine gesetzlichen Pflichten entgegenstehen</li>
+                  <li>{t('privacy.rights.item1')}</li>
+                  <li>{t('privacy.rights.item2')}</li>
+                  <li>{t('privacy.rights.item3')}</li>
                 </ul>
                 <p>
-                  Anfragen richten Sie bitte an:{' '}
+                  {t('privacy.rights.contact')}{' '}
                   <a href="mailto:contact@redteaming.ch" className="text-primary hover:underline">
                     contact@redteaming.ch
                   </a>
@@ -117,14 +121,14 @@ export default function Privacy() {
               </div>
 
               <div>
-                <h2 className="text-subheading mb-4">8. Änderungen</h2>
+                <h2 className="text-subheading mb-4">{t('privacy.changes.title')}</h2>
                 <p>
-                  Diese Datenschutzerklärung kann bei Bedarf angepasst werden, insbesondere bei Änderungen der gesetzlichen Vorgaben oder der Website-Funktionalität. Es gilt jeweils die aktuelle Version auf dieser Website.
+                  {t('privacy.changes.text')}
                 </p>
               </div>
 
               <div className="pt-4 border-t border-border">
-                <p className="text-xs text-muted-foreground">Stand: Januar 2026</p>
+                <p className="text-xs text-muted-foreground">{t('privacy.lastUpdated')}</p>
               </div>
             </div>
           </div>
@@ -134,7 +138,7 @@ export default function Privacy() {
       {/* Footer */}
       <footer className="bg-card border-t border-border mt-12">
         <div className="container py-8 text-center text-xs text-muted-foreground">
-          <p>© 2026 Red Teaming for Hotels. All rights reserved.</p>
+          <p>{t('privacy.copyright')}</p>
         </div>
       </footer>
     </div>

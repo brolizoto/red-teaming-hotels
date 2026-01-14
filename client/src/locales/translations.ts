@@ -1,4 +1,6 @@
-export const de = {
+// Auto-generated translations from de.json and en.json
+export const translations = {
+  de: {
   "nav": {
     "home": "Home",
     "approach": "Ansatz",
@@ -265,34 +267,90 @@ export const de = {
     "copyright": "© 2026 Red Teaming for Hotels. All rights reserved."
   },
   "imprint": {
+    "back": "← Zurück",
     "title": "Impressum",
-    "company": "Markwalder Unternehmensgruppe GmbH",
-    "address": "Bernastrasse 8",
-    "city": "CH-3005 Bern",
-    "contact": "Kontakt",
-    "email": "contact@redteaming.ch",
-    "phone": "+41 78 740 19 29",
-    "register": "Handelsregister",
-    "registerNumber": "CHE-XXX.XXX.XXX"
+    "company": {
+      "title": "Firmenangaben",
+      "name": "Markwalder Unternehmensgruppe GmbH",
+      "address": "Bernastrasse 8",
+      "city": "3005 Bern",
+      "country": "Schweiz"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "email": "E-Mail:"
+    },
+    "uid": {
+      "title": "Unternehmensidentifikation",
+      "value": "UID: CHE-313.293.712"
+    },
+    "copyright": "© 2026 Red Teaming for Hotels. All rights reserved."
   },
   "privacy": {
+    "back": "← Zurück",
     "title": "Datenschutzerklärung",
-    "intro": "Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte auf.",
-    "responsible": "Verantwortlich",
-    "company": "Markwalder Unternehmensgruppe GmbH",
-    "address": "Bernastrasse 8",
-    "city": "CH-3005 Bern",
-    "email": "contact@redteaming.ch",
-    "dataCollection": "Datenerfassung",
-    "dataCollectionText": "Beim Besuch unserer Website werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet-Service-Providers und ähnliches.",
-    "contactForm": "Kontaktformular",
-    "contactFormText": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.",
-    "rights": "Ihre Rechte",
-    "rightsText": "Sie haben jederzeit das Recht auf Auskunft über die bezüglich Ihrer Person gespeicherten Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung. Sie haben ausserdem ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten."
+    "intro": "Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den geltenden gesetzlichen Datenschutzvorschriften der Schweiz (DSG).",
+    "responsible": {
+      "title": "1. Verantwortliche Stelle",
+      "company": "Red Teaming Switzerland",
+      "name": "Markwalder Unternehmensgruppe GmbH",
+      "address": "Bernastrasse 8",
+      "city": "CH-3005 Bern",
+      "uid": "UID: CHE-313.293.712",
+      "email": "E-Mail:"
+    },
+    "collection": {
+      "title": "2. Erhebung und Verarbeitung personenbezogener Daten",
+      "intro": "Wir verarbeiten personenbezogene Daten nur, wenn Sie uns diese freiwillig zur Verfügung stellen, insbesondere:",
+      "item1": "bei der Kontaktaufnahme per E-Mail",
+      "item2": "über ein Kontaktformular",
+      "item3": "bei der Anfrage eines Gesprächstermins",
+      "dataTitle": "Zu den verarbeiteten Daten können gehören:",
+      "data1": "Name",
+      "data2": "E-Mail-Adresse",
+      "data3": "Telefonnummer",
+      "data4": "Inhalt Ihrer Anfrage",
+      "usage": "Diese Daten werden ausschliesslich zur Bearbeitung Ihrer Anfrage und zur Kommunikation mit Ihnen verwendet."
+    },
+    "purpose": {
+      "title": "3. Zweck der Datenverarbeitung",
+      "intro": "Die Verarbeitung Ihrer Daten erfolgt zu folgenden Zwecken:",
+      "item1": "Beantwortung von Anfragen",
+      "item2": "Terminvereinbarung und Kommunikation",
+      "item3": "Einordnung eines möglichen Prüfbedarfs",
+      "sharing": "Eine Weitergabe Ihrer Daten an Dritte erfolgt nicht, ausser wenn dies zur technischen Abwicklung notwendig ist oder gesetzlich vorgeschrieben wird."
+    },
+    "hosting": {
+      "title": "4. Hosting der Website",
+      "text": "Unsere Website wird bei Manus gehostet. Manus verarbeitet Daten in unserem Auftrag und stellt den technischen Betrieb der Website sicher. Dabei können technisch notwendige Zugriffsdaten (z. B. IP-Adresse, Zeitpunkt des Zugriffs, Browsertyp) erfasst werden. Diese Daten dienen ausschliesslich der Sicherstellung eines stabilen und sicheren Betriebs der Website."
+    },
+    "cookies": {
+      "title": "5. Cookies und Tracking",
+      "text1": "Unsere Website verwendet keine Tracking- oder Marketing-Cookies.",
+      "text2": "Es werden keine Profile erstellt und kein Nutzerverhalten ausgewertet.",
+      "text3": "Technisch notwendige Cookies können eingesetzt werden, um die Funktionalität der Website sicherzustellen."
+    },
+    "storage": {
+      "title": "6. Dauer der Speicherung",
+      "text": "Personenbezogene Daten werden nur so lange gespeichert, wie dies für die Bearbeitung Ihrer Anfrage erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen."
+    },
+    "rights": {
+      "title": "7. Ihre Rechte",
+      "intro": "Sie haben jederzeit das Recht:",
+      "item1": "Auskunft über die zu Ihrer Person gespeicherten Daten zu erhalten",
+      "item2": "die Berichtigung unrichtiger Daten zu verlangen",
+      "item3": "die Löschung Ihrer Daten zu verlangen, sofern keine gesetzlichen Pflichten entgegenstehen",
+      "contact": "Anfragen richten Sie bitte an:"
+    },
+    "changes": {
+      "title": "8. Änderungen",
+      "text": "Diese Datenschutzerklärung kann bei Bedarf angepasst werden, insbesondere bei Änderungen der gesetzlichen Vorgaben oder der Website-Funktionalität. Es gilt jeweils die aktuelle Version auf dieser Website."
+    },
+    "lastUpdated": "Stand: Januar 2026",
+    "copyright": "© 2026 Red Teaming for Hotels. All rights reserved."
   }
-};
-
-export const en = {
+},
+  en: {
   "nav": {
     "home": "Home",
     "approach": "Approach",
@@ -559,29 +617,87 @@ export const en = {
     "copyright": "© 2026 Red Teaming for Hotels. All rights reserved."
   },
   "imprint": {
+    "back": "← Back",
     "title": "Imprint",
-    "company": "Markwalder Unternehmensgruppe GmbH",
-    "address": "Bernastrasse 8",
-    "city": "CH-3005 Bern",
-    "contact": "Contact",
-    "email": "contact@redteaming.ch",
-    "phone": "+41 78 740 19 29",
-    "register": "Commercial Register",
-    "registerNumber": "CHE-XXX.XXX.XXX"
+    "company": {
+      "title": "Company Information",
+      "name": "Markwalder Unternehmensgruppe GmbH",
+      "address": "Bernastrasse 8",
+      "city": "3005 Bern",
+      "country": "Switzerland"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email:"
+    },
+    "uid": {
+      "title": "Company Identification",
+      "value": "UID: CHE-313.293.712"
+    },
+    "copyright": "© 2026 Red Teaming for Hotels. All rights reserved."
   },
   "privacy": {
+    "back": "← Back",
     "title": "Privacy Policy",
-    "intro": "This privacy policy informs you about the type, scope and purpose of the processing of personal data within our online offering and the associated websites, functions and content.",
-    "responsible": "Responsible",
-    "company": "Markwalder Unternehmensgruppe GmbH",
-    "address": "Bernastrasse 8",
-    "city": "CH-3005 Bern",
-    "email": "contact@redteaming.ch",
-    "dataCollection": "Data Collection",
-    "dataCollectionText": "When you visit our website, information of a general nature is automatically collected. This information (server log files) includes the type of web browser, the operating system used, the domain name of your Internet service provider and similar.",
-    "contactForm": "Contact Form",
-    "contactFormText": "If you send us inquiries via the contact form, your details from the inquiry form including the contact data you provided there will be stored with us for the purpose of processing the inquiry and in case of follow-up questions.",
-    "rights": "Your Rights",
-    "rightsText": "You have the right at any time to information about the data stored about you, their origin and recipients as well as the purpose of data processing. You also have a right to correction, blocking or deletion of this data."
+    "intro": "The protection of your personal data is important to us. We treat your personal data confidentially and in accordance with the applicable legal data protection regulations of Switzerland (DSG).",
+    "responsible": {
+      "title": "1. Responsible Entity",
+      "company": "Red Teaming Switzerland",
+      "name": "Markwalder Unternehmensgruppe GmbH",
+      "address": "Bernastrasse 8",
+      "city": "CH-3005 Bern",
+      "uid": "UID: CHE-313.293.712",
+      "email": "Email:"
+    },
+    "collection": {
+      "title": "2. Collection and Processing of Personal Data",
+      "intro": "We only process personal data if you voluntarily provide it to us, in particular:",
+      "item1": "when contacting us by email",
+      "item2": "via a contact form",
+      "item3": "when requesting a call appointment",
+      "dataTitle": "The processed data may include:",
+      "data1": "Name",
+      "data2": "Email address",
+      "data3": "Phone number",
+      "data4": "Content of your inquiry",
+      "usage": "This data is used exclusively to process your inquiry and to communicate with you."
+    },
+    "purpose": {
+      "title": "3. Purpose of Data Processing",
+      "intro": "Your data is processed for the following purposes:",
+      "item1": "Answering inquiries",
+      "item2": "Appointment scheduling and communication",
+      "item3": "Assessment of potential audit needs",
+      "sharing": "Your data will not be passed on to third parties unless this is necessary for technical processing or required by law."
+    },
+    "hosting": {
+      "title": "4. Website Hosting",
+      "text": "Our website is hosted by Manus. Manus processes data on our behalf and ensures the technical operation of the website. Technically necessary access data (e.g., IP address, time of access, browser type) may be collected. This data serves exclusively to ensure stable and secure operation of the website."
+    },
+    "cookies": {
+      "title": "5. Cookies and Tracking",
+      "text1": "Our website does not use tracking or marketing cookies.",
+      "text2": "No profiles are created and no user behavior is analyzed.",
+      "text3": "Technically necessary cookies may be used to ensure the functionality of the website."
+    },
+    "storage": {
+      "title": "6. Storage Duration",
+      "text": "Personal data is only stored for as long as necessary to process your inquiry or as required by legal retention obligations."
+    },
+    "rights": {
+      "title": "7. Your Rights",
+      "intro": "You have the right at any time to:",
+      "item1": "Obtain information about the data stored about you",
+      "item2": "Request correction of incorrect data",
+      "item3": "Request deletion of your data, provided there are no legal obligations to the contrary",
+      "contact": "Please direct inquiries to:"
+    },
+    "changes": {
+      "title": "8. Changes",
+      "text": "This privacy policy may be updated as needed, particularly in the event of changes to legal requirements or website functionality. The current version on this website always applies."
+    },
+    "lastUpdated": "Last updated: January 2026",
+    "copyright": "© 2026 Red Teaming for Hotels. All rights reserved."
   }
+}
 };
