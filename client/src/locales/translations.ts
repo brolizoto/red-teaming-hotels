@@ -41,77 +41,92 @@ export const translations = {
   },
   "approach": {
     "hero": {
-      "title": "Ansatz",
-      "subtitle": "Red Teaming prüft Organisationen so, wie es ein echtes Ereignis tun würde",
-      "description": "Nicht entlang von Checklisten, sondern entlang von Risiko und Abhängigkeiten."
+      "title": "Unser Ansatz",
+      "quote": "Entscheidungsgrundlagen müssen vor einem Sicherheitsereignis erarbeitet sein – nicht erst im Krisenfall."
     },
-    "quote": {
-      "text": "Entscheidungsgrundlagen müssen vor einem Sicherheitsereignis erarbeitet sein – nicht erst im Krisenfall."
-    },
-    "whatIsRedTeaming": {
+    "whatIs": {
       "title": "Was ist Red Teaming?",
-      "description": "Red Teaming prüft die Resilienz einer Organisation anhand realistischer Ereignisszenarien. Keine Theorie und kein Audit, aber der direkte Weg zu einer umfassenden Sicherheitsstrategie, die den individuellen Risiken, Abläufen, Abhängigkeiten und Entscheidungswegen im Alltag entspricht."
+      "p1": "Red Teaming prüft die Resilienz einer Organisation anhand realistischer Ereignisszenarien. Keine Theorie und kein Audit, sondern der direkte Weg zu einer umfassenden Sicherheitsstrategie, die den individuellen Risiken, Abläufen, Abhängigkeiten und Entscheidungswegen im Alltag entspricht.",
+      "p2": "Der Begriff Red Team stammt aus dem Sicherheitssektor. Ein Red Team ist eine Gruppe, die im Auftrag einer Organisation ein künstlich herbeigeführtes Sicherheitsereignis durchführt, um Schwachstellen, Prozesslücken und Entscheidungsdefizite aufzudecken. Das Red Team arbeitet eng mit der Direktion zusammen, um realistische Szenarien zu entwickeln und durchzuführen."
     },
-    "redTeam": {
-      "title": "Was ist ein Red Team?",
-      "description": "Der Begriff Red Team stammt aus dem Sicherheitssektor. Ein Red Team ist eine Gruppe, die im Auftrag einer Organisation ein künstlich herbeigeführtes Sicherheitsereignis durchführt, um Schwachstellen, Prozesslücken und Entscheidungsdefizite aufzudecken. Das Red Team arbeitet eng mit der Direktion zusammen, um realistische Szenarien zu entwickeln und durchzuführen."
+    "why": {
+      "title": "Warum Red Teaming?",
+      "intro": "In vielen Organisationen existiert Sicherheit auf dem Papier, aber nicht in der Realität. Eine ungeprüfte Sicherheit ist eine trügerische Sicherheit.",
+      "gapsTitle": "Typische Lücken:",
+      "gap1": "Dokumentation existiert, wurde aber nie real geprüft oder ist veraltet.",
+      "gap2": "Zuständigkeiten sind unklar oder nicht dokumentiert.",
+      "gap3": "IT-Systeme sind kritische Abhängigkeiten, aber ihre Ausfallsicherheit wurde nie getestet.",
+      "gap4": "Abläufe existieren nur theoretisch und wurden nie unter Druck geprüft.",
+      "gap5": "Entscheidungswege sind unklar oder wurden nie unter Zeitdruck getestet.",
+      "conclusion": "Red Teaming macht diese Lücken sichtbar, bevor ein Schadenfall eintritt."
     },
-    "threeDimensions": {
-      "title": "Red Teaming entlang von drei Dimensionen",
-      "intro": "Red Teaming verbindet physische, digitale und organisatorische Sicherheit zu einem verständlichen Gesamtbild. Die drei Dimensionen werden nicht isoliert betrachtet, sondern entlang von drei Dimensionen:",
+    "dimensions": {
+      "title": "Drei Dimensionen",
+      "intro": "Red Teaming verbindet physische, digitale und organisatorische Sicherheit zu einem verständlichen Gesamtbild. Die drei Dimensionen werden nicht isoliert betrachtet, sondern in ihren Abhängigkeiten:",
       "physical": {
-        "title": "Physische Sicherheit",
-        "description": "Prüfung von Zutrittskontrolle, Perimeterschutz, Evakuierungswegen und physischen Massnahmen unter realistischen Bedingungen."
+        "title": "Physisch",
+        "desc": "Prüfung von Zutrittskontrolle, Perimeterschutz, Evakuierungswegen und physischen Massnahmen.",
+        "examples": "Beispiele: Zutrittskontrolle, Perimeterschutz, Evakuierungswege, Notfallpläne, Brandschutz, Fluchtwege."
       },
       "digital": {
-        "title": "Digitale Sicherheit",
-        "description": "Prüfung von IT-Systemen, Netzwerksicherheit, Datenintegrität und digitalen Abhängigkeiten unter realistischen Bedingungen."
+        "title": "Digital",
+        "desc": "Prüfung von IT-Systemen, Netzwerksicherheit, Datenintegrität und digitalen Abhängigkeiten.",
+        "examples": "Beispiele: Phishing-Resilienz, IT-Ausfallsicherheit, Systemabhängigkeiten, Datensicherheit, Netzwerksegmentierung."
       },
       "organizational": {
-        "title": "Organisatorische Sicherheit",
-        "description": "Prüfung von Notfall- und Krisenmanagement, Kommunikation, Entscheidungswegen und Prozessen unter realistischen Bedingungen."
+        "title": "Organisatorisch",
+        "desc": "Prüfung von Notfall- und Krisenmanagement, Kommunikation, Entscheidungswegen und Prozessen.",
+        "examples": "Beispiele: Krisenmanagement, Kommunikationswege, Entscheidungsprozesse, Zuständigkeiten, Dokumentation, Führungsfähigkeit."
       }
     },
     "process": {
-      "title": "Ablauf eines Red Teaming Assessments",
-      "step1": {
-        "title": "Gespräch",
-        "description": "Erstgespräch auf Direktionsstufe zur Klärung von Zielen, Scope und Rahmenbedingungen."
+      "title": "Wie funktioniert ein Red Teaming Assessment?",
+      "intro": "Ein Red Teaming Assessment folgt einem strukturierten Ablauf und wird eng mit der Geschäftsleitung abgestimmt:",
+      "phase1": {
+        "title": "Vorbereitung & Scoping",
+        "desc": "Erstgespräch auf Direktionsstufe zur Klärung von Zielen, Scope und Rahmenbedingungen.",
+        "details": "Definition von Zielen, Scope und Rahmenbedingungen. Entwicklung realistischer Szenarien basierend auf individuellen Risiken und Abhängigkeiten. Festlegung von Testbereichen und Grenzen."
       },
-      "step2": {
-        "title": "Vorbereitung",
-        "description": "Entwicklung realistischer Szenarien basierend auf individuellen Risiken und Abhängigkeiten."
+      "phase2": {
+        "title": "Durchführung",
+        "desc": "Diskrete Testphase unter realen Bedingungen – physisch, digital und organisatorisch.",
+        "details": "Realitätsnahe Prüfung unter realen Bedingungen. Physische Tests (Zutritt, Evakuation), digitale Tests (Phishing, IT-Resilienz) und organisatorische Tests (Krisenmanagement, Entscheidungswege)."
       },
-      "step3": {
-        "title": "Test",
-        "description": "Diskrete Testphase unter realen Bedingungen – physisch, digital und organisatorisch."
+      "phase3": {
+        "title": "Analyse & Reporting",
+        "desc": "Auswertung der Testergebnisse und Identifikation von Schwachstellen, Prozesslücken und Entscheidungsdefiziten.",
+        "details": "Systematische Auswertung aller Testergebnisse. Identifikation von Schwachstellen, Prozesslücken und Entscheidungsdefiziten. Priorisierung nach Risiko und Auswirkung."
       },
-      "step4": {
-        "title": "Reporting",
-        "description": "Management Summary mit klaren Prioritäten und Massnahmenempfehlungen."
+      "phase4": {
+        "title": "Reporting & Empfehlungen",
+        "desc": "Management Summary mit klaren Prioritäten und Massnahmenempfehlungen.",
+        "details": "Präsentation der Ergebnisse auf Direktionsstufe. Management Summary mit klaren Prioritäten. Konkrete Massnahmenempfehlungen zur Verbesserung der Resilienz."
       }
     },
-    "vsOthers": {
+    "comparison": {
       "title": "Red Teaming vs. Audits & Penetration Tests",
-      "intro": "Wie unterscheidet sich Red Teaming von klassischen Audits und Penetration Tests?",
-      "audit": {
-        "title": "Audits",
-        "description": "Fokus auf Compliance und Checklisten. Prüfung von Dokumentation und Prozessen gegen Standards."
-      },
-      "pentest": {
-        "title": "Penetration Tests",
-        "description": "Fokus auf einzelne Bereiche. Prüfung von IT-Systemen und Netzwerksicherheit."
-      },
-      "redteaming": {
+      "redTeaming": {
         "title": "Red Teaming",
-        "description": "Fokus auf Resilienz und Realität. Prüfung von physischen, digitalen und organisatorischen Abhängigkeiten unter realistischen Bedingungen."
-      }
+        "point1": "Prüft die reale Handlungsfähigkeit im Ereignisfall.",
+        "point2": "Fokus auf Resilienz, nicht auf Compliance.",
+        "point3": "Deckt Lücken in Führung, Prozessen und Technik auf.",
+        "point4": "Verbindet physische, digitale und organisatorische Sicherheit.",
+        "point5": "Liefert Entscheidungsgrundlagen, keine Checklisten."
+      },
+      "audits": {
+        "title": "Audits & Pen Tests",
+        "point1": "Prüfen einzelne Bereiche oder Standards.",
+        "point2": "Fokus auf Compliance und Dokumentation.",
+        "point3": "Liefern oft keine Antwort auf Realitätsfragen.",
+        "point4": "Betrachten Dimensionen isoliert voneinander.",
+        "point5": "Liefern Checklisten, keine Entscheidungsgrundlagen."
+      },
+      "note": "Red Teaming ersetzt keine Audits oder Penetration Tests, sondern ergänzt sie durch eine realitätsnahe Prüfung der Gesamtresilienz."
     },
-    "whatIsNot": {
-      "title": "Was Red Teaming nicht ist",
-      "item1": "Kein Audit: Red Teaming prüft nicht gegen Checklisten, sondern gegen Realität.",
-      "item2": "Kein Penetration Test: Red Teaming prüft nicht nur IT-Systeme, sondern physische, digitale und organisatorische Abhängigkeiten.",
-      "item3": "Keine Beratung: Red Teaming liefert keine Massnahmen, sondern Entscheidungsgrundlagen."
+    "cta": {
+      "title": "Gespräch anfragen",
+      "subtitle": "Lassen Sie uns gemeinsam herausfinden, wie Red Teaming Ihre Organisation unterstützen kann.",
+      "button": "Kontakt aufnehmen"
     }
   },
   "hotels": {
@@ -437,77 +452,92 @@ export const translations = {
   },
   "approach": {
     "hero": {
-      "title": "Approach",
-      "subtitle": "Red Teaming tests organizations the way a real event would",
-      "description": "Not along checklists, but along risk and dependencies."
+      "title": "Our Approach",
+      "quote": "Decision-making foundations must be developed before a security event – not during a crisis."
     },
-    "quote": {
-      "text": "Decision-making foundations must be developed before a security event – not during a crisis."
-    },
-    "whatIsRedTeaming": {
+    "whatIs": {
       "title": "What is Red Teaming?",
-      "description": "Red Teaming tests an organization's resilience based on realistic event scenarios. No theory and no audit, but the direct path to a comprehensive security strategy that corresponds to individual risks, processes, dependencies and decision-making paths in everyday life."
+      "p1": "Red Teaming tests an organization's resilience based on realistic event scenarios. No theory and no audit, but the direct path to a comprehensive security strategy that corresponds to individual risks, processes, dependencies and decision-making paths in everyday life.",
+      "p2": "The term Red Team comes from the security sector. A Red Team is a group that, on behalf of an organization, conducts an artificially induced security event to uncover vulnerabilities, process gaps and decision-making deficits. The Red Team works closely with management to develop and conduct realistic scenarios."
     },
-    "redTeam": {
-      "title": "What is a Red Team?",
-      "description": "The term Red Team comes from the security sector. A Red Team is a group that, on behalf of an organization, conducts an artificially induced security event to uncover vulnerabilities, process gaps and decision-making deficits. The Red Team works closely with management to develop and conduct realistic scenarios."
+    "why": {
+      "title": "Why Red Teaming?",
+      "intro": "In many organizations, security exists on paper but not in reality. Untested security is deceptive security.",
+      "gapsTitle": "Typical gaps:",
+      "gap1": "Documentation exists but has never been tested in reality or is outdated.",
+      "gap2": "Responsibilities are unclear or not documented.",
+      "gap3": "IT systems are critical dependencies, but their fail-safety has never been tested.",
+      "gap4": "Processes exist only theoretically and have never been tested under pressure.",
+      "gap5": "Decision-making paths are unclear or have never been tested under time pressure.",
+      "conclusion": "Red Teaming makes these gaps visible before an incident occurs."
     },
-    "threeDimensions": {
-      "title": "Red Teaming along three dimensions",
-      "intro": "Red Teaming combines physical, digital and organizational security into an understandable overall picture. The three dimensions are not considered in isolation, but along three dimensions:",
+    "dimensions": {
+      "title": "Three Dimensions",
+      "intro": "Red Teaming combines physical, digital and organizational security into an understandable overall picture. The three dimensions are not considered in isolation, but in their dependencies:",
       "physical": {
-        "title": "Physical Security",
-        "description": "Testing of access control, perimeter protection, evacuation routes and physical measures under realistic conditions."
+        "title": "Physical",
+        "desc": "Testing of access control, perimeter protection, evacuation routes and physical measures.",
+        "examples": "Examples: Access control, perimeter protection, evacuation routes, emergency plans, fire protection, escape routes."
       },
       "digital": {
-        "title": "Digital Security",
-        "description": "Testing of IT systems, network security, data integrity and digital dependencies under realistic conditions."
+        "title": "Digital",
+        "desc": "Testing of IT systems, network security, data integrity and digital dependencies.",
+        "examples": "Examples: Phishing resilience, IT fail-safety, system dependencies, data security, network segmentation."
       },
       "organizational": {
-        "title": "Organizational Security",
-        "description": "Testing of emergency and crisis management, communication, decision-making paths and processes under realistic conditions."
+        "title": "Organizational",
+        "desc": "Testing of emergency and crisis management, communication, decision-making paths and processes.",
+        "examples": "Examples: Crisis management, communication channels, decision-making processes, responsibilities, documentation, leadership capability."
       }
     },
     "process": {
-      "title": "Process of a Red Teaming Assessment",
-      "step1": {
-        "title": "Conversation",
-        "description": "Initial conversation at management level to clarify goals, scope and framework conditions."
+      "title": "How does a Red Teaming Assessment work?",
+      "intro": "A Red Teaming Assessment follows a structured process and is closely coordinated with management:",
+      "phase1": {
+        "title": "Preparation & Scoping",
+        "desc": "Initial conversation at management level to clarify goals, scope and framework conditions.",
+        "details": "Definition of goals, scope and framework conditions. Development of realistic scenarios based on individual risks and dependencies. Definition of test areas and boundaries."
       },
-      "step2": {
-        "title": "Preparation",
-        "description": "Development of realistic scenarios based on individual risks and dependencies."
+      "phase2": {
+        "title": "Execution",
+        "desc": "Discreet test phase under real conditions – physically, digitally and organizationally.",
+        "details": "Realistic testing under real conditions. Physical tests (access, evacuation), digital tests (phishing, IT resilience) and organizational tests (crisis management, decision-making paths)."
       },
-      "step3": {
-        "title": "Test",
-        "description": "Discreet test phase under real conditions – physically, digitally and organizationally."
+      "phase3": {
+        "title": "Analysis & Reporting",
+        "desc": "Evaluation of test results and identification of vulnerabilities, process gaps and decision-making deficits.",
+        "details": "Systematic evaluation of all test results. Identification of vulnerabilities, process gaps and decision-making deficits. Prioritization by risk and impact."
       },
-      "step4": {
-        "title": "Reporting",
-        "description": "Management summary with clear priorities and action recommendations."
+      "phase4": {
+        "title": "Reporting & Recommendations",
+        "desc": "Management summary with clear priorities and action recommendations.",
+        "details": "Presentation of results at management level. Management summary with clear priorities. Concrete action recommendations to improve resilience."
       }
     },
-    "vsOthers": {
+    "comparison": {
       "title": "Red Teaming vs. Audits & Penetration Tests",
-      "intro": "How does Red Teaming differ from traditional audits and penetration tests?",
-      "audit": {
-        "title": "Audits",
-        "description": "Focus on compliance and checklists. Review of documentation and processes against standards."
-      },
-      "pentest": {
-        "title": "Penetration Tests",
-        "description": "Focus on individual areas. Testing of IT systems and network security."
-      },
-      "redteaming": {
+      "redTeaming": {
         "title": "Red Teaming",
-        "description": "Focus on resilience and reality. Testing of physical, digital and organizational dependencies under realistic conditions."
-      }
+        "point1": "Tests real capability to act in an event.",
+        "point2": "Focus on resilience, not compliance.",
+        "point3": "Uncovers gaps in leadership, processes and technology.",
+        "point4": "Combines physical, digital and organizational security.",
+        "point5": "Delivers decision-making foundations, not checklists."
+      },
+      "audits": {
+        "title": "Audits & Pen Tests",
+        "point1": "Test individual areas or standards.",
+        "point2": "Focus on compliance and documentation.",
+        "point3": "Often provide no answer to reality questions.",
+        "point4": "Consider dimensions in isolation.",
+        "point5": "Deliver checklists, not decision-making foundations."
+      },
+      "note": "Red Teaming does not replace audits or penetration tests, but complements them with a realistic test of overall resilience."
     },
-    "whatIsNot": {
-      "title": "What Red Teaming is not",
-      "item1": "Not an audit: Red Teaming does not test against checklists, but against reality.",
-      "item2": "Not a penetration test: Red Teaming does not only test IT systems, but physical, digital and organizational dependencies.",
-      "item3": "Not consulting: Red Teaming does not deliver measures, but decision-making foundations."
+    "cta": {
+      "title": "Request a conversation",
+      "subtitle": "Let's find out together how Red Teaming can support your organization.",
+      "button": "Get in touch"
     }
   },
   "hotels": {

@@ -414,3 +414,11 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [ ] Navigation identisch auf allen Seiten prüfen
 - [ ] Language Switcher auf allen Seiten testen
 - [ ] Final Checkpoint erstellen
+
+## Ansatz-Seite Original-Layout wiederherstellen
+
+- [ ] Ansatz.tsx komplett neu schreiben basierend auf Original-Screenshot
+- [ ] Deutsche Texte 1:1 aus Screenshot übernehmen
+- [ ] Layout-Struktur exakt nachbauen: Hero mit Zitat, 7 Sektionen, Icons, Cards
+- [ ] Ansatz translations in translations.ts aktualisieren
+- [ ] Ansatz-Seite testen (DE/EN)
