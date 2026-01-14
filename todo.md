@@ -357,3 +357,8 @@
 - [ ] Impressum und Datenschutz auf i18n umstellen
 - [ ] Sprachwahl im localStorage speichern
 - [ ] Alle Texte testen und validieren
+
+## Layout-Korrektur für Hotels & Weitere Einsatzfelder
+
+- [ ] Hotels-Seite: Original Layout mit Bildern und Grid-Struktur wiederherstellen (mit i18n)
+- [ ] Weitere Einsatzfelder-Seite: Original Layout mit Bildern und Grid-Struktur wiederherstellen (mit i18n)
