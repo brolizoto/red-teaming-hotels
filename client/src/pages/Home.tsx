@@ -393,8 +393,8 @@ export default function Home() {
               </p>
               <p>
                 Red Teaming macht diese Lücken sichtbar, bevor sie Schaden verursachen. 
-                Es zeigt, wo Theorie und Praxis auseinanderklaffen, wo Abhängigkeiten kritisch sind 
-                und wo Entscheidungen unter Druck versagen.
+                Es zeigt, wo Theorie und Praxis auseinanderklaffen, welche Abhängigkeiten kritisch sind 
+                und wann Entscheidungen unter Druck versagen.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
