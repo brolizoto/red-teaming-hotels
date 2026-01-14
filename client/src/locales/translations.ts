@@ -322,7 +322,7 @@ export const translations = {
     "verifyNotRobot": "Bitte bestätigen Sie, dass Sie kein Roboter sind."
   },
   "footer": {
-    "tagline": "Realitätsnahe Prüfung von Sicherheit, Prozessen und Krisenbereitschaft",
+    "tagline": "Verantwortung für Hotelsicherheit ist heute auf Direktionsebene.",
     "navigation": "Navigation",
     "contact": "Kontakt",
     "imprint": "Impressum",
@@ -719,7 +719,7 @@ export const translations = {
     "verifyNotRobot": "Please verify that you are not a robot."
   },
   "footer": {
-    "tagline": "Realistic Testing of Security, Processes and Crisis Preparedness",
+    "tagline": "Responsibility for hotel security is now at management level.",
     "navigation": "Navigation",
     "contact": "Contact",
     "imprint": "Imprint",
