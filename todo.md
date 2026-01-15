@@ -467,3 +467,14 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Graue Hintergründe von Standorte und Brandschutz Sektionen entfernt (folgt Hotels-Seite Muster)
 - [x] Visuelle Hierarchie und Konsistenz verbessert (weiße Sektionen + graue Cards für Bulletpoints)
 - [x] Gesamte Seite auf harmonisches Layout überprüft (DE + EN)
+
+## Ansatz Seite Redesign
+
+- [x] Aktuelle Ansatz-Seite analysieren (visuelle Schwächen identifizieren)
+- [x] Design verbessern (mehr visuelle Elemente, bessere Hierarchie)
+  - Prozess-Schritte: Große rote Badges statt kleine graue
+  - Drei Dimensionen: Icon-Badges + Hover-Effekte
+  - Vergleichs-Sektion: Graue Hintergrund-Sektion mit weißen Cards
+  - CTA: Weißer Hintergrund für Konsistenz
+- [x] Alle Texte 1:1 beibehalten (keine Textänderungen)
+- [x] Beide Sprachen testen (DE + EN)

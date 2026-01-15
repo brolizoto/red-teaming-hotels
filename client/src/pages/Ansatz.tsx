@@ -9,7 +9,7 @@ import { UnifiedFooter } from "@/components/UnifiedFooter";
 
 /**
  * Red Teaming - Ansatz/Methodik Seite
- * Original Layout basierend auf Screenshot
+ * Redesigned for better visual appeal while keeping text 1:1
  */
 
 export default function Ansatz() {
@@ -150,8 +150,10 @@ export default function Ansatz() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-background border border-border rounded-lg p-6">
-                  <Shield className="text-primary mb-4" size={32} />
+                <div className="bg-background border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Shield className="text-primary" size={28} />
+                  </div>
                   <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.dimensions.physical.title')}</h3>
                   <p className="text-sm text-muted-foreground mb-4">
                     {t('approach.dimensions.physical.desc')}
@@ -161,8 +163,10 @@ export default function Ansatz() {
                   </p>
                 </div>
 
-                <div className="bg-background border border-border rounded-lg p-6">
-                  <Target className="text-primary mb-4" size={32} />
+                <div className="bg-background border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Target className="text-primary" size={28} />
+                  </div>
                   <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.dimensions.digital.title')}</h3>
                   <p className="text-sm text-muted-foreground mb-4">
                     {t('approach.dimensions.digital.desc')}
@@ -172,8 +176,10 @@ export default function Ansatz() {
                   </p>
                 </div>
 
-                <div className="bg-background border border-border rounded-lg p-6">
-                  <Layers className="text-primary mb-4" size={32} />
+                <div className="bg-background border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Layers className="text-primary" size={28} />
+                  </div>
                   <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.dimensions.organizational.title')}</h3>
                   <p className="text-sm text-muted-foreground mb-4">
                     {t('approach.dimensions.organizational.desc')}
@@ -209,17 +215,17 @@ export default function Ansatz() {
 
             <div className="space-y-6">
               {/* Phase 1 */}
-              <div className="bg-card border border-border rounded-lg p-6">
+              <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary font-bold">1</span>
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">1</span>
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-foreground mb-2">{t('approach.process.phase1.title')}</h3>
                     <p className="text-sm text-muted-foreground mb-3">
                       {t('approach.process.phase1.desc')}
                     </p>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-xs text-muted-foreground italic">
                       {t('approach.process.phase1.details')}
                     </p>
                   </div>
@@ -227,17 +233,17 @@ export default function Ansatz() {
               </div>
 
               {/* Phase 2 */}
-              <div className="bg-card border border-border rounded-lg p-6">
+              <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary font-bold">2</span>
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">2</span>
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-foreground mb-2">{t('approach.process.phase2.title')}</h3>
                     <p className="text-sm text-muted-foreground mb-3">
                       {t('approach.process.phase2.desc')}
                     </p>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-xs text-muted-foreground italic">
                       {t('approach.process.phase2.details')}
                     </p>
                   </div>
@@ -245,17 +251,17 @@ export default function Ansatz() {
               </div>
 
               {/* Phase 3 */}
-              <div className="bg-card border border-border rounded-lg p-6">
+              <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary font-bold">3</span>
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">3</span>
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-foreground mb-2">{t('approach.process.phase3.title')}</h3>
                     <p className="text-sm text-muted-foreground mb-3">
                       {t('approach.process.phase3.desc')}
                     </p>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-xs text-muted-foreground italic">
                       {t('approach.process.phase3.details')}
                     </p>
                   </div>
@@ -263,17 +269,17 @@ export default function Ansatz() {
               </div>
 
               {/* Phase 4 */}
-              <div className="bg-card border border-border rounded-lg p-6">
+              <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary font-bold">4</span>
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">4</span>
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-foreground mb-2">{t('approach.process.phase4.title')}</h3>
                     <p className="text-sm text-muted-foreground mb-3">
                       {t('approach.process.phase4.desc')}
                     </p>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-xs text-muted-foreground italic">
                       {t('approach.process.phase4.details')}
                     </p>
                   </div>
@@ -284,104 +290,112 @@ export default function Ansatz() {
         </section>
 
         {/* Red Teaming vs. Audits & Penetration Tests */}
-        <section className="container py-16 md:py-24">
-          <div className="max-w-4xl mx-auto">
-            <div className="accent-line mb-8"></div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-              {t('approach.comparison.title')}
-            </h2>
-            <p className="text-base text-muted-foreground mb-12 text-center">
-              {t('approach.comparison.subtitle')}
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Red Teaming Column */}
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
-                  <Shield className="text-primary" size={24} />
-                  {t('approach.comparison.redTeaming.title')}
-                </h3>
-                <ul className="space-y-3 text-sm text-muted-foreground">
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.redTeaming.point1')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.redTeaming.point2')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.redTeaming.point3')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.redTeaming.point4')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.redTeaming.point5')}</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Audits & Pen Tests Column */}
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
-                  <AlertTriangle className="text-primary" size={24} />
-                  {t('approach.comparison.audits.title')}
-                </h3>
-                <ul className="space-y-3 text-sm text-muted-foreground">
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.audits.point1')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.audits.point2')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.audits.point3')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.audits.point4')}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('approach.comparison.audits.point5')}</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mt-8">
-              <p className="text-sm text-muted-foreground text-center">
-                {t('approach.comparison.note')}
+        <section className="bg-card py-16 md:py-24">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
+              <div className="accent-line mb-8 mx-auto"></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
+                {t('approach.comparison.title')}
+              </h2>
+              <p className="text-base text-muted-foreground mb-12 text-center">
+                {t('approach.comparison.subtitle')}
               </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Red Teaming Column */}
+                <div className="bg-background border border-border rounded-lg p-6">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                      <Shield className="text-primary" size={24} />
+                    </div>
+                    <h3 className="text-xl font-bold text-foreground">
+                      {t('approach.comparison.redTeaming.title')}
+                    </h3>
+                  </div>
+                  <ul className="space-y-3 text-sm text-muted-foreground">
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('approach.comparison.redTeaming.point1')}</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('approach.comparison.redTeaming.point2')}</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('approach.comparison.redTeaming.point3')}</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('approach.comparison.redTeaming.point4')}</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('approach.comparison.redTeaming.point5')}</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Audits & Pen Tests Column */}
+                <div className="bg-background border border-border rounded-lg p-6">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                      <AlertTriangle className="text-primary" size={24} />
+                    </div>
+                    <h3 className="text-xl font-bold text-foreground">
+                      {t('approach.comparison.audits.title')}
+                    </h3>
+                  </div>
+                  <ul className="space-y-3 text-sm text-muted-foreground">
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('approach.comparison.audits.point1')}</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('approach.comparison.audits.point2')}</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('approach.comparison.audits.point3')}</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('approach.comparison.audits.point4')}</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary font-bold">•</span>
+                      <span>{t('approach.comparison.audits.point5')}</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mt-8">
+                <p className="text-sm text-muted-foreground text-center">
+                  {t('approach.comparison.note')}
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="bg-card py-16 md:py-24" id="contact">
-          <div className="container">
-            <div className="max-w-2xl mx-auto text-center">
-              <div className="accent-line mb-8 mx-auto"></div>
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                {t('approach.cta.title')}
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                {t('approach.cta.subtitle')}
-              </p>
-              <button 
-                onClick={() => setContactFormOpen(true)}
-                className="btn-primary text-lg px-8 py-4"
-              >
-                {t('approach.cta.button')}
-              </button>
-            </div>
+        <section className="container py-16 md:py-24" id="contact">
+          <div className="max-w-2xl mx-auto text-center">
+            <div className="accent-line mb-8 mx-auto"></div>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              {t('approach.cta.title')}
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              {t('approach.cta.subtitle')}
+            </p>
+            <button 
+              onClick={() => setContactFormOpen(true)}
+              className="btn-primary text-lg px-8 py-4"
+            >
+              {t('approach.cta.button')}
+            </button>
           </div>
         </section>
 
