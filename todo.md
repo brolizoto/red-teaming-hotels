@@ -535,3 +535,10 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Cyber-Security-Bild bei "Was wir real prüfen" ersetzt (Person mit Laptop + Smartphone)
 - [x] Layout geprüft - keine Anpassung nötig (passt perfekt ins Grid)
 - [x] Beide Sprachen getestet (DE + EN) - Bild illustriert Phishing-Szenarien authentisch
+
+## Führungsfähigkeit-Bild auf Hotels-Seite ersetzen
+
+- [x] Neues Hotelmanager-Bild in Projekt kopieren
+- [x] Führungs-Bild bei "Was wir real prüfen" ersetzt (Hotelmanager mit Tablet in Lobby)
+- [x] Layout/Farben geprüft - keine Anpassung nötig (warme Töne passen perfekt)
+- [x] Beide Sprachen getestet (DE + EN) - Bild illustriert Führungsfähigkeit authentisch
