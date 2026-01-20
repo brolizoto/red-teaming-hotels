@@ -560,3 +560,10 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
   - Minimalistische Icons im Swiss Design
 - [x] Warme, gedämpfte Farbpalette beibehalten (konsistent mit Fotos)
 - [x] Beide Sprachen getestet (DE + EN) - Farben harmonieren perfekt mit Fotos
+
+## Zweite blaue Grafik unter "Sicherheit als Führungsaufgabe" ersetzen
+
+- [ ] Grafik unter "Sicherheit als Führungsaufgabe" lokalisieren
+- [ ] Warme Version der Grafik erstellen (beige/grau/rot statt blau)
+- [ ] Blaue Grafik durch warme Version ersetzen
+- [ ] Beide Sprachen testen (DE + EN)
