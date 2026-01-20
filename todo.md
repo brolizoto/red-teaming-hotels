@@ -528,3 +528,10 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Krisen-Bild beim "Doppelte Schreckensszenario" ersetzt (System-Ausfall mit Manager am Telefon)
 - [x] Farben und Layout geprüft - keine Anpassung nötig (rote Fehlermeldung passt perfekt zum Design)
 - [x] Beide Sprachen getestet (DE + EN) - Bild illustriert Dual-Krise perfekt
+
+## Cyber-Resilienz-Bild auf Hotels-Seite ersetzen
+
+- [x] Neues Phishing/Cyber-Bild in Projekt kopieren
+- [x] Cyber-Security-Bild bei "Was wir real prüfen" ersetzt (Person mit Laptop + Smartphone)
+- [x] Layout geprüft - keine Anpassung nötig (passt perfekt ins Grid)
+- [x] Beide Sprachen getestet (DE + EN) - Bild illustriert Phishing-Szenarien authentisch

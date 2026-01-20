@@ -213,8 +213,8 @@ export default function Hotels() {
               </div>
               <div className="relative overflow-hidden rounded-lg shadow-lg group">
                 <img 
-                  src="/images/cyber-security-monitoring.jpg" 
-                  alt="Cyber security monitoring"
+                  src="/images/cyber-phishing-work.jpg" 
+                  alt="Cyber security and phishing scenarios"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />
