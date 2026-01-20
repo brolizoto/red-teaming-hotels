@@ -255,9 +255,9 @@ export default function Hotels() {
             {/* Venn-Diagramm */}
             <div className="my-12">
               <img 
-                src={i18n.language === 'en' ? '/images/venn-en.png' : '/images/venn-diagram.png'}
+                src={i18n.language === 'en' ? '/images/venn-en-warm.png' : '/images/venn-diagram-warm.png'}
                 alt={t('hotels.testing.vennAlt')}
-                className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
+                className="w-full max-w-3xl mx-auto rounded-lg shadow-sm"
                 loading="lazy"
               />
             </div>

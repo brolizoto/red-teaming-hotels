@@ -549,3 +549,14 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] IT-Infrastruktur-Bild bei "Was wir real prüfen" ersetzt (zwei IT-Professionals vor Server-Rack)
 - [x] Layout/Farben geprüft - keine Anpassung nötig (helle, professionelle Töne passen perfekt)
 - [x] Beide Sprachen getestet (DE + EN) - Bild illustriert IT/Technik/Personal-Abhängigkeiten authentisch
+
+## Blaue Grafiken auf Hotels-Seite anpassen
+
+- [x] Blaue Grafiken identifiziert (Venn-Diagramm mit Navy-Blau)
+- [x] Grafiken farblich angepasst und durch warme Versionen ersetzt
+  - Heller beiger Hintergrund (#FAF8F5) statt Navy-Blau
+  - Warme graue Kreise (#E8E0D5) statt kaltes Blau
+  - Gedämpftes Rot (#E63946) für Zentral-Bereich
+  - Minimalistische Icons im Swiss Design
+- [x] Warme, gedämpfte Farbpalette beibehalten (konsistent mit Fotos)
+- [x] Beide Sprachen getestet (DE + EN) - Farben harmonieren perfekt mit Fotos
