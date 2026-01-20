@@ -521,3 +521,10 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Hero-Bild auf Hotels-Seite ersetzen (authentische Rezeption mit Personal und Gästen)
 - [x] Text-Farben geprüft - keine Anpassung nötig (Gradient-Overlay funktioniert perfekt)
 - [x] Beide Sprachen getestet (DE + EN) - Text gut lesbar
+
+## Krisen-Szenario-Bild auf Hotels-Seite ersetzen
+
+- [x] Neues System-Ausfall-Bild in Projekt kopieren
+- [x] Krisen-Bild beim "Doppelte Schreckensszenario" ersetzt (System-Ausfall mit Manager am Telefon)
+- [x] Farben und Layout geprüft - keine Anpassung nötig (rote Fehlermeldung passt perfekt zum Design)
+- [x] Beide Sprachen getestet (DE + EN) - Bild illustriert Dual-Krise perfekt
