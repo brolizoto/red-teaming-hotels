@@ -514,3 +514,10 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Realistisches Stock-Foto suchen (Krisensitzung, Sicherheitszentrale, oder Evakuationsübung)
 - [x] AI-generiertes Split-Screen-Bild ersetzen (durch echtes Krisen-Meeting-Foto)
 - [x] Neues Bild testen und verifiziert (authentisch und professionell)
+
+## Hotels-Seite Hero-Bild ersetzen
+
+- [x] Neues Hotel-Rezeption-Bild in Projekt kopieren
+- [x] Hero-Bild auf Hotels-Seite ersetzen (authentische Rezeption mit Personal und Gästen)
+- [x] Text-Farben geprüft - keine Anpassung nötig (Gradient-Overlay funktioniert perfekt)
+- [x] Beide Sprachen getestet (DE + EN) - Text gut lesbar
