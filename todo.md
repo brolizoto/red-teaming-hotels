@@ -567,3 +567,11 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [ ] Warme Version der Grafik erstellen (beige/grau/rot statt blau)
 - [ ] Blaue Grafik durch warme Version ersetzen
 - [ ] Beide Sprachen testen (DE + EN)
+
+
+## Sprachenmix in Roadmap-Grafiken korrigieren
+
+- [x] Deutsche Roadmap-Grafik komplett auf Deutsch übersetzen (Zone 1/2/3 Titel, alle Bulletpoints, alle Beschriftungen)
+- [x] Englische Roadmap-Grafik überprüfen (muss 100% Englisch sein)
+- [x] Beide Grafiken in Hotels.tsx testen
+- [x] Checkpoint speichern

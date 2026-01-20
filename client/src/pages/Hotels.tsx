@@ -354,7 +354,7 @@ export default function Hotels() {
               
               <div className="my-12">
                 <img 
-                  src={i18n.language === 'en' ? '/images/roadmap-warm-en.png' : '/images/roadmap-warm.png'}
+                  src={i18n.language === 'en' ? '/images/roadmap-warm-en.png' : '/images/roadmap-warm-de.png'}
                   alt={t('hotels.approach.roadmap.alt')}
                   className="w-full max-w-5xl mx-auto rounded-lg shadow-lg"
                   loading="lazy"
