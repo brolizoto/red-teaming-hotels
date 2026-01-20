@@ -508,3 +508,9 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [ ] Layout mit Bildern und visuellen Elementen überarbeiten
 - [ ] Emotionale Elemente hinzufügen (ohne zu überladen)
 - [ ] Beide Sprachen testen (DE + EN)
+
+## Krisen-Bild auf Hotels-Seite durch realistisches Foto ersetzen
+
+- [x] Realistisches Stock-Foto suchen (Krisensitzung, Sicherheitszentrale, oder Evakuationsübung)
+- [x] AI-generiertes Split-Screen-Bild ersetzen (durch echtes Krisen-Meeting-Foto)
+- [x] Neues Bild testen und verifiziert (authentisch und professionell)

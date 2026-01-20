@@ -123,8 +123,8 @@ export default function Hotels() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
                 <img 
-                  src="/images/crisis-scenario-split.jpg" 
-                  alt="Crisis scenario visualization"
+                  src="/images/hotel-crisis-meeting.jpg" 
+                  alt="Hotel crisis management meeting"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                   loading="lazy"
                 />
