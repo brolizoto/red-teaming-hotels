@@ -239,8 +239,8 @@ export default function Hotels() {
               </div>
               <div className="relative overflow-hidden rounded-lg shadow-lg group">
                 <img 
-                  src="/images/it-infrastructure.jpg" 
-                  alt="IT infrastructure"
+                  src="/images/it-personnel-server-room.jpg" 
+                  alt="IT personnel and server infrastructure"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />

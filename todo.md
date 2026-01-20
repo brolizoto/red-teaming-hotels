@@ -542,3 +542,10 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Führungs-Bild bei "Was wir real prüfen" ersetzt (Hotelmanager mit Tablet in Lobby)
 - [x] Layout/Farben geprüft - keine Anpassung nötig (warme Töne passen perfekt)
 - [x] Beide Sprachen getestet (DE + EN) - Bild illustriert Führungsfähigkeit authentisch
+
+## IT-Abhängigkeiten-Bild auf Hotels-Seite ersetzen
+
+- [x] Neues Server-Raum-Bild mit IT-Personal in Projekt kopieren
+- [x] IT-Infrastruktur-Bild bei "Was wir real prüfen" ersetzt (zwei IT-Professionals vor Server-Rack)
+- [x] Layout/Farben geprüft - keine Anpassung nötig (helle, professionelle Töne passen perfekt)
+- [x] Beide Sprachen getestet (DE + EN) - Bild illustriert IT/Technik/Personal-Abhängigkeiten authentisch
