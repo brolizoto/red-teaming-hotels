@@ -478,3 +478,33 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
   - CTA: Weißer Hintergrund für Konsistenz
 - [x] Alle Texte 1:1 beibehalten (keine Textänderungen)
 - [x] Beide Sprachen testen (DE + EN)
+
+## Header Logo PNG Export
+
+- [x] Locate current header logo in project files (text-based logo in header)
+- [x] Create/export PNG version of header logo
+- [x] Deliver PNG file to user
+
+## Logo mit transparentem Hintergrund
+
+- [x] Logo mit transparentem Hintergrund erstellen (kein Weiß, kein Schwarz)
+- [x] PNG-Datei an Benutzer liefern
+
+## Footer Logo mit transparentem Hintergrund
+
+- [x] Footer-Logo Design analysieren
+- [x] Footer-Logo mit transparentem Hintergrund erstellen
+- [x] PNG-Datei an Benutzer liefern
+
+## Footer Logo Korrektur - Switzerland auf gleicher Linie
+
+- [x] Footer-Logo neu erstellen mit Switzerland auf gleicher Linie wie RED TEAMING
+- [x] Korrigierte PNG-Datei an Benutzer liefern
+
+## Hotels-Seite visuell aufwerten (Bilder & Emotionen)
+
+- [ ] Hotels-Seite analysieren (statische Bereiche identifizieren)
+- [ ] Passende Bilder für Hotel-Szenarien generieren
+- [ ] Layout mit Bildern und visuellen Elementen überarbeiten
+- [ ] Emotionale Elemente hinzufügen (ohne zu überladen)
+- [ ] Beide Sprachen testen (DE + EN)
