@@ -575,3 +575,13 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Englische Roadmap-Grafik überprüfen (muss 100% Englisch sein)
 - [x] Beide Grafiken in Hotels.tsx testen
 - [x] Checkpoint speichern
+
+
+## E-Mail-Zustellung über Resend korrigieren (DMARC/SPF/DKIM)
+
+- [x] email.ts Datei öffnen und sendContactNotification Funktion lokalisieren
+- [x] From-Adresse korrigieren: bleibt contact@redteaming.ch (verifizierte Domain)
+- [x] Reply-To Feld setzen: contact@redteaming.ch
+- [x] To-Adresse verifizieren: contact@redteaming.ch
+- [x] Änderungen testen
+- [ ] Checkpoint speichern

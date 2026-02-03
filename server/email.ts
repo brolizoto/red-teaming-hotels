@@ -112,11 +112,11 @@ export async function sendEmailToContact(data: ContactFormData): Promise<boolean
     `;
 
     const { data: result, error } = await resend.emails.send({
-      from: 'Red Teaming Switzerland <noreply@redteaming.ch>',
+      from: 'Red Teaming Schweiz <contact@redteaming.ch>',
       to: ['contact@redteaming.ch'],
       subject: `Neue Kontaktanfrage von ${data.name}`,
       html: htmlContent,
-      replyTo: data.email,
+      replyTo: ['contact@redteaming.ch'],
     });
 
     if (error) {
