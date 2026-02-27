@@ -585,3 +585,13 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] To-Adresse verifizieren: contact@redteaming.ch
 - [x] Änderungen testen
 - [ ] Checkpoint speichern
+
+## Safari/Firefox Browser-Kompatibilität
+
+- [x] CSS auf Safari-inkompatible Features prüfen (backdrop-filter, oklch, @property)
+- [x] postcss-preset-env installiert: oklch() Farben werden zu rgb() Fallbacks konvertiert
+- [x] @vitejs/plugin-legacy installiert: JS-Polyfills für ältere Browser
+- [x] -webkit-backdrop-filter in index.css ergänzt
+- [x] backdrop-filter in Imprint.tsx, Privacy.tsx, NotFound.tsx mit inline style überarbeitet
+- [x] Alle 13 Tests bestehen weiterhin
+- [x] Checkpoint speichern

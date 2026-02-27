@@ -37,7 +37,7 @@ export default function Hotels() {
         <section className="relative overflow-hidden h-[600px] md:h-[700px]">
           <div className="absolute inset-0">
             <img 
-              src="/images/hotel-reception-hero.jpg" 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/hotel-reception-hero_78804535.jpg" 
               alt="Hotel reception with staff and guests"
               className="w-full h-full object-cover"
             />
@@ -107,7 +107,7 @@ export default function Hotels() {
               </div>
               <div className="order-first md:order-last">
                 <img 
-                  src="/images/hotel-security-systems.jpg" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/hotel-security-systems_2fc767ce.jpg" 
                   alt="Hotel security systems"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                   loading="lazy"
@@ -123,7 +123,7 @@ export default function Hotels() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
                 <img 
-                  src="/images/hotel-system-crisis.jpg" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/hotel-system-crisis_80cc689b.jpg" 
                   alt="Hotel system failure during crisis"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                   loading="lazy"
@@ -200,7 +200,7 @@ export default function Hotels() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               <div className="relative overflow-hidden rounded-lg shadow-lg group">
                 <img 
-                  src="/images/evacuation-training.jpg" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/evacuation-training_8fa01d87.jpg" 
                   alt="Evacuation training"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
@@ -213,7 +213,7 @@ export default function Hotels() {
               </div>
               <div className="relative overflow-hidden rounded-lg shadow-lg group">
                 <img 
-                  src="/images/cyber-phishing-work.jpg" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/cyber-phishing-work_9cbf9a5c.jpg" 
                   alt="Cyber security and phishing scenarios"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
@@ -226,7 +226,7 @@ export default function Hotels() {
               </div>
               <div className="relative overflow-hidden rounded-lg shadow-lg group">
                 <img 
-                  src="/images/hotel-manager-leadership.jpg" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/hotel-manager-leadership_b43db4c6.jpg" 
                   alt="Hotel manager leadership and decision-making"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
@@ -239,7 +239,7 @@ export default function Hotels() {
               </div>
               <div className="relative overflow-hidden rounded-lg shadow-lg group">
                 <img 
-                  src="/images/it-personnel-server-room.jpg" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/it-personnel-server-room_9a26c99c.jpg" 
                   alt="IT personnel and server infrastructure"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
@@ -255,7 +255,7 @@ export default function Hotels() {
             {/* Venn-Diagramm */}
             <div className="my-12">
               <img 
-                src={i18n.language === 'en' ? '/images/venn-en-warm.png' : '/images/venn-diagram-warm.png'}
+                src={i18n.language === 'en' ? 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/venn-en-warm_b992e953.png' : 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/venn-diagram-warm_de1660f0.png'}
                 alt={t('hotels.testing.vennAlt')}
                 className="w-full max-w-3xl mx-auto rounded-lg shadow-sm"
                 loading="lazy"
@@ -354,7 +354,7 @@ export default function Hotels() {
               
               <div className="my-12">
                 <img 
-                  src={i18n.language === 'en' ? '/images/roadmap-warm-en.png' : '/images/roadmap-warm-de.png'}
+                  src={i18n.language === 'en' ? 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/roadmap-warm-en_c347869b.png' : 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/roadmap-warm-de_64ef8ef4.png'}
                   alt={t('hotels.approach.roadmap.alt')}
                   className="w-full max-w-5xl mx-auto rounded-lg shadow-lg"
                   loading="lazy"

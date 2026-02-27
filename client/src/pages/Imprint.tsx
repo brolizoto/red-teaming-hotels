@@ -7,7 +7,7 @@ export default function Imprint() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50">
+      <header className="border-b border-border sticky top-0 z-50" style={{backgroundColor: 'rgba(255,255,255,0.97)', WebkitBackdropFilter: 'blur(4px)', backdropFilter: 'blur(4px)'}}>
         <div className="container py-4 flex justify-between items-center">
           <a href="/" className="text-primary font-bold text-lg">
             RED TEAMING <span className="text-sm text-muted-foreground">Switzerland</span>

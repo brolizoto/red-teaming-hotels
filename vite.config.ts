@@ -1,13 +1,28 @@
 import { jsxLocPlugin } from "@builder.io/vite-plugin-jsx-loc";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
+import legacy from "@vitejs/plugin-legacy";
 import fs from "node:fs";
 import path from "path";
 import { defineConfig } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
+const plugins = [
+  react(),
+  tailwindcss(),
+  jsxLocPlugin(),
+  vitePluginManusRuntime(),
+  legacy({
+    targets: [
+      "last 2 Safari versions",
+      "last 2 Firefox versions",
+      "last 2 Chrome versions",
+      "last 2 Edge versions",
+    ],
+    additionalLegacyPolyfills: ["regenerator-runtime/runtime"],
+  }),
+];
 
 export default defineConfig({
   plugins,
