@@ -13,7 +13,7 @@ export const translations = {
     "hero": {
       "title": "Red Teaming",
       "subtitle": "Realitätsnahe Prüfung von Sicherheit, Prozessen und Krisenbereitschaft",
-      "description": "Wir testen Organisationen so, wie es ein echtes Ereignis tun würde – physisch, digital und organisatorisch. Nicht theoretisch, sondern real.",
+      "description": "Wir testen Organisationen so, wie es ein echtes Ereignis tun würde – physisch, digital, organisatorisch und durch Social Engineering. Nicht theoretisch, sondern real.",
       "ctaApproach": "Unseren Ansatz verstehen",
       "ctaContact": "Gespräch anfragen"
     },
@@ -442,7 +442,7 @@ export const translations = {
     "hero": {
       "title": "Red Teaming",
       "subtitle": "Realistic Testing of Security, Processes and Crisis Preparedness",
-      "description": "We test organizations the way a real event would – physically, digitally and organizationally. Not theoretically, but for real.",
+      "description": "We test organizations the way a real event would – physically, digitally, organizationally and through social engineering. Not theoretically, but for real.",
       "ctaApproach": "Understand Our Approach",
       "ctaContact": "Request Call"
     },

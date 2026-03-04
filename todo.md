@@ -614,4 +614,10 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 ## Fehlende Übersetzung: "Weitere Einsatzfelder" auf Home-Seite
 
 - [x] English translation for "Weitere Einsatzfelder" tile in Areas of Application section (hardcoded DE text replaced with t('home.areas.otherFields.title') → "Other Fields")
+- [x] Checkpoint speichern
+
+## Hero-Text Home-Seite: Social Engineering ergänzen
+
+- [x] DE: "physisch, digital, organisatorisch und durch Social Engineering"
+- [x] EN: "physically, digitally, organizationally and through social engineering"
 - [ ] Checkpoint speichern
