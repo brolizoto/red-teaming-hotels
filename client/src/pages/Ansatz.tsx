@@ -1,4 +1,4 @@
-import { ArrowRight, Shield, Target, AlertTriangle, Layers, FileText } from "lucide-react";
+import { ArrowRight, Shield, Target, AlertTriangle, Layers, FileText, MessageSquare } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { SEO } from "@/components/SEO";
@@ -128,7 +128,7 @@ export default function Ansatz() {
           </div>
         </section>
 
-        {/* Drei Dimensionen */}
+        {/* Vier Dimensionen */}
         <section className="bg-card py-16 md:py-24">
           <div className="container">
             <div className="max-w-4xl mx-auto">
@@ -149,7 +149,7 @@ export default function Ansatz() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-background border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Shield className="text-primary" size={28} />
@@ -186,6 +186,19 @@ export default function Ansatz() {
                   </p>
                   <p className="text-xs text-muted-foreground">
                     {t('approach.dimensions.organizational.examples')}
+                  </p>
+                </div>
+
+                <div className="bg-background border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <MessageSquare className="text-primary" size={28} />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.dimensions.socialEngineering.title')}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    {t('approach.dimensions.socialEngineering.desc')}
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    {t('approach.dimensions.socialEngineering.examples')}
                   </p>
                 </div>
               </div>

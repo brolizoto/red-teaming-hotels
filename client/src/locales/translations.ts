@@ -78,8 +78,8 @@ export const translations = {
       "conclusion": "Red Teaming macht diese Lücken sichtbar, bevor sie Schaden verursachen."
     },
     "dimensions": {
-      "title": "Drei Dimensionen",
-      "intro": "Red Teaming prüft Organisationen entlang von drei Dimensionen, die im Ernstfall zusammenwirken:",
+      "title": "Vier Dimensionen",
+      "intro": "Red Teaming prüft Organisationen entlang von vier Dimensionen, die im Ernstfall zusammenwirken:",
       "physical": {
         "title": "Physisch",
         "desc": "Zutrittskontrolle, Perimeter, Evakuierung, physische Sicherheitskonzepte",
@@ -87,13 +87,18 @@ export const translations = {
       },
       "digital": {
         "title": "Digital",
-        "desc": "Phishing, Social Engineering, IT-Infrastruktur, Datensicherheit",
+        "desc": "Phishing, IT-Infrastruktur, Datensicherheit, Systemverfügbarkeit",
         "examples": "Wir testen, wie Organisationen auf digitale Angriffe reagieren und ob IT-Sicherheitskonzepte im Ernstfall greifen."
       },
       "organizational": {
         "title": "Organisatorisch",
         "desc": "Krisenmanagement, Kommunikation, Entscheidungswege, Prozesse",
         "examples": "Wir analysieren, ob Organisationen handlungsfähig bleiben, wenn Entscheidungen unter Druck getroffen werden müssen."
+      },
+      "socialEngineering": {
+        "title": "Social Engineering",
+        "desc": "Manipulation von Mitarbeitenden, Täuschungsversuche, menschliche Schwachstellen",
+        "examples": "Wir testen, ob Mitarbeitende auf gezielte Manipulationsversuche hereinfallen und wie die Organisation auf solche Vorfälle reagiert."
       }
     },
     "process": {
@@ -106,7 +111,7 @@ export const translations = {
       },
       "phase2": {
         "title": "Durchführung",
-        "desc": "Wir führen das Assessment unter realen Bedingungen durch, physisch, digital oder organisatorisch. Dabei simulieren wir realistische Szenarien und dokumentieren alle Beobachtungen.",
+        "desc": "Wir führen das Assessment unter realen Bedingungen durch – physisch, digital, organisatorisch oder durch Social Engineering. Dabei simulieren wir realistische Szenarien und dokumentieren alle Beobachtungen.",
         "details": "Ergebnis: Realitätsnahe Prüfung der Sicherheitskonzepte und Prozesse"
       },
       "phase3": {
@@ -126,7 +131,7 @@ export const translations = {
       "redTeaming": {
         "title": "Red Teaming",
         "point1": "Realitätsnahe Simulation von Ereignissen",
-        "point2": "Ganzheitliche Betrachtung (physisch, digital, organisatorisch)",
+        "point2": "Ganzheitliche Betrachtung (physisch, digital, organisatorisch, Social Engineering)",
         "point3": "Fokus auf Handlungsfähigkeit im Ernstfall",
         "point4": "Keine Checklisten, sondern szenariobasiert",
         "point5": "Zeigt, was wirklich passiert"
@@ -507,8 +512,8 @@ export const translations = {
       "conclusion": "Red Teaming makes these gaps visible before they cause damage."
     },
     "dimensions": {
-      "title": "Three Dimensions",
-      "intro": "Red Teaming tests organizations along three dimensions that interact in an emergency:",
+      "title": "Four Dimensions",
+      "intro": "Red Teaming tests organizations along four dimensions that interact in an emergency:",
       "physical": {
         "title": "Physical",
         "desc": "Access control, perimeter, evacuation, physical security concepts",
@@ -516,13 +521,18 @@ export const translations = {
       },
       "digital": {
         "title": "Digital",
-        "desc": "Phishing, social engineering, IT infrastructure, data security",
+        "desc": "Phishing, IT infrastructure, data security, system availability",
         "examples": "We test how organizations respond to digital attacks and whether IT security concepts work in an emergency."
       },
       "organizational": {
         "title": "Organizational",
         "desc": "Crisis management, communication, decision-making paths, processes",
         "examples": "We analyze whether organizations remain capable of action when decisions must be made under pressure."
+      },
+      "socialEngineering": {
+        "title": "Social Engineering",
+        "desc": "Manipulation of employees, deception attempts, human vulnerabilities",
+        "examples": "We test whether employees fall for targeted manipulation attempts and how the organization responds to such incidents."
       }
     },
     "process": {
@@ -535,7 +545,7 @@ export const translations = {
       },
       "phase2": {
         "title": "Execution",
-        "desc": "We conduct the assessment under real conditions, physically, digitally or organizationally. We simulate realistic scenarios and document all observations.",
+        "desc": "We conduct the assessment under real conditions – physically, digitally, organizationally or through social engineering. We simulate realistic scenarios and document all observations.",
         "details": "Result: Realistic testing of security concepts and processes"
       },
       "phase3": {
@@ -555,7 +565,7 @@ export const translations = {
       "redTeaming": {
         "title": "Red Teaming",
         "point1": "Realistic simulation of events",
-        "point2": "Holistic view (physical, digital, organizational)",
+        "point2": "Holistic view (physical, digital, organizational, social engineering)",
         "point3": "Focus on capability to act in an emergency",
         "point4": "No checklists, but scenario-based",
         "point5": "Shows what really happens"

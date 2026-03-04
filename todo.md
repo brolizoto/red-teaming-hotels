@@ -620,4 +620,12 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 
 - [x] DE: "physisch, digital, organisatorisch und durch Social Engineering"
 - [x] EN: "physically, digitally, organizationally and through social engineering"
+- [x] Checkpoint speichern
+
+## Ansatz-Seite: Social Engineering als 4. Dimension ergänzen
+
+- [x] Alle "drei Dimensionen" Textstellen in translations.ts (DE + EN) auf vier Dimensionen angepasst
+- [x] Social Engineering Dimension-Karte in Ansatz.tsx ergänzt (2x2 Grid, MessageSquare Icon)
+- [x] Vergleichstabelle (point2) in DE + EN aktualisiert
+- [x] Phase2-Beschreibung in DE + EN aktualisiert
 - [ ] Checkpoint speichern
