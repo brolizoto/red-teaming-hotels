@@ -255,7 +255,7 @@ export default function Hotels() {
             {/* Venn-Diagramm */}
             <div className="my-12">
               <img 
-                src={i18n.language === 'en' ? 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/venn-en-warm_b992e953.png' : 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/venn-diagram-warm_de1660f0.png'}
+                src={i18n.language === 'en' ? 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/venn-4-en-SRc4HuarTT694xpMQPAreG.png' : 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/venn-4-de-mWzNJRJXargWxpCAC9Qbxc.png'}
                 alt={t('hotels.testing.vennAlt')}
                 className="w-full max-w-3xl mx-auto rounded-lg shadow-sm"
                 loading="lazy"

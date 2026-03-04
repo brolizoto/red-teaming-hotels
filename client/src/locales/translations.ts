@@ -188,7 +188,7 @@ export const translations = {
       "area2": "Cyber-Resilienz & Phishing-Szenarien",
       "area3": "Entscheidungswege & Führungsfähigkeit",
       "area4": "Kritische Abhängigkeiten (IT, Technik, Personal)",
-      "vennAlt": "Ganzheitliche Hotelsicherheit entsteht in den Schnittstellen: Physische Sicherheit, Digitale Sicherheit und Organisation & Führung",
+      "vennAlt": "Ganzheitliche Hotelsicherheit entsteht in den Schnittstellen: Physische Sicherheit, Digitale Sicherheit, Organisation & Führung und Social Engineering",
       "quote": "Entscheidend ist nicht, ob etwas existiert, sondern ob es im Ernstfall funktioniert."
     },
     "approach": {
@@ -615,7 +615,7 @@ export const translations = {
       "area2": "Cyber resilience & phishing scenarios",
       "area3": "Decision-making paths & leadership capability",
       "area4": "Critical dependencies (IT, technology, personnel)",
-      "vennAlt": "Comprehensive hotel security emerges at the intersections: Physical Security, Digital Security and Organization & Leadership",
+      "vennAlt": "Comprehensive hotel security emerges at the intersections: Physical Security, Digital Security, Organization & Leadership and Social Engineering",
       "quote": "What matters is not whether something exists, but whether it works in an emergency."
     },
     "approach": {

@@ -595,3 +595,12 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] backdrop-filter in Imprint.tsx, Privacy.tsx, NotFound.tsx mit inline style überarbeitet
 - [x] Alle 13 Tests bestehen weiterhin
 - [x] Checkpoint speichern
+
+## Social Engineering als 4. Pfeiler im Venn-Diagramm
+
+- [x] Neues Venn-Diagramm (4 Kreise: PHY, ORG, DIG, SOC) auf Deutsch generieren
+- [x] Neues Venn-Diagramm (4 Kreise) auf Englisch generieren
+- [x] Neue Diagramme direkt auf CDN gespeichert (webdev-static-assets)
+- [x] Hotels.tsx: Venn-Diagramm-Referenzen auf neue CDN-URLs aktualisiert
+- [x] translations.ts: vennAlt in DE und EN mit Social Engineering ergänzt
+- [ ] Checkpoint speichern
