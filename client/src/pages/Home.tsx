@@ -399,7 +399,7 @@ export default function Home() {
                 {t('home.whyRedTeaming.paragraph2')}
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-background border border-border rounded-lg p-6">
                 <Shield className="text-primary mb-4" size={32} />
                 <h3 className="text-lg font-bold text-foreground mb-2">{t('home.whyRedTeaming.physical')}</h3>

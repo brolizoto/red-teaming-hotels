@@ -603,10 +603,10 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Neue Diagramme direkt auf CDN gespeichert (webdev-static-assets)
 - [x] Hotels.tsx: Venn-Diagramm-Referenzen auf neue CDN-URLs aktualisiert
 - [x] translations.ts: vennAlt in DE und EN mit Social Engineering ergänzt
-- [ ] Checkpoint speichern
+- [x] Checkpoint speichern
 
 ## Social Engineering als 4. Pfeiler auf Home-Seite (Warum Red Teaming?)
 
 - [x] Home.tsx: 4. Karte "Social Engineering" im Warum-Red-Teaming-Abschnitt hinzugefügt (4-Spalten-Grid)
 - [x] translations.ts: socialEngineering + socialEngineeringDesc in DE und EN ergänzt
-- [ ] Checkpoint speichern
+- [x] Checkpoint speichern
