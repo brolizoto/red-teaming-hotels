@@ -610,3 +610,8 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Home.tsx: 4. Karte "Social Engineering" im Warum-Red-Teaming-Abschnitt hinzugefügt (4-Spalten-Grid)
 - [x] translations.ts: socialEngineering + socialEngineeringDesc in DE und EN ergänzt
 - [x] Checkpoint speichern
+
+## Fehlende Übersetzung: "Weitere Einsatzfelder" auf Home-Seite
+
+- [x] English translation for "Weitere Einsatzfelder" tile in Areas of Application section (hardcoded DE text replaced with t('home.areas.otherFields.title') → "Other Fields")
+- [ ] Checkpoint speichern

@@ -463,7 +463,7 @@ export default function Home() {
               className="bg-card border border-border rounded-lg p-8 text-left hover:border-primary transition-colors group"
             >
               <Building2 className="text-primary mb-4 group-hover:scale-110 transition-transform" size={40} />
-              <h3 className="text-2xl font-bold text-foreground mb-3">Weitere Einsatzfelder</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-3">{t('home.areas.otherFields.title')}</h3>
               <p className="text-muted-foreground mb-4">
                 {t('home.areas.otherFields.description')}
               </p>
