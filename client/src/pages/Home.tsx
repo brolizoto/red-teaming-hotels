@@ -1,4 +1,4 @@
-import { ArrowRight, Menu, X, Shield, Target, Users, Building2, Home as HomeIcon } from "lucide-react";
+import { ArrowRight, Menu, X, Shield, Target, Users, Building2, Home as HomeIcon, MessageSquare } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { analytics } from "../lib/analytics";
@@ -399,7 +399,7 @@ export default function Home() {
                 {t('home.whyRedTeaming.paragraph2')}
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="bg-background border border-border rounded-lg p-6">
                 <Shield className="text-primary mb-4" size={32} />
                 <h3 className="text-lg font-bold text-foreground mb-2">{t('home.whyRedTeaming.physical')}</h3>
@@ -419,6 +419,13 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-foreground mb-2">{t('home.whyRedTeaming.organizational')}</h3>
                 <p className="text-sm text-muted-foreground">
                   {t('home.whyRedTeaming.organizationalDesc')}
+                </p>
+              </div>
+              <div className="bg-background border border-border rounded-lg p-6">
+                <MessageSquare className="text-primary mb-4" size={32} />
+                <h3 className="text-lg font-bold text-foreground mb-2">{t('home.whyRedTeaming.socialEngineering')}</h3>
+                <p className="text-sm text-muted-foreground">
+                  {t('home.whyRedTeaming.socialEngineeringDesc')}
                 </p>
               </div>
             </div>

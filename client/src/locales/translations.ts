@@ -32,7 +32,9 @@ export const translations = {
       "digital": "Digital",
       "digitalDesc": "Phishing, Social Engineering, IT-Infrastruktur, Datensicherheit",
       "organizational": "Organisatorisch",
-      "organizationalDesc": "Notfall- und Krisenmanagement, Kommunikation, Entscheidungswege, Prozesse"
+      "organizationalDesc": "Notfall- und Krisenmanagement, Kommunikation, Entscheidungswege, Prozesse",
+      "socialEngineering": "Social Engineering",
+      "socialEngineeringDesc": "Manipulation von Mitarbeitenden, Täuschungsversuche, Testen menschlicher Schwachstellen"
     },
     "areas": {
       "title": "Einsatzfelder",
@@ -459,7 +461,9 @@ export const translations = {
       "digital": "Digital",
       "digitalDesc": "Phishing, social engineering, IT infrastructure, data security",
       "organizational": "Organizational",
-      "organizationalDesc": "Emergency and crisis management, communication, decision-making paths, processes"
+      "organizationalDesc": "Emergency and crisis management, communication, decision-making paths, processes",
+      "socialEngineering": "Social Engineering",
+      "socialEngineeringDesc": "Manipulation of staff, deception attempts, testing human vulnerabilities"
     },
     "areas": {
       "title": "Areas of Application",
