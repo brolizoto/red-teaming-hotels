@@ -628,4 +628,9 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Social Engineering Dimension-Karte in Ansatz.tsx ergänzt (2x2 Grid, MessageSquare Icon)
 - [x] Vergleichstabelle (point2) in DE + EN aktualisiert
 - [x] Phase2-Beschreibung in DE + EN aktualisiert
+- [x] Checkpoint speichern
+
+## Hotels-Seite: Redundanten Dimensions-Karten-Block entfernen
+
+- [ ] Karten-Block mit vier Dimensionen auf Hotels-Seite entfernen (nur Venn-Diagramm behalten)
 - [ ] Checkpoint speichern

@@ -1,4 +1,4 @@
-import { ArrowRight, Shield, Target, AlertTriangle, Layers, FileText, MessageSquare } from "lucide-react";
+import { ArrowRight, Target, AlertTriangle, Layers, FileText, Shield } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { SEO } from "@/components/SEO";
@@ -149,58 +149,10 @@ export default function Ansatz() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-background border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <Shield className="text-primary" size={28} />
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.dimensions.physical.title')}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    {t('approach.dimensions.physical.desc')}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {t('approach.dimensions.physical.examples')}
-                  </p>
-                </div>
-
-                <div className="bg-background border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <Target className="text-primary" size={28} />
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.dimensions.digital.title')}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    {t('approach.dimensions.digital.desc')}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {t('approach.dimensions.digital.examples')}
-                  </p>
-                </div>
-
-                <div className="bg-background border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <Layers className="text-primary" size={28} />
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.dimensions.organizational.title')}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    {t('approach.dimensions.organizational.desc')}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {t('approach.dimensions.organizational.examples')}
-                  </p>
-                </div>
-
-                <div className="bg-background border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <MessageSquare className="text-primary" size={28} />
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground mb-3">{t('approach.dimensions.socialEngineering.title')}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    {t('approach.dimensions.socialEngineering.desc')}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {t('approach.dimensions.socialEngineering.examples')}
-                  </p>
-                </div>
+              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
+                <p className="text-base text-foreground">
+                  {t('approach.dimensions.statement')}
+                </p>
               </div>
             </div>
           </div>

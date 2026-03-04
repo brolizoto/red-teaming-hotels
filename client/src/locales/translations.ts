@@ -80,26 +80,7 @@ export const translations = {
     "dimensions": {
       "title": "Vier Dimensionen",
       "intro": "Red Teaming prüft Organisationen entlang von vier Dimensionen, die im Ernstfall zusammenwirken:",
-      "physical": {
-        "title": "Physisch",
-        "desc": "Zutrittskontrolle, Perimeter, Evakuierung, physische Sicherheitskonzepte",
-        "examples": "Wir prüfen, ob physische Sicherheitsmassnahmen unter realen Bedingungen funktionieren, nicht nur auf dem Papier."
-      },
-      "digital": {
-        "title": "Digital",
-        "desc": "Phishing, IT-Infrastruktur, Datensicherheit, Systemverfügbarkeit",
-        "examples": "Wir testen, wie Organisationen auf digitale Angriffe reagieren und ob IT-Sicherheitskonzepte im Ernstfall greifen."
-      },
-      "organizational": {
-        "title": "Organisatorisch",
-        "desc": "Krisenmanagement, Kommunikation, Entscheidungswege, Prozesse",
-        "examples": "Wir analysieren, ob Organisationen handlungsfähig bleiben, wenn Entscheidungen unter Druck getroffen werden müssen."
-      },
-      "socialEngineering": {
-        "title": "Social Engineering",
-        "desc": "Manipulation von Mitarbeitenden, Täuschungsversuche, menschliche Schwachstellen",
-        "examples": "Wir testen, ob Mitarbeitende auf gezielte Manipulationsversuche hereinfallen und wie die Organisation auf solche Vorfälle reagiert."
-      }
+      "statement": "Wir prüfen physisch, digital, organisatorisch und durch Social Engineering, strukturiert, faktenbasiert und reproduzierbar. Was wir dabei konkret untersuchen, besprechen wir im persönlichen Gespräch."
     },
     "process": {
       "title": "Wie funktioniert ein Red Teaming Assessment?",
@@ -514,26 +495,7 @@ export const translations = {
     "dimensions": {
       "title": "Four Dimensions",
       "intro": "Red Teaming tests organizations along four dimensions that interact in an emergency:",
-      "physical": {
-        "title": "Physical",
-        "desc": "Access control, perimeter, evacuation, physical security concepts",
-        "examples": "We test whether physical security measures work under real conditions, not just on paper."
-      },
-      "digital": {
-        "title": "Digital",
-        "desc": "Phishing, IT infrastructure, data security, system availability",
-        "examples": "We test how organizations respond to digital attacks and whether IT security concepts work in an emergency."
-      },
-      "organizational": {
-        "title": "Organizational",
-        "desc": "Crisis management, communication, decision-making paths, processes",
-        "examples": "We analyze whether organizations remain capable of action when decisions must be made under pressure."
-      },
-      "socialEngineering": {
-        "title": "Social Engineering",
-        "desc": "Manipulation of employees, deception attempts, human vulnerabilities",
-        "examples": "We test whether employees fall for targeted manipulation attempts and how the organization responds to such incidents."
-      }
+      "statement": "We test physically, digitally, organizationally and through social engineering, structured, fact-based and reproducible. What we specifically examine is discussed in a personal conversation."
     },
     "process": {
       "title": "How does a Red Teaming Assessment work?",
