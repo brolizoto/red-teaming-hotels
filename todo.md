@@ -642,4 +642,10 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Hotels-Seite: Angebotsbereich neu aufbauen (Abo + Standortbestimmung + 3 Phasen)
 - [x] Hotels-Seite: Prozess-Schritte 01-04 anpassen (Gespräch → Assessment → Zertifikat → Monitoring)
 - [x] Ansatz-Seite: Digitalen Sicherheitsprozess OSINT→Cyber-Screen→Übergabe→Re-Screen ergänzen
+- [x] Checkpoint speichern
+
+## Gründer-Sektion auf Ansatz-Seite
+
+- [x] Gründer-Übersetzungen DE + EN in translations.ts ergänzen
+- [x] Gründer-Sektion in Ansatz.tsx vor dem CTA einfügen (Roger Büschlen + Romain Markwalder)
 - [ ] Checkpoint speichern

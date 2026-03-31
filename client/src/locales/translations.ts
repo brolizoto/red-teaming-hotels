@@ -151,6 +151,22 @@ export const translations = {
       },
       "note": "Red Teaming ersetzt keine Audits oder Penetration Tests.\n\nEs ergänzt sie durch eine realitätsnahe Perspektive: Was passiert wirklich, wenn Theorie auf Praxis trifft?"
     },
+    "founders": {
+      "title": "Das Gründerteam",
+      "subtitle": "Zwei Perspektiven, ein Ansatz: operative Sicherheit, die in der Praxis funktioniert.",
+      "roger": {
+        "name": "Roger Büschlen",
+        "role": "Mitgründer",
+        "focus": "Social Engineering & Verhandlungspsychologie",
+        "bio": "Roger Büschlen analysiert das Zusammenspiel von Mensch, Prozessen und Entscheidungsverhalten und macht operative Schwachstellen sichtbar. Sein Fokus liegt auf praktikablen Lösungen, die im Alltag umsetzbar sind."
+      },
+      "romain": {
+        "name": "Romain Markwalder",
+        "role": "Mitgründer",
+        "focus": "Business Continuity & Krisenmanagement",
+        "bio": "Romain Markwalder unterstützt Unternehmen mit Erfahrung aus internationalen Krisenumfeldern. Er stärkt durch realitätsnahe Szenarien die Entscheidungsfähigkeit unter Druck und spezialisiert sich auf organisatorische Resilienz."
+      }
+    },
     "cta": {
       "title": "Gespräch anfragen",
       "subtitle": "Lassen Sie uns unverbindlich besprechen, wie Red Teaming Ihre Organisation weiterbringen kann.",
@@ -615,6 +631,22 @@ export const translations = {
         "point5": "Shows what is documented"
       },
       "note": "Red Teaming does not replace audits or penetration tests.\n\nIt complements them with a realistic perspective: What really happens when theory meets practice?"
+    },
+    "founders": {
+      "title": "The founding team",
+      "subtitle": "Two perspectives, one approach: operational security that works in practice.",
+      "roger": {
+        "name": "Roger Büschlen",
+        "role": "Co-founder",
+        "focus": "Social Engineering & Negotiation Psychology",
+        "bio": "Roger Büschlen analyses the interplay of people, processes and decision-making behaviour, making operational vulnerabilities visible. His focus is on practical solutions that can be implemented in day-to-day operations."
+      },
+      "romain": {
+        "name": "Romain Markwalder",
+        "role": "Co-founder",
+        "focus": "Business Continuity & Crisis Management",
+        "bio": "Romain Markwalder supports organisations drawing on experience from international crisis environments. He strengthens decision-making capability under pressure through realistic scenarios and specialises in organisational resilience."
+      }
     },
     "cta": {
       "title": "Request a conversation",

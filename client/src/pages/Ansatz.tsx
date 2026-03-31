@@ -412,6 +412,65 @@ export default function Ansatz() {
           </div>
         </section>
 
+        {/* Gründerteam */}
+        <section className="container py-12 md:py-16">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <div className="accent-line mb-6 mx-auto" style={{width: '4rem'}}></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
+                {t('approach.founders.title')}
+              </h2>
+              <p className="text-base text-muted-foreground">
+                {t('approach.founders.subtitle')}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Roger Büschlen */}
+              <div className="bg-card border border-border rounded-xl p-8 hover:border-primary/40 transition-colors">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xl">RB</span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-foreground">{t('approach.founders.roger.name')}</h3>
+                    <p className="text-xs text-primary font-semibold uppercase tracking-wide">{t('approach.founders.roger.role')}</p>
+                  </div>
+                </div>
+                <div className="mb-4">
+                  <span className="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full">
+                    {t('approach.founders.roger.focus')}
+                  </span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {t('approach.founders.roger.bio')}
+                </p>
+              </div>
+
+              {/* Romain Markwalder */}
+              <div className="bg-card border border-border rounded-xl p-8 hover:border-primary/40 transition-colors">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xl">RM</span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-foreground">{t('approach.founders.romain.name')}</h3>
+                    <p className="text-xs text-primary font-semibold uppercase tracking-wide">{t('approach.founders.romain.role')}</p>
+                  </div>
+                </div>
+                <div className="mb-4">
+                  <span className="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full">
+                    {t('approach.founders.romain.focus')}
+                  </span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {t('approach.founders.romain.bio')}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="container py-16 md:py-24" id="contact">
           <div className="max-w-2xl mx-auto text-center">
