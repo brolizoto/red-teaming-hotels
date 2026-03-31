@@ -14,6 +14,7 @@ import About from "./pages/About";
 import Imprint from "./pages/Imprint";
 import Privacy from "./pages/Privacy";
 import AdminDashboard from "./pages/AdminDashboard";
+import AssessmentRedirect from "./pages/AssessmentRedirect";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -29,6 +30,8 @@ function Router() {
       <Route path={"/imprint"} component={Imprint} />
       <Route path={"/privacy"} component={Privacy} />
       <Route path={"/admin"} component={AdminDashboard} />
+      {/* Hidden tool route — not in navigation */}
+      <Route path={"/rt4h/assessment"} component={AssessmentRedirect} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

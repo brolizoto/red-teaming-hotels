@@ -657,4 +657,17 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Weissraum zwischen Sektionen reduzieren
 - [x] Bild-Kacheln kontraststärker (dunklere Überlagerung)
 - [x] Zertifikat-SVG-Badge erstellen und als eigene Sektion einbinden
-- [ ] Checkpoint speichern
+- [x] Checkpoint speichern
+
+## Versteckte Route: /rt4h/assessment
+
+- [x] Route /rt4h/assessment in App.tsx registrieren (nicht in Navigation)
+- [x] Redirect-Seite erstellen: leitet direkt auf https://redteam-guide.lovable.app weiter
+- [x] Checkpoint speichern
+
+## Spätere Migration: Lovable → Manus
+
+- [ ] Lovable-Code exportieren (GitHub/ZIP)
+- [ ] Supabase-URL + Anon Key als Secrets in Manus hinterlegen
+- [ ] Tool-Funktionalität unter /rt4h/assessment in Manus einbauen
+- [ ] Testen und Lovable deaktivieren
