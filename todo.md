@@ -648,4 +648,13 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 
 - [x] Gründer-Übersetzungen DE + EN in translations.ts ergänzen
 - [x] Gründer-Sektion in Ansatz.tsx vor dem CTA einfügen (Roger Büschlen + Romain Markwalder)
+- [x] Checkpoint speichern
+
+## Hotels-Seite: Visuelle Optimierung
+
+- [x] Angebotskarten stärken (Zertifikat-Badge, Zeitrahmen, grössere Bullets)
+- [x] 3-Phasen-Sektion aufwerten (dunklerer Hintergrund, grössere Phasennummern)
+- [x] Weissraum zwischen Sektionen reduzieren
+- [x] Bild-Kacheln kontraststärker (dunklere Überlagerung)
+- [x] Zertifikat-SVG-Badge erstellen und als eigene Sektion einbinden
 - [ ] Checkpoint speichern

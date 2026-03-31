@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220">
+  <!-- Background circle -->
+  <circle cx="110" cy="110" r="105" fill="#ffffff"/>
+  <!-- Outer ring -->
+  <circle cx="110" cy="110" r="105" fill="none" stroke="#E63946" stroke-width="3.5"/>
+  <!-- Inner dashed ring -->
+  <circle cx="110" cy="110" r="90" fill="none" stroke="#E63946" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.6"/>
+
+  <!-- Shield -->
+  <path d="M110 42 L142 58 L142 92 Q142 122 110 138 Q78 122 78 92 L78 58 Z" fill="#E63946" opacity="0.08"/>
+  <path d="M110 48 L138 62 L138 92 Q138 118 110 132 Q82 118 82 92 L82 62 Z" fill="none" stroke="#E63946" stroke-width="2.2"/>
+
+  <!-- Checkmark -->
+  <path d="M98 92 L107 101 L124 80" fill="none" stroke="#E63946" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- OPERATIONAL TRUST - top, split into two lines -->
+  <text x="110" y="158" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9.5" font-weight="700" letter-spacing="2.5" fill="#1a1a1a">OPERATIONAL TRUST</text>
+  <text x="110" y="172" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9.5" font-weight="700" letter-spacing="2.5" fill="#1a1a1a">CERTIFIED HOTEL</text>
+
+  <!-- RED TEAMING label -->
+  <text x="110" y="188" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="600" letter-spacing="3" fill="#E63946">RED TEAMING</text>
+
+  <!-- Decorative horizontal lines flanking text -->
+  <line x1="18" y1="158" x2="42" y2="158" stroke="#E63946" stroke-width="1" opacity="0.5"/>
+  <line x1="178" y1="158" x2="202" y2="158" stroke="#E63946" stroke-width="1" opacity="0.5"/>
+
+  <!-- Small star/dot decorations -->
+  <circle cx="18" cy="110" r="3" fill="#E63946" opacity="0.7"/>
+  <circle cx="202" cy="110" r="3" fill="#E63946" opacity="0.7"/>
+</svg>
