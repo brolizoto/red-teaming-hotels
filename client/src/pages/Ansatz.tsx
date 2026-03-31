@@ -158,6 +158,73 @@ export default function Ansatz() {
           </div>
         </section>
 
+        {/* Digitaler Sicherheitsprozess */}
+        <section className="container py-12 md:py-16">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-12">
+              <div className="md:col-span-2 flex justify-center md:justify-start">
+                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Shield className="text-primary" size={32} />
+                </div>
+              </div>
+              <div className="md:col-span-10">
+                <div className="accent-line mb-6"></div>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  {t('approach.digitalProcess.title')}
+                </h2>
+                <p className="text-base text-muted-foreground">
+                  {t('approach.digitalProcess.subtitle')}
+                </p>
+              </div>
+            </div>
+
+            {/* 4-Step Process */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+              {/* Step 1 */}
+              <div className="relative">
+                <div className="bg-card border border-primary/30 rounded-xl p-6 h-full">
+                  <p className="text-xs font-bold text-primary tracking-widest mb-1">{t('approach.digitalProcess.step1.label')}</p>
+                  <h3 className="text-base font-bold text-foreground mb-3">{t('approach.digitalProcess.step1.title')}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{t('approach.digitalProcess.step1.description')}</p>
+                </div>
+                <div className="hidden md:flex absolute -right-2 top-1/2 -translate-y-1/2 z-10">
+                  <ArrowRight className="text-primary" size={16} />
+                </div>
+              </div>
+              {/* Step 2 */}
+              <div className="relative">
+                <div className="bg-card border border-border rounded-xl p-6 h-full">
+                  <p className="text-xs font-bold text-primary tracking-widest mb-1">{t('approach.digitalProcess.step2.label')}</p>
+                  <h3 className="text-base font-bold text-foreground mb-3">{t('approach.digitalProcess.step2.title')}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{t('approach.digitalProcess.step2.description')}</p>
+                </div>
+                <div className="hidden md:flex absolute -right-2 top-1/2 -translate-y-1/2 z-10">
+                  <ArrowRight className="text-primary" size={16} />
+                </div>
+              </div>
+              {/* Step 3 */}
+              <div className="relative">
+                <div className="bg-card border border-border rounded-xl p-6 h-full">
+                  <p className="text-xs font-bold text-primary tracking-widest mb-1">{t('approach.digitalProcess.step3.label')}</p>
+                  <h3 className="text-base font-bold text-foreground mb-3">{t('approach.digitalProcess.step3.title')}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{t('approach.digitalProcess.step3.description')}</p>
+                </div>
+                <div className="hidden md:flex absolute -right-2 top-1/2 -translate-y-1/2 z-10">
+                  <ArrowRight className="text-primary" size={16} />
+                </div>
+              </div>
+              {/* Step 4 */}
+              <div>
+                <div className="bg-card border border-border rounded-xl p-6 h-full">
+                  <p className="text-xs font-bold text-primary tracking-widest mb-1">{t('approach.digitalProcess.step4.label')}</p>
+                  <h3 className="text-base font-bold text-foreground mb-3">{t('approach.digitalProcess.step4.title')}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{t('approach.digitalProcess.step4.description')}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Wie funktioniert Red Teaming */}
         <section className="container py-16 md:py-24">
           <div className="max-w-4xl mx-auto">

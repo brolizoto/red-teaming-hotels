@@ -634,3 +634,12 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 
 - [ ] Karten-Block mit vier Dimensionen auf Hotels-Seite entfernen (nur Venn-Diagramm behalten)
 - [ ] Checkpoint speichern
+
+## Konzept-Update: Abo-Modell / Einmalige Standortbestimmung / 3 Phasen
+
+- [x] Übersetzungen DE + EN: approach.basic/advanced → abo + standortbestimmung
+- [x] Übersetzungen DE + EN: 3-Phasen-Modell (Phase 1 Realitätscheck, Phase 2 Vertiefung, Phase 3 Dauerhafte Absicherung)
+- [x] Hotels-Seite: Angebotsbereich neu aufbauen (Abo + Standortbestimmung + 3 Phasen)
+- [x] Hotels-Seite: Prozess-Schritte 01-04 anpassen (Gespräch → Assessment → Zertifikat → Monitoring)
+- [x] Ansatz-Seite: Digitalen Sicherheitsprozess OSINT→Cyber-Screen→Übergabe→Re-Screen ergänzen
+- [ ] Checkpoint speichern

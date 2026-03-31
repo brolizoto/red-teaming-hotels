@@ -82,6 +82,30 @@ export const translations = {
       "intro": "Red Teaming prüft Organisationen entlang von vier Dimensionen, die im Ernstfall zusammenwirken:",
       "statement": "Wir prüfen physisch, digital, organisatorisch und durch Social Engineering, strukturiert, faktenbasiert und reproduzierbar. Was wir dabei konkret untersuchen, besprechen wir im persönlichen Gespräch."
     },
+    "digitalProcess": {
+      "title": "Der digitale Sicherheitsprozess",
+      "subtitle": "Jedes Assessment beginnt mit einer strukturierten digitalen Analyse, bevor physische oder organisatorische Tests folgen.",
+      "step1": {
+        "label": "SCHRITT 1",
+        "title": "OSINT-Screening",
+        "description": "Analyse der öffentlich zugänglichen digitalen Angriffsfläche. Welche Informationen sind über das Unternehmen, seine Mitarbeitenden und Systeme frei verfügbar? Ergebnis: Risiko-Score 0 bis 100."
+      },
+      "step2": {
+        "label": "SCHRITT 2",
+        "title": "Cyber-Screen",
+        "description": "Technische Prüfung der digitalen Infrastruktur: E-Mail-Sicherheit, Domänen-Konfiguration, Phishing-Anfälligkeit und bekannte Schwachstellen. Diskret, ohne Eingriff in Systeme."
+      },
+      "step3": {
+        "label": "SCHRITT 3",
+        "title": "Übergabe & Bericht",
+        "description": "Strukturierter GM-Report mit priorisierten Handlungsempfehlungen. Keine Fachsprache, sondern klare Entscheidungsgrundlagen für die Direktion."
+      },
+      "step4": {
+        "label": "SCHRITT 4",
+        "title": "Re-Screen",
+        "description": "Halbjährliche Wiederholung des Screenings, um Fortschritte zu messen und neue Schwachstellen frühzeitig zu erkennen. Nur im Rahmen des Abos."
+      }
+    },
     "process": {
       "title": "Wie funktioniert ein Red Teaming Assessment?",
       "intro": "Ein Red Teaming Assessment folgt einem strukturierten Ablauf, der auf die spezifischen Risiken und Anforderungen der Organisation abgestimmt wird.",
@@ -181,26 +205,52 @@ export const translations = {
     },
     "approach": {
       "title": "Unser Ansatz für Hotels",
-      "subtitle": "Je nach Ausgangslage und Zielsetzung",
-      "basic": {
-        "title": "Red Teaming Basic",
-        "subtitle": "Klarheit schaffen & Risiken sichtbar machen",
-        "point1": "Strukturierte Risiko-Standortbestimmung (physisch & digital)",
-        "point2": "Reale Tests ausgewählter Szenarien",
-        "point3": "Erkennung kritischer Cyber- & Phishing-Risiken",
-        "point4": "Management Summary mit klaren Prioritäten",
+      "subtitle": "Zwei Einstiegswege, ein Ziel: operative Sicherheit, die nachweislich funktioniert.",
+      "abo": {
+        "badge": "EMPFOHLEN",
+        "title": "Das Abo",
+        "subtitle": "Kontinuierliche Sicherheit mit Zertifikat",
+        "description": "Das Kernprodukt. Mindestlaufzeit 12 Monate, inklusive initialem Assessment, laufendem Monitoring und dem Zertifikat \"Operational Trust Certified Hotel\".",
+        "point1": "Initiales Assessment (Monat 1 und 2): OSINT-Screening, Cyber-Screen, physische Begehung",
+        "point2": "Monatliche Phishing-Simulationen und quartalsweise Vishing-Tests",
+        "point3": "Halbjährlicher Re-Screen: Fortschritt messen, neue Schwachstellen identifizieren",
+        "point4": "Zertifikat \"Operational Trust Certified Hotel\" nach erfolgreichem Assessment",
+        "point5": "Fester Ansprechpartner, 24/7 Krisenstab-Pikett im Ereignisfall",
         "idealFor": "IDEAL FÜR:",
-        "idealForText": "Hotels, die wissen wollen, wo sie stehen, bevor sie vertiefen."
+        "idealForText": "Hotels, die operative Sicherheit dauerhaft verankern und extern nachweisen wollen."
       },
-      "advanced": {
-        "title": "Red Teaming Advanced",
-        "subtitle": "Haftungs- & Krisenrisiken aktiv reduzieren",
-        "point1": "Erweiterte Cyber- & Phishing-Szenarien",
-        "point2": "Verknüpfung von IT-Ausfällen mit realen Ereignissen",
-        "point3": "Vertiefte Analyse von Krisenmanagement & Governance",
-        "point4": "Detaillierter Entscheid- & Massnahmenplan",
+      "standortbestimmung": {
+        "title": "Einmalige Standortbestimmung",
+        "subtitle": "Klarheit schaffen, ohne Verpflichtung",
+        "description": "Ein einmaliges Assessment ohne Monitoring und ohne Zertifikat. Zeigt, wo das Hotel heute konkret angreifbar ist, und liefert priorisierte Handlungsempfehlungen.",
+        "point1": "OSINT-Screening der digitalen Angriffsfläche (Risiko-Score 0 bis 100)",
+        "point2": "Reale Tests ausgewählter physischer und digitaler Szenarien",
+        "point3": "Strukturierter GM-Report mit klaren Prioritäten",
+        "point4": "Kein laufendes Monitoring, kein Zertifikat",
         "idealFor": "IDEAL FÜR:",
-        "idealForText": "Empfohlen bei erhöhter Sichtbarkeit, Events, komplexer IT oder regulatorischem Druck."
+        "idealForText": "Hotels, die zunächst verstehen wollen, wo sie stehen, bevor sie sich festlegen."
+      },
+      "phases": {
+        "title": "Die drei Phasen der Zusammenarbeit",
+        "subtitle": "Das Abo folgt einem klaren, strukturierten Ablauf über 24 Monate und darüber hinaus.",
+        "phase1": {
+          "label": "PHASE 1",
+          "period": "Jahr 1 (Monat 1 bis 12)",
+          "title": "Realitätscheck & Zertifizierung",
+          "description": "Vollständiges initiales Assessment, Zertifikatsvergabe nach Monat 2, monatliche Phishing-Tests, quartalsweise Vishing-Tests, Halbjahres-Re-Screen nach Monat 6."
+        },
+        "phase2": {
+          "label": "PHASE 2",
+          "period": "Jahr 2 (Monat 13 bis 24)",
+          "title": "Vertiefung & Bestätigung",
+          "description": "Laufendes Monitoring mit neuen Szenarien, vollständiges Re-Assessment nach Monat 18, messbarer Fortschrittsvergleich, Zertifikat-Erneuerung nach Monat 24."
+        },
+        "phase3": {
+          "label": "PHASE 3",
+          "period": "Ab Jahr 3",
+          "title": "Dauerhafte Absicherung",
+          "description": "Monatliche Phishing-Tests, halbjährliche Vishing-Tests, jährliches Kurzassessment, automatische Zertifikat-Verlängerung. Sicherheit als dauerhafter Betriebsstandard."
+        }
       },
       "roadmap": {
         "title": "Sicherheit als Führungsaufgabe",
@@ -217,18 +267,18 @@ export const translations = {
       },
       "step2": {
         "number": "02",
-        "title": "Test",
-        "description": "Diskrete Testphase unter realen Bedingungen"
+        "title": "Assessment",
+        "description": "Initiales Assessment: OSINT-Screening, Cyber-Screen, physische Begehung (Monat 1 und 2)"
       },
       "step3": {
         "number": "03",
-        "title": "Summary",
-        "description": "Management-Summary & Priorisierung"
+        "title": "Zertifikat",
+        "description": "Übergabe GM-Report, Zertifikat \"Operational Trust Certified Hotel\" nach erfolgreichem Assessment"
       },
       "step4": {
         "number": "04",
-        "title": "Entscheid",
-        "description": "Entscheid über nächste Schritte"
+        "title": "Monitoring",
+        "description": "Laufendes Monitoring: monatliche Phishing-Tests, quartalsweise Vishing-Tests, halbjährlicher Re-Screen"
       }
     },
     "cta": {
@@ -497,6 +547,30 @@ export const translations = {
       "intro": "Red Teaming tests organizations along four dimensions that interact in an emergency:",
       "statement": "We test physically, digitally, organizationally and through social engineering, structured, fact-based and reproducible. What we specifically examine is discussed in a personal conversation."
     },
+    "digitalProcess": {
+      "title": "The digital security process",
+      "subtitle": "Every assessment begins with a structured digital analysis before physical or organisational tests follow.",
+      "step1": {
+        "label": "STEP 1",
+        "title": "OSINT Screening",
+        "description": "Analysis of the publicly accessible digital attack surface. What information is freely available about the organisation, its employees and systems? Result: risk score 0 to 100."
+      },
+      "step2": {
+        "label": "STEP 2",
+        "title": "Cyber Screen",
+        "description": "Technical review of the digital infrastructure: email security, domain configuration, phishing susceptibility and known vulnerabilities. Discreet, without interfering with systems."
+      },
+      "step3": {
+        "label": "STEP 3",
+        "title": "Handover & Report",
+        "description": "Structured GM report with prioritised recommendations. No technical jargon, but clear decision-making foundations for management."
+      },
+      "step4": {
+        "label": "STEP 4",
+        "title": "Re-Screen",
+        "description": "Semi-annual repetition of the screening to measure progress and identify new vulnerabilities early. Available within the subscription only."
+      }
+    },
     "process": {
       "title": "How does a Red Teaming Assessment work?",
       "intro": "A Red Teaming Assessment follows a structured process tailored to the specific risks and requirements of the organization.",
@@ -596,26 +670,52 @@ export const translations = {
     },
     "approach": {
       "title": "Our approach for hotels",
-      "subtitle": "Depending on the initial situation and objectives",
-      "basic": {
-        "title": "Red Teaming Basic",
-        "subtitle": "Create clarity & make risks visible",
-        "point1": "Structured risk assessment (physical & digital)",
-        "point2": "Real tests of selected scenarios",
-        "point3": "Detection of critical cyber & phishing risks",
-        "point4": "Management summary with clear priorities",
+      "subtitle": "Two entry points, one goal: operational security that demonstrably works.",
+      "abo": {
+        "badge": "RECOMMENDED",
+        "title": "The Subscription",
+        "subtitle": "Continuous security with certification",
+        "description": "The core product. Minimum term 12 months, including initial assessment, ongoing monitoring and the \"Operational Trust Certified Hotel\" certificate.",
+        "point1": "Initial assessment (months 1 and 2): OSINT screening, cyber screen, physical walkthrough",
+        "point2": "Monthly phishing simulations and quarterly vishing tests",
+        "point3": "Semi-annual re-screen: measure progress, identify new vulnerabilities",
+        "point4": "\"Operational Trust Certified Hotel\" certificate after successful assessment",
+        "point5": "Dedicated contact, 24/7 crisis team on-call in the event of an incident",
         "idealFor": "IDEAL FOR:",
-        "idealForText": "Hotels that want to know where they stand before they deepen."
+        "idealForText": "Hotels that want to permanently embed operational security and demonstrate it externally."
       },
-      "advanced": {
-        "title": "Red Teaming Advanced",
-        "subtitle": "Actively reducing liability & crisis risks",
-        "point1": "Extended cyber & phishing scenarios",
-        "point2": "Linking IT failures with real events",
-        "point3": "In-depth analysis of crisis management & governance",
-        "point4": "Detailed decision & action plan",
+      "standortbestimmung": {
+        "title": "One-time Assessment",
+        "subtitle": "Gain clarity without commitment",
+        "description": "A one-time assessment without monitoring and without certification. Shows where the hotel is concretely vulnerable today and delivers prioritised recommendations.",
+        "point1": "OSINT screening of the digital attack surface (risk score 0 to 100)",
+        "point2": "Real tests of selected physical and digital scenarios",
+        "point3": "Structured GM report with clear priorities",
+        "point4": "No ongoing monitoring, no certificate",
         "idealFor": "IDEAL FOR:",
-        "idealForText": "Recommended for increased visibility, events, complex IT or regulatory pressure."
+        "idealForText": "Hotels that first want to understand where they stand before committing."
+      },
+      "phases": {
+        "title": "The three phases of collaboration",
+        "subtitle": "The subscription follows a clear, structured process over 24 months and beyond.",
+        "phase1": {
+          "label": "PHASE 1",
+          "period": "Year 1 (months 1 to 12)",
+          "title": "Reality check & certification",
+          "description": "Full initial assessment, certificate issued after month 2, monthly phishing tests, quarterly vishing tests, mid-year re-screen after month 6."
+        },
+        "phase2": {
+          "label": "PHASE 2",
+          "period": "Year 2 (months 13 to 24)",
+          "title": "Deepening & confirmation",
+          "description": "Ongoing monitoring with new scenarios, full re-assessment after month 18, measurable progress comparison, certificate renewal after month 24."
+        },
+        "phase3": {
+          "label": "PHASE 3",
+          "period": "From year 3",
+          "title": "Permanent protection",
+          "description": "Monthly phishing tests, semi-annual vishing tests, annual short assessment, automatic certificate renewal. Security as a permanent operational standard."
+        }
       },
       "roadmap": {
         "title": "Security as a leadership task",
@@ -632,18 +732,18 @@ export const translations = {
       },
       "step2": {
         "number": "02",
-        "title": "Test",
-        "description": "Discreet test phase under real conditions"
+        "title": "Assessment",
+        "description": "Initial assessment: OSINT screening, cyber screen, physical walkthrough (months 1 and 2)"
       },
       "step3": {
         "number": "03",
-        "title": "Summary",
-        "description": "Management summary & prioritization"
+        "title": "Certificate",
+        "description": "GM report handover, \"Operational Trust Certified Hotel\" certificate after successful assessment"
       },
       "step4": {
         "number": "04",
-        "title": "Decision",
-        "description": "Decision on next steps"
+        "title": "Monitoring",
+        "description": "Ongoing monitoring: monthly phishing tests, quarterly vishing tests, semi-annual re-screen"
       }
     },
     "cta": {

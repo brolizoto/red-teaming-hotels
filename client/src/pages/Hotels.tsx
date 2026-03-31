@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, AlertTriangle, Shield, Target, CheckCircle2 } from "lucide-react";
+import { ArrowRight, AlertTriangle, Shield, Target, CheckCircle2, Award, RefreshCw, TrendingUp } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { useTranslation } from "react-i18next";
 import { Navigation } from "@/components/Navigation";
@@ -270,7 +270,9 @@ export default function Hotels() {
           </div>
         </section>
 
-        {/* Unser Ansatz für Hotels */}
+        {/* ============================================================
+            NEUER ANGEBOTSBEREICH: Abo + Einmalige Standortbestimmung
+            ============================================================ */}
         <section id="services" className="container py-12 md:py-20">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -280,85 +282,189 @@ export default function Hotels() {
                 {t('hotels.approach.subtitle')}
               </p>
             </div>
-          
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-              {/* Red Teaming Basic */}
-              <div className="border border-border rounded-lg hover:border-primary transition-colors p-6 md:p-8">
-                <h3 className="text-subheading mb-4">{t('hotels.approach.basic.title')}</h3>
-                <p className="text-sm text-muted-foreground mb-6">
-                  {t('hotels.approach.basic.subtitle')}
+
+            {/* Two Option Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mb-16">
+
+              {/* Karte 1: Das Abo (empfohlen) */}
+              <div className="relative border-2 border-primary rounded-xl p-8 bg-background shadow-sm">
+                {/* Badge */}
+                <div className="absolute -top-4 left-8">
+                  <span className="bg-primary text-white text-xs font-bold px-4 py-1.5 rounded-full tracking-wide">
+                    {t('hotels.approach.abo.badge')}
+                  </span>
+                </div>
+
+                <div className="flex items-start gap-4 mb-6 mt-2">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Award className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-foreground">{t('hotels.approach.abo.title')}</h3>
+                    <p className="text-sm text-primary font-semibold mt-1">{t('hotels.approach.abo.subtitle')}</p>
+                  </div>
+                </div>
+
+                <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
+                  {t('hotels.approach.abo.description')}
                 </p>
-                <ul className="space-y-4 text-sm text-muted-foreground mb-8">
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.approach.basic.point1')}</span>
+
+                <ul className="space-y-3 text-sm text-muted-foreground mb-8">
+                  <li className="flex gap-3 items-start">
+                    <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
+                    <span>{t('hotels.approach.abo.point1')}</span>
                   </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.approach.basic.point2')}</span>
+                  <li className="flex gap-3 items-start">
+                    <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
+                    <span>{t('hotels.approach.abo.point2')}</span>
                   </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.approach.basic.point3')}</span>
+                  <li className="flex gap-3 items-start">
+                    <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
+                    <span>{t('hotels.approach.abo.point3')}</span>
                   </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.approach.basic.point4')}</span>
+                  <li className="flex gap-3 items-start">
+                    <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
+                    <span>{t('hotels.approach.abo.point4')}</span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
+                    <span>{t('hotels.approach.abo.point5')}</span>
                   </li>
                 </ul>
-                <p className="text-xs font-bold text-foreground">{t('hotels.approach.basic.idealFor')}</p>
-                <p className="text-xs text-muted-foreground">
-                  {t('hotels.approach.basic.idealForText')}
-                </p>
+
+                <div className="border-t border-border pt-4">
+                  <p className="text-xs font-bold text-foreground uppercase tracking-wide mb-1">{t('hotels.approach.abo.idealFor')}</p>
+                  <p className="text-xs text-muted-foreground">{t('hotels.approach.abo.idealForText')}</p>
+                </div>
               </div>
 
-              {/* Red Teaming Advanced */}
-              <div className="border border-border rounded-lg hover:border-primary transition-colors bg-card p-6 md:p-8">
-                <h3 className="text-subheading mb-4">{t('hotels.approach.advanced.title')}</h3>
-                <p className="text-sm text-muted-foreground mb-6">
-                  {t('hotels.approach.advanced.subtitle')}
+              {/* Karte 2: Einmalige Standortbestimmung */}
+              <div className="border border-border rounded-xl p-8 bg-background hover:border-primary/50 transition-colors">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Target className="text-muted-foreground" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-foreground">{t('hotels.approach.standortbestimmung.title')}</h3>
+                    <p className="text-sm text-muted-foreground font-semibold mt-1">{t('hotels.approach.standortbestimmung.subtitle')}</p>
+                  </div>
+                </div>
+
+                <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
+                  {t('hotels.approach.standortbestimmung.description')}
                 </p>
-                <ul className="space-y-4 text-sm text-muted-foreground mb-8">
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.approach.advanced.point1')}</span>
+
+                <ul className="space-y-3 text-sm text-muted-foreground mb-8">
+                  <li className="flex gap-3 items-start">
+                    <CheckCircle2 className="text-muted-foreground flex-shrink-0 mt-0.5" size={16} />
+                    <span>{t('hotels.approach.standortbestimmung.point1')}</span>
                   </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.approach.advanced.point2')}</span>
+                  <li className="flex gap-3 items-start">
+                    <CheckCircle2 className="text-muted-foreground flex-shrink-0 mt-0.5" size={16} />
+                    <span>{t('hotels.approach.standortbestimmung.point2')}</span>
                   </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.approach.advanced.point3')}</span>
+                  <li className="flex gap-3 items-start">
+                    <CheckCircle2 className="text-muted-foreground flex-shrink-0 mt-0.5" size={16} />
+                    <span>{t('hotels.approach.standortbestimmung.point3')}</span>
                   </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('hotels.approach.advanced.point4')}</span>
+                  <li className="flex gap-3 items-start text-muted-foreground/60">
+                    <span className="flex-shrink-0 mt-0.5 w-4 h-4 flex items-center justify-center text-muted-foreground/40 text-lg leading-none">–</span>
+                    <span>{t('hotels.approach.standortbestimmung.point4')}</span>
                   </li>
                 </ul>
-                <p className="text-xs font-bold text-foreground">{t('hotels.approach.advanced.idealFor')}</p>
-                <p className="text-xs text-muted-foreground">
-                  {t('hotels.approach.advanced.idealForText')}
-                </p>
+
+                <div className="border-t border-border pt-4">
+                  <p className="text-xs font-bold text-foreground uppercase tracking-wide mb-1">{t('hotels.approach.standortbestimmung.idealFor')}</p>
+                  <p className="text-xs text-muted-foreground">{t('hotels.approach.standortbestimmung.idealForText')}</p>
+                </div>
               </div>
             </div>
-          </div>
-          
-          {/* Roadmap-Grafik */}
-          <div className="mt-16 max-w-6xl mx-auto">
+
+            {/* 3-Phasen-Modell */}
             <div className="bg-gradient-to-br from-background to-muted/20 border border-border rounded-xl p-8 md:p-12">
-              <div className="text-center mb-12">
-                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">{t('hotels.approach.roadmap.title')}</h3>
-                <p className="text-base text-muted-foreground">{t('hotels.approach.roadmap.subtitle')}</p>
+              <div className="text-center mb-10">
+                <div className="accent-line mb-6 mx-auto" style={{width: '3rem'}}></div>
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">{t('hotels.approach.phases.title')}</h3>
+                <p className="text-base text-muted-foreground max-w-2xl mx-auto">{t('hotels.approach.phases.subtitle')}</p>
               </div>
-              
-              <div className="my-12">
-                <img 
-                  src={i18n.language === 'en' ? 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/roadmap-warm-en_c347869b.png' : 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/roadmap-warm-de_64ef8ef4.png'}
-                  alt={t('hotels.approach.roadmap.alt')}
-                  className="w-full max-w-5xl mx-auto rounded-lg shadow-lg"
-                  loading="lazy"
-                />
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                {/* Phase 1 */}
+                <div className="relative">
+                  <div className="bg-background border border-primary/30 rounded-xl p-6 h-full">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                        <CheckCircle2 className="text-white" size={20} />
+                      </div>
+                      <div>
+                        <p className="text-xs font-bold text-primary tracking-widest">{t('hotels.approach.phases.phase1.label')}</p>
+                        <p className="text-xs text-muted-foreground">{t('hotels.approach.phases.phase1.period')}</p>
+                      </div>
+                    </div>
+                    <h4 className="text-base font-bold text-foreground mb-3">{t('hotels.approach.phases.phase1.title')}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{t('hotels.approach.phases.phase1.description')}</p>
+                  </div>
+                  {/* Connector arrow (hidden on mobile) */}
+                  <div className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 items-center justify-center w-8">
+                    <ArrowRight className="text-primary" size={20} />
+                  </div>
+                </div>
+
+                {/* Phase 2 */}
+                <div className="relative">
+                  <div className="bg-background border border-border rounded-xl p-6 h-full">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <TrendingUp className="text-primary" size={20} />
+                      </div>
+                      <div>
+                        <p className="text-xs font-bold text-primary tracking-widest">{t('hotels.approach.phases.phase2.label')}</p>
+                        <p className="text-xs text-muted-foreground">{t('hotels.approach.phases.phase2.period')}</p>
+                      </div>
+                    </div>
+                    <h4 className="text-base font-bold text-foreground mb-3">{t('hotels.approach.phases.phase2.title')}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{t('hotels.approach.phases.phase2.description')}</p>
+                  </div>
+                  <div className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 items-center justify-center w-8">
+                    <ArrowRight className="text-primary" size={20} />
+                  </div>
+                </div>
+
+                {/* Phase 3 */}
+                <div>
+                  <div className="bg-background border border-border rounded-xl p-6 h-full">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <RefreshCw className="text-primary" size={20} />
+                      </div>
+                      <div>
+                        <p className="text-xs font-bold text-primary tracking-widest">{t('hotels.approach.phases.phase3.label')}</p>
+                        <p className="text-xs text-muted-foreground">{t('hotels.approach.phases.phase3.period')}</p>
+                      </div>
+                    </div>
+                    <h4 className="text-base font-bold text-foreground mb-3">{t('hotels.approach.phases.phase3.title')}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{t('hotels.approach.phases.phase3.description')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Roadmap-Grafik */}
+            <div className="mt-16">
+              <div className="bg-gradient-to-br from-background to-muted/20 border border-border rounded-xl p-8 md:p-12">
+                <div className="text-center mb-12">
+                  <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">{t('hotels.approach.roadmap.title')}</h3>
+                  <p className="text-base text-muted-foreground">{t('hotels.approach.roadmap.subtitle')}</p>
+                </div>
+                
+                <div className="my-12">
+                  <img 
+                    src={i18n.language === 'en' ? 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/roadmap-warm-en_c347869b.png' : 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029639105/7RP23gxa5ieCqbojNjMkFW/roadmap-warm-de_64ef8ef4.png'}
+                    alt={t('hotels.approach.roadmap.alt')}
+                    className="w-full max-w-5xl mx-auto rounded-lg shadow-lg"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -366,29 +472,31 @@ export default function Hotels() {
 
         {/* Ablauf der Zusammenarbeit */}
         <section className="container py-12 md:py-16">
-          <div className="accent-line mb-8"></div>
-          <h2 className="text-heading mb-12">{t('hotels.process.title')}</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-4">01</div>
-              <h3 className="font-bold text-foreground mb-2">{t('hotels.process.step1.title')}</h3>
-              <p className="text-xs md:text-sm text-muted-foreground">{t('hotels.process.step1.description')}</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-4">02</div>
-              <h3 className="font-bold text-foreground mb-2">{t('hotels.process.step2.title')}</h3>
-              <p className="text-xs md:text-sm text-muted-foreground">{t('hotels.process.step2.description')}</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-4">03</div>
-              <h3 className="font-bold text-foreground mb-2">{t('hotels.process.step3.title')}</h3>
-              <p className="text-xs md:text-sm text-muted-foreground">{t('hotels.process.step3.description')}</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-4">04</div>
-              <h3 className="font-bold text-foreground mb-2">{t('hotels.process.step4.title')}</h3>
-              <p className="text-xs md:text-sm text-muted-foreground">{t('hotels.process.step4.description')}</p>
+          <div className="max-w-6xl mx-auto">
+            <div className="accent-line mb-8"></div>
+            <h2 className="text-heading mb-12">{t('hotels.process.title')}</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-4">01</div>
+                <h3 className="font-bold text-foreground mb-2">{t('hotels.process.step1.title')}</h3>
+                <p className="text-xs md:text-sm text-muted-foreground">{t('hotels.process.step1.description')}</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-4">02</div>
+                <h3 className="font-bold text-foreground mb-2">{t('hotels.process.step2.title')}</h3>
+                <p className="text-xs md:text-sm text-muted-foreground">{t('hotels.process.step2.description')}</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-4">03</div>
+                <h3 className="font-bold text-foreground mb-2">{t('hotels.process.step3.title')}</h3>
+                <p className="text-xs md:text-sm text-muted-foreground">{t('hotels.process.step3.description')}</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-4">04</div>
+                <h3 className="font-bold text-foreground mb-2">{t('hotels.process.step4.title')}</h3>
+                <p className="text-xs md:text-sm text-muted-foreground">{t('hotels.process.step4.description')}</p>
+              </div>
             </div>
           </div>
         </section>
