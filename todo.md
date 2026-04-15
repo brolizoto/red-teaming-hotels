@@ -681,4 +681,4 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Ansatz: "Warum Red Teaming?" Text anpassen
 - [x] Hotels: "Resilienz als Führungsaufgabe / Red Teaming macht Entscheidungsfähigkeit entwickelbar"
 - [x] WeitereEinsatzfelder: Seitenbeschreibung anpassen
-- [ ] Checkpoint speichern
+- [x] Checkpoint speichern

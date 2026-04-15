@@ -19,7 +19,7 @@ export const translations = {
     },
     "whatIsRedTeaming": {
       "title": "Was ist Red Teaming?",
-      "description1": "Red Teaming prüft die Resilienz einer Organisation anhand realistischer Ereignisszenarien. Keine Theorie und kein Audit, aber der direkte Weg zu einer umfassenden Sicherheitsstrategie, die den individuellen Risiken, Abläufen, Abhängigkeiten und Entscheidungswegen im Alltag entspricht.",
+      "description1": "Red Teaming prüft die Resilienz einer Organisation anhand realistischer Ereignisszenarien. Keine Theorie und kein Audit, aber der direkte Weg zu einer umfassenden Strategie, die den individuellen Risiken, Abläufen, Abhängigkeiten und Entscheidungswegen im Alltag entspricht.",
       "description2": "Red Teaming verbindet physische, digitale und organisatorische Sicherheit zu einem verständlichen Gesamtbild.",
       "question": "Wir fragen: Was passiert wirklich, wenn etwas passiert?"
     },
@@ -500,7 +500,7 @@ export const translations = {
     },
     "whatIsRedTeaming": {
       "title": "What is Red Teaming?",
-      "description1": "Red Teaming tests an organization's resilience based on realistic event scenarios. No theory and no audit, but the direct path to a comprehensive security strategy that corresponds to individual risks, processes, dependencies and decision-making paths in everyday life.",
+      "description1": "Red Teaming tests an organization's resilience based on realistic event scenarios. No theory and no audit, but the direct path to a comprehensive strategy that corresponds to individual risks, processes, dependencies and decision-making paths in everyday life.",
       "description2": "Red Teaming combines physical, digital and organizational security into an understandable overall picture.",
       "question": "We ask: What really happens when something happens?"
     },
