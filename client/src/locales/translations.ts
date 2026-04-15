@@ -12,7 +12,7 @@ export const translations = {
   "home": {
     "hero": {
       "title": "Red Teaming",
-      "subtitle": "Realitätsnahe Prüfung von Sicherheit, Prozessen und Krisenbereitschaft",
+      "subtitle": "Realitätsnahe Prüfung von Resilienz, Sicherheit und Krisenbereitschaft",
       "description": "Wir testen Organisationen so, wie es ein echtes Ereignis tun würde – physisch, digital, organisatorisch und durch Social Engineering. Nicht theoretisch, sondern real.",
       "ctaApproach": "Unseren Ansatz verstehen",
       "ctaContact": "Gespräch anfragen"
@@ -25,7 +25,7 @@ export const translations = {
     },
     "whyRedTeaming": {
       "title": "Warum Red Teaming?",
-      "paragraph1": "In vielen Organisationen existiert Sicherheit auf dem Papier, aber nicht im Ernstfall. Pläne wurden nie real getestet, Zuständigkeiten sind unklar, Dokumentation ist veraltet.",
+      "paragraph1": "In vielen Organisationen existiert Resilienz auf dem Papier, aber nicht im Ernstfall.",
       "paragraph2": "Red Teaming macht diese Lücken sichtbar, bevor sie Schaden verursachen. Es zeigt, wo Theorie und Praxis auseinanderklaffen, welche Abhängigkeiten kritisch sind und wann Entscheidungen unter Druck versagen.",
       "physical": "Physisch",
       "physicalDesc": "Zutrittskontrolle, Perimeter, Evakuation, physische Sicherheitskonzepte",
@@ -38,7 +38,7 @@ export const translations = {
     },
     "areas": {
       "title": "Einsatzfelder",
-      "description": "Red Teaming ist branchenübergreifend einsetzbar, überall dort, wo Sicherheit, Krisenbereitschaft und Prozessqualität entscheidend sind.",
+      "description": "Red Teaming ist branchenübergreifend einsetzbar, überall dort, wo Resilienz, Krisenbereitschaft und Sicherheit entscheidend sind.",
       "hotels": {
         "title": "Hotels",
         "description": "Spezialisiert auf Hotellerie: Gästesicherheit, Reputation, Krisenmanagement und operative Kontinuität.",
@@ -63,12 +63,12 @@ export const translations = {
     },
     "whatIs": {
       "title": "Was ist Red Teaming?",
-      "p1": "Red Teaming prüft die Resilienz einer Organisation anhand realistischer Ereignisszenarien. Keine Theorie und kein Audit - aber der direkte Weg zu einer umfassende Sicherheitsstrategie, die individuellen Risiken, Abläufen, Abhängigkeiten und Entscheidungswegen im Alltag entspricht.",
+      "p1": "Red Teaming prüft die Resilienz einer Organisation anhand realistischer Ereignisszenarien. Keine Theorie und kein Audit - aber der direkte Weg zu einer umfassenden Strategie, die individuellen Risiken, Abläufen, Abhängigkeiten und Entscheidungswegen im Alltag entspricht.",
       "p2": "Im Sicherheitssektor simuliert \"Red Team\" ein gegnerisches Verhalten, um die eigene Abwehr zu testen. Übertragen auf Organisationen bedeutet das: In Absprache mit der Direktion evaluieren wir die Reaktion auf ein künstlich herbeigeführtes Sicherheitsereignis - physisch, digital und organisatorisch, um ein umfassendes und massgeschneidertes Sicherheitskonzept zu ermöglichen."
     },
     "why": {
       "title": "Warum Red Teaming?",
-      "intro": "In vielen Organisationen existiert Sicherheit auf dem Papier, aber nicht im Ernstfall. Pläne wurden nie real getestet, Zuständigkeiten sind unklar, Dokumentation ist veraltet.",
+      "intro": "In vielen Organisationen existiert Resilienz auf dem Papier, aber nicht im Ernstfall. Pläne wurden nie real getestet, Zuständigkeiten sind unklar, Dokumentation ist veraltet.",
       "gapsTitle": "Typische Lücken:",
       "gap1": "Pläne existieren, wurden aber nie unter realen Bedingungen getestet",
       "gap2": "Zuständigkeiten sind unklar oder überschneiden sich",
@@ -269,7 +269,7 @@ export const translations = {
         }
       },
       "roadmap": {
-        "title": "Sicherheit als Führungsaufgabe",
+        "title": "Resilienz als Führungsaufgabe",
         "subtitle": "Red Teaming macht Entscheidungsfähigkeit entwickelbar",
         "alt": "Red Teaming Roadmap: Von formaler Sicherheit über getestete Realität zur geführten Sicherheit"
       }
@@ -306,7 +306,7 @@ export const translations = {
   "otherFields": {
     "hero": {
       "title": "Weitere Einsatzfelder",
-      "subtitle": "Red Teaming ist branchenübergreifend einsetzbar, überall dort, wo Sicherheit, Krisenbereitschaft und Prozessqualität entscheidend sind.",
+      "subtitle": "Red Teaming ist branchenübergreifend einsetzbar, überall dort, wo Resilienz, Krisenbereitschaft und Sicherheit entscheidend sind.",
       "description": "Neben der spezialisierten Anwendung in der Hotellerie bieten wir Red Teaming für Unternehmen, Standorte, private Liegenschaften und als Teil physischer Sicherheitsüberprüfungen an."
     },
     "companies": {
@@ -493,7 +493,7 @@ export const translations = {
   "home": {
     "hero": {
       "title": "Red Teaming",
-      "subtitle": "Realistic Testing of Security, Processes and Crisis Preparedness",
+      "subtitle": "Realistic Testing of Resilience, Security and Crisis Preparedness",
       "description": "We test organizations the way a real event would – physically, digitally, organizationally and through social engineering. Not theoretically, but for real.",
       "ctaApproach": "Understand Our Approach",
       "ctaContact": "Request Call"
@@ -506,7 +506,7 @@ export const translations = {
     },
     "whyRedTeaming": {
       "title": "Why Red Teaming?",
-      "paragraph1": "In many organizations, security exists on paper but not in an emergency. Plans have never been tested in reality, responsibilities are unclear, documentation is outdated.",
+      "paragraph1": "In many organizations, resilience exists on paper but not in an emergency.",
       "paragraph2": "Red Teaming makes these gaps visible before they cause damage. It shows where theory and practice diverge, which dependencies are critical and when decisions fail under pressure.",
       "physical": "Physical",
       "physicalDesc": "Access control, perimeter, evacuation, physical security concepts",
@@ -519,7 +519,7 @@ export const translations = {
     },
     "areas": {
       "title": "Areas of Application",
-      "description": "Red Teaming can be used across industries, wherever safety, crisis preparedness and process quality are crucial.",
+      "description": "Red Teaming can be applied across industries, wherever resilience, crisis preparedness and security are crucial.",
       "hotels": {
         "title": "Hotels",
         "description": "Specializing in the hotel industry: guest safety, reputation, crisis management and operational continuity.",
@@ -544,12 +544,12 @@ export const translations = {
     },
     "whatIs": {
       "title": "What is Red Teaming?",
-      "p1": "Red Teaming tests an organization's resilience based on realistic event scenarios. No theory and no audit - but the direct path to a comprehensive security strategy that corresponds to individual risks, processes, dependencies and decision-making paths in everyday life.",
+      "p1": "Red Teaming tests an organization's resilience based on realistic event scenarios. No theory and no audit - but the direct path to a comprehensive strategy that corresponds to individual risks, processes, dependencies and decision-making paths in everyday life.",
       "p2": "In the security sector, \"Red Team\" simulates adversarial behavior to test one's own defense. Applied to organizations, this means: In consultation with management, we evaluate the response to an artificially induced security event - physically, digitally and organizationally, to enable a comprehensive and tailored security concept."
     },
     "why": {
       "title": "Why Red Teaming?",
-      "intro": "In many organizations, security exists on paper but not in an emergency. Plans have never been tested in reality, responsibilities are unclear, documentation is outdated.",
+      "intro": "In many organizations, resilience exists on paper but not in an emergency. Plans have never been tested in reality, responsibilities are unclear, documentation is outdated.",
       "gapsTitle": "Typical gaps:",
       "gap1": "Plans exist but have never been tested under real conditions",
       "gap2": "Responsibilities are unclear or overlap",
@@ -750,7 +750,7 @@ export const translations = {
         }
       },
       "roadmap": {
-        "title": "Security as a leadership task",
+        "title": "Resilience as a leadership task",
         "subtitle": "Red Teaming makes decision-making capability developable",
         "alt": "Red Teaming Roadmap: From formal security through tested reality to guided security"
       }
@@ -787,7 +787,7 @@ export const translations = {
   "otherFields": {
     "hero": {
       "title": "Other Fields",
-      "subtitle": "Red Teaming can be applied across industries, wherever security, crisis preparedness and process quality are critical.",
+      "subtitle": "Red Teaming can be applied across industries, wherever resilience, crisis preparedness and security are critical.",
       "description": "In addition to specialized application in the hotel industry, we offer Red Teaming for companies, locations, private properties and as part of physical security assessments."
     },
     "companies": {

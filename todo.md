@@ -671,3 +671,14 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [ ] Supabase-URL + Anon Key als Secrets in Manus hinterlegen
 - [ ] Tool-Funktionalität unter /rt4h/assessment in Manus einbauen
 - [ ] Testen und Lovable deaktivieren
+
+## Textanpassungen (April 2026)
+
+- [x] Home: Untertitel "Realitätsnahe Prüfung von Resilienz, Sicherheit und Krisenbereitschaft" (ohne "Prozesse")
+- [x] Home: "Warum Red Teaming?" Text anpassen
+- [x] Home: Einsatzfelder-Beschreibung anpassen
+- [x] Ansatz: "Was ist Red Teaming?" Text anpassen
+- [x] Ansatz: "Warum Red Teaming?" Text anpassen
+- [x] Hotels: "Resilienz als Führungsaufgabe / Red Teaming macht Entscheidungsfähigkeit entwickelbar"
+- [x] WeitereEinsatzfelder: Seitenbeschreibung anpassen
+- [ ] Checkpoint speichern
