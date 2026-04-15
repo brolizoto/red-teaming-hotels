@@ -699,7 +699,16 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 
 ## SEO-Fixes Homepage (/)
 
-- [ ] Titel kürzen: max. 60 Zeichen
-- [ ] Beschreibung kürzen: max. 160 Zeichen
-- [ ] Keywords reduzieren: 3–8 fokussierte Keywords
+- [x] Titel kürzen: max. 60 Zeichen
+- [x] Beschreibung kürzen: max. 160 Zeichen
+- [x] Keywords reduzieren: 3–8 fokussierte Keywords
+- [x] Checkpoint speichern
+
+## Keyword-Stärkung (bestehende Seiten)
+
+- [x] Hotels-Seite: "Operational Trust Certified Hotel" in H2-Überschrift einbauen
+- [x] Hotels-Seite: Longtail-Keywords in Fliesstext (Cyberangriff, Phishing, Krisenbereitschaft)
+- [x] Ansatz-Seite: FAQ-Antworten mit Longtail-Keywords schärfen (DE + EN)
+- [x] Home-Seite: Erste Absätze mit fokussierten Keywords stärken (DE + EN)
+- [x] index.html: JSON-LD knowsAbout und keywords aktualisieren
 - [ ] Checkpoint speichern

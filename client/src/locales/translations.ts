@@ -173,11 +173,11 @@ export const translations = {
       "q1": "Was ist Red Teaming – und was ist es nicht?",
       "a1": "Red Teaming ist eine realitätsnahe Prüfung der Resilienz einer Organisation. Kein Audit, keine Checkliste – sondern die Simulation realistischer Ereignisse unter echten Bedingungen. Ziel ist es, Lücken sichtbar zu machen, bevor sie im Ernstfall Schaden verursachen.",
       "q2": "Für wen ist Red Teaming geeignet?",
-      "a2": "Red Teaming ist für Organisationen geeignet, die ihre Krisen- und Notfallfähigkeit real testen wollen – nicht nur dokumentieren. Besonders relevant für Hotels, Unternehmen mit mehreren Standorten, und Organisationen mit hohen Anforderungen an Betriebskontinuität.",
+      "a2": "Red Teaming ist für Organisationen geeignet, die ihre Krisenbereitschaft und Hotel Security real testen wollen – nicht nur dokumentieren. Besonders relevant für Hotels, Unternehmen mit mehreren Standorten, und Organisationen mit hohen Anforderungen an Betriebskontinuität.",
       "q3": "Was ist der Unterschied zwischen dem Abo und der einmaligen Standortbestimmung?",
-      "a3": "Das Abo ist das Kernprodukt: 12 Monate Mindestlaufzeit, laufendes Monitoring, und das Zertifikat Operational Trust Certified Hotel. Die einmalige Standortbestimmung ist ein einzelnes Assessment ohne Monitoring und ohne Zertifikat – ideal für Hotels, die zunächst verstehen wollen, wo sie heute stehen.",
+      "a3": "Das Abo ist das Kernprodukt: 12 Monate Mindestlaufzeit, laufendes Monitoring und das Zertifikat \"Operational Trust Certified Hotel\" – das einzige Hotel-Sicherheitszertifikat, das auf realen Tests basiert. Die einmalige Standortbestimmung ist ein einzelnes Assessment ohne Monitoring und ohne Zertifikat.",
       "q4": "Wie lange dauert ein Red Teaming Assessment?",
-      "a4": "Das initiale Assessment dauert zwei Monate (Monat 1 und 2). Es umfasst OSINT-Screening, Cyber-Screen und physische Begehung. Im Rahmen des Abos folgen danach laufende Tests und ein halbjährlicher Re-Screen.",
+      "a4": "Das initiale Assessment dauert zwei Monate. Es umfasst OSINT-Screening der digitalen Angriffsfläche, Cyber-Screen (Phishing-Simulation, Vishing-Test) und physische Begehung. Im Rahmen des Abos folgen danach laufende Phishing-Tests und ein halbjährlicher Re-Screen.",
       "q5": "Wird der Betrieb des Hotels während des Assessments beeinträchtigt?",
       "a5": "Nein. Das Assessment wird diskret und in Absprache mit der Direktion durchgeführt. Ziel ist eine realitätsnahe Prüfung – nicht eine Störung des Betriebs. Digitale Analysen (OSINT, Cyber-Screen) erfolgen vollständig ohne Eingriff in Systeme."
     },
@@ -190,7 +190,7 @@ export const translations = {
   "hotels": {
     "hero": {
       "title": "Vorbereitung bestimmt das Schadenausmass.",
-      "subtitle": "Red Teaming for Hotels unterstützt Direktionen dabei, die Notfall- und Krisenbereitschaft ihrer Standorte realistisch zu testen - physisch, digital und organisatorisch.",
+      "subtitle": "Red Teaming for Hotels unterstützt Direktionen dabei, die Krisenbereitschaft und Hotel Security ihres Standorts realistisch zu testen – physisch, digital und organisatorisch.",
       "description": "Damit Entscheidungen vorbereitet sind – nicht improvisiert.",
       "cta": "Gespräch anfragen (30 Minuten)"
     },
@@ -224,7 +224,7 @@ export const translations = {
     },
     "testing": {
       "title": "Was wir real prüfen",
-      "intro": "Wir prüfen Hotels so, wie es ein reales Ereignis tun würde. Nicht theoretisch. Nicht zertifikatsgetrieben.",
+      "intro": "Wir prüfen Hotels so, wie es ein reales Ereignis tun würde. Nicht theoretisch. Nicht zertifikatsgetrieben. Sondern als echter Cyberangriff, physischer Eindringversuch oder Krisenmanagement-Test.",
       "focus": "Unser Fokus liegt auf den Punkten, die im Ernstfall Entscheidungen verzögern oder verunmöglichen.",
       "area1": "Physische Sicherheit & Evakuationsfähigkeit",
       "area2": "Cyber-Resilienz & Phishing-Szenarien",
@@ -283,8 +283,8 @@ export const translations = {
         }
       },
       "roadmap": {
-        "title": "Resilienz als Führungsaufgabe",
-        "subtitle": "Red Teaming macht Entscheidungsfähigkeit entwickelbar",
+        "title": "Hotel Security als Führungsaufgabe",
+        "subtitle": "Red Teaming macht Krisenbereitschaft und Entscheidungsfähigkeit entwickelbar",
         "alt": "Red Teaming Roadmap: Von formaler Sicherheit über getestete Realität zur geführten Sicherheit"
       }
     },
@@ -668,11 +668,11 @@ export const translations = {
       "q1": "What is Red Teaming – and what is it not?",
       "a1": "Red Teaming is a realistic assessment of an organization's resilience. Not an audit, not a checklist – but the simulation of realistic events under real conditions. The goal is to make gaps visible before they cause damage in an emergency.",
       "q2": "Who is Red Teaming suitable for?",
-      "a2": "Red Teaming is suitable for organizations that want to test their crisis and emergency preparedness in reality – not just document it. Particularly relevant for hotels, companies with multiple locations, and organizations with high requirements for operational continuity.",
+      "a2": "Red Teaming is suitable for organizations that want to test their hotel security and crisis preparedness in reality – not just document it. Particularly relevant for hotels, companies with multiple locations, and organizations with high requirements for business continuity.",
       "q3": "What is the difference between the subscription and the one-time assessment?",
-      "a3": "The subscription is the core product: 12-month minimum term, ongoing monitoring, and the Operational Trust Certified Hotel certificate. The one-time assessment is a single assessment without monitoring and without certification – ideal for hotels that first want to understand where they stand today.",
+      "a3": "The subscription is the core product: 12-month minimum term, ongoing monitoring and the \"Operational Trust Certified Hotel\" certificate – the only hotel security certificate based on real tests. The one-time assessment is a single assessment without monitoring and without certification.",
       "q4": "How long does a Red Teaming assessment take?",
-      "a4": "The initial assessment takes two months (months 1 and 2). It includes OSINT screening, Cyber Screen and physical walkthrough. Within the subscription, ongoing tests and a semi-annual re-screen follow.",
+      "a4": "The initial assessment takes two months. It includes OSINT screening of the digital attack surface, Cyber Screen (phishing simulation, vishing test) and physical walkthrough. Within the subscription, ongoing phishing tests and a semi-annual re-screen follow.",
       "q5": "Is hotel operations disrupted during the assessment?",
       "a5": "No. The assessment is conducted discreetly and in consultation with management. The goal is a realistic assessment – not a disruption of operations. Digital analyses (OSINT, Cyber Screen) are conducted entirely without interfering with systems."
     },
@@ -685,7 +685,7 @@ export const translations = {
   "hotels": {
     "hero": {
       "title": "Preparation determines the extent of damage.",
-      "subtitle": "Red Teaming for Hotels supports management in testing the emergency and crisis preparedness of their locations realistically - physically, digitally and organizationally.",
+      "subtitle": "Red Teaming for Hotels supports management in testing hotel security and crisis preparedness realistically – physically, digitally and organizationally.",
       "description": "So that decisions are prepared – not improvised.",
       "cta": "Request Call (30 Minutes)"
     },
@@ -719,7 +719,7 @@ export const translations = {
     },
     "testing": {
       "title": "What we really test",
-      "intro": "We test hotels the way a real event would. Not theoretically. Not certificate-driven.",
+      "intro": "We test hotels the way a real event would. Not theoretically. Not certificate-driven. But as a real cyberattack, physical intrusion attempt or crisis management test.",
       "focus": "Our focus is on the points that delay or prevent decisions in an emergency.",
       "area1": "Physical security & evacuation capability",
       "area2": "Cyber resilience & phishing scenarios",
@@ -778,8 +778,8 @@ export const translations = {
         }
       },
       "roadmap": {
-        "title": "Resilience as a leadership task",
-        "subtitle": "Red Teaming makes decision-making capability developable",
+        "title": "Hotel Security as a leadership task",
+        "subtitle": "Red Teaming makes crisis preparedness and decision-making capability developable",
         "alt": "Red Teaming Roadmap: From formal security through tested reality to guided security"
       }
     },
