@@ -690,4 +690,16 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Person-Schema für Gründer in index.html ergänzen
 - [x] FAQ-Schema (FAQPage) in index.html ergänzen
 - [x] FAQ-Abschnitt auf Ansatz-Seite (DE + EN)
+- [x] Checkpoint speichern
+
+## Wöchentliche Google-Indexierungs-Überprüfung
+
+- [x] Überprüfungs-Skript erstellen (Google Indexierung + Rich Results Status)
+- [x] Wöchentlichen Scheduler einrichten (jeden Montag 08:00 Uhr)
+
+## SEO-Fixes Homepage (/)
+
+- [ ] Titel kürzen: max. 60 Zeichen
+- [ ] Beschreibung kürzen: max. 160 Zeichen
+- [ ] Keywords reduzieren: 3–8 fokussierte Keywords
 - [ ] Checkpoint speichern
