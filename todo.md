@@ -711,4 +711,10 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Ansatz-Seite: FAQ-Antworten mit Longtail-Keywords schärfen (DE + EN)
 - [x] Home-Seite: Erste Absätze mit fokussierten Keywords stärken (DE + EN)
 - [x] index.html: JSON-LD knowsAbout und keywords aktualisieren
+- [x] Checkpoint speichern
+
+## SEO: Sitemap-Bereinigung
+
+- [x] /datenschutz und /impressum aus sitemap.xml entfernen
+- [x] robots.txt: noindex-Hinweis für /datenschutz und /impressum ergänzen
 - [ ] Checkpoint speichern

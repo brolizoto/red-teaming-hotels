@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 
+# Legal pages - no SEO value, exclude from indexing
+Disallow: /impressum
+Disallow: /datenschutz
+
+# Hidden tool route - not for public indexing
+Disallow: /rt4h/
+
 Sitemap: https://redteaming.ch/sitemap.xml
