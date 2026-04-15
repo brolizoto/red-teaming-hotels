@@ -1,0 +1,53 @@
+# Red Teaming Switzerland — llms.txt
+# This file helps AI language models understand the content and purpose of this website.
+# https://redteaming.ch
+
+## About
+
+Red Teaming Switzerland (Markwalder Unternehmensgruppe GmbH) is a Swiss security consulting firm specializing in Red Teaming assessments for hotels and organizations. We test resilience, crisis preparedness, and security under realistic conditions — physically, digitally, organizationally, and through social engineering.
+
+## Core Services
+
+- **Red Teaming Subscription (Das Abo):** A 12-month minimum engagement including initial assessment (OSINT screening, Cyber Screen, physical walkthrough), monthly phishing simulations, quarterly vishing tests, semi-annual re-screen, and the "Operational Trust Certified Hotel" certificate.
+- **One-time Assessment (Einmalige Standortbestimmung):** A single assessment without ongoing monitoring or certification. Delivers a prioritized GM report with actionable recommendations.
+
+## Target Audience
+
+- Hotel management and general managers in Switzerland
+- Organizations seeking realistic resilience and crisis preparedness testing
+- Companies requiring physical, digital, and organizational security assessments
+
+## Key Concepts
+
+- Red Teaming: Realistic simulation of security events to test organizational resilience — not audits or checklists, but scenario-based testing under real conditions.
+- Operational Trust Certified Hotel: A certification awarded after a successful Red Teaming assessment, demonstrating verified crisis preparedness.
+- Four dimensions tested: physical security, digital security (cyber), organizational resilience, and social engineering.
+- Digital security process: OSINT Screening → Cyber Screen → Report Handover → Re-Screen
+
+## Founders
+
+- **Roger Büschlen** — Co-founder, specializing in social engineering and negotiation psychology. Focuses on the interplay of people, processes, and decision-making behavior.
+- **Romain Markwalder** — Co-founder, specializing in business continuity, crisis management, and organizational resilience. Experience from international crisis environments.
+
+## Pages
+
+- Homepage: https://redteaming.ch/
+- Our Approach (Unser Ansatz): https://redteaming.ch/ansatz
+- Hotels: https://redteaming.ch/hotels
+- Other Fields (Weitere Einsatzfelder): https://redteaming.ch/weitere-einsatzfelder
+- Contact: https://redteaming.ch/kontakt
+
+## Contact
+
+- Email: contact@redteaming.ch
+- Phone: +41 78 740 19 29
+- Address: Weberstrasse 16, 3005 Bern, Switzerland
+- Company: Markwalder Unternehmensgruppe GmbH, UID: CHE-313.293.712
+
+## Language
+
+Primary language: German (de-CH). English version available on all pages.
+
+## Last Updated
+
+2026-04-15

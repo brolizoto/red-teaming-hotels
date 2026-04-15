@@ -12,6 +12,31 @@ import { UnifiedFooter } from "@/components/UnifiedFooter";
  * Redesigned for better visual appeal while keeping text 1:1
  */
 
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="py-5">
+      <button
+        className="w-full text-left flex items-center justify-between gap-4 group"
+        onClick={() => setOpen(!open)}
+        aria-expanded={open}
+      >
+        <span className="text-base md:text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+          {question}
+        </span>
+        <span className={`text-primary text-xl font-bold flex-shrink-0 transition-transform duration-200 ${open ? 'rotate-45' : ''}`}>
+          +
+        </span>
+      </button>
+      {open && (
+        <p className="mt-4 text-muted-foreground text-sm md:text-base leading-relaxed">
+          {answer}
+        </p>
+      )}
+    </div>
+  );
+}
+
 export default function Ansatz() {
   const { t } = useTranslation();
   const [, navigate] = useLocation();
@@ -466,6 +491,32 @@ export default function Ansatz() {
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {t('approach.founders.romain.bio')}
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 md:py-24 bg-muted/30" id="faq">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
+              <div className="accent-line mb-8"></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                {t('approach.faq.title')}
+              </h2>
+              <p className="text-lg text-muted-foreground mb-12">
+                {t('approach.faq.subtitle')}
+              </p>
+              <div className="space-y-0 divide-y divide-border">
+                {[
+                  { q: t('approach.faq.q1'), a: t('approach.faq.a1') },
+                  { q: t('approach.faq.q2'), a: t('approach.faq.a2') },
+                  { q: t('approach.faq.q3'), a: t('approach.faq.a3') },
+                  { q: t('approach.faq.q4'), a: t('approach.faq.a4') },
+                  { q: t('approach.faq.q5'), a: t('approach.faq.a5') },
+                ].map((item, idx) => (
+                  <FAQItem key={idx} question={item.q} answer={item.a} />
+                ))}
               </div>
             </div>
           </div>

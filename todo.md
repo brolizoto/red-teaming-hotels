@@ -682,3 +682,12 @@ HINWEIS: Hotels und Weitere Einsatzfelder Seiten sind vollständig zweisprachig,
 - [x] Hotels: "Resilienz als Führungsaufgabe / Red Teaming macht Entscheidungsfähigkeit entwickelbar"
 - [x] WeitereEinsatzfelder: Seitenbeschreibung anpassen
 - [x] Checkpoint speichern
+
+## KI-Suchoptimierung (AEO/GEO)
+
+- [x] llms.txt erstellen (KI-Crawler-Anleitung)
+- [x] Sitemap-Daten aktualisieren (lastmod auf heute)
+- [x] Person-Schema für Gründer in index.html ergänzen
+- [x] FAQ-Schema (FAQPage) in index.html ergänzen
+- [x] FAQ-Abschnitt auf Ansatz-Seite (DE + EN)
+- [ ] Checkpoint speichern
